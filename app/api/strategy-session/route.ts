@@ -37,7 +37,7 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json({
       ok: true,
-      redirectUrl: '/thank-you/strategy-session',
+      redirectUrl: https://calendar.app.google/i5SWT8hspfcNYBna6,
     })
   } catch (error) {
     console.error('Strategy Session API error:', error)
