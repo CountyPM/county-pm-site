@@ -1,162 +1,141 @@
 export default function HomePage() {
   return (
     <main>
+
+      {/* HERO SECTION */}
+      <section className="bg-white">
+        <div className="mx-auto max-w-6xl px-4 py-24">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-gray-500">
+            Ventura County Real Estate Advisor
+          </p>
+
+          <h1 className="mt-4 text-4xl font-bold tracking-tight text-gray-900 md:text-6xl">
+            Not sure whether to sell, rent, or hold your property?
+          </h1>
+
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-gray-600">
+            County Property Management helps property owners evaluate the best
+            strategy based on timing, equity, and long-term goals.
+          </p>
+
+          <div className="mt-10 flex flex-wrap gap-4">
+            <a
+              href="/property-strategy-session"
+              className="rounded bg-black px-6 py-3 text-white"
+            >
+              Book Property Strategy Session
+            </a>
+
+            <a
+              href="/rent-vs-sell"
+              className="rounded border border-gray-300 px-6 py-3"
+            >
+              Explore Rent vs Sell
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* DECISION FRAMEWORK */}
+      <section className="border-t border-gray-200 bg-gray-50">
+        <div className="mx-auto max-w-6xl px-4 py-20 text-center">
+          <h2 className="text-3xl font-semibold text-gray-900">
+            Every property has three possible paths
+          </h2>
+
+          <div className="mt-12 grid gap-8 md:grid-cols-3">
+            <div className="rounded-2xl border bg-white p-8">
+              <h3 className="text-xl font-semibold">Rent</h3>
+              <p className="mt-3 text-gray-600">
+                Generate income and maintain flexibility while the market evolves.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border bg-white p-8">
+              <h3 className="text-xl font-semibold">Sell</h3>
+              <p className="mt-3 text-gray-600">
+                Capture equity and transition into your next opportunity.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border bg-white p-8">
+              <h3 className="text-xl font-semibold">Hold</h3>
+              <p className="mt-3 text-gray-600">
+                Position the property for long-term appreciation and future decisions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FUNNEL ENTRY */}
       <section className="bg-white">
         <div className="mx-auto max-w-6xl px-4 py-20">
-          <div className="grid gap-12 md:grid-cols-2 md:items-center">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-gray-500">
-                Ventura County Real Estate Asset Advisor
+          <h2 className="text-3xl font-semibold text-gray-900 text-center">
+            How can we help you today?
+          </h2>
+
+          <div className="mt-12 grid gap-8 md:grid-cols-3">
+
+            <a href="/property-strategy-session" className="rounded-2xl border p-8 hover:shadow">
+              <h3 className="text-xl font-semibold">Property Owners</h3>
+              <p className="mt-3 text-gray-600">
+                Evaluate whether to rent, sell, or hold your property.
               </p>
+            </a>
 
-              <h1 className="mt-4 text-4xl font-bold tracking-tight text-gray-900 md:text-6xl">
-                Rent, sell, or hold? Start with the right strategy.
-              </h1>
-
-              <p className="mt-6 max-w-xl text-lg leading-8 text-gray-600">
-                County Property Management helps property owners evaluate
-                whether a property should be rented, sold, or held based on
-                timing, equity, flexibility, and long-term goals.
+            <a href="/rent-vs-sell" className="rounded-2xl border p-8 hover:shadow">
+              <h3 className="text-xl font-semibold">Considering Selling</h3>
+              <p className="mt-3 text-gray-600">
+                Compare selling now vs generating rental income.
               </p>
+            </a>
 
-              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                <a
-                  href="/property-strategy-session"
-                  className="rounded bg-black px-5 py-3 text-white"
-                >
-                  Book Property Strategy Session
-                </a>
-
-                <a
-                  href="/property-management"
-                  className="rounded border border-gray-300 px-5 py-3 text-gray-900"
-                >
-                  Explore Property Management
-                </a>
-              </div>
-            </div>
-
-            <div className="rounded-2xl border border-gray-200 bg-gray-50 p-8">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-gray-500">
-                Richard Miller
+            <a href="/agents" className="rounded-2xl border p-8 hover:shadow">
+              <h3 className="text-xl font-semibold">Real Estate Agents</h3>
+              <p className="mt-3 text-gray-600">
+                Refer clients with confidence and receive future listing opportunities.
               </p>
-              <h2 className="mt-3 text-2xl font-semibold text-gray-900">
-                Trusted Ventura County guidance backed by 40+ years of
-                experience.
-              </h2>
-              <p className="mt-4 text-base leading-7 text-gray-600">
-                The new County Property Management site is built around a
-                consultative decision framework designed to help owners explore
-                whether renting, selling, or holding is the right move.
-              </p>
-            </div>
+            </a>
+
           </div>
         </div>
       </section>
 
+      {/* AUTHORITY SECTION */}
       <section className="border-t border-gray-200 bg-gray-50">
-        <div className="mx-auto max-w-6xl px-4 py-16">
-          <div className="grid gap-6 md:grid-cols-3">
-            <div className="rounded-2xl border border-gray-200 bg-white p-6">
-              <h3 className="text-2xl font-semibold text-gray-900">Rent</h3>
-              <p className="mt-3 text-gray-600">
-                Explore whether your property can generate income while
-                preserving flexibility.
-              </p>
-            </div>
+        <div className="mx-auto max-w-5xl px-4 py-20 text-center">
+          <h2 className="text-3xl font-semibold text-gray-900">
+            Trusted real estate guidance in Ventura County
+          </h2>
 
-            <div className="rounded-2xl border border-gray-200 bg-white p-6">
-              <h3 className="text-2xl font-semibold text-gray-900">Sell</h3>
-              <p className="mt-3 text-gray-600">
-                Review whether now is the right time to unlock equity and make
-                a clean transition.
-              </p>
-            </div>
-
-            <div className="rounded-2xl border border-gray-200 bg-white p-6">
-              <h3 className="text-2xl font-semibold text-gray-900">Hold</h3>
-              <p className="mt-3 text-gray-600">
-                Keep your options open and build a plan that aligns with your
-                longer-term goals.
-              </p>
-            </div>
-          </div>
+          <p className="mt-6 text-lg text-gray-600">
+            Richard Miller brings over 40 years of real estate experience,
+            helping property owners make strategic decisions — not just transactions.
+          </p>
         </div>
       </section>
 
-      <section className="border-t border-gray-200 bg-white">
-        <div className="mx-auto max-w-6xl px-4 py-16">
-          <div className="mb-8">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-gray-500">
-              Quick Access
-            </p>
-            <h2 className="mt-3 text-3xl font-semibold text-gray-900">
-              Preserve the operational functions people already expect.
-            </h2>
-          </div>
+      {/* FINAL CTA */}
+      <section className="bg-black">
+        <div className="mx-auto max-w-4xl px-4 py-20 text-center text-white">
+          <h2 className="text-3xl font-semibold">
+            Start with a Property Strategy Session
+          </h2>
 
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-5">
-            <a
-              href="/available-rentals"
-              className="rounded-2xl border border-gray-200 bg-gray-50 p-6 hover:bg-gray-100"
-            >
-              <h3 className="text-xl font-semibold text-gray-900">
-                Available Rentals
-              </h3>
-              <p className="mt-3 text-gray-600">
-                Browse currently available rental properties.
-              </p>
-            </a>
+          <p className="mt-4 text-gray-300">
+            Get clarity on whether your property should be rented, sold, or held.
+          </p>
 
-            <a
-              href="/tenant-portal"
-              className="rounded-2xl border border-gray-200 bg-gray-50 p-6 hover:bg-gray-100"
-            >
-              <h3 className="text-xl font-semibold text-gray-900">
-                Tenant Portal
-              </h3>
-              <p className="mt-3 text-gray-600">
-                Access rent payments, account information, and requests.
-              </p>
-            </a>
-
-            <a
-              href="/owner-portal"
-              className="rounded-2xl border border-gray-200 bg-gray-50 p-6 hover:bg-gray-100"
-            >
-              <h3 className="text-xl font-semibold text-gray-900">
-                Owner Portal
-              </h3>
-              <p className="mt-3 text-gray-600">
-                Access statements, updates, and owner-side information.
-              </p>
-            </a>
-
-            <a
-              href="/maintenance-requests"
-              className="rounded-2xl border border-gray-200 bg-gray-50 p-6 hover:bg-gray-100"
-            >
-              <h3 className="text-xl font-semibold text-gray-900">
-                Maintenance Requests
-              </h3>
-              <p className="mt-3 text-gray-600">
-                Submit and manage maintenance-related communication.
-              </p>
-            </a>
-            <a
-              href="/reviews"
-              className="rounded-2xl border border-gray-200 bg-gray-50 p-6 hover:bg-gray-100"
->
-              <h3 className="text-xl font-semibold text-gray-900">
-                Reviews
-              </h3>
-              <p className="mt-3 text-gray-600">
-                Share feedback and help us improve the client experience.
-              </p>
-            </a>
-          </div>
+          <a
+            href="/property-strategy-session"
+            className="mt-8 inline-block rounded bg-white px-6 py-3 text-black"
+          >
+            Book Strategy Session
+          </a>
         </div>
       </section>
+
     </main>
   )
 }
