@@ -1,3 +1,5 @@
+import ContactForm from '@/components/forms/ContactForm'
+
 export default function ContactPage() {
   return (
     <main>
@@ -58,55 +60,10 @@ export default function ContactPage() {
               Quick Contact Form
             </h2>
             <p className="mt-3 text-gray-600">
-              This placeholder form will be connected to CRM workflows in the
-              next implementation phase.
+              Send us a message and our team will follow up.
             </p>
 
-            <form className="mt-8 space-y-4">
-              <div>
-                <label className="block text-sm font-medium text-gray-700">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  className="mt-2 w-full rounded border border-gray-300 px-4 py-3"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  className="mt-2 w-full rounded border border-gray-300 px-4 py-3"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700">
-                  Phone
-                </label>
-                <input
-                  type="text"
-                  className="mt-2 w-full rounded border border-gray-300 px-4 py-3"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700">
-                  Message
-                </label>
-                <textarea className="mt-2 min-h-[140px] w-full rounded border border-gray-300 px-4 py-3" />
-              </div>
-
-              <button
-                type="button"
-                className="w-full rounded bg-black px-5 py-3 text-white"
-              >
-                Send Inquiry
-              </button>
-            </form>
+            <ContactForm />
           </div>
         </div>
       </section>

@@ -3,8 +3,6 @@ import { NextRequest, NextResponse } from 'next/server'
 const GHL_BASE_URL = 'https://services.leadconnectorhq.com'
 const GHL_VERSION = '2021-07-28'
 
-type DecisionIntent = 'selling' | 'renting' | 'holding' | 'still-deciding'
-
 function requiredEnv(name: string): string {
   const value = process.env[name]
   if (!value) {
@@ -13,17 +11,18 @@ function requiredEnv(name: string): string {
   return value
 }
 
-async function upsertContact(payload: {
+async function upsertReviewContact(payload: {
   firstName: string
   lastName: string
   email: string
   phone: string
-  propertyAddress: string
-  decisionIntent: DecisionIntent
-  notes: string
+  rating: number
+  comments: string
 }) {
   const locationId = requiredEnv('GHL_LOCATION_ID')
   const token = requiredEnv('GHL_PRIVATE_TOKEN')
+
+  const reviewTag = payload.rating >= 4 ? 'review_positive' : 'review_negative'
 
   const response = await fetch(`${GHL_BASE_URL}/contacts/upsert`, {
     method: 'POST',
@@ -39,35 +38,17 @@ async function upsertContact(payload: {
       lastName: payload.lastName,
       email: payload.email,
       phone: payload.phone,
-      tags: ['strategy_session', 'owner_lead', payload.decisionIntent],
-      customFields: [
-        {
-          id: 'xYWSrWucsRSvLl6by1fV',
-          field_value: payload.propertyAddress,
-        },
-        {
-          id: 'gGLQplFvC6YXpSQZFwkm',
-          field_value: payload.decisionIntent,
-        },
-        {
-          id: '2TnL0BNzx8cLvTTG627p',
-          field_value: 'strategy_session',
-        },
-        {
-          id: 'skmb2vGo5RIqL3g92apI',
-          field_value: payload.notes,
-        },
-      ],
-      source: 'Website Strategy Session Form',
+      tags: [reviewTag],
+      source: 'Website Review Form',
     }),
   })
 
   const data = await response.json().catch(() => ({}))
-  console.log('GHL upsert response:', JSON.stringify(data, null, 2))
+  console.log('GHL review upsert response:', JSON.stringify(data, null, 2))
 
   if (!response.ok) {
     throw new Error(
-      `GHL contact upsert failed: ${response.status} ${JSON.stringify(data)}`
+      `GHL review upsert failed: ${response.status} ${JSON.stringify(data)}`
     )
   }
 
@@ -78,14 +59,7 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
 
-    const requiredFields = [
-      'firstName',
-      'lastName',
-      'email',
-      'phone',
-      'propertyAddress',
-      'decisionIntent',
-    ] as const
+    const requiredFields = ['firstName', 'lastName', 'email', 'rating'] as const
 
     for (const field of requiredFields) {
       if (!body[field] || String(body[field]).trim() === '') {
@@ -96,27 +70,42 @@ export async function POST(request: NextRequest) {
       }
     }
 
+    const rating = Number(body.rating)
+
+    if (!Number.isInteger(rating) || rating < 1 || rating > 5) {
+      return NextResponse.json(
+        { error: 'Rating must be between 1 and 5.' },
+        { status: 400 }
+      )
+    }
+
     const submission = {
       firstName: String(body.firstName).trim(),
       lastName: String(body.lastName).trim(),
       email: String(body.email).trim(),
-      phone: String(body.phone).trim(),
-      propertyAddress: String(body.propertyAddress).trim(),
-      decisionIntent: String(body.decisionIntent).trim() as DecisionIntent,
-      notes: body.notes ? String(body.notes).trim() : '',
+      phone: body.phone ? String(body.phone).trim() : '',
+      rating,
+      comments: body.comments ? String(body.comments).trim() : '',
     }
 
-    await upsertContact(submission)
+    await upsertReviewContact(submission)
+
+    if (rating >= 4) {
+      return NextResponse.json({
+        ok: true,
+        redirectUrl: 'https://g.page/r/CQdtGMFNiTTaEAI/review',
+      })
+    }
 
     return NextResponse.json({
       ok: true,
-      redirectUrl: requiredEnv('GHL_BOOKING_URL'),
+      redirectUrl: '/thank-you/review-internal',
     })
   } catch (error) {
-    console.error('Strategy Session API error:', error)
+    console.error('Review API error:', error)
 
     return NextResponse.json(
-      { error: 'Unable to submit form right now.' },
+      { error: 'Unable to submit feedback right now.' },
       { status: 500 }
     )
   }

@@ -3,8 +3,6 @@ import { NextRequest, NextResponse } from 'next/server'
 const GHL_BASE_URL = 'https://services.leadconnectorhq.com'
 const GHL_VERSION = '2021-07-28'
 
-type DecisionIntent = 'selling' | 'renting' | 'holding' | 'still-deciding'
-
 function requiredEnv(name: string): string {
   const value = process.env[name]
   if (!value) {
@@ -18,9 +16,7 @@ async function upsertContact(payload: {
   lastName: string
   email: string
   phone: string
-  propertyAddress: string
-  decisionIntent: DecisionIntent
-  notes: string
+  message: string
 }) {
   const locationId = requiredEnv('GHL_LOCATION_ID')
   const token = requiredEnv('GHL_PRIVATE_TOKEN')
@@ -39,35 +35,17 @@ async function upsertContact(payload: {
       lastName: payload.lastName,
       email: payload.email,
       phone: payload.phone,
-      tags: ['strategy_session', 'owner_lead', payload.decisionIntent],
-      customFields: [
-        {
-          id: 'xYWSrWucsRSvLl6by1fV',
-          field_value: payload.propertyAddress,
-        },
-        {
-          id: 'gGLQplFvC6YXpSQZFwkm',
-          field_value: payload.decisionIntent,
-        },
-        {
-          id: '2TnL0BNzx8cLvTTG627p',
-          field_value: 'strategy_session',
-        },
-        {
-          id: 'skmb2vGo5RIqL3g92apI',
-          field_value: payload.notes,
-        },
-      ],
-      source: 'Website Strategy Session Form',
+      tags: ['contact_form'],
+      source: 'Website Contact Form',
     }),
   })
 
   const data = await response.json().catch(() => ({}))
-  console.log('GHL upsert response:', JSON.stringify(data, null, 2))
+  console.log('GHL contact form upsert response:', JSON.stringify(data, null, 2))
 
   if (!response.ok) {
     throw new Error(
-      `GHL contact upsert failed: ${response.status} ${JSON.stringify(data)}`
+      `GHL contact form upsert failed: ${response.status} ${JSON.stringify(data)}`
     )
   }
 
@@ -78,14 +56,7 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
 
-    const requiredFields = [
-      'firstName',
-      'lastName',
-      'email',
-      'phone',
-      'propertyAddress',
-      'decisionIntent',
-    ] as const
+    const requiredFields = ['firstName', 'lastName', 'email', 'message'] as const
 
     for (const field of requiredFields) {
       if (!body[field] || String(body[field]).trim() === '') {
@@ -100,23 +71,21 @@ export async function POST(request: NextRequest) {
       firstName: String(body.firstName).trim(),
       lastName: String(body.lastName).trim(),
       email: String(body.email).trim(),
-      phone: String(body.phone).trim(),
-      propertyAddress: String(body.propertyAddress).trim(),
-      decisionIntent: String(body.decisionIntent).trim() as DecisionIntent,
-      notes: body.notes ? String(body.notes).trim() : '',
+      phone: body.phone ? String(body.phone).trim() : '',
+      message: String(body.message).trim(),
     }
 
     await upsertContact(submission)
 
     return NextResponse.json({
       ok: true,
-      redirectUrl: requiredEnv('GHL_BOOKING_URL'),
+      redirectUrl: '/thank-you/contact',
     })
   } catch (error) {
-    console.error('Strategy Session API error:', error)
+    console.error('Contact form API error:', error)
 
     return NextResponse.json(
-      { error: 'Unable to submit form right now.' },
+      { error: 'Unable to submit contact form right now.' },
       { status: 500 }
     )
   }
