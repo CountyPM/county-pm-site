@@ -98,6 +98,12 @@ export default function HomePage() {
               </p>
             </a>
 
+            <a href="/blog" className="rounded-2xl border p-8 hover:shadow">
+              <h3 className="text-xl font-semibold">Resource Center</h3>
+              <p className="mt-3 text-gray-600">
+                Explore owner strategy, property management insights, and real estate guidance.
+              </p>
+            </a>
           </div>
         </div>
       </section>
