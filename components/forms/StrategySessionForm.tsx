@@ -55,73 +55,73 @@ export default function StrategySessionForm() {
   return (
     <form onSubmit={handleSubmit} className="mt-8 space-y-4">
       <div>
-        <label className="block text-sm font-medium text-gray-700">
+        <label className="block text-sm font-medium text-[var(--cpm-text)]">
           First Name
         </label>
         <input
           name="firstName"
           type="text"
           required
-          className="mt-2 w-full rounded border border-gray-300 px-4 py-3"
+          className="mt-2 w-full rounded border border-[var(--cpm-border)] bg-[var(--cpm-page)] px-4 py-3 text-[var(--cpm-text)] placeholder:text-[var(--cpm-muted)]"
         />
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-gray-700">
+        <label className="block text-sm font-medium text-[var(--cpm-text)]">
           Last Name
         </label>
         <input
           name="lastName"
           type="text"
           required
-          className="mt-2 w-full rounded border border-gray-300 px-4 py-3"
+          className="mt-2 w-full rounded border border-[var(--cpm-border)] bg-[var(--cpm-page)] px-4 py-3 text-[var(--cpm-text)] placeholder:text-[var(--cpm-muted)]"
         />
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-gray-700">
+        <label className="block text-sm font-medium text-[var(--cpm-text)]">
           Email
         </label>
         <input
           name="email"
           type="email"
           required
-          className="mt-2 w-full rounded border border-gray-300 px-4 py-3"
+          className="mt-2 w-full rounded border border-[var(--cpm-border)] bg-[var(--cpm-page)] px-4 py-3 text-[var(--cpm-text)] placeholder:text-[var(--cpm-muted)]"
         />
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-gray-700">
+        <label className="block text-sm font-medium text-[var(--cpm-text)]">
           Phone
         </label>
         <input
           name="phone"
           type="text"
           required
-          className="mt-2 w-full rounded border border-gray-300 px-4 py-3"
+          className="mt-2 w-full rounded border border-[var(--cpm-border)] bg-[var(--cpm-page)] px-4 py-3 text-[var(--cpm-text)] placeholder:text-[var(--cpm-muted)]"
         />
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-gray-700">
+        <label className="block text-sm font-medium text-[var(--cpm-text)]">
           Property Address
         </label>
         <input
           name="propertyAddress"
           type="text"
           required
-          className="mt-2 w-full rounded border border-gray-300 px-4 py-3"
+          className="mt-2 w-full rounded border border-[var(--cpm-border)] bg-[var(--cpm-page)] px-4 py-3 text-[var(--cpm-text)] placeholder:text-[var(--cpm-muted)]"
         />
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-gray-700">
+        <label className="block text-sm font-medium text-[var(--cpm-text)]">
           Are you leaning toward selling, renting, holding, or still deciding?
         </label>
         <select
           name="decisionIntent"
           required
-          className="mt-2 w-full rounded border border-gray-300 px-4 py-3"
+          className="mt-2 w-full rounded border border-[var(--cpm-border)] bg-[var(--cpm-page)] px-4 py-3 text-[var(--cpm-text)]"
           defaultValue=""
         >
           <option value="" disabled>
@@ -135,18 +135,18 @@ export default function StrategySessionForm() {
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-gray-700">
+        <label className="block text-sm font-medium text-[var(--cpm-text)]">
           Notes
         </label>
         <textarea
           name="notes"
-          className="mt-2 min-h-[140px] w-full rounded border border-gray-300 px-4 py-3"
+          className="mt-2 min-h-[140px] w-full rounded border border-[var(--cpm-border)] bg-[var(--cpm-page)] px-4 py-3 text-[var(--cpm-text)] placeholder:text-[var(--cpm-muted)]"
           placeholder="Tell us a little about your situation."
         />
       </div>
 
       {errorMessage && (
-        <div className="rounded border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+        <div className="rounded border border-red-300 bg-red-950/40 px-4 py-3 text-sm text-red-100">
           {errorMessage}
         </div>
       )}
@@ -154,7 +154,7 @@ export default function StrategySessionForm() {
       <button
         type="submit"
         disabled={status === 'submitting'}
-        className="w-full rounded bg-black px-5 py-3 text-white disabled:opacity-60"
+        className="btn-primary w-full disabled:opacity-60"
       >
         {status === 'submitting' ? 'Submitting...' : 'Continue'}
       </button>

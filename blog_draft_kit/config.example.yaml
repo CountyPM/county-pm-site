@@ -1,0 +1,24 @@
+# Example configuration for local processing
+author_default: "Richard J. Miller"
+status_default: "draft"
+category_default: "Blog"
+tags_default:
+  - "Property Management"
+  - "Ventura County"
+
+image:
+  min_width_warning: 1200
+  max_width: 2200
+  output_format: "WEBP"
+  quality: 82
+
+cleanup:
+  remove_lines_matching:
+    - '^County Property Management .* Page \d+$'
+    - '^County Property Management$'
+    - '^www\.c-p-m\.com.*$'
+    - '^\(\d{3}\) \d{3}-\d{4}$'
+    - '^Page \d+$'
+  heading_patterns:
+    - '^THE [A-Z0-9 ,&\'’\-]+$'
+    - '^LESSON FOR [A-Z0-9 ,&\'’\-]+$'

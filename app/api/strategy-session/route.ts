@@ -5,6 +5,16 @@ const GHL_VERSION = '2021-07-28'
 
 type DecisionIntent = 'selling' | 'renting' | 'holding' | 'still-deciding'
 
+type StrategySessionSubmission = {
+  firstName: string
+  lastName: string
+  email: string
+  phone: string
+  propertyAddress: string
+  decisionIntent: DecisionIntent
+  notes: string
+}
+
 function requiredEnv(name: string): string {
   const value = process.env[name]
   if (!value) {
@@ -13,15 +23,38 @@ function requiredEnv(name: string): string {
   return value
 }
 
-async function upsertContact(payload: {
-  firstName: string
-  lastName: string
-  email: string
-  phone: string
-  propertyAddress: string
-  decisionIntent: DecisionIntent
-  notes: string
-}) {
+function extractContactId(data: unknown): string | null {
+  if (!data || typeof data !== 'object') {
+    return null
+  }
+
+  const record = data as Record<string, unknown>
+
+  if (record.contact && typeof record.contact === 'object') {
+    const contact = record.contact as Record<string, unknown>
+
+    if (typeof contact.id === 'string' && contact.id.trim() !== '') {
+      return contact.id
+    }
+  }
+
+  if (typeof record.id === 'string' && record.id.trim() !== '') {
+    return record.id
+  }
+
+  return null
+}
+
+function isDecisionIntent(value: string): value is DecisionIntent {
+  return (
+    value === 'selling' ||
+    value === 'renting' ||
+    value === 'holding' ||
+    value === 'still-deciding'
+  )
+}
+
+async function upsertContact(payload: StrategySessionSubmission) {
   const locationId = requiredEnv('GHL_LOCATION_ID')
   const token = requiredEnv('GHL_PRIVATE_TOKEN')
 
@@ -40,34 +73,67 @@ async function upsertContact(payload: {
       email: payload.email,
       phone: payload.phone,
       tags: ['strategy_session', 'owner_lead', payload.decisionIntent],
-      customFields: [
-        {
-          id: 'xYWSrWucsRSvLl6by1fV',
-          field_value: payload.propertyAddress,
-        },
-        {
-          id: 'gGLQplFvC6YXpSQZFwkm',
-          field_value: payload.decisionIntent,
-        },
-        {
-          id: '2TnL0BNzx8cLvTTG627p',
-          field_value: 'strategy_session',
-        },
-        {
-          id: 'skmb2vGo5RIqL3g92apI',
-          field_value: payload.notes,
-        },
-      ],
       source: 'Website Strategy Session Form',
     }),
   })
 
   const data = await response.json().catch(() => ({}))
-  console.log('GHL upsert response:', JSON.stringify(data, null, 2))
 
   if (!response.ok) {
     throw new Error(
       `GHL contact upsert failed: ${response.status} ${JSON.stringify(data)}`
+    )
+  }
+
+  const contactId = extractContactId(data)
+
+  if (!contactId) {
+    throw new Error('GHL contact upsert succeeded but no contact ID was returned.')
+  }
+
+  return contactId
+}
+
+async function updateStrategySessionFields(
+  contactId: string,
+  payload: Pick<
+    StrategySessionSubmission,
+    'propertyAddress' | 'decisionIntent' | 'notes'
+  >
+) {
+  const token = requiredEnv('GHL_PRIVATE_TOKEN')
+
+  const response = await fetch(`${GHL_BASE_URL}/contacts/${contactId}`, {
+    method: 'PUT',
+    headers: {
+      Accept: 'application/json',
+      Authorization: `Bearer ${token}`,
+      Version: GHL_VERSION,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      customFields: [
+        {
+          key: 'property_address',
+          field_value: payload.propertyAddress,
+        },
+        {
+          key: 'decision_intent',
+          field_value: payload.decisionIntent,
+        },
+        {
+          key: 'strategy_session_notes',
+          field_value: payload.notes || '',
+        },
+      ],
+    }),
+  })
+
+  const data = await response.json().catch(() => ({}))
+
+  if (!response.ok) {
+    throw new Error(
+      `Strategy session field update failed: ${response.status} ${JSON.stringify(data)}`
     )
   }
 
@@ -96,17 +162,32 @@ export async function POST(request: NextRequest) {
       }
     }
 
-    const submission = {
+    const decisionIntent = String(body.decisionIntent).trim()
+
+    if (!isDecisionIntent(decisionIntent)) {
+      return NextResponse.json(
+        { error: 'Invalid decision intent.' },
+        { status: 400 }
+      )
+    }
+
+    const submission: StrategySessionSubmission = {
       firstName: String(body.firstName).trim(),
       lastName: String(body.lastName).trim(),
       email: String(body.email).trim(),
       phone: String(body.phone).trim(),
       propertyAddress: String(body.propertyAddress).trim(),
-      decisionIntent: String(body.decisionIntent).trim() as DecisionIntent,
+      decisionIntent,
       notes: body.notes ? String(body.notes).trim() : '',
     }
 
-    await upsertContact(submission)
+    const contactId = await upsertContact(submission)
+
+    await updateStrategySessionFields(contactId, {
+      propertyAddress: submission.propertyAddress,
+      decisionIntent: submission.decisionIntent,
+      notes: submission.notes,
+    })
 
     return NextResponse.json({
       ok: true,

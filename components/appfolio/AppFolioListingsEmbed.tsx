@@ -80,7 +80,7 @@ export default function AppFolioListingsEmbed() {
   return (
     <div className="min-h-[400px]">
       {status === 'loading' && (
-        <div className="rounded-2xl border border-gray-200 bg-gray-50 p-6 text-gray-600">
+        <div className="cpm-card rounded-2xl p-6 text-[var(--cpm-muted)]">
           Loading available rentals…
         </div>
       )}

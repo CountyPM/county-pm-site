@@ -8,12 +8,14 @@ type BlogLeadFormProps = {
   title?: string
   description?: string
   buttonText?: string
+  endpoint?: string
 }
 
 export default function BlogLeadForm({
   title = 'Get helpful property insights by email',
   description = 'Join our list to receive practical owner guidance, market insights, and decision-making resources.',
   buttonText = 'Get Updates',
+  endpoint = '/api/blog-lead',
 }: BlogLeadFormProps) {
   const [status, setStatus] = useState<Status>('idle')
   const [errorMessage, setErrorMessage] = useState('')
@@ -28,11 +30,14 @@ export default function BlogLeadForm({
     const payload = {
       firstName: formData.get('firstName'),
       email: formData.get('email'),
-      interest: formData.get('interest'),
+      interest:
+        endpoint === '/api/lead-magnet'
+          ? 'rent-vs-sell'
+          : formData.get('interest'),
     }
 
     try {
-      const response = await fetch('/api/blog-lead', {
+      const response = await fetch(endpoint, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -59,44 +64,44 @@ export default function BlogLeadForm({
   }
 
   return (
-    <div className="rounded-2xl border border-gray-200 bg-white p-8">
-      <h3 className="text-2xl font-semibold text-gray-900">{title}</h3>
-      <p className="mt-3 text-gray-600">{description}</p>
+    <div className="cpm-card rounded-2xl p-8">
+      <h3 className="text-2xl font-semibold cpm-heading">{title}</h3>
+      <p className="mt-3 cpm-copy">{description}</p>
 
       <form onSubmit={handleSubmit} className="mt-6 space-y-4">
         <div>
-          <label className="block text-sm font-medium text-gray-700">
+          <label className="block text-sm font-medium cpm-field-label">
             First Name
           </label>
           <input
             name="firstName"
             type="text"
             required
-            className="mt-2 w-full rounded border border-gray-300 px-4 py-3"
+            className="cpm-input mt-2"
           />
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-700">
+          <label className="block text-sm font-medium cpm-field-label">
             Email
           </label>
           <input
             name="email"
             type="email"
             required
-            className="mt-2 w-full rounded border border-gray-300 px-4 py-3"
+            className="cpm-input mt-2"
           />
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-700">
+          <label className="block text-sm font-medium cpm-field-label">
             Primary Interest
           </label>
           <select
             name="interest"
             required
             defaultValue=""
-            className="mt-2 w-full rounded border border-gray-300 px-4 py-3"
+            className="cpm-input mt-2"
           >
             <option value="" disabled>
               Choose one
@@ -109,7 +114,7 @@ export default function BlogLeadForm({
         </div>
 
         {errorMessage && (
-          <div className="rounded border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+          <div className="rounded border border-red-300 bg-red-950/40 px-4 py-3 text-sm text-red-100">
             {errorMessage}
           </div>
         )}
@@ -117,7 +122,7 @@ export default function BlogLeadForm({
         <button
           type="submit"
           disabled={status === 'submitting'}
-          className="w-full rounded bg-black px-5 py-3 text-white disabled:opacity-60"
+          className="btn-primary w-full disabled:opacity-60"
         >
           {status === 'submitting' ? 'Submitting...' : buttonText}
         </button>

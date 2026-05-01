@@ -1,12 +1,24 @@
 @import "tailwindcss";
 
+:root {
+  --cpm-page: #0e3a5a;
+  --cpm-surface: #174865;
+  --cpm-primary: #5fa8e0;
+  --cpm-primary-soft: #8fc1e8;
+  --cpm-accent: #d6a94a;
+  --cpm-accent-dark: #a67c1f;
+  --cpm-text: #f8fafc;
+  --cpm-muted: #b8cad6;
+  --cpm-border: #2a5c78;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  color: #1f2937;
-  background: #ffffff;
+  color: var(--cpm-text);
+  background: var(--cpm-page);
 }
 
 a {
@@ -15,4 +27,128 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+/* =========================
+   CPM Button System
+========================= */
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-semibold transition;
+  background: var(--cpm-accent);
+  color: var(--cpm-page);
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-full border px-5 py-2.5 text-sm font-semibold transition;
+  border-color: var(--cpm-border);
+  color: var(--cpm-text);
+  background: transparent;
+}
+
+.btn-secondary:hover {
+  color: var(--cpm-primary-soft);
+  border-color: var(--cpm-primary-soft);
+}
+
+.btn-dark {
+  @apply inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-semibold transition;
+  background: var(--cpm-surface);
+  color: var(--cpm-text);
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-semibold transition;
+  background: var(--cpm-accent);
+  color: var(--cpm-page);
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-full border px-5 py-2.5 text-sm font-semibold transition;
+  border-color: var(--cpm-border);
+  color: var(--cpm-text);
+  background: transparent;
+}
+
+.btn-secondary:hover {
+  color: var(--cpm-primary-soft);
+  border-color: var(--cpm-primary-soft);
+}
+
+.cpm-section {
+  border-color: var(--cpm-border);
+  background: var(--cpm-page);
+  color: var(--cpm-text);
+}
+
+.cpm-section-alt {
+  border-color: var(--cpm-border);
+  background: var(--cpm-surface);
+  color: var(--cpm-text);
+}
+
+.cpm-card {
+  border: 1px solid var(--cpm-border);
+  background: var(--cpm-surface);
+  color: var(--cpm-text);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.22);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.cpm-card:hover {
+  border-color: var(--cpm-primary-soft);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.28);
+  transform: translateY(-2px);
+}
+
+.cpm-card-dark {
+  border: 1px solid var(--cpm-border);
+  background: var(--cpm-page);
+  color: var(--cpm-text);
+}
+
+.cpm-eyebrow {
+  color: var(--cpm-primary-soft);
+}
+
+.cpm-heading {
+  color: var(--cpm-text);
+}
+
+.cpm-copy {
+  color: var(--cpm-muted);
+}
+
+.cpm-field-label {
+  color: var(--cpm-primary-soft);
+}
+
+.cpm-input {
+  width: 100%;
+  border-radius: 0.25rem;
+  border: 1px solid var(--cpm-border);
+  background: var(--cpm-page);
+  padding: 0.75rem 1rem;
+  color: var(--cpm-text);
+}
+
+.cpm-input::placeholder {
+  color: var(--cpm-muted);
+}
+
+.cpm-input:focus {
+  outline: none;
+  border-color: var(--cpm-primary);
+  box-shadow: 0 0 0 2px rgba(95, 168, 224, 0.25);
 }

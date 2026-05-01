@@ -1,17 +1,17 @@
 export default function MaintenanceRequestsPage() {
   return (
     <main>
-      <section className="bg-white">
+      <section className="bg-[var(--cpm-page)]">
         <div className="mx-auto max-w-5xl px-4 py-20">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-gray-500">
             Maintenance Support
           </p>
 
-          <h1 className="mt-4 text-4xl font-bold tracking-tight text-gray-900 md:text-6xl">
+          <h1 className="mt-4 text-4xl font-bold tracking-tight text-[var(--cpm-text)] md:text-6xl">
             Maintenance Requests
           </h1>
 
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-gray-600">
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-[var(--cpm-muted)]">
             Tenant maintenance requests are handled through the secure resident
             portal. This keeps requests organized, trackable, and routed
             through the proper system.
@@ -19,14 +19,14 @@ export default function MaintenanceRequestsPage() {
         </div>
       </section>
 
-      <section className="border-t border-gray-200 bg-gray-50">
+      <section className="border-t border-[var(--cpm-border)] bg-[var(--cpm-page)]">
         <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 md:grid-cols-2 md:items-start">
-          <div className="rounded-2xl border border-gray-200 bg-white p-8">
-            <h2 className="text-2xl font-semibold text-gray-900">
+          <div className="cpm-card rounded-2xl p-8">
+            <h2 className="text-2xl font-semibold text-[var(--cpm-text)]">
               How to submit a request
             </h2>
 
-            <ul className="mt-6 space-y-4 text-gray-600">
+            <ul className="mt-6 space-y-4 text-[var(--cpm-muted)]">
               <li>• Log in to the Tenant Portal</li>
               <li>• Submit the issue through your resident account</li>
               <li>• Include as much detail as possible</li>
@@ -34,18 +34,18 @@ export default function MaintenanceRequestsPage() {
             </ul>
           </div>
 
-          <div className="rounded-2xl border border-gray-200 bg-white p-8">
-            <h2 className="text-2xl font-semibold text-gray-900">
+          <div className="cpm-card rounded-2xl p-8">
+            <h2 className="text-2xl font-semibold text-[var(--cpm-text)]">
               Go to Tenant Portal
             </h2>
-            <p className="mt-4 text-gray-600">
+            <p className="mt-4 text-[var(--cpm-muted)]">
               Maintenance requests are generated through the AppFolio tenant
               portal.
             </p>
 
             <a
               href="/tenant-portal"
-              className="mt-6 inline-flex rounded bg-black px-5 py-3 text-white"
+              className="mt-6 inline-flex rounded btn-primary px-5 py-3 text-white"
             >
               Access Tenant Portal
             </a>

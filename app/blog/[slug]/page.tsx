@@ -24,13 +24,13 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   return (
     <main>
-      <section className="bg-white">
+      <section className="bg-[var(--cpm-page)]">
         <div className="mx-auto max-w-4xl px-4 py-24">
           <p className="text-sm font-semibold uppercase tracking-[0.15em] text-gray-500">
             {post.category}
           </p>
 
-          <h1 className="mt-4 text-4xl font-bold tracking-tight text-gray-900 md:text-5xl">
+          <h1 className="mt-4 text-4xl font-bold tracking-tight text-[var(--cpm-text)] md:text-5xl">
             {post.title}
           </h1>
 
@@ -41,29 +41,29 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         </div>
       </section>
 
-      <section className="border-t border-gray-200 bg-gray-50">
+      <section className="border-t border-[var(--cpm-border)] bg-[var(--cpm-page)]">
         <div className="mx-auto max-w-3xl px-4 py-20">
-          <article className="rounded-3xl border border-gray-200 bg-white p-10">
+          <article className="rounded-3xl border border-[var(--cpm-border)] bg-[var(--cpm-surface)] p-10">
             {post.content.map((paragraph, index) => (
               <div key={index}>
                 <p
                   className={
                     index === 0
-                      ? 'text-lg leading-8 text-gray-700'
-                      : 'mt-6 text-lg leading-8 text-gray-700'
+                      ? 'text-lg leading-8 text-[var(--cpm-muted)]'
+                      : 'mt-6 text-lg leading-8 text-[var(--cpm-muted)]'
                   }
                 >
                   {paragraph}
                 </p>
 
                 {index === 1 && (
-                  <div className="mt-8 rounded-xl border border-gray-200 bg-gray-50 p-6 text-center">
+                  <div className="mt-8 rounded-xl border border-[var(--cpm-border)] bg-[var(--cpm-page)] p-6 text-center">
                     <p className="text-gray-800 font-medium">
                       Need help deciding what to do with your property?
                 </p>
                 <a
-                  href="/property-strategy-session"
-                  className="mt-4 inline-block rounded bg-black px-5 py-2 text-white"
+                  href="/resources/rent-vs-sell"
+                  className="mt-4 inline-block rounded btn-primary px-5 py-2 text-white"
                 >
                   Get a Strategy Recommendation
                 </a>
@@ -73,18 +73,18 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         ))}
           </article>
 
-          <div className="mt-12 rounded-2xl border border-gray-200 bg-white p-8 text-center">
-            <h3 className="text-2xl font-semibold text-gray-900">
+          <div className="mt-12 cpm-card rounded-2xl p-8 text-center">
+            <h3 className="text-2xl font-semibold text-[var(--cpm-text)]">
               Not sure what to do with your property?
             </h3>
 
-            <p className="mt-4 text-gray-600">
+            <p className="mt-4 text-[var(--cpm-muted)]">
               Get a clear rent, sell, or hold strategy based on your situation.
             </p>
 
             <a
-              href="/property-strategy-session"
-              className="mt-6 inline-block rounded bg-black px-6 py-3 text-white"
+              href="/resources/rent-vs-sell"
+              className="mt-6 inline-block rounded btn-primary px-6 py-3 text-white"
             >
               Book a Strategy Session
             </a>

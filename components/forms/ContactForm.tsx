@@ -54,69 +54,69 @@ export default function ContactForm() {
     <form onSubmit={handleSubmit} className="mt-8 space-y-4">
       <div className="grid gap-4 md:grid-cols-2">
         <div>
-          <label className="block text-sm font-medium text-gray-700">
+          <label className="block text-sm font-medium cpm-field-label">
             First Name
           </label>
           <input
             name="firstName"
             type="text"
             required
-            className="mt-2 w-full rounded border border-gray-300 px-4 py-3"
+            className="cpm-input mt-2"
           />
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-700">
+          <label className="block text-sm font-medium cpm-field-label">
             Last Name
           </label>
           <input
             name="lastName"
             type="text"
             required
-            className="mt-2 w-full rounded border border-gray-300 px-4 py-3"
+            className="cpm-input mt-2"
           />
         </div>
       </div>
 
       <div className="grid gap-4 md:grid-cols-2">
         <div>
-          <label className="block text-sm font-medium text-gray-700">
+          <label className="block text-sm font-medium cpm-field-label">
             Email
           </label>
           <input
             name="email"
             type="email"
             required
-            className="mt-2 w-full rounded border border-gray-300 px-4 py-3"
+            className="cpm-input mt-2"
           />
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-700">
+          <label className="block text-sm font-medium cpm-field-label">
             Phone
           </label>
           <input
             name="phone"
             type="text"
-            className="mt-2 w-full rounded border border-gray-300 px-4 py-3"
+            className="cpm-input mt-2"
           />
         </div>
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-gray-700">
+        <label className="block text-sm font-medium cpm-field-label">
           Message
         </label>
         <textarea
           name="message"
           required
-          className="mt-2 min-h-[160px] w-full rounded border border-gray-300 px-4 py-3"
+          className="cpm-input mt-2 min-h-[160px]"
           placeholder="How can we help?"
         />
       </div>
 
       {errorMessage && (
-        <div className="rounded border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+        <div className="rounded border border-red-300 bg-red-950/40 px-4 py-3 text-sm text-red-100">
           {errorMessage}
         </div>
       )}
@@ -124,7 +124,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={status === 'submitting'}
-        className="w-full rounded bg-black px-5 py-3 text-white disabled:opacity-60"
+        className="btn-primary w-full disabled:opacity-60"
       >
         {status === 'submitting' ? 'Submitting...' : 'Send Inquiry'}
       </button>
