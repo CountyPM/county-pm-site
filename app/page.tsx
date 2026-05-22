@@ -269,6 +269,75 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* INVESTOR SECTION */}
+      <section className="border-t border-[var(--cpm-border)] bg-[var(--cpm-page)]">
+        <div className="mx-auto max-w-6xl px-4 py-20">
+          <div className="grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-center">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--cpm-primary-soft)]">
+                For Property Investors
+              </p>
+
+              <h2 className="mt-5 text-3xl font-semibold text-[var(--cpm-text)] md:text-4xl">
+                Most property managers work for themselves.
+              </h2>
+
+              <p className="mt-6 text-lg leading-8 text-[var(--cpm-muted)]">
+                Forty years managing Ventura County real estate. No vendor kickbacks.
+                No junior agent runaround. No surprise add-on fees. If you own rental
+                property in the 805 — or are considering it — read the investor
+                series on what proper property management actually looks like.
+              </p>
+
+              <div className="mt-8 flex flex-wrap gap-4">
+                <a href="/resources/investor-insights" className="btn-primary">
+                  Get Investor Insights
+                </a>
+
+                <a href="/blog/most-property-managers-work-for-themselves" className="btn-secondary">
+                  Read the Anchor Article
+                </a>
+              </div>
+
+              <div className="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-sm text-[var(--cpm-muted)]">
+                <p>Conflict-free management</p>
+                <p>Personal broker access</p>
+                <p>Transparent owner reporting</p>
+              </div>
+            </div>
+
+            <div>
+              <div className="cpm-card rounded-3xl p-6 md:p-8">
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--cpm-primary-soft)]">
+                  The Investor Letter Series
+                </p>
+                <h3 className="mt-3 text-2xl font-semibold text-[var(--cpm-text)]">
+                  Seven letters. Forty days. One promise.
+                </h3>
+                <p className="mt-3 text-[var(--cpm-muted)]">
+                  Direct correspondence covering the questions every investor should
+                  ask their property manager — and the answers most won&rsquo;t give
+                  you straight.
+                </p>
+
+                <ul className="mt-5 space-y-3 text-sm text-[var(--cpm-muted)]">
+                  <li>· The conflict of interest nobody talks about</li>
+                  <li>· Why I&rsquo;ve never lost an eviction</li>
+                  <li>· The vacancy clock — and what it costs you</li>
+                  <li>· You own the property. Do you own the numbers?</li>
+                  <li>· What forty years of experience actually buys you</li>
+                </ul>
+
+                <p className="mt-6 text-sm text-[var(--cpm-muted)]">
+                  One short letter every few days. Unsubscribe anytime.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* /INVESTOR SECTION */}
+
       {/* FINAL CTA */}
       <section className="border-t border-[var(--cpm-border)] bg-[var(--cpm-surface)]">
         <div className="mx-auto max-w-4xl px-4 py-20 text-center">

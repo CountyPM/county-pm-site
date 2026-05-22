@@ -1,20 +1,33 @@
 import { notFound } from 'next/navigation'
+import { MDXRemote } from 'next-mdx-remote/rsc'
 import { getAllPosts, getPostBySlug } from '@/lib/blog'
-import BlogLeadForm from '@/components/forms/BlogLeadForm'
+import InvestorLeadForm from '@/components/forms/InvestorLeadForm'
 
-type BlogPostPageProps = {
-  params: Promise<{
-    slug: string
-  }>
+type PageProps = {
+  params: Promise<{ slug: string }>
 }
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   return getAllPosts().map((post) => ({
     slug: post.slug,
   }))
 }
 
-export default async function BlogPostPage({ params }: BlogPostPageProps) {
+export async function generateMetadata({ params }: PageProps) {
+  const { slug } = await params
+  const post = getPostBySlug(slug)
+
+  if (!post) {
+    return {}
+  }
+
+  return {
+    title: post.seoTitle || post.title,
+    description: post.seoDescription || post.excerpt,
+  }
+}
+
+export default async function BlogPostPage({ params }: PageProps) {
   const { slug } = await params
   const post = getPostBySlug(slug)
 
@@ -23,78 +36,68 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   }
 
   return (
-    <main>
-      <section className="bg-[var(--cpm-page)]">
-        <div className="mx-auto max-w-4xl px-4 py-24">
-          <p className="text-sm font-semibold uppercase tracking-[0.15em] text-gray-500">
-            {post.category}
-          </p>
+    <main className="bg-[var(--cpm-page)]">
+      <article className="mx-auto max-w-4xl px-6 py-20">
+        {post.heroImage ? (
+          <header
+            className="relative mb-12 overflow-hidden rounded-3xl border border-white/10 bg-cover bg-center shadow-2xl"
+            style={{
+              backgroundImage: `linear-gradient(rgba(7,44,73,0.78), rgba(7,44,73,0.78)), url(${post.heroImage})`,
+            }}
+          >
+            <div className="px-8 py-20 md:px-12 md:py-28">
+              <p className="mb-4 text-sm text-[var(--cpm-muted)]">
+                {post.category} · {post.readingTime}
+              </p>
 
-          <h1 className="mt-4 text-4xl font-bold tracking-tight text-[var(--cpm-text)] md:text-5xl">
-            {post.title}
-          </h1>
-
-          <div className="mt-6 text-sm text-gray-500">
-            <p>{post.author}</p>
-            <p>{new Date(post.publishedAt).toLocaleDateString()}</p>
-          </div>
-        </div>
-      </section>
-
-      <section className="border-t border-[var(--cpm-border)] bg-[var(--cpm-page)]">
-        <div className="mx-auto max-w-3xl px-4 py-20">
-          <article className="rounded-3xl border border-[var(--cpm-border)] bg-[var(--cpm-surface)] p-10">
-            {post.content.map((paragraph, index) => (
-              <div key={index}>
-                <p
-                  className={
-                    index === 0
-                      ? 'text-lg leading-8 text-[var(--cpm-muted)]'
-                      : 'mt-6 text-lg leading-8 text-[var(--cpm-muted)]'
-                  }
-                >
-                  {paragraph}
-                </p>
-
-                {index === 1 && (
-                  <div className="mt-8 rounded-xl border border-[var(--cpm-border)] bg-[var(--cpm-page)] p-6 text-center">
-                    <p className="text-gray-800 font-medium">
-                      Need help deciding what to do with your property?
-                </p>
-                <a
-                  href="/resources/rent-vs-sell"
-                  className="mt-4 inline-block rounded btn-primary px-5 py-2 text-white"
-                >
-                  Get a Strategy Recommendation
-                </a>
-              </div>
-            )}
-          </div>
-        ))}
-          </article>
-
-          <div className="mt-12 cpm-card rounded-2xl p-8 text-center">
-            <h3 className="text-2xl font-semibold text-[var(--cpm-text)]">
-              Not sure what to do with your property?
-            </h3>
-
-            <p className="mt-4 text-[var(--cpm-muted)]">
-              Get a clear rent, sell, or hold strategy based on your situation.
+              <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-white md:text-5xl">
+                {post.title}
+              </h1>
+            </div>
+          </header>
+        ) : (
+          <header className="mb-12">
+            <p className="mb-4 text-sm text-[var(--cpm-muted)]">
+              {post.category} · {post.readingTime}
             </p>
 
-            <a
-              href="/resources/rent-vs-sell"
-              className="mt-6 inline-block rounded btn-primary px-6 py-3 text-white"
-            >
-              Book a Strategy Session
-            </a>
-          </div>
+            <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-white md:text-5xl">
+              {post.title}
+            </h1>
+          </header>
+        )}
 
-          <div className="mt-12">
-            <BlogLeadForm />
-          </div>
+        <div className="blog-content mx-auto max-w-3xl">
+          <MDXRemote source={post.content} />
         </div>
-      </section>
+      </article>
+
+      {/* INVESTOR LEAD FORM — Investor Education category only */}
+      {post.category === 'Investor Education' && (
+        <section className="border-t border-[var(--cpm-border)] bg-[var(--cpm-surface)]">
+          <div className="mx-auto max-w-4xl px-6 py-20">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-gray-500">
+              Continue the Series
+            </p>
+
+            <h2 className="mt-4 text-3xl font-bold tracking-tight text-[var(--cpm-text)] md:text-4xl">
+              Want the full investor letter series?
+            </h2>
+
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-[var(--cpm-muted)]">
+              Seven short letters on conflict-free property management, tenant
+              screening, vacancy economics, and the questions every investor
+              should ask their property manager. One letter every few days.
+              Unsubscribe anytime.
+            </p>
+
+            <div className="mt-10 cpm-card rounded-2xl p-6 md:p-8">
+              <InvestorLeadForm />
+            </div>
+          </div>
+        </section>
+      )}
+      {/* /INVESTOR LEAD FORM */}
     </main>
   )
 }
