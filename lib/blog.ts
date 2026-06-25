@@ -17,6 +17,8 @@ export type BlogPostMeta = {
   seoDescription?: string
   heroImage?: string
   heroImageAlt?: string
+  showInvestorForm?: boolean
+  faq?: string[] // FAQ entry slugs this post references (spoke -> hub)
   readingTime: string
 }
 
@@ -46,6 +48,8 @@ export function getAllPosts(): BlogPostMeta[] {
         seoDescription: data.seoDescription,
         heroImage: data.heroImage,
         heroImageAlt: data.heroImageAlt,
+        showInvestorForm: Boolean(data.showInvestorForm),
+        faq: Array.isArray(data.faq) ? data.faq.map(String) : [],
         readingTime: readingTime(content).text,
       }
     })
@@ -79,6 +83,8 @@ export function getPostBySlug(slug: string): BlogPost | null {
       : undefined,
     heroImage: data.heroImage ? String(data.heroImage) : undefined,
     heroImageAlt: data.heroImageAlt ? String(data.heroImageAlt) : undefined,
+    showInvestorForm: Boolean(data.showInvestorForm),
+    faq: Array.isArray(data.faq) ? data.faq.map(String) : [],
     readingTime: readingTime(content).text,
     content,
   }

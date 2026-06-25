@@ -1,6 +1,8 @@
+import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import { getAllPosts, getPostBySlug } from '@/lib/blog'
+import { getFaqEntry, faqEntryUrl } from '@/lib/faq'
 import InvestorLeadForm from '@/components/forms/InvestorLeadForm'
 
 type PageProps = {
@@ -34,6 +36,13 @@ export default async function BlogPostPage({ params }: PageProps) {
   if (!post) {
     notFound()
   }
+
+  // Spoke: resolve referenced FAQ entries from the hub. We render a short
+  // reference + link back to the canonical answer — never a copy (avoids drift
+  // and duplicate-content penalties; the hub stays the single source of truth).
+  const faqRefs = (post.faq || [])
+    .map((faqSlug) => getFaqEntry(faqSlug))
+    .filter((entry): entry is NonNullable<typeof entry> => entry !== null)
 
   return (
     <main className="bg-[var(--cpm-page)]">
@@ -70,10 +79,46 @@ export default async function BlogPostPage({ params }: PageProps) {
         <div className="blog-content mx-auto max-w-3xl">
           <MDXRemote source={post.content} />
         </div>
+
+        {/* FAQ SPOKE — references to canonical hub answers (links, not copies) */}
+        {faqRefs.length > 0 && (
+          <section className="mx-auto mt-16 max-w-3xl border-t border-[var(--cpm-border)] pt-10">
+            <h2 className="text-2xl font-semibold tracking-tight text-white">
+              Related questions
+            </h2>
+
+            <ul className="mt-6 divide-y divide-[var(--cpm-border)] border-y border-[var(--cpm-border)]">
+              {faqRefs.map((entry) => (
+                <li key={entry.slug}>
+                  <Link
+                    href={faqEntryUrl(entry)}
+                    className="group flex items-center justify-between gap-4 py-4 text-lg text-white transition hover:text-[#e6ad2e]"
+                  >
+                    <span>{entry.question}</span>
+                    <span className="text-[var(--cpm-muted)] transition-transform group-hover:translate-x-1">
+                      →
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+
+            <p className="mt-4 text-sm text-[var(--cpm-muted)]">
+              Answered in full in our{' '}
+              <Link
+                href="/faq"
+                className="text-[#e6ad2e] underline underline-offset-4"
+              >
+                FAQ hub
+              </Link>
+              .
+            </p>
+          </section>
+        )}
       </article>
 
-      {/* INVESTOR LEAD FORM — Investor Education category only */}
-      {post.category === 'Investor Education' && (
+      {/* INVESTOR LEAD FORM — controlled by the showInvestorForm frontmatter flag */}
+      {post.showInvestorForm && (
         <section className="border-t border-[var(--cpm-border)] bg-[var(--cpm-surface)]">
           <div className="mx-auto max-w-4xl px-6 py-20">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-gray-500">
