@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "check:faq-sources": "node scripts/check-faq-sources.mjs"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",

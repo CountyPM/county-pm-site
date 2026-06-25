@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "urls": {
+    "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1947.12": {
+      "hash": "e46cb71e8ef3a4e59ae6ce1bb1bb55ca0f0d26f45cc3f1401802392572b315e4",
+      "length": 15746,
+      "finalUrl": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1947.12",
+      "label": "Tenant Protection Act of 2019 (AB 1482), Cal. Civ. Code §1947.12",
+      "firstSeen": "2026-06-25"
+    },
+    "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1946.2": {
+      "hash": "6bd2696e808756462d1d24d0d9094243524fe3fc9b5c61b8044253c919c90a50",
+      "length": 24866,
+      "finalUrl": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1946.2",
+      "label": "Just cause eviction provisions, Cal. Civ. Code §1946.2",
+      "firstSeen": "2026-06-25"
+    }
+  }
+}
