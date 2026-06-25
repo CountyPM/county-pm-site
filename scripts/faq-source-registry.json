@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "verifiedOn": "2026-06-25",
+  "note": "Primary-source citations for recurring objective FAQ topics. The write pipeline attaches these automatically to matching objective entries; the agent does fresh web research for any objective claim not covered here. Track B (scripts/check-faq-sources.mjs) keeps these URLs alive. CURRENCY-CHECKED 2026-06-25 — see currencyNote fields.",
+  "entries": [
+    {
+      "id": "ca-rent-cap",
+      "match": ["rent control", "rent cap", "raise rent", "raise the rent", "increase the rent", "rent increase", "how much can a landlord", "ab 1482", "ab1482", "tenant protection act"],
+      "facts": "AB 1482 caps annual rent increases for covered units at 5% plus regional CPI, or 10%, whichever is LOWER, over any 12-month period. Adds just-cause eviction protection. Remains in effect until January 1, 2030.",
+      "currencyNote": "Verified current 2026-06-25 against Civ. Code 1947.12. Single-family/condo and <15-year-old housing exemptions still apply with proper notice.",
+      "sources": [
+        { "label": "Tenant Protection Act of 2019 (AB 1482), Cal. Civ. Code §1947.12", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1947.12." },
+        { "label": "Just cause eviction provisions, Cal. Civ. Code §1946.2", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1946.2." }
+      ]
+    },
+    {
+      "id": "ca-eviction-notice",
+      "match": ["evict", "eviction", "3-day notice", "three-day notice", "pay or quit", "unlawful detainer"],
+      "facts": "A nonpayment eviction begins with a 3-day Notice to Pay Rent or Quit (at least 3 days, excluding weekends and judicial holidays). If unpaid after it expires, the landlord may file an Unlawful Detainer action; the tenant cannot be removed without a court judgment and sheriff lockout.",
+      "currencyNote": "Verified current 2026-06-25. SB 436 (2025-26), which would have extended the notice to 14 days, FAILED passage in committee, so the 3-day period remains current law. Re-check if reintroduced.",
+      "sources": [
+        { "label": "Cal. Code of Civil Procedure §1161 (unlawful detainer; 3-day notice)", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=1161." },
+        { "label": "California Courts self-help: Eviction (unlawful detainer)", "url": "https://selfhelp.courts.ca.gov/eviction-landlord" }
+      ]
+    },
+    {
+      "id": "esa-fair-housing",
+      "match": ["emotional support animal", "esa", "assistance animal", "service animal", "fair housing", "reasonable accommodation", "pet deposit", "no-pet"],
+      "facts": "Emotional support animals are assistance animals under the federal Fair Housing Act and California FEHA, not pets. Housing providers must grant a reasonable accommodation regardless of a no-pet policy, and may NOT charge a pet deposit or pet rent for an assistance animal. Accommodation can be denied only if the specific animal is a direct threat or would cause substantial property damage. Online 'ESA certificates' alone are not sufficient documentation.",
+      "currencyNote": "Verified current 2026-06-25 against CA CRD ESA FAQ and HUD assistance-animal guidance.",
+      "sources": [
+        { "label": "CA Civil Rights Dept., Emotional Support Animals and Fair Housing Law (FAQ)", "url": "https://calcivilrights.ca.gov/wp-content/uploads/sites/32/2022/12/Emotional-Support-Animals-and-Fair-Housing-Law-FAQ_ENG.pdf" },
+        { "label": "U.S. HUD, Assistance Animals (Fair Housing)", "url": "https://www.hud.gov/program_offices/fair_housing_equal_opp/assistance_animals" }
+      ]
+    },
+    {
+      "id": "ca-screening-fee",
+      "match": ["application fee", "screening fee", "application screening", "credit check fee"],
+      "facts": "California caps the tenant application screening fee at a statutory maximum that began at $30 (1998) and is adjusted annually by the Consumer Price Index, and the fee may not exceed the landlord's actual out-of-pocket screening costs plus reasonable time. The landlord must provide a receipt itemizing the out-of-pocket expenses.",
+      "currencyNote": "Verified current 2026-06-25 against Civ. Code 1950.6. The 'actual out-of-pocket cost only' rule is PROPOSED in SB 381 (2025-26), NOT yet law — do not state it as current. Re-check the CPI-adjusted dollar cap annually.",
+      "sources": [
+        { "label": "Cal. Civ. Code §1950.6 (application screening fee)", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.6." }
+      ]
+    },
+    {
+      "id": "irs-section-121",
+      "match": ["capital gains", "capital gains tax", "primary residence exclusion", "section 121", "exclusion of gain", "sell my home"],
+      "facts": "IRC §121 lets you exclude up to $250,000 of gain ($500,000 married filing jointly) on the sale of a main home if you owned AND used it as your main home for at least 2 of the 5 years before the sale. Gain attributable to depreciation taken while it was a rental is NOT excludable (depreciation recapture). You generally can't use the exclusion twice within 2 years.",
+      "currencyNote": "Verified current 2026-06-25 against IRS Topic 701 / Pub. 523 (2025).",
+      "sources": [
+        { "label": "IRS Topic No. 701, Sale of Your Home", "url": "https://www.irs.gov/taxtopics/tc701" },
+        { "label": "IRS Publication 523, Selling Your Home", "url": "https://www.irs.gov/publications/p523" }
+      ]
+    },
+    {
+      "id": "irs-section-1031",
+      "match": ["1031", "like-kind exchange", "like kind exchange", "qualified intermediary", "1031 exchange", "defer capital gains"],
+      "facts": "IRC §1031 defers gain when business/investment real property is exchanged for like-kind business/investment real property. Since the TCJA it applies to real property only. To avoid receipt of proceeds you must use a safe harbor such as a qualified intermediary. Strict timelines: identify replacement property within 45 days and close within 180 days. U.S. property is not like-kind to foreign property.",
+      "currencyNote": "Verified current 2026-06-25 against IRS like-kind exchanges guidance.",
+      "sources": [
+        { "label": "IRS, Like-Kind Exchanges — Real Estate Tax Tips", "url": "https://www.irs.gov/businesses/small-businesses-self-employed/like-kind-exchanges-real-estate-tax-tips" }
+      ]
+    }
+  ]
+}
