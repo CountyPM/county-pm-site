@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import { getAllPosts, getPostBySlug } from '@/lib/blog'
 import { getFaqEntry, faqEntryUrl } from '@/lib/faq'
+import { blogPostingLd, jsonLd } from '@/lib/structured-data'
 import InvestorLeadForm from '@/components/forms/InvestorLeadForm'
 
 type PageProps = {
@@ -143,6 +144,14 @@ export default async function BlogPostPage({ params }: PageProps) {
         </section>
       )}
       {/* /INVESTOR LEAD FORM */}
+
+      {/* BlogPosting JSON-LD — emitted after the visible article (GEO rule:
+          human-readable content first, structured data second). publisher
+          references the sitewide Organization node from the root layout. */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(blogPostingLd(post)) }}
+      />
     </main>
   )
 }
