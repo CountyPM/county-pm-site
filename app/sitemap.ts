@@ -10,9 +10,9 @@ type ChangeFrequency = NonNullable<
 // Curated indexable routes. Excludes /api (no content), /thank-you/* (post-
 // conversion pages), and dynamic segments (blog/faq, expanded below). Uses the
 // /resources/* paths the site's own navigation links to as canonical.
-// NOTE: a legacy top-level /rent-vs-sell page also exists and duplicates
-// /resources/rent-vs-sell; it is intentionally omitted pending a redirect/
-// canonical decision (see handoff note).
+// NOTE: the legacy top-level /rent-vs-sell path now 308-redirects to
+// /resources/rent-vs-sell (see next.config.ts); it is intentionally omitted
+// here since only the canonical destination should appear in the sitemap.
 const STATIC_ROUTES: { path: string; changeFrequency: ChangeFrequency; priority: number }[] = [
   { path: '', changeFrequency: 'weekly', priority: 1.0 },
   { path: '/property-management', changeFrequency: 'monthly', priority: 0.9 },
