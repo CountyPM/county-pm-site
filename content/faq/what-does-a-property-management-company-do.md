@@ -1,15 +1,26 @@
 ---
-question: "What does a property management company do?"
-topic: "property-management-basics"
-topicTitle: "Property Management Basics"
-topicDescription: "Plain answers to the questions Ventura County owners ask before hiring a property manager."
-type: "subjective"
+question: What does a property management company do?
+topic: property-management-basics
+topicTitle: Property Management Basics
+topicDescription: >-
+  Plain answers to the questions Ventura County owners ask before hiring a
+  property manager.
+type: subjective
 derivedFrom:
-  - "what-do-property-management-companies-do"
-created: "2026-06-25"
+  - what-do-property-management-companies-do
+created: '2026-06-25'
 order: 1
 sources: []
-annotations: []
+annotations:
+  - date: '2026-06-25'
+    type: additive
+    note: >-
+      On the financial side of full-service management, expect transparent
+      owner-accessible online reporting (CPM uses AppFolio for 24/7 statements)
+      and vendor invoices passed through without markup. How a manager handles
+      money and vendors is a core part of the service worth asking about up
+      front — see also the property-manager conflict-of-interest entry.
+    post: most-property-managers-work-for-themselves
 ---
 
 A property management company handles the day-to-day operation of a rental property on the owner's behalf — marketing vacancies, screening and placing tenants, collecting rent, coordinating maintenance and repairs, and providing financial reporting. In exchange for a management fee, the owner is freed from landlord duties while the property keeps generating income.

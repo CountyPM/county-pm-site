@@ -1,0 +1,17 @@
+---
+question: "Should I rent or buy during a major life transition like a divorce?"
+topic: "buying-and-investing"
+topicTitle: "Buying & Investing in Real Estate"
+topicDescription: "How Ventura County renters and owners think about buying, financing, and building a rental portfolio."
+type: "subjective"
+derivedFrom:
+  - "when-decisions-overwhelm"
+created: "2026-06-25"
+order: 7
+sources: []
+annotations: []
+---
+
+When life is unsettled, renting first is often the sounder call. Buying is a large, expensive-to-reverse decision, and making it while you're emotionally stretched — during a divorce, a move, or a loss — stacks a hard commitment on top of an already hard time. Renting buys you flexibility precisely when you can least predict what you'll want a year out.
+
+Time in a new place also gives you information that ownership can't. You learn where you actually want to be, what the commute and the schools are really like, and how a neighborhood feels day to day before you tie up your money and lock in. Think of a rental as a base camp: the choice doesn't have to be perfect, just good enough for now, and the things that don't fit will quietly tell you what to look for when you're ready to buy. This is general perspective, not financial or legal advice — your finances and any settlement terms should drive the final decision.

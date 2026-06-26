@@ -1,19 +1,30 @@
 ---
-question: "Do I owe capital gains tax when I sell a California rental I used to live in?"
-topic: "selling-your-rental"
-topicTitle: "Selling or Exchanging a Rental"
-topicDescription: "Tax and timing questions for Ventura County owners selling or moving equity out of a California rental."
-type: "objective"
+question: Do I owe capital gains tax when I sell a California rental I used to live in?
+topic: selling-your-rental
+topicTitle: Selling or Exchanging a Rental
+topicDescription: >-
+  Tax and timing questions for Ventura County owners selling or moving equity
+  out of a California rental.
+type: objective
 derivedFrom:
-  - "getting-your-money-out-of-california"
-created: "2026-06-25"
+  - getting-your-money-out-of-california
+created: '2026-06-25'
 order: 1
 sources:
-  - label: "IRS Topic No. 701, Sale of Your Home"
-    url: "https://www.irs.gov/taxtopics/tc701"
-  - label: "IRS Publication 523, Selling Your Home"
-    url: "https://www.irs.gov/publications/p523"
-annotations: []
+  - label: 'IRS Topic No. 701, Sale of Your Home'
+    url: 'https://www.irs.gov/taxtopics/tc701'
+  - label: 'IRS Publication 523, Selling Your Home'
+    url: 'https://www.irs.gov/publications/p523'
+annotations:
+  - date: '2026-06-25'
+    type: additive
+    note: >-
+      Practical sequencing when selling a former residence: confirm the §121
+      exclusion with your CPA before assuming you owe tax. A duplex unit you
+      actually lived in can still qualify for the two-of-five-years exclusion on
+      that portion — a real number worth checking before you sell, separate from
+      how the rented portion is treated.
+    post: getting-your-money-out-of-california
 ---
 
 Possibly not on all of it. Under IRC §121, you can exclude up to $250,000 of gain — or up to $500,000 if you're married filing jointly — on the sale of a main home, as long as you owned it and lived in it as your main home for at least two of the five years before the sale. A property you once lived in and later rented can still qualify if it meets that two-of-five-years test.
