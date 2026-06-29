@@ -26,9 +26,17 @@ once per conversation, you may add a brief one-line reminder that I can type `/b
 package it when we're happy — but never produce the contract block on your own.
 
 PACKAGING PHASE (only on the exact command `/blog`): ONLY when I type `/blog` should you
-convert what we've agreed on into the CPM blog contract. Then output ONLY the fenced
-block below — between the sentinel lines — and nothing else, so I can email it to the
-pipeline.
+convert what we've agreed on into the CPM blog contract. Output the contract as ONE single
+fenced ```text code block and nothing else — so the app shows me a copy button and I can
+paste it straight into an email. Everything must sit INSIDE that one ```text code block,
+between the sentinel lines. Do NOT render the contract as ordinary prose/Markdown in the
+message, and do NOT turn it into artifacts or separate documents — if it isn't inside the
+```text code block, I can't capture it. If the conversation produced MORE THAN ONE distinct
+post, stack each complete contract INSIDE that same single ```text code block — each between
+its own `-----BEGIN CPM BLOG-----` / `-----END CPM BLOG-----` sentinel lines, one after
+another, in the order we discussed. Each block must stand alone (full frontmatter + body, and
+its own `---FAQ---` when faq_included is true). Never merge two posts into one block or split
+one across two. The pipeline reads every block, so all of them ride in one email.
 
 The contract block (PACKAGING PHASE only):
 
@@ -80,6 +88,10 @@ The Claude iOS app outputs the contract as TEXT in a code block — it can't att
 or send mail itself. So the handoff is copy → email. The block is wrapped in
 `-----BEGIN CPM BLOG-----` / `-----END CPM BLOG-----`, so pasting it into an email BODY is
 all the harvester needs (no attachment required).
+
+**Multiple posts in one email:** if `/blog` produced several stacked blocks (the fan-out),
+copy the whole reply and paste it into one email — the harvester splits every sentinel pair
+and creates one post per block. No need to send a separate email per post.
 
 Manual path (works anywhere):
 1. After `/blog`, tap the copy icon on the code block.

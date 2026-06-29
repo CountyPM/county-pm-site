@@ -47,6 +47,10 @@ cpm-blog_*.md
 blog-*.log
 scripts/_*
 
+# backlog routing: drafts for OTHER County companies (Next-Level, Evidence Graph)
+# staged for handoff to their content managers — not CPM site content, never commit
+/backlog-routing/
+
 # FAQ pipeline (track A): derived corpus index + unreviewed AI drafts — never commit
 scripts/faq-corpus-index.json
 content/faq-drafts/

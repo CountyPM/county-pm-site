@@ -33,7 +33,7 @@
 
 import fs from 'node:fs'
 import path from 'node:path'
-import { fileURLToPath } from 'node:url'
+import { fileURLToPath, pathToFileURL } from 'node:url'
 import { ImapFlow } from 'imapflow'
 import { simpleParser } from 'mailparser'
 
@@ -92,21 +92,43 @@ function loadConfig() {
 const BEGIN = '-----BEGIN CPM BLOG-----'
 const END = '-----END CPM BLOG-----'
 
-// Pull the contract text out of a parsed email: prefer a .md attachment,
-// else the plain-text body (trimmed to BEGIN/END sentinels if present).
-function extractContract(parsed) {
-  const atts = parsed.attachments || []
-  const md =
-    atts.find((a) => /cpm-blog.*\.md$/i.test(a.filename || '')) ||
-    atts.find((a) => /\.md$/i.test(a.filename || '')) ||
-    atts.find((a) => /\.txt$/i.test(a.filename || ''))
-  if (md && md.content) return md.content.toString('utf8')
+// Pull EVERY BEGIN/END-delimited block out of a chunk of text. A single email
+// body can stack multiple contracts (the /blog fan-out), so we walk all pairs
+// rather than just the first. If no sentinels are present, the whole chunk is
+// treated as one candidate (back-compat with single-post plain-text emails).
+function splitSentinelBlocks(text) {
+  if (!text) return []
+  const out = []
+  let from = 0
+  while (true) {
+    const b = text.indexOf(BEGIN, from)
+    if (b === -1) break
+    const e = text.indexOf(END, b + BEGIN.length)
+    if (e === -1) break
+    out.push(text.slice(b + BEGIN.length, e).trim())
+    from = e + END.length
+  }
+  if (out.length === 0) return [text.trim()]
+  return out
+}
 
-  let text = parsed.text || ''
-  const b = text.indexOf(BEGIN)
-  const e = text.indexOf(END)
-  if (b !== -1 && e !== -1 && e > b) text = text.slice(b + BEGIN.length, e)
-  return text.trim()
+// Pull ALL contract texts out of a parsed email, as an array. One email may
+// carry several posts: across multiple .md/.txt attachments AND/OR multiple
+// stacked sentinel blocks in the body. Attachments are preferred when present
+// (each attachment may itself stack blocks); otherwise we fan out the body.
+function extractContracts(parsed) {
+  const atts = parsed.attachments || []
+  const mdAtts = atts.filter((a) => /\.(md|txt)$/i.test(a.filename || '') && a.content)
+  if (mdAtts.length) {
+    // Sort cpm-blog*.md first for stable, predictable ordering.
+    mdAtts.sort((a, b) => {
+      const ar = /cpm-blog/i.test(a.filename || '') ? 0 : 1
+      const br = /cpm-blog/i.test(b.filename || '') ? 0 : 1
+      return ar - br
+    })
+    return mdAtts.flatMap((a) => splitSentinelBlocks(a.content.toString('utf8')))
+  }
+  return splitSentinelBlocks(parsed.text || '')
 }
 
 // A real contract starts with a YAML frontmatter block containing a title.
@@ -125,7 +147,11 @@ function sanitizeSlugPart(s) {
     .slice(0, 60)
 }
 
+// Exported for unit testing (test harness imports these without running main).
+export { splitSentinelBlocks, extractContracts, looksLikeContract, sanitizeSlugPart }
+
 // ---------- main ----------
+async function run() {
 const opts = parseArgs(process.argv.slice(2))
 const cfg = loadConfig()
 const dryRun = Boolean(opts['dry-run'])
@@ -175,6 +201,9 @@ try {
     // Collect UIDs to mark \Seen AFTER the fetch completes — issuing an IMAP
     // command (messageFlagsAdd) while a fetch is still iterating is not allowed.
     const seenUids = []
+    // Names already used this run (covers dry-run, where files aren't written
+    // yet, and same-stem posts within a single batch).
+    const reserved = new Set()
     for await (const msg of client.fetch({ seen: false }, { uid: true, source: true })) {
       const parsed = await simpleParser(msg.source)
       const from = (parsed.from?.value?.[0]?.address || '').toLowerCase()
@@ -187,35 +216,42 @@ try {
         continue
       }
 
-      const contract = extractContract(parsed)
-      if (!looksLikeContract(contract)) {
+      // One message can carry several posts (the /blog fan-out). Pull every
+      // candidate, keep the valid contracts, and write one file per post.
+      const contracts = extractContracts(parsed).filter(looksLikeContract)
+      if (contracts.length === 0) {
         skipped++
         info(`  • skip (no valid contract found): "${subject}"`)
         seenUids.push(msg.uid)
         continue
       }
+      info(`  • "${subject}" — ${contracts.length} contract(s)`)
 
-      const titleMatch = contract.match(/\btitle:\s*["']?([^"'\n]+)/i)
-      const stem =
-        sanitizeSlugPart(titleMatch?.[1]) ||
-        sanitizeSlugPart(subject) ||
-        new Date().toISOString().slice(0, 19).replace(/[:T]/g, '')
-      let fileName = `cpm-blog_${stem}.md`
-      let dest = path.join(inboxDir, fileName)
-      let n = 2
-      while (fs.existsSync(dest)) {
-        fileName = `cpm-blog_${stem}-${n++}.md`
-        dest = path.join(inboxDir, fileName)
-      }
+      for (const contract of contracts) {
+        const titleMatch = contract.match(/\btitle:\s*["']?([^"'\n]+)/i)
+        const stem =
+          sanitizeSlugPart(titleMatch?.[1]) ||
+          sanitizeSlugPart(subject) ||
+          new Date().toISOString().slice(0, 19).replace(/[:T]/g, '')
+        let fileName = `cpm-blog_${stem}.md`
+        let dest = path.join(inboxDir, fileName)
+        let n = 2
+        while (reserved.has(fileName) || fs.existsSync(dest)) {
+          fileName = `cpm-blog_${stem}-${n++}.md`
+          dest = path.join(inboxDir, fileName)
+        }
+        reserved.add(fileName)
 
-      if (dryRun) {
-        info(`  • would harvest: "${subject}" → ${fileName}`)
-      } else {
-        fs.writeFileSync(dest, contract.endsWith('\n') ? contract : contract + '\n')
-        seenUids.push(msg.uid)
-        info(`  • harvested: "${subject}" → ${fileName}`)
+        if (dryRun) {
+          info(`    - would harvest → ${fileName}`)
+        } else {
+          fs.writeFileSync(dest, contract.endsWith('\n') ? contract : contract + '\n')
+          info(`    - harvested → ${fileName}`)
+        }
+        harvested++
       }
-      harvested++
+      // Mark the message seen once, after all its posts are handled.
+      seenUids.push(msg.uid)
     }
 
     // Now that the fetch has finished, mark everything we handled as \Seen.
@@ -229,3 +265,9 @@ try {
 }
 
 console.log(`\n✓ harvest done — ${harvested} contract(s)${dryRun ? ' (dry-run, nothing written)' : ''}, ${skipped} skipped.\n`)
+}
+
+// Run as a CLI only when invoked directly (not when imported by a test).
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  run()
+}

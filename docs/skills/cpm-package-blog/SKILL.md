@@ -26,9 +26,26 @@ Keep two phases separate:
 
 ## What to produce
 
-A single Markdown contract file named `cpm-blog_<slug>.md` (the `<slug>` is just a working
-filename — the PC stage generates the real slug). Write it to the blog inbox folder if one
-is configured locally; otherwise present its contents for the user to send.
+A Markdown contract named `cpm-blog_<slug>.md` (the `<slug>` is just a working filename —
+the PC stage generates the real slug). Write it to the blog inbox folder if one is
+configured locally; otherwise present its contents for the user to send.
+
+**One post → one contract. Several posts → several contracts (fan-out).** A creative session
+often yields more than one publishable post — sometimes spread across several draft files in
+mixed formats (`.docx`, `.pdf`, `.md`, `.txt`). When `/blog` covers multiple distinct posts:
+
+- Emit **one contract per post**, each a complete, independently valid contract (full
+  frontmatter + body, plus its own `---FAQ---` block when `faq_included: true`).
+- In Cowork/Code, write **one `cpm-blog_<slug>.md` file per post** into the inbox.
+- When presenting for the user to email (iPhone/consumer-app path), output the contract(s) as
+  **ONE single fenced ```text code block** so the app renders a copy button. **Stack every
+  post inside that one code block**, each wrapped in its own `-----BEGIN CPM BLOG-----` /
+  `-----END CPM BLOG-----` sentinel pair, in the order discussed. Do **not** render the
+  contract as ordinary prose/Markdown and do **not** spin the posts out as artifacts/separate
+  documents — if it isn't inside the ```text code block, the user can't copy it. The harvester
+  splits every sentinel pair (and reads every `.md`/`.txt` attachment), writing one inbox file
+  per block, so one email carries the whole batch; the PC stage collision-checks each slug.
+- Never merge two posts into one contract, and never split one post across two.
 
 ### Exact format
 
