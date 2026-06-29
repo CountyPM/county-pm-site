@@ -14,10 +14,14 @@
     "crosslink:faq": "node scripts/crosslink-faq.mjs",
     "backfill:scaffold": "node scripts/backfill-faq-feedstock.mjs",
     "backfill:harvest": "node scripts/backfill-faq-feedstock.mjs --harvest",
-    "validate:faq": "node scripts/validate-faq.mjs"
+    "validate:faq": "node scripts/validate-faq.mjs",
+    "harvest:blog": "node scripts/harvest-blog-inbox.mjs",
+    "post:blog": "node scripts/post-blog.mjs"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
+    "imapflow": "^1.0.191",
+    "mailparser": "^3.7.4",
     "next": "16.2.0",
     "next-mdx-remote": "^6.0.0",
     "react": "19.2.4",

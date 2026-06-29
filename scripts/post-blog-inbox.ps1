@@ -1,0 +1,90 @@
+# post-blog-inbox.ps1 - Windows-side runner for the CPM blog capture pipeline (Track D).
+#
+# The iPhone half emails a packaged contract to the blog inbox mailbox.
+# This script (run on Windows, where git + network + SWC all work):
+#   1. harvests new mail over IMAP into .\incoming  (scripts\harvest-blog-inbox.mjs)
+#   2. runs each contract through scripts\post-blog.mjs (convert -> MDX + sidecar -> commit)
+#   3. moves handled contracts to .\.blog-processed so nothing is processed twice
+#
+# REVIEW-FIRST BY DEFAULT: post-blog.mjs runs WITHOUT --publish, so posts are
+# committed locally but NOT pushed. Review them, then push, or re-run with
+# -Publish once the loop is proven to flip it to fully automatic / live.
+#
+# Usage:
+#   powershell -ExecutionPolicy Bypass -File scripts\post-blog-inbox.ps1            # harvest + convert + commit (no push)
+#   powershell -ExecutionPolicy Bypass -File scripts\post-blog-inbox.ps1 -Publish   # also push to main (LIVE -> Vercel)
+#   powershell -ExecutionPolicy Bypass -File scripts\post-blog-inbox.ps1 -DryRun    # report only; harvest nothing, write nothing
+#
+# Register in Windows Task Scheduler (see scripts\setup-blog-task.bat) to run
+# on a cadence (e.g. every 30 min, or hourly). It no-ops when there's no new mail.
+
+param(
+  [switch]$Publish,
+  [switch]$DryRun
+)
+$ErrorActionPreference = 'Stop'
+$repo = 'C:\Users\cpm\county-pm-site'
+Set-Location $repo
+$log = Join-Path $repo 'blog-publish.log'
+function Log($m) { "$(Get-Date -Format o)  $m" | Tee-Object -FilePath $log -Append }
+
+$inbox     = Join-Path $repo 'incoming'
+$processed = Join-Path $repo '.blog-processed'
+$sidecar   = $processed   # private fields archive lives with the processed contracts
+
+try {
+  Log "post-blog-inbox: start (Publish=$Publish DryRun=$DryRun)"
+
+  # 1. Clear a stale git lock (interrupted git ops leave this behind).
+  $lock = Join-Path $repo '.git\index.lock'
+  if (Test-Path $lock) { Remove-Item $lock -Force; Log 'Removed stale .git/index.lock' }
+
+  # 2. Ensure harvest deps are present (one-time on a fresh checkout; needs network).
+  if (-not (Test-Path (Join-Path $repo 'node_modules\imapflow')) -or
+      -not (Test-Path (Join-Path $repo 'node_modules\mailparser'))) {
+    Log 'Installing harvest deps (imapflow, mailparser)...'
+    npm install
+    if ($LASTEXITCODE -ne 0) { Log 'npm install FAILED - cannot harvest.'; exit 1 }
+  }
+
+  New-Item -ItemType Directory -Force -Path $inbox, $processed | Out-Null
+
+  # 3. Harvest new mail into .\incoming.
+  if ($DryRun) {
+    node scripts/harvest-blog-inbox.mjs --dry-run
+    Log 'Dry run - harvest reported only; nothing converted.'
+    Log 'post-blog-inbox: done'
+    exit 0
+  }
+  node scripts/harvest-blog-inbox.mjs
+  if ($LASTEXITCODE -ne 0) { Log 'Harvest FAILED - aborting.'; exit 1 }
+
+  # 4. Convert each harvested contract.
+  $files = Get-ChildItem -Path $inbox -Filter 'cpm-blog_*.md' -File -ErrorAction SilentlyContinue
+  if (-not $files) { Log 'No contracts in inbox to convert.'; Log 'post-blog-inbox: done'; exit 0 }
+
+  $ok = 0; $bad = 0
+  $state = if ($Publish) { 'published' } else { 'committed (not pushed)' }
+  foreach ($f in $files) {
+    Log "Converting $($f.Name)"
+    $nodeArgs = @('scripts/post-blog.mjs', $f.FullName, '--sidecar-dir', $sidecar)
+    if ($Publish) { $nodeArgs += '--publish' }
+    node @nodeArgs
+    if ($LASTEXITCODE -eq 0) {
+      # Move the handled contract out of the inbox so it isn't processed twice.
+      Move-Item -LiteralPath $f.FullName -Destination (Join-Path $processed $f.Name) -Force
+      Log "OK: $($f.Name) -> .blog-processed ($state)"
+      $ok++
+    } else {
+      Log "FAILED: $($f.Name) left in inbox for review."
+      $bad++
+    }
+  }
+
+  Log "post-blog-inbox: done - $ok converted, $bad failed."
+  if ($bad -gt 0) { exit 1 }
+}
+catch {
+  Log "ERROR: $_"
+  exit 1
+}

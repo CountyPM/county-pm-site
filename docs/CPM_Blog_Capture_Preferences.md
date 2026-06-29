@@ -1,0 +1,95 @@
+# CPM Blog Capture — Claude Preferences Entry (iPhone-ready)
+
+This is the **always-on** surface of the blog capture contract (Track D, Handoff §3.1).
+Paste the block below into your Claude **personal preferences** (Settings → Profile →
+"What personal preferences should Claude consider"). Preferences apply in **every**
+chat on **every** platform — including the iPhone app — which is why this, not a Skill,
+is what makes capture work from your phone.
+
+It pairs with the deterministic trigger `/blog` and an ambient backstop (Claude offers
+to package when it spots CPM blog intent). The exact same contract is also packaged by
+the `cpm-package-blog` Skill in Cowork/Code — keep the two in sync; this doc and
+`docs/skills/cpm-package-blog/SKILL.md` are the joint source of truth.
+
+---
+
+## PASTE THIS INTO YOUR CLAUDE PREFERENCES
+
+For County Property Management blog work, keep two phases strictly separate:
+
+CREATIVE PHASE (the default): When I raise a blog topic, or ask you to write, draft,
+explore, or brainstorm a blog — even if I say "create a blog entry about X" — treat it
+as a normal, open-ended conversation. Brainstorm angles, propose your own ideas, draft,
+and revise with me in ordinary prose. Do NOT output the structured contract/frontmatter
+format during this phase, and do not let any template constrain your thinking. At most,
+once per conversation, you may add a brief one-line reminder that I can type `/blog` to
+package it when we're happy — but never produce the contract block on your own.
+
+PACKAGING PHASE (only on the exact command `/blog`): ONLY when I type `/blog` should you
+convert what we've agreed on into the CPM blog contract. Then output ONLY the fenced
+block below — between the sentinel lines — and nothing else, so I can email it to the
+pipeline.
+
+The contract block (PACKAGING PHASE only):
+
+```text
+-----BEGIN CPM BLOG-----
+---
+type: blog
+campaign_id: null
+slug: null
+title: "<headline>"
+subtitle: "<one-sentence deck/subtitle>"
+byline: "By Richard J. Miller · Founder, County Property Management · California Broker since 1995"
+decision_intent: [<one or more of: selling, renting, holding, still-deciding>]
+tags: [<zero or more of: blog_lead, lead_magnet, contact_form, strategy_session, owner_lead>]
+publish_date: null
+status: ready
+source_chat_context: "<1-2 sentences: where this came from; may note private context — this is NEVER published, it stays in a private archive>"
+gemini_prompt: "<a vivid image-generation prompt for the hero image>"
+faq_included: <true or false>
+---
+
+<the full article body in Markdown — clear H2/H3 headings, lead each section with the point>
+
+---FAQ---
+
+Q: <question>
+A: <direct answer first sentence, then expand>
+
+Q: <question>
+A: <answer>
+-----END CPM BLOG-----
+```
+
+Rules:
+- Keep `type`, `campaign_id`, `slug`, `publish_date`, `status` EXACTLY as shown
+  (the PC stage fills slug/date and classifies). `status: ready` is required.
+- `decision_intent` and `tags` use ONLY the values listed — invent none.
+- Include the `---FAQ---` block only when `faq_included: true`; 3–6 strong Q&As,
+  each answer leading with the direct answer.
+- Put any private/client/deal specifics in `source_chat_context` only — never in the
+  body or title. It is stored privately and never reaches the public site.
+- Output the contract and nothing else, so I can copy it straight into an email.
+
+---
+
+## HOW TO SEND IT (iPhone)
+
+The Claude iOS app outputs the contract as TEXT in a code block — it can't attach a file
+or send mail itself. So the handoff is copy → email. The block is wrapped in
+`-----BEGIN CPM BLOG-----` / `-----END CPM BLOG-----`, so pasting it into an email BODY is
+all the harvester needs (no attachment required).
+
+Manual path (works anywhere):
+1. After `/blog`, tap the copy icon on the code block.
+2. Open Mail → new message → paste into the body → send to **cpmblog93012@gmail.com**.
+   Send from an allowlisted address (see `CPM_ALLOWED_SENDERS` in `.env.blog-inbox`).
+3. The PC runner harvests it within ~15 min, converts, and (review-first) commits it.
+
+Near-one-tap path (recommended) — a one-time iOS Shortcut:
+- Shortcuts app → New Shortcut → add action **Get Clipboard** → add action **Send Email**.
+- In Send Email: set **To** = cpmblog93012@gmail.com, **Subject** = "CPM blog",
+  **Body** = the Clipboard variable, and turn **Show Compose Sheet ON** (so you tap Send).
+- Name it "Send CPM Blog" and pin it to the Home Screen / Share Sheet.
+- Then the flow is: `/blog` → copy the block → run "Send CPM Blog" → tap Send.

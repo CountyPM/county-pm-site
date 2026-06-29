@@ -32,9 +32,20 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+# ...but the credential-less sample IS committed as documentation
+!.env.blog-inbox.sample
 
 # blog pipeline private sidecar (gemini prompts, source chat context) — never commit
 .blog-sidecar/
+
+# blog capture/handoff (track D) — inbox + archive hold raw contracts with
+# private fields (source_chat_context, gemini_prompt). NEVER commit these.
+/incoming/
+/.blog-processed/
+cpm-blog_*.md
+# IMAP credentials for the inbox harvester live in .env.blog-inbox (covered by .env* above)
+blog-*.log
+scripts/_*
 
 # FAQ pipeline (track A): derived corpus index + unreviewed AI drafts — never commit
 scripts/faq-corpus-index.json
