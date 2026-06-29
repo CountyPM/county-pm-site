@@ -16,7 +16,14 @@ sources:
       https://answers.hud.gov/FHA/s/article/What-is-the-minimum-down-payment-requirement-for-FHA
   - label: 'U.S. HUD, How can FHA help me buy a home?'
     url: 'https://answers.hud.gov/FHA/s/article/How-can-FHA-help-me-buy-a-home'
-annotations: []
+annotations:
+  - date: '2026-06-29'
+    type: additive
+    note: >-
+      A 2026 post reinforces the answer with the FHA 203(b) path: as little as
+      3.5% down, not 20%. Takeaway: the 20% figure is a myth for many buyers —
+      run the 3.5%-down numbers before assuming you are priced out.
+    post: the-cheap-rent-trap
 related:
   - how-can-i-buy-property-if-i-cant-afford-it-on-my-own
 ---

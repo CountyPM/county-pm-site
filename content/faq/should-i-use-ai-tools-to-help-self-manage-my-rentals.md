@@ -9,7 +9,16 @@ derivedFrom:
 created: '2026-06-25'
 order: 2
 sources: []
-annotations: []
+annotations:
+  - date: '2026-06-29'
+    type: additive
+    note: >-
+      Our 2026 AI essay supports the answer: lean on AI for the mechanical layer
+      — drafting, tracking, research, first-pass tenant communication — but do
+      not let it substitute for judgment on notices, screening, and tenant
+      relationships. Takeaway: use AI to save time on tasks; keep a human on the
+      decisions that carry liability.
+    post: the-robot-cant-read-the-room
 related:
   - can-ai-manage-a-rental-property-on-its-own
 ---

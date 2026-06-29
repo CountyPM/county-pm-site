@@ -11,7 +11,17 @@ derivedFrom:
 created: '2026-06-25'
 order: 6
 sources: []
-annotations: []
+annotations:
+  - date: '2026-06-29'
+    type: additive
+    note: >-
+      A 2026 post adds the pooling strategy: buy a multi-family property with
+      one or two trusted partners, live in one unit, and let the rent from the
+      others carry the mortgage — or, for parents, help the kids with entry
+      costs now so compounding starts early. Takeaway: partnering and
+      house-hacking are long-proven ways onto the ladder when a solo purchase is
+      not realistic.
+    post: the-cheap-rent-trap
 related:
   - do-i-need-a-20-down-payment-to-buy-a-home
 ---

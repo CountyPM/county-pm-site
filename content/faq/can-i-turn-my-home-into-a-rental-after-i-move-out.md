@@ -11,7 +11,17 @@ derivedFrom:
 created: '2026-06-25'
 order: 5
 sources: []
-annotations: []
+annotations:
+  - date: '2026-06-29'
+    type: additive
+    note: >-
+      The Decade Dividend (2026) adds the financing angle: when you move out and
+      rent the home you bought as an owner-occupant, you keep the owner-occupied
+      loan and rate you originally locked — there is no requirement to refinance
+      into a costlier investor loan. Takeaway: the rate you secured as a
+      resident is one of the biggest advantages of converting the home rather
+      than selling it.
+    post: the-decade-dividend
 related:
   - why-are-owner-occupied-mortgage-rates-better-than-investor
 ---

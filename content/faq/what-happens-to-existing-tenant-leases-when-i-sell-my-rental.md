@@ -17,7 +17,16 @@ sources:
   - label: 'Just cause eviction provisions, Cal. Civ. Code §1946.2'
     url: >-
       https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1946.2.
-annotations: []
+annotations:
+  - date: '2026-06-29'
+    type: additive
+    note: >-
+      Getting Your Money Out of California (2026) restates the answer in plain
+      terms: leases are contracts that transfer with the property, so a
+      fixed-term tenant stays on under the new owner, and a month-to-month
+      tenant is handled with proper notice. Takeaway: selling does not void
+      leases — the buyer steps into them.
+    post: getting-your-money-out-of-california
 related:
   - capital-gains-when-selling-a-california-rental
   - how-can-i-move-my-rental-property-equity-out-of-california

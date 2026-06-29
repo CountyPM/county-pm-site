@@ -11,7 +11,18 @@ derivedFrom:
 created: '2026-06-25'
 order: 4
 sources: []
-annotations: []
+annotations:
+  - date: '2026-06-29'
+    type: additive
+    note: >-
+      The Rainy Day Trap (2026) adds the reasoning behind the answer: real
+      estate hedges inflation because, unlike the dollar, it cannot be printed,
+      so its nominal price rises as the money supply expands — and a fixed-rate
+      mortgage layered on top freezes your largest cost while rents and the real
+      value of the debt erode. Takeaway: the hedge is partly the hard asset and
+      partly the fixed-rate debt against it; together they defend purchasing
+      power rather than promise real gains.
+    post: the-rainy-day-trap
 related:
   - how-does-a-fixed-rate-mortgage-protect-against-inflation
 ---

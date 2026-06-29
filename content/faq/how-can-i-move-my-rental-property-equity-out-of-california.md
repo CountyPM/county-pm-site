@@ -18,7 +18,20 @@ sources:
       https://www.irs.gov/businesses/small-businesses-self-employed/like-kind-exchanges-real-estate-tax-tips
   - label: 'California Courts Self-Help: Wills, estates, and advance care planning'
     url: 'https://selfhelp.courts.ca.gov/wills-estates-probate/legal-documents'
-annotations: []
+annotations:
+  - date: '2026-06-29'
+    type: additive
+    note: >-
+      Getting Your Money Out of California (2026) walks a real owner through the
+      full sequence — a revocable living trust first, a CPA check on any
+      primary-residence capital-gains exclusion, then a forward 1031 exchange
+      through a qualified intermediary into lower-cost out-of-state doors. The
+      post's '60 days' is the notice period for the month-to-month tenant on
+      sale, not a 1031 deadline; the exchange's 45-day identification and
+      180-day closing windows are unchanged. Takeaway (2026): the 1031 deadlines
+      stand — the new context is sequencing the trust, CPA, and tenant handling
+      around the exchange.
+    post: getting-your-money-out-of-california
 related:
   - capital-gains-when-selling-a-california-rental
   - what-happens-to-existing-tenant-leases-when-i-sell-my-rental

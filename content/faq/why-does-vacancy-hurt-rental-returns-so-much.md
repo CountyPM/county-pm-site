@@ -11,7 +11,16 @@ derivedFrom:
 created: '2026-06-25'
 order: 7
 sources: []
-annotations: []
+annotations:
+  - date: '2026-06-29'
+    type: additive
+    note: >-
+      A 2026 post sharpens the answer: every day a unit sits empty is revenue
+      you never recover, so when notice comes the clock starts — assessment,
+      make-ready, marketing, showings — using vetted vendors to turn the unit
+      fast. Takeaway: vacancy is lost NOI that cannot be earned back, which is
+      why speed at turnover matters more than chasing the cheapest make-ready.
+    post: most-property-managers-work-for-themselves
 related:
   - how-important-is-tenant-screening-to-a-rental-propertys
 ---

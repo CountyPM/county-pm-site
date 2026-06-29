@@ -11,7 +11,16 @@ derivedFrom:
 created: '2026-06-25'
 order: 1
 sources: []
-annotations: []
+annotations:
+  - date: '2026-06-29'
+    type: additive
+    note: >-
+      Our 2026 Rently walkthrough adds the step-by-step the answer describes:
+      the prospect registers and verifies ID plus a payment method, receives a
+      time-boxed access code, tours the vacant unit alone, and every entry is
+      logged. Takeaway: self-guided showings widen access hours while keeping a
+      verified identity behind every visit.
+    post: self-service-showings-with-rently.com
 related:
   - are-self-service-showings-safe-for-my-rental-property
 ---

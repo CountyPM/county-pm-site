@@ -16,7 +16,16 @@ sources:
       https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=1161.
   - label: 'California Courts self-help: Eviction (unlawful detainer)'
     url: 'https://selfhelp.courts.ca.gov/eviction-landlord'
-annotations: []
+annotations:
+  - date: '2026-06-29'
+    type: additive
+    note: >-
+      Our 2026 AI essay underscores the answer: one procedural error — wrong
+      date, wrong statutory language, wrong service method — restarts the whole
+      process, and the exposure is sharper in just-cause cities like Oxnard.
+      Takeaway: in a California eviction the sequence and accuracy of each step
+      matter as much as the grounds themselves.
+    post: the-robot-cant-read-the-room
 related:
   - how-to-evict-a-tenant-in-california
 ---

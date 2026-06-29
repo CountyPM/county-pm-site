@@ -21,6 +21,15 @@ annotations:
       money and vendors is a core part of the service worth asking about up
       front — see also the property-manager conflict-of-interest entry.
     post: most-property-managers-work-for-themselves
+  - date: '2026-06-25'
+    type: additive
+    note: >-
+      A 2026 post restates the core scope in CPM's words: market listings,
+      screen tenants, handle maintenance, collect rent, and report to owners —
+      full-service management aimed at hitting the owner's revenue expectations.
+      Takeaway: the job is to let owners enjoy the income without the day-to-day
+      headaches.
+    post: what-do-property-management-companies-do
 related:
   - is-hiring-a-property-manager-worth-it-for-a-single-rental
   - property-manager-conflict-of-interest

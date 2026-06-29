@@ -9,7 +9,15 @@ derivedFrom:
 created: '2026-06-25'
 order: 4
 sources: []
-annotations: []
+annotations:
+  - date: '2026-06-29'
+    type: additive
+    note: >-
+      A 2026 screening post reinforces that the 3x income-to-rent figure is a
+      common underwriting guideline, not a statute, and should be applied
+      consistently alongside other compensating factors. Takeaway: use 3x as one
+      screening signal applied evenly, not as a legal cutoff.
+    post: why-good-tenants-keep-getting-rejected
 related:
   - tenant-application-screening-fee-california
 ---

@@ -11,7 +11,17 @@ derivedFrom:
 created: '2026-06-25'
 order: 3
 sources: []
-annotations: []
+annotations:
+  - date: '2026-06-29'
+    type: additive
+    note: >-
+      The Rainy Day Trap (2026) adds the mechanism behind the answer: a
+      fixed-rate mortgage freezes your largest cost in today's dollars while
+      rents rise and the real value of the debt erodes as inflation runs — in
+      effect a short position on the dollar. Takeaway: the fixed payment is the
+      hedge, and the longer inflation runs the more the spread works for the
+      owner.
+    post: the-rainy-day-trap
 related:
   - why-is-real-estate-considered-a-hedge-against-inflation
 ---

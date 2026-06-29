@@ -15,7 +15,17 @@ sources:
     url: 'https://selling-guide.fanniemae.com/sel/b2-1.1-01/occupancy-types'
   - label: 'U.S. HUD, How can FHA help me buy a home?'
     url: 'https://answers.hud.gov/FHA/s/article/How-can-FHA-help-me-buy-a-home'
-annotations: []
+annotations:
+  - date: '2026-06-29'
+    type: additive
+    note: >-
+      The Decade Dividend (2026) puts numbers behind the answer: owner-occupied
+      loans allow roughly 3.5–5% down at the best available rate, while investor
+      loans typically require 20–25% down and carry a 0.5–1%+ rate premium — and
+      an owner-occupant who later rents the home keeps the better rate.
+      Takeaway: lenders price owner-occupied risk lower, and that advantage
+      carries forward if the home becomes a rental.
+    post: the-decade-dividend
 related:
   - can-i-turn-my-home-into-a-rental-after-i-move-out
 ---

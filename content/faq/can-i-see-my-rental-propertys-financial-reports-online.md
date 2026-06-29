@@ -11,7 +11,15 @@ derivedFrom:
 created: '2026-06-25'
 order: 3
 sources: []
-annotations: []
+annotations:
+  - date: '2026-06-29'
+    type: additive
+    note: >-
+      A 2026 post confirms the specifics behind the answer: CPM runs on
+      AppFolio, with owner financial reports available 24/7 and rent collection
+      automated. Takeaway: you should be able to see where your money is without
+      having to call anyone.
+    post: most-property-managers-work-for-themselves
 related:
   - property-manager-conflict-of-interest
 ---

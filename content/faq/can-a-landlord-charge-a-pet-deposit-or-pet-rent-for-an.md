@@ -19,7 +19,16 @@ sources:
   - label: 'U.S. HUD, Assistance Animals (Fair Housing)'
     url: >-
       https://www.hud.gov/program_offices/fair_housing_equal_opp/assistance_animals
-annotations: []
+annotations:
+  - date: '2026-06-29'
+    type: additive
+    note: >-
+      A 2026 post on tenant screening reinforces the rule that an assistance
+      animal is not a pet: no pet deposit and no pet rent may be charged for a
+      verified emotional support animal, though the tenant stays liable for any
+      actual damage. Takeaway: keep the ESA accommodation and the money
+      questions separate from your ordinary pet policy.
+    post: why-good-tenants-keep-getting-rejected
 related:
   - can-a-landlord-deny-an-emotional-support-animal
   - tenant-application-screening-fee-california

@@ -11,7 +11,16 @@ derivedFrom:
 created: '2026-06-25'
 order: 6
 sources: []
-annotations: []
+annotations:
+  - date: '2026-06-29'
+    type: additive
+    note: >-
+      A 2026 overview of what a management company actually does — marketing,
+      screening, maintenance, rent collection, owner reporting — adds the scope
+      behind the answer. Takeaway: even for a single rental, the value is
+      offloading the recurring landlord duties and the compliance exposure that
+      come with the property.
+    post: what-do-property-management-companies-do
 related:
   - what-does-a-property-management-company-do
   - what-landlord-responsibilities-come-with-owning-a-rental

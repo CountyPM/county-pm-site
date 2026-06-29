@@ -9,7 +9,17 @@ derivedFrom:
 created: '2026-06-25'
 order: 1
 sources: []
-annotations: []
+annotations:
+  - date: '2026-06-29'
+    type: additive
+    note: >-
+      Our 2026 essay on AI's ceiling in property management adds the lived
+      examples behind the answer: AI drafts notices and summarizes ordinances
+      well, but it cannot weigh a four-year, always-on-time tenant's history
+      against a one-time payroll delay, and it cannot carry liability for a
+      mis-served notice. Takeaway: AI handles tasks; it does not handle
+      situations or accountability.
+    post: the-robot-cant-read-the-room
 related:
   - should-i-use-ai-tools-to-help-self-manage-my-rentals
 ---

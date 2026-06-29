@@ -17,7 +17,26 @@ sources:
       https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=1161.
   - label: 'California Courts self-help: Eviction (unlawful detainer)'
     url: 'https://selfhelp.courts.ca.gov/eviction-landlord'
-annotations: []
+annotations:
+  - date: '2026-06-29'
+    type: additive
+    note: >-
+      Cash for Keys: When the Courts Fail Everyone (2026) adds a cautionary case
+      to the answer: accepting any payment — even a partial auto-payment posted
+      by a tenant portal — can invalidate a 3-Day Notice and reset the clock,
+      and the tenant's formal response can add months. Takeaway: airtight
+      documentation and clean service are what make a non-payment case winnable;
+      small missteps restart it.
+    post: cash-for-keys-when-the-court-fails
+  - date: '2026-06-29'
+    type: additive
+    note: >-
+      A 2026 post adds the prevention side of the answer: a four-decade record
+      of never losing a non-payment eviction rests on documentation from day one
+      and screening done right, so the strongest cases are built long before
+      court. Takeaway: winning the eviction starts at the application, not at
+      the courthouse.
+    post: most-property-managers-work-for-themselves
 related:
   - how-to-evict-a-tenant-in-california
   - what-is-cash-for-keys

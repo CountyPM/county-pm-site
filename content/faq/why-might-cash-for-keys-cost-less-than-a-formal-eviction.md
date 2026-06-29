@@ -11,7 +11,16 @@ derivedFrom:
 created: '2026-06-25'
 order: 5
 sources: []
-annotations: []
+annotations:
+  - date: '2026-06-29'
+    type: additive
+    note: >-
+      Our 2026 case study quantifies the answer: roughly five months of court
+      delays and about $2,450 in legal fees made paying the tenant to leave the
+      cheaper outcome. Takeaway: the real comparison is not payment vs. nothing
+      — it is a known cash-for-keys figure vs. months of lost rent plus legal
+      costs and uncertainty.
+    post: cash-for-keys-when-the-court-fails
 related:
   - how-to-evict-a-tenant-in-california
   - what-does-it-take-to-win-an-eviction-for-non-payment-of-rent

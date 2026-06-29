@@ -14,7 +14,16 @@ sources:
   - label: Cal. Civ. Code §1941.1 (landlord duty to maintain habitable premises)
     url: >-
       https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1941.1.
-annotations: []
+annotations:
+  - date: '2026-06-29'
+    type: additive
+    note: >-
+      A 2026 overview frames the responsibilities the answer lists —
+      maintenance, rent collection, tenant relations, compliance — as exactly
+      the recurring duties owners take on the day they rent a property out.
+      Takeaway: owning a rental is an ongoing operating role, which is precisely
+      what a manager exists to absorb.
+    post: what-do-property-management-companies-do
 related:
   - is-hiring-a-property-manager-worth-it-for-a-single-rental
   - what-does-a-property-management-company-do

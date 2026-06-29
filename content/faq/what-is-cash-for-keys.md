@@ -11,7 +11,16 @@ derivedFrom:
 created: '2026-06-25'
 order: 4
 sources: []
-annotations: []
+annotations:
+  - date: '2026-06-29'
+    type: additive
+    note: >-
+      Our 2026 case study illustrates the definition: a negotiated payment for
+      the tenant to vacate voluntarily, which became the cheaper, faster path
+      once court delays and legal fees stacked up. Takeaway: cash for keys
+      trades a known, smaller payment now for the cost and uncertainty of a
+      contested eviction.
+    post: cash-for-keys-when-the-court-fails
 related:
   - how-to-evict-a-tenant-in-california
   - what-does-it-take-to-win-an-eviction-for-non-payment-of-rent

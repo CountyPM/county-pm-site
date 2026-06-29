@@ -11,7 +11,17 @@ derivedFrom:
 created: '2026-06-25'
 order: 4
 sources: []
-annotations: []
+annotations:
+  - date: '2026-06-29'
+    type: additive
+    note: >-
+      A 2026 post sharpens the answer: the tenant you place determines
+      maintenance, on-time rent, and whether you ever see eviction court — which
+      is why CPM screens every applicant personally (earnings, credit, landlord
+      references, criminal and eviction history) and reviews each file with the
+      owner. Takeaway: screening, more than the property analysis, is where
+      returns are won or lost.
+    post: most-property-managers-work-for-themselves
 related:
   - why-does-vacancy-hurt-rental-returns-so-much
 ---

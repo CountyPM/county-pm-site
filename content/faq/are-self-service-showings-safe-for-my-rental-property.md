@@ -11,7 +11,17 @@ derivedFrom:
 created: '2026-06-25'
 order: 2
 sources: []
-annotations: []
+annotations:
+  - date: '2026-06-29'
+    type: additive
+    note: >-
+      Our 2026 walkthrough of how we run Rently self-guided showings adds
+      operational color to the safety answer: a prospect verifies identity and a
+      payment/credit method before any access code is issued, the unit is vacant
+      during the tour, and every entry is logged. Takeaway (2026): the safety
+      case rests on the screening that happens before the door ever opens, not
+      on someone standing in the room.
+    post: self-service-showings-with-rently.com
 related:
   - how-do-self-service-self-guided-rental-showings-work
 ---
