@@ -1,17 +1,23 @@
 ---
-question: "What landlord responsibilities come with owning a rental property?"
-topic: "property-management-basics"
-topicTitle: "Property Management Basics"
-topicDescription: "Plain answers to the questions Ventura County owners ask before hiring a property manager."
-type: "objective"
+question: What landlord responsibilities come with owning a rental property?
+topic: property-management-basics
+topicTitle: Property Management Basics
+topicDescription: >-
+  Plain answers to the questions Ventura County owners ask before hiring a
+  property manager.
+type: objective
 derivedFrom:
-  - "what-do-property-management-companies-do"
-created: "2026-06-25"
+  - what-do-property-management-companies-do
+created: '2026-06-25'
 order: 5
 sources:
-  - label: "Cal. Civ. Code §1941.1 (landlord duty to maintain habitable premises)"
-    url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1941.1."
+  - label: Cal. Civ. Code §1941.1 (landlord duty to maintain habitable premises)
+    url: >-
+      https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1941.1.
 annotations: []
+related:
+  - is-hiring-a-property-manager-worth-it-for-a-single-rental
+  - what-does-a-property-management-company-do
 ---
 
 Owning a rental makes you a landlord with both legal duties and day-to-day operating work. The core legal duty is habitability: under California Civil Code §1941.1 you must keep the dwelling fit to live in — effective weatherproofing, working plumbing, heating, and electrical systems, safe and sanitary common areas, and prompt repair of conditions that make the unit untenantable. You also have to follow fair-housing rules when advertising and screening, handle security deposits and required notices correctly, and use the proper legal process if a tenancy has to end.

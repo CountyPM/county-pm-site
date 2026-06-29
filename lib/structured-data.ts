@@ -15,6 +15,13 @@
 // California brokerage that operates the brand (RAWA, Inc, DRE #00578068).
 import { SITE_URL } from './site'
 import type { BlogPost } from './blog'
+import {
+  getRelatedEntries,
+  faqEntryUrl,
+  faqAnswerPlainText,
+  type FaqEntry,
+} from './faq'
+import { getEntitiesForText, type FaqEntity } from './faq-entities'
 
 // Stable IRI for the Organization node, so cross-block @id references resolve.
 export const ORG_ID = `${SITE_URL}/#organization`
@@ -52,6 +59,59 @@ export function organizationLd() {
       propertyID: 'California DRE License',
       value: '00578068',
     },
+  }
+}
+
+// ---- FAQ hub structured data (track A slice 3: cross-linking + entities) ----
+
+// Turn the authoritative entities a passage invokes (statutes/orgs from the
+// promoted source registry) into schema.org `about` nodes. `sameAs` gives the
+// answer engine a canonical URL to resolve each governing law/agency to.
+export function faqAboutNodes(entities: FaqEntity[]) {
+  return entities.map((e) => ({
+    '@type': e.type,
+    name: e.name,
+    ...(e.sameAs && e.sameAs.length
+      ? { sameAs: e.sameAs.length === 1 ? e.sameAs[0] : e.sameAs }
+      : {}),
+  }))
+}
+
+// FAQPage JSON-LD for a topic cluster. Emitted by the topic route AFTER the
+// visible answers (GEO rule: human-readable answer first, markup second). Each
+// Question is an addressable node (@id = its anchor URL) and carries `about` for
+// the entities it invokes; cross-page related entries surface as page-level
+// `relatedLink` (valid on WebPage/FAQPage) — the cross-link graph's machine layer.
+export function faqPageLd(entries: FaqEntry[]) {
+  const onPage = new Set(entries.map((e) => e.slug))
+  const relatedLinks = new Set<string>()
+
+  const mainEntity = entries.map((entry) => {
+    const url = `${SITE_URL}${faqEntryUrl(entry)}`
+    const entities = getEntitiesForText(`${entry.question} ${entry.answer}`)
+    for (const r of getRelatedEntries(entry)) {
+      // Same-page siblings are already on this FAQPage; only off-page related
+      // entries need an explicit link out.
+      if (!onPage.has(r.slug)) relatedLinks.add(`${SITE_URL}${faqEntryUrl(r)}`)
+    }
+    return {
+      '@type': 'Question',
+      '@id': url,
+      url,
+      name: entry.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faqAnswerPlainText(entry),
+      },
+      ...(entities.length ? { about: faqAboutNodes(entities) } : {}),
+    }
+  })
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity,
+    ...(relatedLinks.size ? { relatedLink: Array.from(relatedLinks).sort() } : {}),
   }
 }
 

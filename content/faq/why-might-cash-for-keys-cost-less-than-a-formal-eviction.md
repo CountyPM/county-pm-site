@@ -1,15 +1,21 @@
 ---
-question: "Why might cash for keys cost less than a formal eviction?"
-topic: "california-evictions"
-topicTitle: "California Evictions"
-topicDescription: "How California's eviction process, notices, and just-cause rules work for Ventura County rental owners."
-type: "subjective"
+question: Why might cash for keys cost less than a formal eviction?
+topic: california-evictions
+topicTitle: California Evictions
+topicDescription: >-
+  How California's eviction process, notices, and just-cause rules work for
+  Ventura County rental owners.
+type: subjective
 derivedFrom:
-  - "cash-for-keys-when-the-court-fails"
-created: "2026-06-25"
+  - cash-for-keys-when-the-court-fails
+created: '2026-06-25'
 order: 5
 sources: []
 annotations: []
+related:
+  - how-to-evict-a-tenant-in-california
+  - what-does-it-take-to-win-an-eviction-for-non-payment-of-rent
+  - what-is-cash-for-keys
 ---
 
 Because a contested eviction is slow, and time is the expensive part. An unlawful detainer can stretch on for months of court delay, and during all of it the tenant is usually still in the unit and not paying — so the lost rent piles up on top of attorney's fees, court costs, and the eventual turnover. Add the risk that a single procedural error restarts the whole process, and the true cost of "winning" can run well past the rent that was owed in the first place.

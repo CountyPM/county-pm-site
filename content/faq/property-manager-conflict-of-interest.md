@@ -1,19 +1,28 @@
 ---
-question: "Do property managers have a conflict of interest?"
-topic: "property-management-basics"
-topicTitle: "Property Management Basics"
-topicDescription: "Plain answers to the questions Ventura County owners ask before hiring a property manager."
-type: "subjective"
+question: Do property managers have a conflict of interest?
+topic: property-management-basics
+topicTitle: Property Management Basics
+topicDescription: >-
+  Plain answers to the questions Ventura County owners ask before hiring a
+  property manager.
+type: subjective
 derivedFrom:
-  - "most-property-managers-work-for-themselves"
-created: "2026-06-25"
+  - most-property-managers-work-for-themselves
+created: '2026-06-25'
 order: 2
 sources: []
 annotations:
-  - date: "2026-06-25"
-    type: "additive"
-    note: "Concrete questions to ask a prospective manager: Do you or any affiliate own a maintenance, repair, or supply company? Do you mark up vendor invoices? Are inspections and lease renewals billed as add-ons? A manager with no conflicts can answer all three plainly."
-    post: "most-property-managers-work-for-themselves"
+  - date: '2026-06-25'
+    type: additive
+    note: >-
+      Concrete questions to ask a prospective manager: Do you or any affiliate
+      own a maintenance, repair, or supply company? Do you mark up vendor
+      invoices? Are inspections and lease renewals billed as add-ons? A manager
+      with no conflicts can answer all three plainly.
+    post: most-property-managers-work-for-themselves
+related:
+  - can-i-see-my-rental-propertys-financial-reports-online
+  - what-does-a-property-management-company-do
 ---
 
 Many property managers do carry a conflict of interest — most often when the management company has an ownership stake in the maintenance vendors it recommends. When the manager profits from every repair order, the incentive to find the cheapest qualified contractor disappears, and the owner quietly pays more. Other common conflicts include marking up vendor invoices and billing routine services like inspections or lease renewals as add-on fees.

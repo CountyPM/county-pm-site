@@ -1,19 +1,24 @@
 ---
-question: "What is the risk of a mistake in a California eviction notice?"
-topic: "california-evictions"
-topicTitle: "California Evictions"
-topicDescription: "How California's eviction process, notices, and just-cause rules work for Ventura County rental owners."
-type: "objective"
+question: What is the risk of a mistake in a California eviction notice?
+topic: california-evictions
+topicTitle: California Evictions
+topicDescription: >-
+  How California's eviction process, notices, and just-cause rules work for
+  Ventura County rental owners.
+type: objective
 derivedFrom:
-  - "the-robot-cant-read-the-room"
-created: "2026-06-25"
+  - the-robot-cant-read-the-room
+created: '2026-06-25'
 order: 3
 sources:
-  - label: "Cal. Code of Civil Procedure §1161 (unlawful detainer; 3-day notice)"
-    url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=1161."
-  - label: "California Courts self-help: Eviction (unlawful detainer)"
-    url: "https://selfhelp.courts.ca.gov/eviction-landlord"
+  - label: Cal. Code of Civil Procedure §1161 (unlawful detainer; 3-day notice)
+    url: >-
+      https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=1161.
+  - label: 'California Courts self-help: Eviction (unlawful detainer)'
+    url: 'https://selfhelp.courts.ca.gov/eviction-landlord'
 annotations: []
+related:
+  - how-to-evict-a-tenant-in-california
 ---
 
 The risk is that the whole case collapses. California's eviction process is technical and the exposure is asymmetric: a single defect — the wrong amount demanded, the wrong statutory wording, a miscalculated deadline, or improper service — can invalidate the notice. A judge can dismiss the unlawful detainer on that ground alone, and you have to start the clock over with a new, corrected notice, adding weeks or months during which no rent is coming in.

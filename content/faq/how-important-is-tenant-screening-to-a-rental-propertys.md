@@ -1,15 +1,19 @@
 ---
-question: "How important is tenant screening to a rental property's returns?"
-topic: "property-management-basics"
-topicTitle: "Property Management Basics"
-topicDescription: "Plain answers to the questions Ventura County owners ask before hiring a property manager."
-type: "subjective"
+question: How important is tenant screening to a rental property's returns?
+topic: property-management-basics
+topicTitle: Property Management Basics
+topicDescription: >-
+  Plain answers to the questions Ventura County owners ask before hiring a
+  property manager.
+type: subjective
 derivedFrom:
-  - "most-property-managers-work-for-themselves"
-created: "2026-06-25"
+  - most-property-managers-work-for-themselves
+created: '2026-06-25'
 order: 4
 sources: []
 annotations: []
+related:
+  - why-does-vacancy-hurt-rental-returns-so-much
 ---
 
 It's about as important as the property itself. Owners often spend weeks analyzing cap rate, cash flow, and appreciation, then approve the first applicant who applies and signs quickly. But the tenant is what determines whether the income all that analysis assumes actually shows up month after month. A great property with the wrong tenant can underperform a modest one with a reliable tenant.

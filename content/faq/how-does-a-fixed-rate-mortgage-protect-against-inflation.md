@@ -1,15 +1,19 @@
 ---
-question: "How does a fixed-rate mortgage protect against inflation?"
-topic: "buying-and-investing"
-topicTitle: "Buying & Investing in Real Estate"
-topicDescription: "How Ventura County renters and owners think about buying, financing, and building a rental portfolio."
-type: "subjective"
+question: How does a fixed-rate mortgage protect against inflation?
+topic: buying-and-investing
+topicTitle: Buying & Investing in Real Estate
+topicDescription: >-
+  How Ventura County renters and owners think about buying, financing, and
+  building a rental portfolio.
+type: subjective
 derivedFrom:
-  - "the-rainy-day-trap"
-created: "2026-06-25"
+  - the-rainy-day-trap
+created: '2026-06-25'
 order: 3
 sources: []
 annotations: []
+related:
+  - why-is-real-estate-considered-a-hedge-against-inflation
 ---
 
 A fixed-rate mortgage protects against inflation by locking your largest housing cost in today's dollars while everything around it drifts upward. The principal-and-interest payment never adjusts, so as inflation pushes up wages and rents over the years, your biggest expense stays flat. The gap between what the property earns and what it costs to carry tends to widen in your favor over time.

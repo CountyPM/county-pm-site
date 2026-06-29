@@ -25,6 +25,10 @@ annotations:
       that portion — a real number worth checking before you sell, separate from
       how the rented portion is treated.
     post: getting-your-money-out-of-california
+related:
+  - how-can-i-move-my-rental-property-equity-out-of-california
+  - what-happens-to-existing-tenant-leases-when-i-sell-my-rental
+  - what-is-a-1031-exchange
 ---
 
 Possibly not on all of it. Under IRC §121, you can exclude up to $250,000 of gain — or up to $500,000 if you're married filing jointly — on the sale of a main home, as long as you owned it and lived in it as your main home for at least two of the five years before the sale. A property you once lived in and later rented can still qualify if it meets that two-of-five-years test.

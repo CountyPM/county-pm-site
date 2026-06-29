@@ -1,15 +1,19 @@
 ---
-question: "Can I see my rental property's financial reports online?"
-topic: "property-management-basics"
-topicTitle: "Property Management Basics"
-topicDescription: "Plain answers to the questions Ventura County owners ask before hiring a property manager."
-type: "subjective"
+question: Can I see my rental property's financial reports online?
+topic: property-management-basics
+topicTitle: Property Management Basics
+topicDescription: >-
+  Plain answers to the questions Ventura County owners ask before hiring a
+  property manager.
+type: subjective
 derivedFrom:
-  - "most-property-managers-work-for-themselves"
-created: "2026-06-25"
+  - most-property-managers-work-for-themselves
+created: '2026-06-25'
 order: 3
 sources: []
 annotations: []
+related:
+  - property-manager-conflict-of-interest
 ---
 
 With the right manager, yes. County Property Management runs on AppFolio, so owners get a secure online portal where financial reports are available around the clock — income and expense statements, rent collection status, and the documentation you need at tax time. You don't have to call and wait to find out where your money is; you can log in and see it.

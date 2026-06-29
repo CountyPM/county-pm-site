@@ -41,6 +41,11 @@ export type FaqEntryMeta = {
   created: string
   sources: FaqSource[]
   annotations: FaqAnnotation[]
+  // Slug(s) of sibling FAQ entries this one relates to (the cross-link graph,
+  // track A slice 3). Reciprocal by construction: if A lists B, B lists A. Written
+  // by scripts/crosslink-faq.mjs --apply after review; rendered as "Related
+  // questions". Mirrors the blog `faq:` spoke.
+  related: string[]
   order: number // ordering within the topic page
 }
 
@@ -102,6 +107,9 @@ function parseEntry(slug: string, raw: string): FaqEntry {
     created: String(data.created || ''),
     sources: normalizeSources(data.sources),
     annotations: normalizeAnnotations(data.annotations),
+    related: Array.isArray(data.related)
+      ? Array.from(new Set(data.related.map(String).filter(Boolean)))
+      : [],
     order: typeof data.order === 'number' ? data.order : 999,
     answer: content.trim(),
   }
@@ -164,6 +172,25 @@ export function getFaqTopic(slug: string): FaqTopic | null {
 // index both link here so every reference points at the single source of truth.
 export function faqEntryUrl(entry: Pick<FaqEntry, 'topic' | 'slug'>): string {
   return `/faq/${entry.topic}#${entry.slug}`
+}
+
+// Resolve an entry's `related` slugs to the sibling entries, in declared order.
+// Unresolvable slugs (a related entry that no longer exists) are dropped so the
+// render and JSON-LD never point at a 404 — validate-faq.mjs is the gate that
+// flags them at publish time, but the reader stays defensive regardless.
+export function getRelatedEntries(
+  entry: Pick<FaqEntry, 'slug' | 'related'>
+): FaqEntryMeta[] {
+  if (!entry.related.length) return []
+  const all = getAllFaqEntries()
+  const bySlug = new Map(all.map((e) => [e.slug, e]))
+  const out: FaqEntryMeta[] = []
+  for (const slug of entry.related) {
+    if (slug === entry.slug) continue // never self-link
+    const target = bySlug.get(slug)
+    if (target) out.push(target)
+  }
+  return out
 }
 
 // Flatten a Markdown answer to plain prose for the FAQPage JSON-LD acceptedAnswer

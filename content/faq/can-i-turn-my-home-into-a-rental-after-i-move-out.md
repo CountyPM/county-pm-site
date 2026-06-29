@@ -1,15 +1,19 @@
 ---
-question: "Can I turn my home into a rental after I move out?"
-topic: "buying-and-investing"
-topicTitle: "Buying & Investing in Real Estate"
-topicDescription: "How Ventura County renters and owners think about buying, financing, and building a rental portfolio."
-type: "subjective"
+question: Can I turn my home into a rental after I move out?
+topic: buying-and-investing
+topicTitle: Buying & Investing in Real Estate
+topicDescription: >-
+  How Ventura County renters and owners think about buying, financing, and
+  building a rental portfolio.
+type: subjective
 derivedFrom:
-  - "the-decade-dividend"
-created: "2026-06-25"
+  - the-decade-dividend
+created: '2026-06-25'
 order: 5
 sources: []
 annotations: []
+related:
+  - why-are-owner-occupied-mortgage-rates-better-than-investor
 ---
 
 Yes, and it's one of the more accessible ways for everyday owners to build a portfolio. A common version goes like this: buy a home as an owner-occupant (which gets you the better rate and lower down payment), live in it long enough to build some equity, then convert it to a rental when you move — and buy your next home again as an owner-occupant, often tapping the first home's equity for the down payment. Repeat that over a decade and you can accumulate several income-producing properties without ever using investor financing.

@@ -7,7 +7,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "check:faq-sources": "node scripts/check-faq-sources.mjs"
+    "check:faq-sources": "node scripts/check-faq-sources.mjs",
+    "index:faq-corpus": "node scripts/build-faq-corpus-index.mjs",
+    "draft:faq-entries": "node scripts/draft-faq-entries.mjs",
+    "reconcile:faq": "node scripts/reconcile-faq.mjs",
+    "crosslink:faq": "node scripts/crosslink-faq.mjs",
+    "backfill:scaffold": "node scripts/backfill-faq-feedstock.mjs",
+    "backfill:harvest": "node scripts/backfill-faq-feedstock.mjs --harvest",
+    "validate:faq": "node scripts/validate-faq.mjs"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",

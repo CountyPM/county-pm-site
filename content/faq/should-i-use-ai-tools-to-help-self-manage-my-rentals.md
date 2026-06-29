@@ -1,15 +1,17 @@
 ---
-question: "Should I use AI tools to help self-manage my rentals?"
-topic: "ai-and-property-management"
-topicTitle: "AI & Property Management"
-topicDescription: "What today's AI tools can and can't do in managing a rental."
-type: "subjective"
+question: Should I use AI tools to help self-manage my rentals?
+topic: ai-and-property-management
+topicTitle: AI & Property Management
+topicDescription: What today's AI tools can and can't do in managing a rental.
+type: subjective
 derivedFrom:
-  - "the-robot-cant-read-the-room"
-created: "2026-06-25"
+  - the-robot-cant-read-the-room
+created: '2026-06-25'
 order: 2
 sources: []
 annotations: []
+related:
+  - can-ai-manage-a-rental-property-on-its-own
 ---
 
 Yes, for the right tasks. AI tools save real time on the mechanical layer of self-management: drafting routine tenant emails, organizing maintenance records, researching how a rule generally works, summarizing a long lease, and producing first drafts of listings or notices. Used there, they let a self-managing owner spend less time on paperwork and more on decisions.

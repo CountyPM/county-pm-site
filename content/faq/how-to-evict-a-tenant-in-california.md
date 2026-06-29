@@ -39,6 +39,11 @@ annotations:
       a restart. Confirm the rules for the property's specific city before
       serving.
     post: the-robot-cant-read-the-room
+related:
+  - what-does-it-take-to-win-an-eviction-for-non-payment-of-rent
+  - what-is-cash-for-keys
+  - what-is-the-risk-of-a-mistake-in-a-california-eviction-notice
+  - why-might-cash-for-keys-cost-less-than-a-formal-eviction
 ---
 
 For nonpayment of rent, the first step is serving a 3-day Notice to Pay Rent or Quit — the tenant must be given at least three days, excluding weekends and judicial holidays, to pay what is owed. If the tenant does not pay by the deadline, the landlord can file an Unlawful Detainer, which is the formal eviction lawsuit. A tenant can only be removed by a court judgment followed by a sheriff lockout; a landlord who changes the locks, removes belongings, or shuts off utilities to force a tenant out is acting illegally.

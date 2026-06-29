@@ -1,19 +1,27 @@
 ---
-question: "What happens to existing tenant leases when I sell my rental property?"
-topic: "selling-your-rental"
-topicTitle: "Selling or Exchanging a Rental"
-topicDescription: "Tax and timing questions for Ventura County owners selling or moving equity out of a California rental."
-type: "objective"
+question: What happens to existing tenant leases when I sell my rental property?
+topic: selling-your-rental
+topicTitle: Selling or Exchanging a Rental
+topicDescription: >-
+  Tax and timing questions for Ventura County owners selling or moving equity
+  out of a California rental.
+type: objective
 derivedFrom:
-  - "getting-your-money-out-of-california"
-created: "2026-06-25"
+  - getting-your-money-out-of-california
+created: '2026-06-25'
 order: 4
 sources:
-  - label: "Cal. Civ. Code §1946.1 (termination of periodic tenancy; 30/60-day notice)"
-    url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1946.1."
-  - label: "Just cause eviction provisions, Cal. Civ. Code §1946.2"
-    url: "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1946.2."
+  - label: Cal. Civ. Code §1946.1 (termination of periodic tenancy; 30/60-day notice)
+    url: >-
+      https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1946.1.
+  - label: 'Just cause eviction provisions, Cal. Civ. Code §1946.2'
+    url: >-
+      https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1946.2.
 annotations: []
+related:
+  - capital-gains-when-selling-a-california-rental
+  - how-can-i-move-my-rental-property-equity-out-of-california
+  - what-is-a-1031-exchange
 ---
 
 A lease is a contract tied to the property, not to you, so it transfers to the buyer at closing. A fixed-term lease stays fully in force — the new owner steps into your shoes and must honor the existing rent and terms until the term ends. Selling the building does not, by itself, end a tenant's right to stay.

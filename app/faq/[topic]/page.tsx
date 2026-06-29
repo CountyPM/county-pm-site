@@ -4,9 +4,11 @@ import { MDXRemote } from 'next-mdx-remote/rsc'
 import {
   getFaqTopics,
   getFaqTopic,
-  faqAnswerPlainText,
+  getRelatedEntries,
+  faqEntryUrl,
   type FaqEntry,
 } from '@/lib/faq'
+import { faqPageLd } from '@/lib/structured-data'
 
 type PageProps = {
   params: Promise<{ topic: string }>
@@ -50,18 +52,8 @@ export default async function FaqTopicPage({ params }: PageProps) {
 
   // FAQPage structured data — built AFTER the visible answers below, emitted at
   // the end of the rendered output (GEO rule: visible answer first, schema second).
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: topic.entries.map((entry) => ({
-      '@type': 'Question',
-      name: entry.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: faqAnswerPlainText(entry),
-      },
-    })),
-  }
+  // Carries per-Question `about` entities + cross-page `relatedLink` (slice 3).
+  const jsonLd = faqPageLd(topic.entries)
 
   return (
     <main className="bg-[var(--cpm-page)]">
@@ -150,6 +142,33 @@ export default async function FaqTopicPage({ params }: PageProps) {
                   </ul>
                 </div>
               ) : null}
+
+              {(() => {
+                // Related questions — the cross-link graph rendered as crawler-
+                // visible internal links (the primary GEO signal; the JSON-LD
+                // relatedLink mirrors the cross-page subset).
+                const related = getRelatedEntries(entry)
+                if (related.length === 0) return null
+                return (
+                  <div className="mt-6">
+                    <p className="text-xs font-semibold uppercase tracking-[0.15em] text-[var(--cpm-muted)]">
+                      Related questions
+                    </p>
+                    <ul className="mt-3 space-y-2">
+                      {related.map((rel) => (
+                        <li key={rel.slug} className="text-sm">
+                          <Link
+                            href={faqEntryUrl(rel)}
+                            className="text-[var(--cpm-primary-soft)] underline underline-offset-4 hover:text-[var(--cpm-text)]"
+                          >
+                            {rel.question}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )
+              })()}
             </section>
           ))}
         </div>

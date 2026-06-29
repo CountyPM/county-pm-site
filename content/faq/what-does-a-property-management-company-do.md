@@ -21,6 +21,10 @@ annotations:
       money and vendors is a core part of the service worth asking about up
       front — see also the property-manager conflict-of-interest entry.
     post: most-property-managers-work-for-themselves
+related:
+  - is-hiring-a-property-manager-worth-it-for-a-single-rental
+  - property-manager-conflict-of-interest
+  - what-landlord-responsibilities-come-with-owning-a-rental
 ---
 
 A property management company handles the day-to-day operation of a rental property on the owner's behalf — marketing vacancies, screening and placing tenants, collecting rent, coordinating maintenance and repairs, and providing financial reporting. In exchange for a management fee, the owner is freed from landlord duties while the property keeps generating income.

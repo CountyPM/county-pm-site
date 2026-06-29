@@ -31,6 +31,9 @@ annotations:
       profile — payment history, employment, references — rather than screening
       them out reflexively.
     post: why-good-tenants-keep-getting-rejected
+related:
+  - can-a-landlord-charge-a-pet-deposit-or-pet-rent-for-an
+  - tenant-application-screening-fee-california
 ---
 
 No. An emotional support animal is an assistance animal under the federal Fair Housing Act and California's Fair Employment and Housing Act — not a pet — so a housing provider must grant a reasonable accommodation even under a no-pet policy. You also cannot charge a pet deposit, pet rent, or any extra fee for an assistance animal, and the usual breed, size, and weight restrictions do not apply. Rejecting a qualified applicant who has legitimate documentation is fair-housing discrimination and a complaint waiting to happen.

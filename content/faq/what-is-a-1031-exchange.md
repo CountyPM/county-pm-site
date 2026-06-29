@@ -27,6 +27,10 @@ annotations:
       exchange with estate planning (a revocable living trust) when
       repositioning a long-held rental.
     post: getting-your-money-out-of-california
+related:
+  - capital-gains-when-selling-a-california-rental
+  - how-can-i-move-my-rental-property-equity-out-of-california
+  - what-happens-to-existing-tenant-leases-when-i-sell-my-rental
 ---
 
 A 1031 exchange (named for IRC §1031) lets you defer capital gains tax by reinvesting the proceeds from selling investment or business real property into like-kind investment real property, instead of cashing out and paying tax now. Since the 2017 Tax Cuts and Jobs Act it applies to real property only. Most real estate is "like-kind" to other real estate — for example, a duplex for an apartment building — but U.S. property is not like-kind to property outside the United States.

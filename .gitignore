@@ -33,6 +33,17 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
+# blog pipeline private sidecar (gemini prompts, source chat context) — never commit
+.blog-sidecar/
+
+# FAQ pipeline (track A): derived corpus index + unreviewed AI drafts — never commit
+scripts/faq-corpus-index.json
+content/faq-drafts/
+content/faq-backfill/
+content/faq-reconcile/
+content/faq-crosslink/
+.faq-backfill/
+
 # vercel
 .vercel
 

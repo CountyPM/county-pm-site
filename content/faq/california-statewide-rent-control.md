@@ -35,6 +35,8 @@ annotations:
       termination requires paying the tenant one month of rent as relocation
       assistance.
     post: emergent-market-trend-statewide-california-rent-control
+related:
+  - how-much-can-a-landlord-raise-rent-in-california
 ---
 
 Yes. California has had statewide rent control since the Tenant Protection Act of 2019 (AB 1482) took effect on January 1, 2020. For covered residential properties it caps annual rent increases at 5% plus the local rate of inflation, with a hard ceiling of 10% in any 12-month period, and it gives tenants "just cause" eviction protection. The Act is scheduled to remain in effect until January 1, 2030.

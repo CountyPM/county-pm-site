@@ -30,6 +30,10 @@ annotations:
       applicants who are then rejected is exactly the practice the §1950.6
       actual-cost ceiling and itemized-receipt requirement are meant to curb.
     post: why-good-tenants-keep-getting-rejected
+related:
+  - can-a-landlord-charge-a-pet-deposit-or-pet-rent-for-an
+  - can-a-landlord-deny-an-emotional-support-animal
+  - is-a-3x-income-to-rent-ratio-a-legal-requirement-for-tenants
 ---
 
 California caps the tenant application screening fee at a statutory maximum that began at $30 in 1998 and is adjusted upward each year for inflation (the Consumer Price Index), and in no case may the fee exceed the landlord's actual out-of-pocket cost of screening plus the reasonable value of time spent obtaining the information. Because the cap is CPI-indexed, the current dollar figure is higher than $30 and changes annually, so check the present-year amount before setting your fee.

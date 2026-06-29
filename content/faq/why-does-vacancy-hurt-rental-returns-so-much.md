@@ -1,15 +1,19 @@
 ---
-question: "Why does vacancy hurt rental returns so much?"
-topic: "property-management-basics"
-topicTitle: "Property Management Basics"
-topicDescription: "Plain answers to the questions Ventura County owners ask before hiring a property manager."
-type: "subjective"
+question: Why does vacancy hurt rental returns so much?
+topic: property-management-basics
+topicTitle: Property Management Basics
+topicDescription: >-
+  Plain answers to the questions Ventura County owners ask before hiring a
+  property manager.
+type: subjective
 derivedFrom:
-  - "most-property-managers-work-for-themselves"
-created: "2026-06-25"
+  - most-property-managers-work-for-themselves
+created: '2026-06-25'
 order: 7
 sources: []
 annotations: []
+related:
+  - how-important-is-tenant-screening-to-a-rental-propertys
 ---
 
 Because vacancy is revenue you can never get back. Every day a unit sits empty is a day of rent that's gone for good, while the fixed costs — mortgage, taxes, insurance, upkeep — keep running. That combination makes vacancy the single biggest drag on net operating income, often outweighing the smaller savings owners chase elsewhere.

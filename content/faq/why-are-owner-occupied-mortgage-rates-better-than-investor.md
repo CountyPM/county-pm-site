@@ -1,19 +1,23 @@
 ---
-question: "Why are owner-occupied mortgage rates better than investor loan rates?"
-topic: "buying-and-investing"
-topicTitle: "Buying & Investing in Real Estate"
-topicDescription: "How Ventura County renters and owners think about buying, financing, and building a rental portfolio."
-type: "objective"
+question: Why are owner-occupied mortgage rates better than investor loan rates?
+topic: buying-and-investing
+topicTitle: Buying & Investing in Real Estate
+topicDescription: >-
+  How Ventura County renters and owners think about buying, financing, and
+  building a rental portfolio.
+type: objective
 derivedFrom:
-  - "the-decade-dividend"
-created: "2026-06-25"
+  - the-decade-dividend
+created: '2026-06-25'
 order: 2
 sources:
-  - label: "Fannie Mae Selling Guide, B2-1.1-01: Occupancy Types"
-    url: "https://selling-guide.fanniemae.com/sel/b2-1.1-01/occupancy-types"
-  - label: "U.S. HUD, How can FHA help me buy a home?"
-    url: "https://answers.hud.gov/FHA/s/article/How-can-FHA-help-me-buy-a-home"
+  - label: 'Fannie Mae Selling Guide, B2-1.1-01: Occupancy Types'
+    url: 'https://selling-guide.fanniemae.com/sel/b2-1.1-01/occupancy-types'
+  - label: 'U.S. HUD, How can FHA help me buy a home?'
+    url: 'https://answers.hud.gov/FHA/s/article/How-can-FHA-help-me-buy-a-home'
 annotations: []
+related:
+  - can-i-turn-my-home-into-a-rental-after-i-move-out
 ---
 
 Lenders price loans by risk, and a borrower who lives in the home is considered lower risk than one who doesn't. If money gets tight, people prioritize the mortgage on the roof over their own heads ahead of a loan on a property they merely own — so loans on principal residences default less often. Fannie Mae and the other backers of conventional loans reflect that directly through loan-level price adjustments tied to occupancy: investment-property loans carry extra pricing on top of an otherwise identical loan, which the borrower feels as a higher rate, more points, or both.
