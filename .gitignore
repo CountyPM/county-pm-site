@@ -32,8 +32,9 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
-# ...but the credential-less sample IS committed as documentation
+# ...but the credential-less samples ARE committed as documentation
 !.env.blog-inbox.sample
+!.env.images.sample
 
 # blog pipeline private sidecar (gemini prompts, source chat context) — never commit
 .blog-sidecar/
