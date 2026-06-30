@@ -65,9 +65,33 @@ try {
 
   $ok = 0; $bad = 0
   $state = if ($Publish) { 'published' } else { 'committed (not pushed)' }
+
+  # Track C: scratch dir for generated hero images (gitignored via .hero-tmp/).
+  $heroTmpDir = Join-Path $repo '.hero-tmp'
+  New-Item -ItemType Directory -Force -Path $heroTmpDir | Out-Null
+
   foreach ($f in $files) {
     Log "Converting $($f.Name)"
     $nodeArgs = @('scripts/post-blog.mjs', $f.FullName, '--sidecar-dir', $sidecar)
+
+    # Track C: generate a hero image from the contract's gemini_prompt (still in the
+    # contract at this point - post-blog.mjs strips it). Best-effort: if generation
+    # fails (no gemini_prompt, no API key, network, etc.) the post still publishes
+    # text-only. The hero must never block a post.
+    $heroTmp = Join-Path $heroTmpDir ($f.BaseName + '.webp')
+    if (Test-Path $heroTmp) { Remove-Item $heroTmp -Force -ErrorAction SilentlyContinue }
+    try {
+      node scripts/gen-hero.mjs --contract $f.FullName --out $heroTmp --brightness 1.3
+      if ($LASTEXITCODE -eq 0 -and (Test-Path $heroTmp)) {
+        $nodeArgs += @('--hero', $heroTmp)
+        Log "Hero generated: $($f.BaseName).webp"
+      } else {
+        Log "Hero gen skipped/failed for $($f.Name) (exit $LASTEXITCODE) - publishing text-only."
+      }
+    } catch {
+      Log "Hero gen error for $($f.Name): $_ - publishing text-only."
+    }
+
     if ($Publish) { $nodeArgs += '--publish' }
     node @nodeArgs
     if ($LASTEXITCODE -eq 0) {
@@ -79,6 +103,10 @@ try {
       Log "FAILED: $($f.Name) left in inbox for review."
       $bad++
     }
+
+    # post-blog.mjs already copied the hero into public/images/blog/<slug>.webp,
+    # so the scratch copy is no longer needed.
+    if (Test-Path $heroTmp) { Remove-Item $heroTmp -Force -ErrorAction SilentlyContinue }
   }
 
   Log "post-blog-inbox: done - $ok converted, $bad failed."
