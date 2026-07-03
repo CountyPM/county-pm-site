@@ -20,9 +20,12 @@
  *   node scripts/build-faq-corpus-index.mjs [options]
  *
  * Options:
- *   --sidecar-dir <path>  Where blog sidecars live (default ./.blog-sidecar;
- *                         point at the CPM-Blog-Processed Drive folder to harvest
- *                         the full feedstock). Missing dir is fine — feedstock = [].
+ *   --sidecar-dir <paths> Where blog sidecars live. Accepts a COMMA-SEPARATED list;
+ *                         feedstock is merged + deduped across dirs. Default
+ *                         ./.blog-sidecar. In practice point at .blog-processed
+ *                         (where post-blog.mjs / the Track D inbox runner write each
+ *                         emailed post's parsed faq[]) plus .faq-backfill (legacy
+ *                         seam). Missing dirs are skipped — feedstock just excludes them.
  *   --out <path>          Index output path (default scripts/faq-corpus-index.json).
  *   --quiet               Suppress the human summary.
  */
@@ -158,17 +161,43 @@ function readFeedstock(sidecarDir) {
 
 // ---------- main ----------
 const opts = parseArgs(process.argv.slice(2))
-const sidecarDir = path.resolve(REPO_ROOT, opts['sidecar-dir'] || '.blog-sidecar')
+// --sidecar-dir accepts a comma-separated LIST so one run can harvest both the
+// live new-post archive (.blog-processed — where post-blog.mjs / the Track D inbox
+// runner write each emailed post's parsed faq[]) and the legacy backfill seam
+// (.faq-backfill). Feedstock is merged and deduped by sourceSlug+question.
+const sidecarDirs = String(opts['sidecar-dir'] || '.blog-sidecar')
+  .split(',')
+  .map((d) => d.trim())
+  .filter(Boolean)
+  .map((d) => path.resolve(REPO_ROOT, d))
 const outPath = path.resolve(REPO_ROOT, opts.out || 'scripts/faq-corpus-index.json')
 
 const blog = readBlog()
 const faq = readFaq()
-const { feedstock, sidecarsRead, missing } = readFeedstock(sidecarDir)
+
+const feedstock = []
+const seenQA = new Set()
+let sidecarsRead = 0
+const missingDirs = []
+for (const dir of sidecarDirs) {
+  const r = readFeedstock(dir)
+  if (r.missing) {
+    missingDirs.push(dir)
+    continue
+  }
+  sidecarsRead += r.sidecarsRead
+  for (const qa of r.feedstock) {
+    const key = `${qa.sourceSlug}::${qa.q}`
+    if (seenQA.has(key)) continue
+    seenQA.add(key)
+    feedstock.push(qa)
+  }
+}
 
 const index = {
   version: INDEX_VERSION,
   generatedAt: new Date().toISOString(),
-  sidecarDir: path.relative(REPO_ROOT, sidecarDir),
+  sidecarDirs: sidecarDirs.map((d) => path.relative(REPO_ROOT, d)),
   counts: {
     blog: blog.length,
     faq: faq.length,
@@ -193,10 +222,12 @@ if (!opts.quiet) {
   console.log(`\nCPM FAQ corpus index → ${path.relative(REPO_ROOT, outPath)}`)
   console.log(`  blog posts     ${blog.length}`)
   console.log(`  FAQ entries    ${faq.length}`)
-  console.log(`  feedstock Q&A  ${feedstock.length} (from ${sidecarsRead} sidecar${sidecarsRead === 1 ? '' : 's'})`)
-  if (missing) {
-    console.log(`  note: sidecar dir not found (${path.relative(REPO_ROOT, sidecarDir)}) — feedstock is empty.`)
-    console.log(`        point --sidecar-dir at the CPM-Blog-Processed Drive folder to harvest Q&A.`)
+  console.log(`  feedstock Q&A  ${feedstock.length} (from ${sidecarsRead} sidecar${sidecarsRead === 1 ? '' : 's'} across ${sidecarDirs.length} dir${sidecarDirs.length === 1 ? '' : 's'}: ${sidecarDirs.map((d) => path.relative(REPO_ROOT, d)).join(', ')})`)
+  if (missingDirs.length) {
+    for (const d of missingDirs) console.log(`  note: sidecar dir not found (${path.relative(REPO_ROOT, d)}) — skipped.`)
+    if (missingDirs.length === sidecarDirs.length) {
+      console.log(`        point --sidecar-dir at .blog-processed (new posts) and/or the CPM-Blog-Processed Drive folder to harvest Q&A.`)
+    }
   }
   const needRewrite = faq.filter((e) => e.needsRewrite)
   if (needRewrite.length) {
