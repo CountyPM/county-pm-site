@@ -45,3 +45,50 @@ Below the line (real, but not the constraint — do after the above): wire `cros
 into `publish-faq.ps1`; repo hygiene via `.gitattributes` EOL normalization.
 
 **Principle reaffirmed.** Durable files are the record, not AI memory.
+
+---
+
+## 2026-07-03 (later) — Correction: the feedstock fix was already shipped; the real gap was unpublished 07/02 drafts
+
+**Correcting the entry above.** On starting priority item #1 ("commit the FAQ-feedstock
+fix"), verification against the repo showed that framing was stale on two counts:
+
+1. **The fix was already committed** as `88d58ab` (multi-dir `--sidecar-dir`, indexing
+   `.blog-processed` as new-post feedstock). Nothing to ship.
+2. **The uncommitted working-tree change to `scripts/build-faq-corpus-index.mjs` was
+   corruption, not a fix** — the file was truncated at line 214, missing
+   `fs.writeFileSync(...)` and the privacy-guard tail; it would not parse. Committing it
+   (as the entry above implied) would have broken the corpus-index build. It has been
+   discarded (`git restore`).
+
+**What the real residual was.** The shipped fix worked — it fed the 07/02 post into the
+pipeline and `draft-faq-entries.mjs` scaffolded 5 FAQ drafts. But those sat in the
+gitignored review queue (`content/faq-drafts/`), never authored into master answers or
+promoted, so the hub had received nothing from 07/02. That — not a code fix — was the open
+value leak.
+
+**Action taken (this session).** Authored 4 of the 5 drafts into live hub entries under the
+existing `property-management-basics` cluster (rather than spawning 4 new singleton topics,
+which fragments the hub and makes thin GEO pages), in CPM voice, GEO format (answer-first,
+standalone passages). Objective entries carry official citations (Cal. Civ. Code §2316,
+§2079.16, §1714; DRE agency/fiduciary references). Wired the blog spoke via `faq:[…]` in the
+post frontmatter. `validate:faq` passes 37/37.
+
+- `content/faq/can-a-property-manager-let-a-government-agency-use-my-rental.md` (objective)
+- `content/faq/is-a-property-manager-required-to-present-every-offer.md` (objective)
+- `content/faq/what-should-an-owner-ask-before-allowing-any-non-standard-use.md` (subjective)
+- `content/faq/whats-the-liability-risk-if-a-law-enforcement-operation-goes-wrong.md` (objective)
+
+**Held for a decision — draft #5, "Why compare a contractor sting to a HUD fair-housing
+test?"** Not promoted. It is a rhetorical artifact of the source post's argument, not a
+question anyone searches; as a standalone hub master answer it reads oddly out of context
+and adds little GEO value. Left in the draft queue pending the owner's call to add or drop.
+
+**Process note (feeds priority item #2).** This leak was invisible until inspected by hand —
+exactly the open-feedback-loop constraint recorded above. The pipeline drafted the entries
+but never surfaced that they stalled unpublished. A heartbeat/"N drafted, N still in queue"
+signal would have flagged it without a manual dig.
+
+**Next.** Owner to run `scripts/publish-faq.ps1` (or the daily job) to push the 4 entries
+live; decide add/drop on draft #5; then priority item #2 (post-publish inspection +
+heartbeat).
