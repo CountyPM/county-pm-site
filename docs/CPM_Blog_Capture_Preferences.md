@@ -97,7 +97,7 @@ Manual path (works anywhere):
 1. After `/blog`, tap the copy icon on the code block.
 2. Open Mail → new message → paste into the body → send to **cpmblog93012@gmail.com**.
    Send from an allowlisted address (see `CPM_ALLOWED_SENDERS` in `.env.blog-inbox`).
-3. The PC runner harvests it within ~15 min, converts, and (review-first) commits it.
+3. The PC runner harvests it within ~15 min, converts, and auto-publishes it to the live site (the scheduled task runs with `-Publish`; the sender allowlist is the gate).
 
 Near-one-tap path (recommended) — a one-time iOS Shortcut:
 - Shortcuts app → New Shortcut → add action **Get Clipboard** → add action **Send Email**.

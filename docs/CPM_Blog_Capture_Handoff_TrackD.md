@@ -1,5 +1,7 @@
 # CPM Blog Capture / Handoff — Track D (the FRONT of the blog pipeline)
 
+> **STATUS (2026-07-03): Track D is BUILT, CLOSED, and now AUTO-PUBLISH.** The full iPhone→live loop is proven, and multi-post fan-out + the full backlog migration are done. The "review-first by default / flip once proven" language below has been **superseded**: `scripts/setup-blog-task.bat` registers the scheduled task **with `-Publish`**, so harvested posts convert AND push to the live site automatically (~15 min). The **sender allowlist in `.env.blog-inbox` is the only gate** — there is no human review step. The review-first sections below are retained as the historical first-run procedure.
+
 Track D is the capture layer that feeds the already-built PC stage (`scripts/post-blog.mjs`).
 It closes the loop: **a bloggable chat on your iPhone → an email → a live post on c-p-m.com/blog.**
 
@@ -23,7 +25,7 @@ It closes the loop: **a bloggable chat on your iPhone → an email → a live po
 
 - **Bridge = email** (dedicated Gmail `cpmblog93012@gmail.com`, harvested over IMAP).
 - **Trigger = `/blog`** plus an ambient "offer to package" backstop.
-- **Publish gate = review-first** for the first runs; flip to `-Publish` once proven.
+- **Publish gate = review-first** for the first runs; flip to `-Publish` once proven. **(Update: the flip happened — the registered task now runs with `-Publish`, i.e. auto-publish. The sender allowlist is the safety gate.)**
 
 ## Security model
 
@@ -34,7 +36,7 @@ It closes the loop: **a bloggable chat on your iPhone → an email → a live po
   Inbox/archive folders (`/incoming/`, `/.blog-processed/`) hold raw contracts with private
   fields (`source_chat_context`, `gemini_prompt`) and are gitignored. `post-blog.mjs`'s privacy
   guard hard-fails if those fields ever reach published frontmatter.
-- **Human gate.** Going live stays behind `--publish` / `-Publish`.
+- **Publish gate.** The scheduled runner now passes `-Publish` (auto-publish); the **sender allowlist is the operative gate**, not a human review step. Running `post-blog-inbox.ps1` by hand without `-Publish` still yields the review-first behavior (commit, no push) if you want it.
 
 ## One-time PC setup
 

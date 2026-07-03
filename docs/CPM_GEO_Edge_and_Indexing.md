@@ -1,5 +1,7 @@
 # CPM GEO — Edge Reality, Deploy & Indexing
 
+> **STATUS (2026-07-03): the deploy/indexing to-dos in §3–§5 are DONE.** The `robots.ts`/`sitemap.ts` changes are deployed and serving; the sitemap was submitted to Google Search Console (DNS-verified domain property) and Bing (imported from GSC); and the `/rent-vs-sell` redirect is live in `next.config.ts`. The sitemap is now **~61 URLs** (26 static + 27 blog + 8 FAQ topic pages), not the ~39 quoted below. The **edge-reality facts in §1–§2 remain accurate** and match `app/robots.ts`. Read §3–§5 as the historical checklist that has since been completed.
+
 **Purpose:** Replace the earlier `CPM_Cloudflare_GEO_Handoff.md`, which was written on a false premise (it assumed Cloudflare sat in front of the site — it does not). This doc records the verified edge reality and the steps that actually drive AI/search visibility from here. Focus has shifted from "unblock the edge" to "deploy + get indexed."
 
 **Companions:** `CPM_FAQ_Hub_Framing.md`, `CPM_Blog_Pipeline_Handoff.md` §3.5 (GEO strategy).
