@@ -189,3 +189,35 @@ not the file — verify with the file API / on Windows before "fixing" it.
 
 **Next (item #3, unchanged):** GEO effectiveness readout (indexation coverage + periodic
 AI-citation spot checks) — the OUTCOME end.
+
+---
+
+## 2026-07-03 (close of session) — Item #2 shipped, live, and in version control
+
+**What was decided.** Build item #2 as two halves and settle its open channel question first:
+the pipeline's signal surfaces as an **email to the blog inbox** (`cpmblog93012@gmail.com`,
+reusing the Track-D Gmail path), and the live-URL inspection runs on the **Windows runners**, not
+the sandbox. Heartbeat cadence: the blog runner signals only when a post actually publishes; the
+daily FAQ publish job signals on a real publish and, on no-op days, only when there's a problem
+(`--only-problems`) — so healthy quiet stays silent while a stalled draft queue still surfaces.
+
+**Why.** The binding constraint was that the pipeline auto-publishes but couldn't see its own
+output — the 07/02 FAQ leak shipped live and stayed invisible until a manual dig. Email is the
+surface the owner already watches, so a signal there can't be missed; the Windows host is the only
+place with network + git, matching the standing sandbox limits. The `--only-problems` no-op rule
+keeps the channel from becoming noise the owner learns to ignore.
+
+**Outcome (durable facts).** Committed + pushed as **f63cef2** (7 files; `inspect-live-posts.mjs`
+at 323 lines — the full file is in git, confirming the sandbox mount-cache truncation seen during
+the build was only the shell's view, not the real file). SMTP send **proven live**: a manual
+heartbeat landed the `[CPM blog ⚠]` email in the inbox, the ⚠ correctly raised by the 84-drafts-vs-
+37-live stall crossing the threshold. Still un-exercised by nature: the live-URL inspection fetch,
+which runs on the first real publish.
+
+**What is next.** Item #3 — the GEO effectiveness readout (indexation coverage + periodic
+AI-citation spot checks), the OUTCOME end of the loop. Also still open below the line: drain/triage
+the 84-draft FAQ queue (the ⚠ will fire daily until it's under threshold); wire `crosslink:faq`
+into `publish-faq.ps1`.
+
+**Principle reaffirmed.** Durable files are the record, not AI memory. This entry — not session
+recall — is what the next session should trust for where item #2 landed.
