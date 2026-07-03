@@ -68,3 +68,6 @@ content/faq-crosslink/
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# item #2: post-publish inspection report (runtime artifact for the heartbeat) — never commit
+inspect-report.json

@@ -28,6 +28,11 @@ Set-Location $repo
 $log = Join-Path $repo 'blog-publish.log'
 function Log($m) { "$(Get-Date -Format o)  $m" | Tee-Object -FilePath $log -Append }
 
+# Item #2: capture the pre-run commit so the post-publish inspection only checks
+# what THIS run pushed (range $startSha..HEAD). post-blog.mjs commits per post.
+$startSha = (git rev-parse HEAD 2>$null)
+if ($startSha) { $startSha = $startSha.Trim() }
+
 $inbox     = Join-Path $repo 'incoming'
 $processed = Join-Path $repo '.blog-processed'
 $sidecar   = $processed   # private fields archive lives with the processed contracts
@@ -110,9 +115,34 @@ try {
   }
 
   Log "post-blog-inbox: done - $ok converted, $bad failed."
+
+  # ---- Item #2: OUTPUT-END inspection + heartbeat -------------------------
+  # Only meaningful when we actually pushed (Publish) AND shipped something this
+  # run. Nothing to inspect on a commit-only or empty run. A heartbeat here would
+  # be pure noise every 30-min tick, so it fires only when a post went live.
+  if ($Publish -and $ok -gt 0 -and $startSha) {
+    Log "Inspecting $ok freshly-published post(s) live (range $startSha..HEAD)..."
+    try {
+      node scripts/inspect-live-posts.mjs --since $startSha
+      $inspectExit = $LASTEXITCODE
+      if ($inspectExit -ne 0) { Log "INSPECTION found problems (exit $inspectExit) - see inspect-report.json / heartbeat email." }
+      else { Log "Inspection: all published posts verified live." }
+    } catch {
+      Log "Inspection error: $_"
+    }
+    try {
+      node scripts/send-heartbeat.mjs --context blog --published $ok --failed $bad --state published
+    } catch {
+      Log "Heartbeat send error: $_ (non-fatal)"
+    }
+  }
+  # -------------------------------------------------------------------------
+
   if ($bad -gt 0) { exit 1 }
 }
 catch {
   Log "ERROR: $_"
+  # Best-effort failure heartbeat so a crashing runner isn't silent.
+  try { node scripts/send-heartbeat.mjs --context blog --failed 1 --state error } catch {}
   exit 1
 }

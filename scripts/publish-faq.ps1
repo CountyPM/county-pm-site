@@ -22,6 +22,11 @@ Set-Location $repo
 $log = Join-Path $repo 'faq-publish.log'
 function Log($m) { "$(Get-Date -Format o)  $m" | Tee-Object -FilePath $log -Append }
 
+# Item #2: pre-run commit, so the post-publish inspection scopes to what THIS
+# run pushed (range $startSha..HEAD).
+$startSha = (git rev-parse HEAD 2>$null)
+if ($startSha) { $startSha = $startSha.Trim() }
+
 try {
   Log 'publish-faq: start'
 
@@ -32,7 +37,11 @@ try {
   # 2. Validate FAQ content — pure-JS gate; abort if any entry is invalid
   #    (e.g. an objective entry missing its citation).
   npm run validate:faq
-  if ($LASTEXITCODE -ne 0) { Log 'Validation FAILED — nothing published.'; exit 1 }
+  if ($LASTEXITCODE -ne 0) {
+    Log 'Validation FAILED — nothing published.'
+    try { node scripts/send-heartbeat.mjs --context faq --failed 1 --state 'validation-failed' } catch {}
+    exit 1
+  }
 
   # 3. Optional full production build (SWC works on Windows). Off by default;
   #    Vercel runs the real build on push.
@@ -44,15 +53,36 @@ try {
   # 4. Stage ONLY FAQ content + the source registry.
   git add content/faq scripts/faq-source-registry.json
   $changes = git status --porcelain content/faq scripts/faq-source-registry.json
-  if (-not $changes) { Log 'No FAQ changes to publish.'; exit 0 }
+  if (-not $changes) {
+    Log 'No FAQ changes to publish.'
+    # Item #2 INPUT-END signal: quiet days stay silent, but if the draft queue
+    # has stalled (the 07/02 shape: entries drafted but never promoted to the
+    # hub), --only-problems still fires so it doesn't hide behind a no-op.
+    try { node scripts/send-heartbeat.mjs --context faq --state 'no-op' --only-problems } catch {}
+    exit 0
+  }
 
   # 5. Commit + push (Vercel deploys on push to main).
   git commit -m "FAQ hub: automated publish $(Get-Date -Format 'yyyy-MM-dd')"
   git push origin HEAD:main
   Log 'Published: pushed FAQ updates to origin/main (Vercel will deploy).'
+
+  # ---- Item #2: OUTPUT-END inspection + heartbeat -------------------------
+  if ($startSha) {
+    Log "Inspecting freshly-published FAQ page(s) live (range $startSha..HEAD)..."
+    try {
+      node scripts/inspect-live-posts.mjs --since $startSha
+      if ($LASTEXITCODE -ne 0) { Log 'INSPECTION found problems - see inspect-report.json / heartbeat email.' }
+      else { Log 'Inspection: all published FAQ entries verified live.' }
+    } catch { Log "Inspection error: $_" }
+  }
+  try { node scripts/send-heartbeat.mjs --context faq --state 'published' } catch { Log "Heartbeat send error: $_ (non-fatal)" }
+  # -------------------------------------------------------------------------
+
   Log 'publish-faq: done'
 }
 catch {
   Log "ERROR: $_"
+  try { node scripts/send-heartbeat.mjs --context faq --failed 1 --state error } catch {}
   exit 1
 }
