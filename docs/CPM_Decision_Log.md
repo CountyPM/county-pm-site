@@ -92,3 +92,46 @@ signal would have flagged it without a manual dig.
 **Next.** Owner to run `scripts/publish-faq.ps1` (or the daily job) to push the 4 entries
 live; decide add/drop on draft #5; then priority item #2 (post-publish inspection +
 heartbeat).
+
+**Update (same day).** The 4 entries were committed (`f380c1d`) and pushed; the deploy was
+verified live on the topic page (answers + citations rendering) and the blog spoke ("Related
+questions" block on the 07/02 post). The 07/02 leak is fully closed. Draft #5 remains held.
+
+---
+
+## 2026-07-03 — Kickoff scope for priority item #2 (post-publish inspection + heartbeat)
+
+**Why this is next.** It is the fix for the binding constraint recorded above: the pipeline
+auto-publishes but cannot see its own output. The 07/02 FAQ leak was caught by a manual dig,
+not by the system. Item #2 gives the pipeline eyes at both ends so the next silent defect is
+surfaced automatically. To be built in a fresh session, scoped from this entry (durable files
+are the record, not session memory).
+
+**Two pieces:**
+
+1. **Post-publish inspection (output-end check).** After a post/FAQ ships and Vercel
+   deploys, fetch the live URL(s) and assert the content actually rendered — not just that
+   git succeeded. Minimum viable checks per new blog post: HTTP 200; `<title>` present and
+   matches; hero image resolves (not 404); and, when the post declares `faq:`, the "Related
+   questions" spoke block is present. For FAQ: the new entry renders on its topic page and
+   (if objective) its Sources block is present. Note the CDN caching lesson from today —
+   plain URLs served stale edge-cached HTML for a few minutes post-deploy; the check must
+   cache-bust (query string) or tolerate/retry the propagation window so it doesn't
+   false-alarm on a good deploy.
+
+2. **Heartbeat / failure signal (input-end check).** The weekly authoring task and daily
+   publish job currently no-op silently. Emit a dated signal every run: e.g. "authoring ran:
+   N drafted, N still in `content/faq-drafts/` unpublished, N errors" and "publish ran:
+   committed / no-op / failed." A stalled or empty week, or drafts stuck in the queue (the
+   exact 07/02 failure mode), should be visible without a manual dig.
+
+**Open design question (decide first in the new session):** where the signal surfaces so the
+owner actually sees it. Options: a status line the runner writes to a known file + a
+lightweight Cowork artifact that reads it; an email to the allowlisted address (reusing the
+blog-inbox Gmail path); or a scheduled Cowork task that reads the log and messages a summary.
+Pick the channel before building, because a heartbeat nobody looks at is no heartbeat.
+
+**Constraints to respect (from earlier entries):** the scheduled Linux sandbox can't
+`next build`, reach the network for source checks, or `git push` — so the live-fetch
+inspection likely belongs to the Windows side (or a Cowork task), not the sandbox authoring
+task. Keep host-git actions in the gitignored `scripts/_*.bat` pattern already in use.
