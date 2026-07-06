@@ -27,6 +27,17 @@ annotations:
       5%-plus-CPI / 10% limit. (Original AB 1482 disclosures to existing tenants
       were due July 1, 2020; the per-tenant requirement is ongoing.)
     post: emergent-market-trend-statewide-california-rent-control
+  - date: '2026-07-06'
+    type: additive
+    note: >-
+      A 2026 insurance-cost case makes the ceiling concrete: even when a premium
+      jumps 35%, an AB 1482-covered increase is still limited to the lower of 5%
+      plus regional CPI or 10% in a 12-month window, so a cost shock is absorbed
+      over several cycles, not recovered at once. Two mechanics can invalidate
+      an increase if missed — any raise over 10% needs 60 days' written notice
+      (30 days at 10% or under), and rent can be raised only once per 12 months,
+      measured from the date of the last increase, not the calendar year.
+    post: your-insurance-just-jumped-35-can-you-pass-it-to-the-tenant
 related:
   - california-statewide-rent-control
 ---

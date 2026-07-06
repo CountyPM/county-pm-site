@@ -31,6 +31,16 @@ annotations:
       profile — payment history, employment, references — rather than screening
       them out reflexively.
     post: why-good-tenants-keep-getting-rejected
+  - date: '2026-07-06'
+    type: additive
+    note: >-
+      A 2026 field case is a reminder that an ESA request is a fair-housing
+      matter, not a negotiation: under the federal Fair Housing Act and
+      California's FEHA, a documented emotional support animal is a reasonable
+      accommodation for a disability. Reacting to a tenant's reasonable
+      questions about an improper pet charge by threatening to cancel the lease
+      can turn a small dispute into fair-housing exposure.
+    post: the-600-question-when-a-reasonable-tenant-asks-the-wrong-thing
 related:
   - can-a-landlord-charge-a-pet-deposit-or-pet-rent-for-an
   - tenant-application-screening-fee-california

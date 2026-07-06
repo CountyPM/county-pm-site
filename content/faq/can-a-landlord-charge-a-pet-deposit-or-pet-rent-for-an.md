@@ -29,6 +29,18 @@ annotations:
       actual damage. Takeaway: keep the ESA accommodation and the money
       questions separate from your ordinary pet policy.
     post: why-good-tenants-keep-getting-rejected
+  - date: '2026-07-06'
+    type: additive
+    note: >-
+      A 2026 field case reinforced the rule and added a deposit-cap wrinkle: a
+      documented emotional support animal is an assistance animal, not a pet, so
+      a housing provider generally cannot charge a pet deposit, pet rent, or pet
+      fee for it. The old workaround of rolling a pet deposit into the security
+      deposit no longer works either — since July 1, 2024, most security
+      deposits are capped at one month's rent (a narrow small-landlord exception
+      allows two), so there is often no legal room left to tuck an extra charge
+      inside.
+    post: the-600-question-when-a-reasonable-tenant-asks-the-wrong-thing
 related:
   - can-a-landlord-deny-an-emotional-support-animal
   - tenant-application-screening-fee-california
