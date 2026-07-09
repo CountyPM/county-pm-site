@@ -74,6 +74,11 @@ Rules:
 - Keep `type`, `campaign_id`, `slug`, `publish_date`, `status` EXACTLY as shown
   (the PC stage fills slug/date and classifies). `status: ready` is required.
 - `decision_intent` and `tags` use ONLY the values listed — invent none.
+- YAML-safe values: `title`, `subtitle`, `byline`, `source_chat_context`, and
+  `gemini_prompt` are double-quoted YAML. Escape any straight double quote inside the
+  text as `\"` — e.g. `title: "Why \"No Pets\" Isn't Really About Pets"`. A bare `"`
+  inside a `"..."` value is invalid YAML (the PC stage now auto-repairs it, but emit it
+  right). A colon is safe as long as the value stays wrapped in quotes.
 - Include the `---FAQ---` block only when `faq_included: true`; 3–6 strong Q&As,
   each answer leading with the direct answer.
 - Put any private/client/deal specifics in `source_chat_context` only — never in the
