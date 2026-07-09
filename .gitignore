@@ -82,3 +82,13 @@ incoming/from-free-chats/
 # lives in docs/CPM_GEO_Readout.md, which IS committed). These are per-run scratch.
 geo-index-report.json
 geo-citation-report.json
+
+# cleanup 2026-07-09: classes that slipped into b515519 via a git add -A — never commit
+*.bundle
+/_*
+.mountwritetest
+faq-*.log
+faq-validate-report.json
+scripts/faq-draft-report.json
+# blog-reconcile packets: local review-queue state (same class as content/faq-reconcile)
+content/blog-reconcile/
