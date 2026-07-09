@@ -113,6 +113,15 @@ const outDir = path.resolve(REPO_ROOT, opts['out-dir'] || 'content/faq-drafts')
 const dupeThreshold = opts.dupe != null ? Number(opts.dupe) : 0.5
 const today = new Date().toISOString().slice(0, 10)
 
+// Live hub slugs — a draft whose slug already exists in content/faq/ has already
+// been authored+promoted; re-scaffolding it just re-inflates the queue (the
+// 2026-07-09 stall: 57 of 106 queued drafts were already-published dupes). Skip
+// by slug in addition to the question-similarity dedupe below.
+const faqDir = path.resolve(REPO_ROOT, 'content/faq')
+const liveSlugs = new Set(
+  fs.existsSync(faqDir) ? fs.readdirSync(faqDir).filter((f) => f.endsWith('.md')).map((f) => f.slice(0, -3)) : []
+)
+
 if (!fs.existsSync(indexPath))
   fail(`Corpus index not found at ${path.relative(REPO_ROOT, indexPath)}. Run: node scripts/build-faq-corpus-index.mjs`)
 
@@ -271,9 +280,16 @@ for (const cand of merged) {
 // 3) Emit draft work packets.
 let written = 0
 let skipped = 0
+let publishedSkipped = 0
 if (!opts['dry-run'] && drafts.length) fs.mkdirSync(outDir, { recursive: true })
 
 for (const d of drafts) {
+  // Already authored + promoted to the live hub — don't re-scaffold it.
+  if (liveSlugs.has(d.slug)) {
+    d.status = 'already-published-skipped'
+    publishedSkipped++
+    continue
+  }
   const filePath = path.join(outDir, `${d.slug}.md`)
   if (fs.existsSync(filePath) && !opts.force) {
     d.status = 'exists-skipped'
@@ -358,6 +374,7 @@ const report = {
   uniqueQuestions: merged.length,
   newDrafts: drafts.filter((d) => d.status === 'written' || d.status === 'dry-run').length,
   skippedExisting: skipped,
+  alreadyPublishedSkipped: publishedSkipped,
   reconciliationCandidates,
   drafts: drafts.map((d) => ({
     slug: d.slug,
@@ -382,6 +399,7 @@ if (!opts.quiet) {
   console.log(`  → new drafts         ${report.newDrafts}${opts['dry-run'] ? ' (dry-run, not written)' : ''}`)
   console.log(`  → already answered   ${reconciliationCandidates.length} (reconciliation candidates)`)
   if (skipped) console.log(`  → existing, skipped  ${skipped} (use --force to overwrite)`)
+  if (publishedSkipped) console.log(`  → already published  ${publishedSkipped} (slug already live in content/faq — not re-drafted)`)
   if (report.newDrafts) {
     console.log(`\n  Drafts (${opts['dry-run'] ? 'would write to' : 'written to'} ${path.relative(REPO_ROOT, outDir)}):`)
     for (const d of drafts.filter((x) => x.status === 'written' || x.status === 'dry-run')) {

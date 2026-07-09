@@ -75,6 +75,20 @@ function tokens(s) {
     .split(' ')
     .filter((w) => w.length >= 4)
 }
+// Live HTML encodes `&` in an href as `&amp;`, and registry source URLs sometimes
+// carry a trailing period; tolerate both so a correctly-rendered Sources block is
+// never false-failed on an encoding difference.
+export function htmlContainsUrl(html, url) {
+  if (!url) return false
+  const variants = new Set([
+    url,
+    url.replace(/&/g, '&amp;'),
+    url.replace(/\.+$/, ''),
+    url.replace(/&/g, '&amp;').replace(/\.+$/, ''),
+  ])
+  return [...variants].some((v) => v && html.includes(v))
+}
+
 // Does normalized HTML contain a strong majority of a phrase's significant words?
 export function hasPhrase(html, phrase, threshold = 0.7) {
   const toks = tokens(phrase)
@@ -189,7 +203,7 @@ export function evalHtml(t, status, html, heroStatus = null) {
     add('anchor-rendered', new RegExp(`id=["']${t.slug}["']`).test(html), `#${t.slug}`)
     add('question-rendered', hasPhrase(html, t.question), 'question tokens present')
     if (t.firstSourceUrl) {
-      add('sources-rendered', html.includes(t.firstSourceUrl), 'first source url present')
+      add('sources-rendered', htmlContainsUrl(html, t.firstSourceUrl), 'first source url present')
     }
   }
 
@@ -213,7 +227,10 @@ async function evalTarget(t) {
 async function main() {
   const opts = parseArgs(process.argv.slice(2))
   const base = (opts.base || process.env.CPM_SITE_BASE || DEFAULT_BASE).replace(/\/$/, '')
-  const attempts = Number.isFinite(opts.attempts) ? opts.attempts : 8
+  // Propagation window. A large multi-page deploy (e.g. the 2026-07-09 batch of 49
+  // FAQ pages) can take longer than the old 8x20s=2.7min to reach every Vercel edge;
+  // that raised false ⚠ heartbeats on pages that were in fact correct. 15x20s=5min.
+  const attempts = Number.isFinite(opts.attempts) ? opts.attempts : 15
   const intervalMs = Number.isFinite(opts.intervalMs) ? opts.intervalMs : 20000
 
   let blogSlugs = [...opts.slugs]
@@ -310,7 +327,7 @@ async function main() {
   return report.ok ? 0 : 1
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   main()
     .then((code) => process.exit(code))
     .catch((e) => {

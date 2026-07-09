@@ -1,113 +1,636 @@
 {
   "version": 1,
-  "verifiedOn": "2026-06-25",
-  "note": "Primary-source citations for recurring objective FAQ topics. The write pipeline attaches these automatically to matching objective entries; the agent does fresh web research for any objective claim not covered here. Track B (scripts/check-faq-sources.mjs) keeps these URLs alive. CURRENCY-CHECKED 2026-06-25 — see currencyNote fields. SLICE 3: each entry also carries `entities[]` — the authoritative orgs/statutes this topic is about, as schema.org-typed nodes with canonical `sameAs` URLs. lib/faq-entities.ts matches these to FAQ entries; structured-data.ts emits them as JSON-LD `about` so answer engines resolve each passage to its governing law/agency.",
+  "verifiedOn": "2026-07-09",
+  "note": "Primary-source citations for recurring objective FAQ topics. The write pipeline attaches these automatically to matching objective entries; the agent does fresh web research for any objective claim not covered here. Track B (scripts/check-faq-sources.mjs) keeps these URLs alive. CURRENCY-CHECKED 2026-06-25 — see currencyNote fields. SLICE 3: each entry also carries `entities[]` — the authoritative orgs/statutes this topic is about, as schema.org-typed nodes with canonical `sameAs` URLs. lib/faq-entities.ts matches these to FAQ entries; structured-data.ts emits them as JSON-LD `about` so answer engines resolve each passage to its governing law/agency. | 2026-07-09: added AB 2801, §1950.5 deposits, AB 628 refrigerator, §1941.1 habitability, AB 325/RealPage pricing, SB 610 disaster, Costa-Hawkins, SOAR, agency/fiduciary, lease-survives-sale, IRS passive-loss/step-up, FHA down payment, insurance loss-of-use/Prop 103, owner-vs-investor rates.",
   "entities": [
     {
       "id": "irs",
       "name": "Internal Revenue Service",
       "type": "GovernmentOrganization",
-      "sameAs": ["https://www.irs.gov", "https://en.wikipedia.org/wiki/Internal_Revenue_Service"]
+      "sameAs": [
+        "https://www.irs.gov",
+        "https://en.wikipedia.org/wiki/Internal_Revenue_Service"
+      ]
     },
     {
       "id": "hud",
       "name": "U.S. Department of Housing and Urban Development",
       "type": "GovernmentOrganization",
-      "sameAs": ["https://www.hud.gov", "https://en.wikipedia.org/wiki/United_States_Department_of_Housing_and_Urban_Development"]
+      "sameAs": [
+        "https://www.hud.gov",
+        "https://en.wikipedia.org/wiki/United_States_Department_of_Housing_and_Urban_Development"
+      ]
     },
     {
       "id": "ca-crd",
       "name": "California Civil Rights Department",
       "type": "GovernmentOrganization",
-      "sameAs": ["https://calcivilrights.ca.gov", "https://en.wikipedia.org/wiki/California_Civil_Rights_Department"]
+      "sameAs": [
+        "https://calcivilrights.ca.gov",
+        "https://en.wikipedia.org/wiki/California_Civil_Rights_Department"
+      ]
     },
     {
       "id": "ca-courts",
       "name": "Judicial Council of California (California Courts)",
       "type": "GovernmentOrganization",
-      "sameAs": ["https://www.courts.ca.gov", "https://selfhelp.courts.ca.gov/eviction-landlord"]
+      "sameAs": [
+        "https://www.courts.ca.gov",
+        "https://selfhelp.courts.ca.gov/eviction-landlord"
+      ]
     }
   ],
   "entries": [
     {
       "id": "ca-rent-cap",
-      "match": ["rent control", "rent cap", "raise rent", "raise the rent", "increase the rent", "rent increase", "how much can a landlord", "ab 1482", "ab1482", "tenant protection act"],
+      "match": [
+        "rent control",
+        "rent cap",
+        "raise rent",
+        "raise the rent",
+        "increase the rent",
+        "rent increase",
+        "how much can a landlord",
+        "ab 1482",
+        "ab1482",
+        "tenant protection act"
+      ],
       "facts": "AB 1482 caps annual rent increases for covered units at 5% plus regional CPI, or 10%, whichever is LOWER, over any 12-month period. Adds just-cause eviction protection. Remains in effect until January 1, 2030.",
       "currencyNote": "Verified current 2026-06-25 against Civ. Code 1947.12. Single-family/condo and <15-year-old housing exemptions still apply with proper notice.",
       "entities": [
-        { "name": "California Tenant Protection Act of 2019 (AB 1482), Cal. Civ. Code §1947.12", "type": "Legislation", "sameAs": ["https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1947.12."] },
-        { "name": "Just-cause eviction provisions, Cal. Civ. Code §1946.2", "type": "Legislation", "sameAs": ["https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1946.2."] }
+        {
+          "name": "California Tenant Protection Act of 2019 (AB 1482), Cal. Civ. Code §1947.12",
+          "type": "Legislation",
+          "sameAs": [
+            "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1947.12."
+          ]
+        },
+        {
+          "name": "Just-cause eviction provisions, Cal. Civ. Code §1946.2",
+          "type": "Legislation",
+          "sameAs": [
+            "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1946.2."
+          ]
+        }
       ],
       "sources": [
-        { "label": "Tenant Protection Act of 2019 (AB 1482), Cal. Civ. Code §1947.12", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1947.12." },
-        { "label": "Just cause eviction provisions, Cal. Civ. Code §1946.2", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1946.2." }
+        {
+          "label": "Tenant Protection Act of 2019 (AB 1482), Cal. Civ. Code §1947.12",
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1947.12."
+        },
+        {
+          "label": "Just cause eviction provisions, Cal. Civ. Code §1946.2",
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1946.2."
+        }
       ]
     },
     {
       "id": "ca-eviction-notice",
-      "match": ["evict", "eviction", "3-day notice", "three-day notice", "pay or quit", "unlawful detainer"],
+      "match": [
+        "evict",
+        "eviction",
+        "3-day notice",
+        "three-day notice",
+        "pay or quit",
+        "unlawful detainer"
+      ],
       "facts": "A nonpayment eviction begins with a 3-day Notice to Pay Rent or Quit (at least 3 days, excluding weekends and judicial holidays). If unpaid after it expires, the landlord may file an Unlawful Detainer action; the tenant cannot be removed without a court judgment and sheriff lockout.",
       "currencyNote": "Verified current 2026-06-25. SB 436 (2025-26), which would have extended the notice to 14 days, FAILED passage in committee, so the 3-day period remains current law. Re-check if reintroduced.",
       "entities": [
-        { "name": "Unlawful detainer; 3-day notice, Cal. Code of Civil Procedure §1161", "type": "Legislation", "sameAs": ["https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=1161."] },
-        { "entityRef": "ca-courts" }
+        {
+          "name": "Unlawful detainer; 3-day notice, Cal. Code of Civil Procedure §1161",
+          "type": "Legislation",
+          "sameAs": [
+            "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=1161."
+          ]
+        },
+        {
+          "entityRef": "ca-courts"
+        }
       ],
       "sources": [
-        { "label": "Cal. Code of Civil Procedure §1161 (unlawful detainer; 3-day notice)", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=1161." },
-        { "label": "California Courts self-help: Eviction (unlawful detainer)", "url": "https://selfhelp.courts.ca.gov/eviction-landlord" }
+        {
+          "label": "Cal. Code of Civil Procedure §1161 (unlawful detainer; 3-day notice)",
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=1161."
+        },
+        {
+          "label": "California Courts self-help: Eviction (unlawful detainer)",
+          "url": "https://selfhelp.courts.ca.gov/eviction-landlord"
+        }
       ]
     },
     {
       "id": "esa-fair-housing",
-      "match": ["emotional support animal", "esa", "assistance animal", "service animal", "fair housing", "reasonable accommodation", "pet deposit", "no-pet"],
+      "match": [
+        "emotional support animal",
+        "esa",
+        "assistance animal",
+        "service animal",
+        "fair housing",
+        "reasonable accommodation",
+        "pet deposit",
+        "no-pet"
+      ],
       "facts": "Emotional support animals are assistance animals under the federal Fair Housing Act and California FEHA, not pets. Housing providers must grant a reasonable accommodation regardless of a no-pet policy, and may NOT charge a pet deposit or pet rent for an assistance animal. Accommodation can be denied only if the specific animal is a direct threat or would cause substantial property damage. Online 'ESA certificates' alone are not sufficient documentation.",
       "currencyNote": "Verified current 2026-06-25 against CA CRD ESA FAQ and HUD assistance-animal guidance.",
       "entities": [
-        { "entityRef": "ca-crd" },
-        { "entityRef": "hud" }
+        {
+          "entityRef": "ca-crd"
+        },
+        {
+          "entityRef": "hud"
+        }
       ],
       "sources": [
-        { "label": "CA Civil Rights Dept., Emotional Support Animals and Fair Housing Law (FAQ)", "url": "https://calcivilrights.ca.gov/wp-content/uploads/sites/32/2022/12/Emotional-Support-Animals-and-Fair-Housing-Law-FAQ_ENG.pdf" },
-        { "label": "U.S. HUD, Assistance Animals (Fair Housing)", "url": "https://www.hud.gov/program_offices/fair_housing_equal_opp/assistance_animals" }
+        {
+          "label": "CA Civil Rights Dept., Emotional Support Animals and Fair Housing Law (FAQ)",
+          "url": "https://calcivilrights.ca.gov/wp-content/uploads/sites/32/2022/12/Emotional-Support-Animals-and-Fair-Housing-Law-FAQ_ENG.pdf"
+        },
+        {
+          "label": "U.S. HUD, Assistance Animals (Fair Housing)",
+          "url": "https://www.hud.gov/program_offices/fair_housing_equal_opp/assistance_animals"
+        }
       ]
     },
     {
       "id": "ca-screening-fee",
-      "match": ["application fee", "screening fee", "application screening", "credit check fee"],
+      "match": [
+        "application fee",
+        "screening fee",
+        "application screening",
+        "credit check fee"
+      ],
       "facts": "California caps the tenant application screening fee at a statutory maximum that began at $30 (1998) and is adjusted annually by the Consumer Price Index, and the fee may not exceed the landlord's actual out-of-pocket screening costs plus reasonable time. The landlord must provide a receipt itemizing the out-of-pocket expenses.",
       "currencyNote": "Verified current 2026-06-25 against Civ. Code 1950.6. The 'actual out-of-pocket cost only' rule is PROPOSED in SB 381 (2025-26), NOT yet law — do not state it as current. Re-check the CPI-adjusted dollar cap annually.",
       "entities": [
-        { "name": "Application screening fee, Cal. Civ. Code §1950.6", "type": "Legislation", "sameAs": ["https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.6."] }
+        {
+          "name": "Application screening fee, Cal. Civ. Code §1950.6",
+          "type": "Legislation",
+          "sameAs": [
+            "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.6."
+          ]
+        }
       ],
       "sources": [
-        { "label": "Cal. Civ. Code §1950.6 (application screening fee)", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.6." }
+        {
+          "label": "Cal. Civ. Code §1950.6 (application screening fee)",
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.6."
+        }
       ]
     },
     {
       "id": "irs-section-121",
-      "match": ["capital gains", "capital gains tax", "primary residence exclusion", "section 121", "exclusion of gain", "sell my home"],
+      "match": [
+        "capital gains",
+        "capital gains tax",
+        "primary residence exclusion",
+        "section 121",
+        "exclusion of gain",
+        "sell my home"
+      ],
       "facts": "IRC §121 lets you exclude up to $250,000 of gain ($500,000 married filing jointly) on the sale of a main home if you owned AND used it as your main home for at least 2 of the 5 years before the sale. Gain attributable to depreciation taken while it was a rental is NOT excludable (depreciation recapture). You generally can't use the exclusion twice within 2 years.",
       "currencyNote": "Verified current 2026-06-25 against IRS Topic 701 / Pub. 523 (2025).",
       "entities": [
-        { "name": "Exclusion of gain from sale of a principal residence, 26 U.S.C. §121", "type": "Legislation", "sameAs": ["https://www.irs.gov/taxtopics/tc701"] },
-        { "entityRef": "irs" }
+        {
+          "name": "Exclusion of gain from sale of a principal residence, 26 U.S.C. §121",
+          "type": "Legislation",
+          "sameAs": [
+            "https://www.irs.gov/taxtopics/tc701"
+          ]
+        },
+        {
+          "entityRef": "irs"
+        }
       ],
       "sources": [
-        { "label": "IRS Topic No. 701, Sale of Your Home", "url": "https://www.irs.gov/taxtopics/tc701" },
-        { "label": "IRS Publication 523, Selling Your Home", "url": "https://www.irs.gov/publications/p523" }
+        {
+          "label": "IRS Topic No. 701, Sale of Your Home",
+          "url": "https://www.irs.gov/taxtopics/tc701"
+        },
+        {
+          "label": "IRS Publication 523, Selling Your Home",
+          "url": "https://www.irs.gov/publications/p523"
+        }
       ]
     },
     {
       "id": "irs-section-1031",
-      "match": ["1031", "like-kind exchange", "like kind exchange", "qualified intermediary", "1031 exchange", "defer capital gains"],
+      "match": [
+        "1031",
+        "like-kind exchange",
+        "like kind exchange",
+        "qualified intermediary",
+        "1031 exchange",
+        "defer capital gains"
+      ],
       "facts": "IRC §1031 defers gain when business/investment real property is exchanged for like-kind business/investment real property. Since the TCJA it applies to real property only. To avoid receipt of proceeds you must use a safe harbor such as a qualified intermediary. Strict timelines: identify replacement property within 45 days and close within 180 days. U.S. property is not like-kind to foreign property.",
       "currencyNote": "Verified current 2026-06-25 against IRS like-kind exchanges guidance.",
       "entities": [
-        { "name": "Like-kind exchanges, 26 U.S.C. §1031", "type": "Legislation", "sameAs": ["https://www.irs.gov/businesses/small-businesses-self-employed/like-kind-exchanges-real-estate-tax-tips"] },
-        { "entityRef": "irs" }
+        {
+          "name": "Like-kind exchanges, 26 U.S.C. §1031",
+          "type": "Legislation",
+          "sameAs": [
+            "https://www.irs.gov/businesses/small-businesses-self-employed/like-kind-exchanges-real-estate-tax-tips"
+          ]
+        },
+        {
+          "entityRef": "irs"
+        }
       ],
       "sources": [
-        { "label": "IRS, Like-Kind Exchanges — Real Estate Tax Tips", "url": "https://www.irs.gov/businesses/small-businesses-self-employed/like-kind-exchanges-real-estate-tax-tips" }
+        {
+          "label": "IRS, Like-Kind Exchanges — Real Estate Tax Tips",
+          "url": "https://www.irs.gov/businesses/small-businesses-self-employed/like-kind-exchanges-real-estate-tax-tips"
+        }
+      ]
+    },
+    {
+      "id": "ab-2801",
+      "match": [
+        "ab 2801",
+        "ab2801",
+        "security deposit photo",
+        "deposit photos",
+        "move-in photos",
+        "move-out photos",
+        "photograph the unit",
+        "photos the landlord used",
+        "without photos"
+      ],
+      "facts": "AB 2801 amends Cal. Civ. Code §1950.5 to add photo-documentation duties. From April 1, 2025, a landlord who deducts from the deposit for repairs/cleaning must take photos before and after the work and include them, with a written cost explanation, in the itemized statement. From July 1, 2025, landlords must also take move-in photos. The 21-day return deadline is unchanged.",
+      "currencyNote": "Verified 2026-07-09. Phased effective dates (Apr 1, 2025 deduction photos; Jul 1, 2025 move-in photos) confirmed. Amends §1950.5.",
+      "sources": [
+        {
+          "label": "Assembly Bill 2801 (2024), amending Cal. Civ. Code Section 1950.5",
+          "url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240AB2801"
+        },
+        {
+          "label": "California Security Deposit Law, Cal. Civ. Code Section 1950.5",
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5"
+        }
+      ]
+    },
+    {
+      "id": "ca-security-deposit",
+      "match": [
+        "security deposit",
+        "21-day",
+        "21 day",
+        "itemized statement",
+        "wear and tear",
+        "pre-move-out inspection",
+        "initial inspection",
+        "return the deposit",
+        "deposit deduction",
+        "prepaid rent"
+      ],
+      "facts": "Cal. Civ. Code §1950.5 governs residential security deposits: the landlord must return the deposit and an itemized statement of deductions within 21 calendar days after the tenant vacates. Deductions are limited to unpaid rent, cleaning to the level of cleanliness at move-in, and repair of damage beyond ordinary wear and tear. Subdivision (f) gives the tenant a pre-move-out (initial) inspection right and a chance to cure before move-out.",
+      "currencyNote": "Verified 2026-07-09. Long-standing statute; deposit cap changes via AB 12 (eff. Jul 1, 2024) and photo duties via AB 2801.",
+      "sources": [
+        {
+          "label": "California Security Deposit Law, Cal. Civ. Code Section 1950.5",
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5"
+        }
+      ]
+    },
+    {
+      "id": "ab-628-refrigerator",
+      "match": [
+        "refrigerator",
+        "ab 628",
+        "ab628",
+        "stove",
+        "provide a refrigerator",
+        "working refrigerator",
+        "appliance"
+      ],
+      "facts": "AB 628 amends Cal. Civ. Code §1941.1 to add a working refrigerator and a working stove to the conditions required for a dwelling to be habitable. Effective January 1, 2026, it applies to tenancies entered into or renewed on or after that date, NOT automatically to every existing occupied unit. A tenant may supply their own refrigerator only by mutual written agreement (revocable, triggering a 30-day landlord-replace window); there is no tenant opt-out for the stove. Certain housing (SRO, residential hotels, communal-kitchen facilities) is exempt under §1941.1(b).",
+      "currencyNote": "Verified 2026-07-09. Effective Jan 1, 2026 for leases entered/renewed on/after that date. Confirm exact subdivision + exemptions against the final chaptered text.",
+      "sources": [
+        {
+          "label": "AB 628 (2025-2026), Hiring of real property: dwellings: untenantability — amends Cal. Civ. Code §1941.1",
+          "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB628"
+        },
+        {
+          "label": "Cal. Civ. Code §1941.1 (landlord duty to maintain habitable premises)",
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1941.1"
+        }
+      ]
+    },
+    {
+      "id": "ca-habitability",
+      "match": [
+        "habitability",
+        "habitable",
+        "untenantable",
+        "uninhabitable",
+        "implied warranty",
+        "mold",
+        "musty",
+        "water damage",
+        "smoke",
+        "ash damage",
+        "not in the promised condition"
+      ],
+      "facts": "Cal. Civ. Code §1941.1 lists the conditions that make a residential dwelling untenantable under the implied warranty of habitability — effective waterproofing/weather protection, working plumbing and hot/cold water, adequate heating, safe electrical, and clean, sanitary premises free of vermin and debris. Mold, water intrusion, and smoke/ash intrusion can breach it. AB 628 (eff. Jan 1, 2026) adds a working refrigerator and stove.",
+      "currencyNote": "Verified 2026-07-09. Long-standing statute; amended by AB 628 for 2026.",
+      "sources": [
+        {
+          "label": "Cal. Civ. Code §1941.1 (landlord duty to maintain habitable premises)",
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1941.1"
+        }
+      ]
+    },
+    {
+      "id": "ca-pricing-algorithm",
+      "match": [
+        "ab 325",
+        "ab325",
+        "pricing algorithm",
+        "pricing software",
+        "rent pricing",
+        "realpage",
+        "cartwright",
+        "price fixing",
+        "share rent",
+        "rent information",
+        "coordinate rent"
+      ],
+      "facts": "California AB 325 (effective January 1, 2026) amends the Cartwright Act (adds Bus. & Prof. Code §16729) to target a 'common pricing algorithm' — a shared methodology that uses competitor data to align or set prices — and lowers the pleading standard. Using an algorithm on ONLY your own data is clearly permissible; whether the law reaches publicly available competitor data is legally unresolved, so do not state that using public comps in a shared tool is definitively safe. Separately, the U.S. DOJ sued RealPage on Aug. 23, 2024 under the Sherman Act for algorithmic price coordination using competitors' nonpublic data.",
+      "currencyNote": "Verified 2026-07-09. AB 325 effective Jan 1, 2026. NUANCE: public-vs-nonpublic competitor-data reach is unsettled — only own-data use is clearly safe. RealPage case ongoing (allegation).",
+      "sources": [
+        {
+          "label": "Assembly Bill 325 (2025), amending the Cartwright Act",
+          "url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB325"
+        },
+        {
+          "label": "Cal. Bus. & Prof. Code §16700 et seq. — Cartwright Act",
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=16700"
+        },
+        {
+          "label": "U.S. Department of Justice, United States v. RealPage Inc. (antitrust complaint, 2024)",
+          "url": "https://www.justice.gov/archives/opa/pr/justice-department-sues-realpage-algorithmic-pricing-scheme-harms-millions-american-renters"
+        }
+      ]
+    },
+    {
+      "id": "sb-610-disaster",
+      "match": [
+        "sb 610",
+        "sb610",
+        "wildfire",
+        "disaster",
+        "evacuation",
+        "break a lease after",
+        "fire repairs",
+        "right to return",
+        "uninhabitable after a"
+      ],
+      "facts": "Cal. SB 610 (effective January 1, 2026; adds Civ. Code §§1941.8 and 1941.9) is a DISASTER-specific tenant-protection statute tied to a declared emergency and the landlord's failure to repair disaster damage in time. Where the landlord fails to repair, the tenant may notify the landlord, terminate the tenancy, vacate, and be discharged from further obligations, with prepaid rent returned; the security deposit is returned under §1950.5. It is not a general 'any uninhabitable unit' termination law — the general right to quit an untenantable dwelling is Civ. Code §1933(4)/§1942.",
+      "currencyNote": "Verified 2026-07-09. Disaster-specific, effective Jan 1, 2026. Attribute deposit return to §1950.5.",
+      "sources": [
+        {
+          "label": "Senate Bill 610 (2025), Disaster assistance: tenants, mobilehome parks, and mortgages",
+          "url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB610"
+        },
+        {
+          "label": "California Security Deposit Law, Cal. Civ. Code Section 1950.5",
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5"
+        }
+      ]
+    },
+    {
+      "id": "costa-hawkins",
+      "match": [
+        "costa-hawkins",
+        "costa hawkins",
+        "vacancy decontrol",
+        "single-family exemption",
+        "condo exemption",
+        "local rent control exemption"
+      ],
+      "facts": "The Costa-Hawkins Rental Housing Act, Cal. Civ. Code §1954.50 et seq., exempts single-family homes/condos and units first occupied after Feb. 1, 1995 from local rent control and guarantees vacancy decontrol (an owner may reset rent to market for a new tenancy after a prior tenant voluntarily leaves or is lawfully evicted). It limits the reach of local rent-control ordinances but not AB 1482's statewide cap.",
+      "currencyNote": "Verified 2026-07-09. Long-standing statute (1995).",
+      "sources": [
+        {
+          "label": "Costa-Hawkins Rental Housing Act, Cal. Civ. Code §1954.50",
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954.50"
+        }
+      ]
+    },
+    {
+      "id": "ventura-soar",
+      "match": [
+        "soar",
+        "save open-space",
+        "open space",
+        "greenbelt",
+        "housing supply",
+        "rezoning",
+        "agricultural resources"
+      ],
+      "facts": "SOAR (Save Open-space and Agricultural Resources) is a set of Ventura County voter initiatives requiring a public vote before designated open-space, agricultural, or rural land is rezoned for urban development. Voters extended the county measure in 2016, now running through 2050; several cities have their own SOAR/urban-boundary measures. By constraining where new housing can be built, SOAR is frequently cited as a factor limiting Ventura County housing supply.",
+      "currencyNote": "Verified 2026-07-09 via Ventura County RMA. County measure through 2050; confirm the specific jurisdiction for city-level claims.",
+      "sources": [
+        {
+          "label": "County of Ventura SOAR Initiative 2050 (Ventura County RMA)",
+          "url": "https://rmadocs.venturacounty.gov/planning/ordinances/save-open-space-and-agricultural-resources/planning-save-open-space-and-agricultural-resources-initiative-2050.pdf"
+        },
+        {
+          "label": "Ventura County RMA — County Ordinances",
+          "url": "https://rma.venturacounty.gov/county-ordinances/"
+        }
+      ]
+    },
+    {
+      "id": "ca-agency-fiduciary",
+      "match": [
+        "fiduciary",
+        "present every offer",
+        "present all offers",
+        "agency disclosure",
+        "broker duty",
+        "act in the owner",
+        "without the owner",
+        "non-standard use",
+        "property manager authority",
+        "government agency use"
+      ],
+      "facts": "A California real estate broker/agent owes the principal (owner/landlord) a fiduciary duty of utmost care, integrity, honesty, and loyalty (Cal. Civ. Code §2079.16), plus the duties of an agent under §2079.13 and the actual-authority limits of §2316. A property manager has authority over day-to-day operations but must bring any decision that exposes the owner to a new category of risk — a non-ordinary use, an offer, an enforcement operation — to the owner for an informed decision, and must present all offers.",
+      "currencyNote": "Verified 2026-07-09. Long-standing agency/fiduciary statutes; the 'present all offers' duty is reinforced by DRE regulation and common law.",
+      "sources": [
+        {
+          "label": "Agency disclosure — fiduciary duty, Cal. Civ. Code §2079.16",
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=2079.16"
+        },
+        {
+          "label": "Authority of agents (actual authority), Cal. Civ. Code §2316",
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=2316"
+        }
+      ]
+    },
+    {
+      "id": "lease-survives-sale",
+      "match": [
+        "existing lease",
+        "leases when i sell",
+        "sell my rental",
+        "buyer takes subject",
+        "survives the sale",
+        "lease survives",
+        "new owner",
+        "rent increase notice"
+      ],
+      "facts": "Under California law a buyer takes title subject to an existing lease: a valid fixed-term lease survives the sale and binds the new owner for the remaining term (the purchaser steps into the landlord's shoes; Civ. Code §821). Rent increases on a month-to-month tenancy follow Civ. Code §827 — at least 30 days' written notice for an increase of 10% or less in a 12-month period, and 90 days for more than 10% — subject to AB 1482 and any local cap.",
+      "currencyNote": "Verified 2026-07-09. §827 notice thresholds confirmed; lease-survives-sale is settled property law.",
+      "sources": [
+        {
+          "label": "Cal. Civ. Code §827 (rent-increase notice)",
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=827"
+        },
+        {
+          "label": "Cal. Civ. Code §821 (grantee bound by/entitled to lease covenants)",
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=821"
+        }
+      ]
+    },
+    {
+      "id": "irs-passive-loss",
+      "match": [
+        "25,000",
+        "25000",
+        "$25,000",
+        "passive loss",
+        "rental loss",
+        "active participation",
+        "magi",
+        "passive activity",
+        "special allowance",
+        "deduct the tax loss"
+      ],
+      "facts": "The IRS $25,000 special allowance lets an owner deduct up to $25,000 of rental real-estate loss against ordinary income if they ACTIVELY participate (a lower bar than material participation — approving tenants, terms, and expenditures) and own at least 10%. The allowance is reduced by 50% of the amount by which modified AGI exceeds $100,000 and disappears at $150,000. Using a property manager does not disqualify active participation if the owner keeps genuine decision authority. Governed by IRC §469.",
+      "currencyNote": "Verified 2026-07-09 against IRS Pub 925 (2025) and Topic 425. $25k / $100k–$150k MAGI phaseout current.",
+      "sources": [
+        {
+          "label": "IRS Publication 925, Passive Activity and At-Risk Rules",
+          "url": "https://www.irs.gov/publications/p925"
+        },
+        {
+          "label": "IRS Topic No. 425, Passive Activities – Losses and Credits",
+          "url": "https://www.irs.gov/taxtopics/tc425"
+        }
+      ]
+    },
+    {
+      "id": "irs-step-up",
+      "match": [
+        "step-up",
+        "step up in basis",
+        "stepped-up basis",
+        "basis at death",
+        "inherit",
+        "hold until death",
+        "date of death value"
+      ],
+      "facts": "Under IRC §1014, property inherited from a decedent generally takes a basis equal to its fair market value at the date of death (or the alternate valuation date), 'stepping up' the basis and erasing the built-in capital gain accrued during the decedent's life. This is why holding an appreciated rental until death can favor heirs over a lifetime sale.",
+      "currencyNote": "Verified 2026-07-09 against IRS Pub 551 (Rev. Dec 2025). FMV-at-death rule current.",
+      "sources": [
+        {
+          "label": "IRS Publication 551, Basis of Assets",
+          "url": "https://www.irs.gov/publications/p551"
+        }
+      ]
+    },
+    {
+      "id": "fha-down-payment",
+      "match": [
+        "down payment",
+        "3.5%",
+        "fha",
+        "203(b)",
+        "203b",
+        "20% down",
+        "minimum down",
+        "buy a home with"
+      ],
+      "facts": "The FHA Section 203(b) program — FHA's most common owner-occupant mortgage insurance — allows about 96.5% financing, i.e., a minimum down payment of 3.5% for borrowers with qualifying credit. A 20% down payment is not required to buy an owner-occupied home.",
+      "currencyNote": "Verified 2026-07-09 against HUD 203(b) program page. 3.5% minimum down current.",
+      "sources": [
+        {
+          "label": "HUD — 203(b) Mortgage Insurance (Section 203(b))",
+          "url": "https://www.hud.gov/hud-partners/single-family-sfh203b"
+        },
+        {
+          "label": "U.S. HUD, FHA — What is the minimum down payment requirement?",
+          "url": "https://www.hud.gov/helping-americans/fha"
+        }
+      ]
+    },
+    {
+      "id": "ca-insurance-coverage",
+      "match": [
+        "renters insurance",
+        "additional living expenses",
+        "loss of use",
+        "loss of rent",
+        "fair rental value",
+        "landlord insurance",
+        "hotel after a fire",
+        "cover lost rent",
+        "pass insurance cost"
+      ],
+      "facts": "Residential policies include Coverage D (Loss of Use): renters policies pay Additional Living Expenses (temporary housing such as a hotel, meals, storage) when a covered peril makes the unit uninhabitable; landlord/dwelling policies pay 'fair rental value' (lost rent) in the same situation. Coverage depends on the policy and on the peril being covered. A standard California residential lease has no mechanism to bill a tenant a separate insurance surcharge (unlike a commercial NNN lease); insurance cost is recovered through rent, subject to the AB 1482 cap.",
+      "currencyNote": "Verified 2026-07-09 against CA Dept. of Insurance residential guide and NAIC loss-of-use definitions.",
+      "sources": [
+        {
+          "label": "California Dept. of Insurance — Residential Insurance: Homeowners and Renters guide",
+          "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/res-ins-guide.cfm"
+        },
+        {
+          "label": "NAIC — Coverage D (Loss of Use / Fair Rental Value) definitions",
+          "url": "https://content.naic.org/sites/default/files/industry-data-call-property-ho-definitions.pdf"
+        }
+      ]
+    },
+    {
+      "id": "prop-103-insurance",
+      "match": [
+        "prop 103",
+        "proposition 103",
+        "insurance rate",
+        "insurance got expensive",
+        "rate regulation",
+        "insurance commissioner",
+        "prior approval"
+      ],
+      "facts": "California Proposition 103 (1988) established a 'prior approval' system under which the Insurance Commissioner must approve a property/casualty insurance rate before an insurer may use it (Insurance Code §§1861.01–1861.16, with the rate standard at §1861.05). It is often invoked in debates about why California insurance availability and pricing have tightened.",
+      "currencyNote": "Verified 2026-07-09 against CA Dept. of Insurance Prop 103 page.",
+      "sources": [
+        {
+          "label": "California Dept. of Insurance — Proposition 103 Intervenor Program",
+          "url": "https://www.insurance.ca.gov/01-consumers/150-other-prog/01-intervenor/"
+        }
+      ]
+    },
+    {
+      "id": "owner-occ-vs-investor-rates",
+      "match": [
+        "owner-occupied",
+        "owner occupied",
+        "investor loan",
+        "investment property rate",
+        "non-owner-occupied",
+        "occupancy add-on",
+        "llpa",
+        "investor rate"
+      ],
+      "facts": "Owner-occupied mortgages carry lower rates than investment/non-owner-occupied loans because Fannie Mae and Freddie Mac apply risk-based Loan-Level Price Adjustments (LLPAs) to investment-property loans (roughly 1.125% to 4.125% depending on LTV) while principal residences get the most favorable pricing. Higher default risk on investor loans translates into higher rates.",
+      "currencyNote": "Verified 2026-07-09 against Fannie Mae LLPA Matrix and Selling Guide occupancy guidance.",
+      "sources": [
+        {
+          "label": "Fannie Mae Selling Guide — B2-1.1-01, Occupancy Types",
+          "url": "https://selling-guide.fanniemae.com/sel/b2-1.1-01/occupancy-types"
+        }
       ]
     }
   ]

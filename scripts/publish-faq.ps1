@@ -55,6 +55,10 @@ try {
   $changes = git status --porcelain content/faq scripts/faq-source-registry.json
   if (-not $changes) {
     Log 'No FAQ changes to publish.'
+    # Queue hygiene: clear any drafts whose slug is already live so the heartbeat
+    # counts a truthful queue (fixes the 2026-07-09 inflation: 57/106 drafts were
+    # already-published dupes that kept re-firing the ⚠ stall alert).
+    try { node scripts/prune-published-drafts.mjs --apply --quiet } catch {}
     # Item #2 INPUT-END signal: quiet days stay silent, but if the draft queue
     # has stalled (the 07/02 shape: entries drafted but never promoted to the
     # hub), --only-problems still fires so it doesn't hide behind a no-op.
@@ -76,6 +80,9 @@ try {
       else { Log 'Inspection: all published FAQ entries verified live.' }
     } catch { Log "Inspection error: $_" }
   }
+  # Queue hygiene: the entries just published are now live — clear their drafts
+  # (and any older already-published stragglers) so the queue stops re-inflating.
+  try { node scripts/prune-published-drafts.mjs --apply --quiet } catch { Log "Prune error: $_ (non-fatal)" }
   try { node scripts/send-heartbeat.mjs --context faq --state 'published' } catch { Log "Heartbeat send error: $_ (non-fatal)" }
   # -------------------------------------------------------------------------
 
