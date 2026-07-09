@@ -135,6 +135,49 @@ function git(args) {
   return execFileSync('git', ['-C', REPO_ROOT, ...args], { encoding: 'utf8' }).trim()
 }
 
+// ---------- frontmatter parse hardening ----------
+// A title/subtitle whose text contains a straight double-quote yields invalid
+// YAML once the packager wraps it in "..."  (e.g.  title: "Why "No Pets" ...").
+// gray-matter then throws and the whole post silently fails to publish. Repair
+// the frontmatter's double-quoted scalars (escape stray " and \) and retry once.
+function sanitizeFrontmatterQuotes(rawFile) {
+  if (!rawFile.startsWith('---')) return rawFile
+  const end = rawFile.indexOf('\n---', 3)
+  if (end === -1) return rawFile
+  const head = rawFile.slice(0, end)
+  const rest = rawFile.slice(end)
+  const fixed = head
+    .split('\n')
+    .map((line) => {
+      const m = line.match(/^(\s*[A-Za-z0-9_]+:\s*)"(.*)"(\s*)$/)
+      if (!m) return line
+      const v = m[2]
+        .replace(/\\(["\\])/g, '$1') // decode existing escapes -> logical text
+        .replace(/\\/g, '\\\\')      // re-encode backslashes
+        .replace(/"/g, '\\"')        // re-encode double quotes
+      return `${m[1]}"${v}"${m[3]}`
+    })
+    .join('\n')
+  return fixed + rest
+}
+
+function parseContract(rawFile) {
+  try {
+    return matter(rawFile)
+  } catch (e) {
+    try {
+      const parsed = matter(sanitizeFrontmatterQuotes(rawFile))
+      console.log('  ⚠ frontmatter had invalid quoting - auto-escaped and re-parsed.')
+      return parsed
+    } catch {
+      fail(
+        `Could not parse contract frontmatter as YAML: ${String(e.message).split('\n')[0]}\n` +
+          `  Auto-repair also failed. Check title/subtitle for stray quotes or a bare colon.`
+      )
+    }
+  }
+}
+
 // ---------- main ----------
 const opts = parseArgs(process.argv.slice(2))
 const inputPath = opts._[0]
@@ -144,7 +187,7 @@ if (!fs.existsSync(inputPath)) fail(`Packaged file not found: ${inputPath}`)
 console.log(`\nCPM post-blog — processing ${path.basename(inputPath)}`)
 
 const rawFile = fs.readFileSync(inputPath, 'utf8')
-const { data, content } = matter(rawFile)
+const { data, content } = parseContract(rawFile)
 const { body, faqRaw } = splitBodyAndFaq(content)
 const faq = parseFaq(faqRaw)
 

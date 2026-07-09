@@ -138,7 +138,18 @@ try {
   }
   # -------------------------------------------------------------------------
 
-  if ($bad -gt 0) { exit 1 }
+  if ($bad -gt 0) {
+    Log "$bad contract(s) FAILED conversion; left in incoming\ for review."
+    # Alert: the runner used to be silent on a stuck contract. Fire an attention
+    # heartbeat (--failed>0 renders the [CPM blog WARN] subject) so a failed
+    # convert is visible in the inbox instead of only in blog-publish.log.
+    try {
+      node scripts/send-heartbeat.mjs --context blog --published $ok --failed $bad --state failed
+    } catch {
+      Log "Failure-heartbeat send error: $_ (non-fatal)"
+    }
+    exit 1
+  }
 }
 catch {
   Log "ERROR: $_"

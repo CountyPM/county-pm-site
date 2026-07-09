@@ -84,6 +84,12 @@ A: <direct answer first, then expand>
 - `category` is NOT in the contract — it is derived by the PC stage from
   `decision_intent` + `tags`. Do not add it.
 - Include `---FAQ---` only when `faq_included: true`; 3–6 strong Q&As, answer-first.
+- **YAML-safe values:** `title`, `subtitle`, `byline`, `source_chat_context`, and
+  `gemini_prompt` are emitted as double-quoted YAML. Escape any straight double quote
+  inside the text as `\"` - e.g. `title: "Why \"No Pets\" Isn't Really About Pets"`. A
+  bare `"` inside a `"..."` value is invalid YAML; the PC stage now auto-repairs it, but
+  emit it correctly so nothing relies on the repair. (A colon is safe as long as the value
+  stays wrapped in quotes.)
 - **Privacy:** any client/tenant/deal specifics go ONLY in `source_chat_context`. The PC
   stage hard-fails if `source_chat_context` or `gemini_prompt` ever appear in the published
   frontmatter, so never place private detail in `title`, `subtitle`, or the body.
