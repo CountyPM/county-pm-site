@@ -64,7 +64,7 @@ This split is the design, not a defect. The residual reliability gap is that the
 1. **Wire `crosslink:faq` into `publish-faq.ps1`** — completes Track A slice 3 (currently manual-only).
 2. **Add a failure/heartbeat signal** to the weekly FAQ authoring task so a stalled or empty week is noticed.
 3. **Image-diversity backlog decision** — pre-rule hero repeats (for-sale sign ×3, keys ×3, desk/docs ×2) remain live; decide re-spin vs enforce-forward. See `track-c-image-diversity-rule`.
-4. **GEO effectiveness readout** — nothing yet measures the outcome the initiative exists for: indexation coverage (GSC/Bing) + periodic AI-citation spot checks. The only genuinely new build worth adding.
+4. **GEO effectiveness readout** — **BUILT 2026-07-03** (priority item #3, the OUTCOME end). Two measurement halves + an assembler: `scripts/geo-indexation-check.mjs` (unattended `site:` coverage vs the live sitemap, no API creds — the owner chose the no-setup path over the GSC API), the fixed probe set `scripts/geo-citation-probes.json` + `scripts/geo-citation-record.mjs` (browser-driven AI-citation spot check via the Chrome MCP), and `scripts/geo-readout.mjs` which folds both into a dated section of the committed trend doc `docs/CPM_GEO_Readout.md` and emails a `[CPM GEO ✓/⚠]` summary over the item-#2 SMTP path. Windows runner `scripts/geo-readout.ps1` (monthly). See the readout doc + `CPM_Decision_Log.md` 2026-07-03. Residual: the citation half needs a signed-in browser session (answer engines gate source panels behind login), and a first live indexation run must happen Windows-side to seed the first real numbers.
 5. **Repo hygiene** — a `.gitattributes` normalization pass would end the phantom CRLF/EOL diffs that make working-tree state noisy.
 
 ---

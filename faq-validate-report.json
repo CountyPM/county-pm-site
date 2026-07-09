@@ -1,0 +1,421 @@
+{
+  "generatedAt": "2026-07-06T16:26:07.061Z",
+  "total": 59,
+  "valid": 59,
+  "invalid": 0,
+  "results": [
+    {
+      "slug": "are-self-service-showings-safe-for-my-rental-property",
+      "ok": true,
+      "type": "subjective",
+      "sources": 0,
+      "errors": []
+    },
+    {
+      "slug": "california-statewide-rent-control",
+      "ok": true,
+      "type": "objective",
+      "sources": 2,
+      "errors": []
+    },
+    {
+      "slug": "can-a-landlord-charge-a-pet-deposit-or-pet-rent-for-an",
+      "ok": true,
+      "type": "objective",
+      "sources": 2,
+      "errors": []
+    },
+    {
+      "slug": "can-a-landlord-charge-for-carpet-cleaning-in-california",
+      "ok": true,
+      "type": "objective",
+      "sources": 2,
+      "errors": []
+    },
+    {
+      "slug": "can-a-landlord-deduct-from-a-security-deposit-without-photos",
+      "ok": true,
+      "type": "objective",
+      "sources": 2,
+      "errors": []
+    },
+    {
+      "slug": "can-a-landlord-deny-an-emotional-support-animal",
+      "ok": true,
+      "type": "objective",
+      "sources": 2,
+      "errors": []
+    },
+    {
+      "slug": "can-a-property-manager-let-a-government-agency-use-my-rental",
+      "ok": true,
+      "type": "objective",
+      "sources": 2,
+      "errors": []
+    },
+    {
+      "slug": "can-a-tenant-break-a-lease-after-a-wildfire-in-california",
+      "ok": true,
+      "type": "objective",
+      "sources": 1,
+      "errors": []
+    },
+    {
+      "slug": "can-a-tenant-request-the-photos-a-landlord-used-to-justify",
+      "ok": true,
+      "type": "objective",
+      "sources": 2,
+      "errors": []
+    },
+    {
+      "slug": "can-ai-manage-a-rental-property-on-its-own",
+      "ok": true,
+      "type": "subjective",
+      "sources": 0,
+      "errors": []
+    },
+    {
+      "slug": "can-i-see-my-rental-propertys-financial-reports-online",
+      "ok": true,
+      "type": "subjective",
+      "sources": 0,
+      "errors": []
+    },
+    {
+      "slug": "can-i-turn-my-home-into-a-rental-after-i-move-out",
+      "ok": true,
+      "type": "subjective",
+      "sources": 0,
+      "errors": []
+    },
+    {
+      "slug": "can-i-use-zillow-or-advertised-rents-to-set-my-rental-price",
+      "ok": true,
+      "type": "objective",
+      "sources": 1,
+      "errors": []
+    },
+    {
+      "slug": "can-landlords-share-rent-information-with-each-other",
+      "ok": true,
+      "type": "objective",
+      "sources": 1,
+      "errors": []
+    },
+    {
+      "slug": "capital-gains-when-selling-a-california-rental",
+      "ok": true,
+      "type": "objective",
+      "sources": 2,
+      "errors": []
+    },
+    {
+      "slug": "do-i-need-a-20-down-payment-to-buy-a-home",
+      "ok": true,
+      "type": "objective",
+      "sources": 2,
+      "errors": []
+    },
+    {
+      "slug": "does-a-landlord-have-to-offer-the-pre-move-out-inspection",
+      "ok": true,
+      "type": "objective",
+      "sources": 1,
+      "errors": []
+    },
+    {
+      "slug": "does-a-tenant-have-the-right-to-return-after-fire-repairs-are",
+      "ok": true,
+      "type": "objective",
+      "sources": 1,
+      "errors": []
+    },
+    {
+      "slug": "does-a-tenant-have-to-pay-rent-during-a-mandatory-evacuation",
+      "ok": true,
+      "type": "objective",
+      "sources": 1,
+      "errors": []
+    },
+    {
+      "slug": "does-landlord-insurance-cover-lost-rent-during-a-wildfire",
+      "ok": true,
+      "type": "subjective",
+      "sources": 0,
+      "errors": []
+    },
+    {
+      "slug": "does-renters-insurance-pay-for-a-hotel-after-a-fire",
+      "ok": true,
+      "type": "subjective",
+      "sources": 0,
+      "errors": []
+    },
+    {
+      "slug": "how-can-i-buy-property-if-i-cant-afford-it-on-my-own",
+      "ok": true,
+      "type": "subjective",
+      "sources": 0,
+      "errors": []
+    },
+    {
+      "slug": "how-can-i-move-my-rental-property-equity-out-of-california",
+      "ok": true,
+      "type": "objective",
+      "sources": 2,
+      "errors": []
+    },
+    {
+      "slug": "how-do-i-know-if-my-pricing-software-is-compliant",
+      "ok": true,
+      "type": "subjective",
+      "sources": 1,
+      "errors": []
+    },
+    {
+      "slug": "how-do-self-service-self-guided-rental-showings-work",
+      "ok": true,
+      "type": "subjective",
+      "sources": 0,
+      "errors": []
+    },
+    {
+      "slug": "how-does-a-fixed-rate-mortgage-protect-against-inflation",
+      "ok": true,
+      "type": "subjective",
+      "sources": 0,
+      "errors": []
+    },
+    {
+      "slug": "how-important-is-tenant-screening-to-a-rental-propertys",
+      "ok": true,
+      "type": "subjective",
+      "sources": 0,
+      "errors": []
+    },
+    {
+      "slug": "how-much-can-a-landlord-raise-rent-in-california",
+      "ok": true,
+      "type": "objective",
+      "sources": 2,
+      "errors": []
+    },
+    {
+      "slug": "how-to-evict-a-tenant-in-california",
+      "ok": true,
+      "type": "objective",
+      "sources": 2,
+      "errors": []
+    },
+    {
+      "slug": "is-a-3x-income-to-rent-ratio-a-legal-requirement-for-tenants",
+      "ok": true,
+      "type": "subjective",
+      "sources": 0,
+      "errors": []
+    },
+    {
+      "slug": "is-a-property-manager-required-to-present-every-offer",
+      "ok": true,
+      "type": "objective",
+      "sources": 2,
+      "errors": []
+    },
+    {
+      "slug": "is-hiring-a-property-manager-worth-it-for-a-single-rental",
+      "ok": true,
+      "type": "subjective",
+      "sources": 0,
+      "errors": []
+    },
+    {
+      "slug": "is-it-legal-to-use-rent-pricing-software-in-california",
+      "ok": true,
+      "type": "objective",
+      "sources": 1,
+      "errors": []
+    },
+    {
+      "slug": "property-manager-conflict-of-interest",
+      "ok": true,
+      "type": "subjective",
+      "sources": 0,
+      "errors": []
+    },
+    {
+      "slug": "should-a-tenant-request-the-pre-move-out-inspection",
+      "ok": true,
+      "type": "subjective",
+      "sources": 1,
+      "errors": []
+    },
+    {
+      "slug": "should-i-rent-or-buy-during-a-major-life-transition-like-a",
+      "ok": true,
+      "type": "subjective",
+      "sources": 0,
+      "errors": []
+    },
+    {
+      "slug": "should-i-use-ai-tools-to-help-self-manage-my-rentals",
+      "ok": true,
+      "type": "subjective",
+      "sources": 0,
+      "errors": []
+    },
+    {
+      "slug": "tenant-application-screening-fee-california",
+      "ok": true,
+      "type": "objective",
+      "sources": 1,
+      "errors": []
+    },
+    {
+      "slug": "what-does-a-property-management-company-do",
+      "ok": true,
+      "type": "subjective",
+      "sources": 0,
+      "errors": []
+    },
+    {
+      "slug": "what-does-it-take-to-win-an-eviction-for-non-payment-of-rent",
+      "ok": true,
+      "type": "objective",
+      "sources": 2,
+      "errors": []
+    },
+    {
+      "slug": "what-happens-if-a-landlord-misses-the-21-day-deadline-for",
+      "ok": true,
+      "type": "objective",
+      "sources": 2,
+      "errors": []
+    },
+    {
+      "slug": "what-happens-to-existing-tenant-leases-when-i-sell-my-rental",
+      "ok": true,
+      "type": "objective",
+      "sources": 2,
+      "errors": []
+    },
+    {
+      "slug": "what-is-a-1031-exchange",
+      "ok": true,
+      "type": "objective",
+      "sources": 1,
+      "errors": []
+    },
+    {
+      "slug": "what-is-ab-2801",
+      "ok": true,
+      "type": "objective",
+      "sources": 2,
+      "errors": []
+    },
+    {
+      "slug": "what-is-ab-325",
+      "ok": true,
+      "type": "objective",
+      "sources": 1,
+      "errors": []
+    },
+    {
+      "slug": "what-is-cash-for-keys",
+      "ok": true,
+      "type": "subjective",
+      "sources": 0,
+      "errors": []
+    },
+    {
+      "slug": "what-is-the-pre-move-out-inspection-and-can-a-landlord-deduct",
+      "ok": true,
+      "type": "objective",
+      "sources": 1,
+      "errors": []
+    },
+    {
+      "slug": "what-is-the-risk-of-a-mistake-in-a-california-eviction-notice",
+      "ok": true,
+      "type": "objective",
+      "sources": 2,
+      "errors": []
+    },
+    {
+      "slug": "what-landlord-responsibilities-come-with-owning-a-rental",
+      "ok": true,
+      "type": "objective",
+      "sources": 1,
+      "errors": []
+    },
+    {
+      "slug": "what-must-be-included-with-the-itemized-security-deposit",
+      "ok": true,
+      "type": "objective",
+      "sources": 2,
+      "errors": []
+    },
+    {
+      "slug": "what-should-an-owner-ask-before-allowing-any-non-standard-use",
+      "ok": true,
+      "type": "subjective",
+      "sources": 0,
+      "errors": []
+    },
+    {
+      "slug": "what-was-realpage-accused-of",
+      "ok": true,
+      "type": "objective",
+      "sources": 2,
+      "errors": []
+    },
+    {
+      "slug": "whats-the-liability-risk-if-a-law-enforcement-operation-goes-wrong",
+      "ok": true,
+      "type": "objective",
+      "sources": 1,
+      "errors": []
+    },
+    {
+      "slug": "when-are-landlords-required-to-take-move-in-photos-in",
+      "ok": true,
+      "type": "objective",
+      "sources": 2,
+      "errors": []
+    },
+    {
+      "slug": "who-is-responsible-for-cleaning-up-smoke-and-ash-damage-in-a",
+      "ok": true,
+      "type": "objective",
+      "sources": 1,
+      "errors": []
+    },
+    {
+      "slug": "why-are-owner-occupied-mortgage-rates-better-than-investor",
+      "ok": true,
+      "type": "objective",
+      "sources": 2,
+      "errors": []
+    },
+    {
+      "slug": "why-does-vacancy-hurt-rental-returns-so-much",
+      "ok": true,
+      "type": "subjective",
+      "sources": 0,
+      "errors": []
+    },
+    {
+      "slug": "why-is-real-estate-considered-a-hedge-against-inflation",
+      "ok": true,
+      "type": "subjective",
+      "sources": 0,
+      "errors": []
+    },
+    {
+      "slug": "why-might-cash-for-keys-cost-less-than-a-formal-eviction",
+      "ok": true,
+      "type": "subjective",
+      "sources": 0,
+      "errors": []
+    }
+  ]
+}

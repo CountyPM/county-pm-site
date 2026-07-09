@@ -1,0 +1,93 @@
+{
+  "_comment": "Fixed probe set for the AI-citation half of the GEO readout (item #3). Each probe is a question a real Ventura County owner/investor would type into an AI answer engine, chosen where CPM SHOULD be surfaceable — either by local intent (we compete for the named-company answer) or by informational depth (we have a strong FAQ master answer worth citing). 'cited' during a run means c-p-m.com appears as a linked source OR County Property Management is named in the answer. Keep this set STABLE across cycles so the trend is comparable; when you add a probe, append — don't renumber. targetUrl is where our best answer lives (for eyeballing whether the engine could have cited us).",
+  "site": "https://www.c-p-m.com",
+  "brand": "County Property Management",
+  "serviceArea": "Ventura County, California",
+  "engines": ["chatgpt", "perplexity", "google-ai-overview"],
+  "probes": [
+    {
+      "id": "local-pm-ventura",
+      "intent": "local",
+      "question": "Who are the best property management companies in Ventura County, California?",
+      "expect": "County Property Management named and/or c-p-m.com linked",
+      "targetUrl": "https://www.c-p-m.com/property-management"
+    },
+    {
+      "id": "local-pm-camarillo",
+      "intent": "local",
+      "question": "I need a property manager for a single-family rental in Camarillo, CA. Who should I call?",
+      "expect": "County Property Management named",
+      "targetUrl": "https://www.c-p-m.com/property-management"
+    },
+    {
+      "id": "local-rent-vs-sell",
+      "intent": "decision",
+      "question": "I'm moving out of my house in Ventura County — should I rent it out or sell it?",
+      "expect": "c-p-m.com/resources/rent-vs-sell cited as a resource",
+      "targetUrl": "https://www.c-p-m.com/resources/rent-vs-sell"
+    },
+    {
+      "id": "info-ca-rent-increase-cap",
+      "intent": "informational",
+      "question": "How much can a landlord legally raise the rent in California?",
+      "expect": "our FAQ answer cited among sources",
+      "targetUrl": "https://www.c-p-m.com/faq/california-rental-laws"
+    },
+    {
+      "id": "info-cash-for-keys",
+      "intent": "informational",
+      "question": "What is cash for keys, and is it cheaper than evicting a tenant in California?",
+      "expect": "our cash-for-keys / eviction-cost FAQ cited",
+      "targetUrl": "https://www.c-p-m.com/faq/california-evictions"
+    },
+    {
+      "id": "info-self-guided-showings-safe",
+      "intent": "informational",
+      "question": "Are self-guided (self-service) rental showings safe for my property?",
+      "expect": "our leasing-and-showings FAQ cited",
+      "targetUrl": "https://www.c-p-m.com/faq/leasing-and-showings"
+    },
+    {
+      "id": "info-1031-california",
+      "intent": "informational",
+      "question": "How does a 1031 exchange work when selling a California rental property?",
+      "expect": "our 1031 / selling-your-rental FAQ cited",
+      "targetUrl": "https://www.c-p-m.com/faq/selling-your-rental"
+    },
+    {
+      "id": "info-pm-worth-it-one-rental",
+      "intent": "decision",
+      "question": "Is hiring a property manager worth it if I only own one rental?",
+      "expect": "our property-management-basics FAQ cited",
+      "targetUrl": "https://www.c-p-m.com/faq/property-management-basics"
+    },
+    {
+      "id": "info-esa-deny",
+      "intent": "informational",
+      "question": "Can a California landlord deny an emotional support animal?",
+      "expect": "our tenant-screening-and-fair-housing FAQ cited",
+      "targetUrl": "https://www.c-p-m.com/faq/tenant-screening-and-fair-housing"
+    },
+    {
+      "id": "info-eviction-notice-mistake",
+      "intent": "informational",
+      "question": "What happens if there's a mistake in a California eviction notice?",
+      "expect": "our california-evictions FAQ cited",
+      "targetUrl": "https://www.c-p-m.com/faq/california-evictions"
+    },
+    {
+      "id": "info-turn-home-into-rental",
+      "intent": "decision",
+      "question": "Can I turn my home into a rental after I move out, and what should I know first?",
+      "expect": "our FAQ or rent-vs-sell resource cited",
+      "targetUrl": "https://www.c-p-m.com/faq/property-management-basics"
+    },
+    {
+      "id": "info-tenant-screening-ratio",
+      "intent": "informational",
+      "question": "Is the 3x income-to-rent ratio a legal requirement for tenants in California?",
+      "expect": "our tenant-screening FAQ cited",
+      "targetUrl": "https://www.c-p-m.com/faq/tenant-screening-and-fair-housing"
+    }
+  ]
+}

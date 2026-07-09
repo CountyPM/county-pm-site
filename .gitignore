@@ -71,3 +71,14 @@ next-env.d.ts
 
 # item #2: post-publish inspection report (runtime artifact for the heartbeat) — never commit
 inspect-report.json
+
+# free-account chat export (16MB, contains private/personal chats) — never commit
+conversations.json
+memories.json
+users.json
+incoming/from-free-chats/
+
+# item #3: GEO readout runtime measurement artifacts — never commit (the trend
+# lives in docs/CPM_GEO_Readout.md, which IS committed). These are per-run scratch.
+geo-index-report.json
+geo-citation-report.json

@@ -16,7 +16,10 @@
     "backfill:harvest": "node scripts/backfill-faq-feedstock.mjs --harvest",
     "validate:faq": "node scripts/validate-faq.mjs",
     "harvest:blog": "node scripts/harvest-blog-inbox.mjs",
-    "post:blog": "node scripts/post-blog.mjs"
+    "post:blog": "node scripts/post-blog.mjs",
+    "geo:index": "node scripts/geo-indexation-check.mjs",
+    "geo:citation-record": "node scripts/geo-citation-record.mjs",
+    "geo:readout": "node scripts/geo-readout.mjs"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",

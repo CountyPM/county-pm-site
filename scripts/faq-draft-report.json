@@ -1,0 +1,939 @@
+{
+  "generatedAt": "2026-07-03T15:09:59.524Z",
+  "indexGeneratedAt": "2026-07-03T15:09:58.520Z",
+  "feedstockTotal": 86,
+  "uniqueQuestions": 85,
+  "newDrafts": 54,
+  "skippedExisting": 0,
+  "reconciliationCandidates": [
+    {
+      "question": "What is the first legal step to evict a tenant in California?",
+      "matchedEntry": "how-to-evict-a-tenant-in-california",
+      "similarity": 0.833,
+      "derivedFrom": [
+        "cash-for-keys-when-the-court-fails"
+      ],
+      "note": "Already covered by the hub — route to the reconciliation engine (later slice), not a new entry."
+    },
+    {
+      "question": "What is cash for keys?",
+      "matchedEntry": "what-is-cash-for-keys",
+      "similarity": 1,
+      "derivedFrom": [
+        "cash-for-keys-when-the-court-fails"
+      ],
+      "note": "Already covered by the hub — route to the reconciliation engine (later slice), not a new entry."
+    },
+    {
+      "question": "Why might cash for keys cost less than a formal eviction?",
+      "matchedEntry": "why-might-cash-for-keys-cost-less-than-a-formal-eviction",
+      "similarity": 1,
+      "derivedFrom": [
+        "cash-for-keys-when-the-court-fails"
+      ],
+      "note": "Already covered by the hub — route to the reconciliation engine (later slice), not a new entry."
+    },
+    {
+      "question": "Does California have statewide rent control?",
+      "matchedEntry": "california-statewide-rent-control",
+      "similarity": 1,
+      "derivedFrom": [
+        "emergent-market-trend-statewide-california-rent-control"
+      ],
+      "note": "Already covered by the hub — route to the reconciliation engine (later slice), not a new entry."
+    },
+    {
+      "question": "How much can a landlord raise the rent each year in California?",
+      "matchedEntry": "how-much-can-a-landlord-raise-rent-in-california",
+      "similarity": 1,
+      "derivedFrom": [
+        "emergent-market-trend-statewide-california-rent-control"
+      ],
+      "note": "Already covered by the hub — route to the reconciliation engine (later slice), not a new entry."
+    },
+    {
+      "question": "How can I move my rental property equity out of California without a large tax hit?",
+      "matchedEntry": "how-can-i-move-my-rental-property-equity-out-of-california",
+      "similarity": 1,
+      "derivedFrom": [
+        "getting-your-money-out-of-california"
+      ],
+      "note": "Already covered by the hub — route to the reconciliation engine (later slice), not a new entry."
+    },
+    {
+      "question": "Can I avoid capital gains tax on a California rental I used to live in?",
+      "matchedEntry": "capital-gains-when-selling-a-california-rental",
+      "similarity": 0.7,
+      "derivedFrom": [
+        "getting-your-money-out-of-california"
+      ],
+      "note": "Already covered by the hub — route to the reconciliation engine (later slice), not a new entry."
+    },
+    {
+      "question": "What happens to existing tenant leases when I sell my rental property?",
+      "matchedEntry": "what-happens-to-existing-tenant-leases-when-i-sell-my-rental",
+      "similarity": 1,
+      "derivedFrom": [
+        "getting-your-money-out-of-california"
+      ],
+      "note": "Already covered by the hub — route to the reconciliation engine (later slice), not a new entry."
+    },
+    {
+      "question": "Do I need a qualified intermediary for a 1031 exchange?",
+      "matchedEntry": "what-is-a-1031-exchange",
+      "similarity": 1,
+      "derivedFrom": [
+        "getting-your-money-out-of-california"
+      ],
+      "note": "Already covered by the hub — route to the reconciliation engine (later slice), not a new entry."
+    },
+    {
+      "question": "How important is tenant screening to a rental property's returns?",
+      "matchedEntry": "how-important-is-tenant-screening-to-a-rental-propertys",
+      "similarity": 1,
+      "derivedFrom": [
+        "most-property-managers-work-for-themselves"
+      ],
+      "note": "Already covered by the hub — route to the reconciliation engine (later slice), not a new entry."
+    },
+    {
+      "question": "What does it take to win an eviction for non-payment of rent in California?",
+      "matchedEntry": "what-does-it-take-to-win-an-eviction-for-non-payment-of-rent",
+      "similarity": 1,
+      "derivedFrom": [
+        "most-property-managers-work-for-themselves"
+      ],
+      "note": "Already covered by the hub — route to the reconciliation engine (later slice), not a new entry."
+    },
+    {
+      "question": "Can I see my rental property's financial reports online?",
+      "matchedEntry": "can-i-see-my-rental-propertys-financial-reports-online",
+      "similarity": 1,
+      "derivedFrom": [
+        "most-property-managers-work-for-themselves"
+      ],
+      "note": "Already covered by the hub — route to the reconciliation engine (later slice), not a new entry."
+    },
+    {
+      "question": "Why does vacancy hurt rental returns so much?",
+      "matchedEntry": "why-does-vacancy-hurt-rental-returns-so-much",
+      "similarity": 1,
+      "derivedFrom": [
+        "most-property-managers-work-for-themselves"
+      ],
+      "note": "Already covered by the hub — route to the reconciliation engine (later slice), not a new entry."
+    },
+    {
+      "question": "How do self-service (self-guided) rental showings work?",
+      "matchedEntry": "how-do-self-service-self-guided-rental-showings-work",
+      "similarity": 1,
+      "derivedFrom": [
+        "self-service-showings-with-rently.com"
+      ],
+      "note": "Already covered by the hub — route to the reconciliation engine (later slice), not a new entry."
+    },
+    {
+      "question": "Are self-service showings safe for my rental property?",
+      "matchedEntry": "are-self-service-showings-safe-for-my-rental-property",
+      "similarity": 1,
+      "derivedFrom": [
+        "self-service-showings-with-rently.com"
+      ],
+      "note": "Already covered by the hub — route to the reconciliation engine (later slice), not a new entry."
+    },
+    {
+      "question": "Do I need a 20% down payment to buy a home?",
+      "matchedEntry": "do-i-need-a-20-down-payment-to-buy-a-home",
+      "similarity": 1,
+      "derivedFrom": [
+        "the-cheap-rent-trap"
+      ],
+      "note": "Already covered by the hub — route to the reconciliation engine (later slice), not a new entry."
+    },
+    {
+      "question": "How can I buy property if I can't afford it on my own?",
+      "matchedEntry": "how-can-i-buy-property-if-i-cant-afford-it-on-my-own",
+      "similarity": 1,
+      "derivedFrom": [
+        "the-cheap-rent-trap"
+      ],
+      "note": "Already covered by the hub — route to the reconciliation engine (later slice), not a new entry."
+    },
+    {
+      "question": "Why are owner-occupied mortgage rates better than investor loan rates?",
+      "matchedEntry": "why-are-owner-occupied-mortgage-rates-better-than-investor",
+      "similarity": 1,
+      "derivedFrom": [
+        "the-decade-dividend"
+      ],
+      "note": "Already covered by the hub — route to the reconciliation engine (later slice), not a new entry."
+    },
+    {
+      "question": "Can I turn my home into a rental after I move out?",
+      "matchedEntry": "can-i-turn-my-home-into-a-rental-after-i-move-out",
+      "similarity": 1,
+      "derivedFrom": [
+        "the-decade-dividend"
+      ],
+      "note": "Already covered by the hub — route to the reconciliation engine (later slice), not a new entry."
+    },
+    {
+      "question": "Why is real estate considered a hedge against inflation?",
+      "matchedEntry": "why-is-real-estate-considered-a-hedge-against-inflation",
+      "similarity": 1,
+      "derivedFrom": [
+        "the-rainy-day-trap"
+      ],
+      "note": "Already covered by the hub — route to the reconciliation engine (later slice), not a new entry."
+    },
+    {
+      "question": "How does a fixed-rate mortgage protect against inflation?",
+      "matchedEntry": "how-does-a-fixed-rate-mortgage-protect-against-inflation",
+      "similarity": 1,
+      "derivedFrom": [
+        "the-rainy-day-trap"
+      ],
+      "note": "Already covered by the hub — route to the reconciliation engine (later slice), not a new entry."
+    },
+    {
+      "question": "Can AI manage a rental property on its own?",
+      "matchedEntry": "can-ai-manage-a-rental-property-on-its-own",
+      "similarity": 1,
+      "derivedFrom": [
+        "the-robot-cant-read-the-room"
+      ],
+      "note": "Already covered by the hub — route to the reconciliation engine (later slice), not a new entry."
+    },
+    {
+      "question": "What is the risk of a mistake in a California eviction notice?",
+      "matchedEntry": "what-is-the-risk-of-a-mistake-in-a-california-eviction-notice",
+      "similarity": 1,
+      "derivedFrom": [
+        "the-robot-cant-read-the-room"
+      ],
+      "note": "Already covered by the hub — route to the reconciliation engine (later slice), not a new entry."
+    },
+    {
+      "question": "Should I use AI tools to help self-manage my rentals?",
+      "matchedEntry": "should-i-use-ai-tools-to-help-self-manage-my-rentals",
+      "similarity": 1,
+      "derivedFrom": [
+        "the-robot-cant-read-the-room"
+      ],
+      "note": "Already covered by the hub — route to the reconciliation engine (later slice), not a new entry."
+    },
+    {
+      "question": "Is hiring a property manager worth it for a single rental?",
+      "matchedEntry": "is-hiring-a-property-manager-worth-it-for-a-single-rental",
+      "similarity": 1,
+      "derivedFrom": [
+        "what-do-property-management-companies-do"
+      ],
+      "note": "Already covered by the hub — route to the reconciliation engine (later slice), not a new entry."
+    },
+    {
+      "question": "What landlord responsibilities come with owning a rental property?",
+      "matchedEntry": "what-landlord-responsibilities-come-with-owning-a-rental",
+      "similarity": 1,
+      "derivedFrom": [
+        "what-do-property-management-companies-do"
+      ],
+      "note": "Already covered by the hub — route to the reconciliation engine (later slice), not a new entry."
+    },
+    {
+      "question": "Should I rent or buy during a major life transition like a divorce?",
+      "matchedEntry": "should-i-rent-or-buy-during-a-major-life-transition-like-a",
+      "similarity": 1,
+      "derivedFrom": [
+        "when-decisions-overwhelm"
+      ],
+      "note": "Already covered by the hub — route to the reconciliation engine (later slice), not a new entry."
+    },
+    {
+      "question": "Can a landlord deny a rental applicant because they have an emotional support animal?",
+      "matchedEntry": "can-a-landlord-deny-an-emotional-support-animal",
+      "similarity": 1,
+      "derivedFrom": [
+        "why-good-tenants-keep-getting-rejected"
+      ],
+      "note": "Already covered by the hub — route to the reconciliation engine (later slice), not a new entry."
+    },
+    {
+      "question": "Can a landlord charge a pet deposit or pet rent for an emotional support animal?",
+      "matchedEntry": "can-a-landlord-charge-a-pet-deposit-or-pet-rent-for-an",
+      "similarity": 1,
+      "derivedFrom": [
+        "why-good-tenants-keep-getting-rejected"
+      ],
+      "note": "Already covered by the hub — route to the reconciliation engine (later slice), not a new entry."
+    },
+    {
+      "question": "Is a 3x income-to-rent ratio a legal requirement for tenants?",
+      "matchedEntry": "is-a-3x-income-to-rent-ratio-a-legal-requirement-for-tenants",
+      "similarity": 1,
+      "derivedFrom": [
+        "why-good-tenants-keep-getting-rejected"
+      ],
+      "note": "Already covered by the hub — route to the reconciliation engine (later slice), not a new entry."
+    },
+    {
+      "question": "How much should a tenant screening application fee be?",
+      "matchedEntry": "tenant-application-screening-fee-california",
+      "similarity": 0.625,
+      "derivedFrom": [
+        "why-good-tenants-keep-getting-rejected"
+      ],
+      "note": "Already covered by the hub — route to the reconciliation engine (later slice), not a new entry."
+    }
+  ],
+  "drafts": [
+    {
+      "slug": "why-do-good-rental-applicants-accept-other-properties-before",
+      "question": "Why do good rental applicants accept other properties before I can approve them?",
+      "topic": "good-rental-applicants",
+      "topicMatched": false,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "be-quick-but-dont-hurry-a-lease-we-lost-and-the-lesson-that-stuck"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "how-fast-should-a-property-manager-approve-a-rental",
+      "question": "How fast should a property manager approve a rental application?",
+      "topic": "property-management-basics",
+      "topicMatched": true,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "be-quick-but-dont-hurry-a-lease-we-lost-and-the-lesson-that-stuck"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "whats-the-difference-between-being-quick-and-hurrying-when",
+      "question": "What's the difference between being quick and hurrying when screening a tenant?",
+      "topic": "property-management-basics",
+      "topicMatched": true,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "be-quick-but-dont-hurry-a-lease-we-lost-and-the-lesson-that-stuck"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "how-can-owners-help-their-property-manager-approve-good",
+      "question": "How can owners help their property manager approve good tenants faster?",
+      "topic": "property-management-basics",
+      "topicMatched": true,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "be-quick-but-dont-hurry-a-lease-we-lost-and-the-lesson-that-stuck"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "when-does-a-california-residential-tenancy-actually-end",
+      "question": "When does a California residential tenancy actually end?",
+      "topic": "california-residential-tenancy",
+      "topicMatched": false,
+      "type": "subjective",
+      "sourcesRequired": false,
+      "derivedFrom": [
+        "but-i-paid-through-the-end-of-the-month-when-a-tenancy-actually-ends"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "does-paying-rent-through-the-end-of-the-month-end-my-tenancy",
+      "question": "Does paying rent through the end of the month end my tenancy?",
+      "topic": "paying-rent-through",
+      "topicMatched": false,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "but-i-paid-through-the-end-of-the-month-when-a-tenancy-actually-ends"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "what-starts-the-21-day-security-deposit-clock-in-california",
+      "question": "What starts the 21-day security deposit clock in California?",
+      "topic": "starts-day-security",
+      "topicMatched": false,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "but-i-paid-through-the-end-of-the-month-when-a-tenancy-actually-ends"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "how-long-does-a-landlord-have-to-return-a-security-deposit-in",
+      "question": "How long does a landlord have to return a security deposit in California?",
+      "topic": "california-rental-laws",
+      "topicMatched": true,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "but-i-paid-through-the-end-of-the-month-when-a-tenancy-actually-ends"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "what-is-an-initial-inspection-or-pre-move-out-inspection",
+      "question": "What is an initial inspection or pre-move-out inspection?",
+      "topic": "initial-inspection-pre",
+      "topicMatched": false,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "but-i-paid-through-the-end-of-the-month-when-a-tenancy-actually-ends"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "why-am-i-being-charged-for-days-after-my-rent-was-paid",
+      "question": "Why am I being charged for days after my rent was paid through?",
+      "topic": "charged-days-after",
+      "topicMatched": false,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "but-i-paid-through-the-end-of-the-month-when-a-tenancy-actually-ends"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "what-should-i-do-to-get-my-security-deposit-back-quickly",
+      "question": "What should I do to get my security deposit back quickly?",
+      "topic": "get-security-deposit",
+      "topicMatched": false,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "but-i-paid-through-the-end-of-the-month-when-a-tenancy-actually-ends"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "does-california-require-landlords-to-provide-a-refrigerator",
+      "question": "Does California require landlords to provide a refrigerator?",
+      "topic": "california-require-landlords",
+      "topicMatched": false,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "california-now-requires-landlords-to-provide-a-refrigerator"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "when-does-ab-628-take-effect-and-which-leases-does-it-apply",
+      "question": "When does AB 628 take effect and which leases does it apply to?",
+      "topic": "628-take-effect",
+      "topicMatched": false,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "california-now-requires-landlords-to-provide-a-refrigerator"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "do-landlords-have-to-install-a-refrigerator-in-every-occupied",
+      "question": "Do landlords have to install a refrigerator in every occupied unit on January 1, 2026?",
+      "topic": "landlords-install-refrigerator",
+      "topicMatched": false,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "california-now-requires-landlords-to-provide-a-refrigerator"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "can-a-tenant-provide-their-own-refrigerator-instead-of-the",
+      "question": "Can a tenant provide their own refrigerator instead of the landlord?",
+      "topic": "tenant-screening-and-fair-housing",
+      "topicMatched": true,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "california-now-requires-landlords-to-provide-a-refrigerator"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "what-happens-if-a-landlord-provided-refrigerator-is-recalled",
+      "question": "What happens if a landlord-provided refrigerator is recalled?",
+      "topic": "happens-landlord-provided",
+      "topicMatched": false,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "california-now-requires-landlords-to-provide-a-refrigerator"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "which-rental-units-are-exempt-from-ab-628",
+      "question": "Which rental units are exempt from AB 628?",
+      "topic": "rental-units-exempt",
+      "topicMatched": false,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "california-now-requires-landlords-to-provide-a-refrigerator"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "can-a-landlord-raise-the-rent-to-cover-the-cost-of-providing",
+      "question": "Can a landlord raise the rent to cover the cost of providing a refrigerator?",
+      "topic": "california-rental-laws",
+      "topicMatched": true,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "california-now-requires-landlords-to-provide-a-refrigerator"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "what-is-the-statutory-basis-for-the-california-refrigerator",
+      "question": "What is the statutory basis for the California refrigerator requirement?",
+      "topic": "statutory-basis-california",
+      "topicMatched": false,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "california-now-requires-landlords-to-provide-a-refrigerator"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "is-the-demographic-cliff-already-affecting-ventura-county",
+      "question": "Is the demographic cliff already affecting Ventura County?",
+      "topic": "demographic-cliff-already",
+      "topicMatched": false,
+      "type": "subjective",
+      "sourcesRequired": false,
+      "derivedFrom": [
+        "the-demographic-cliff-what-an-aging-buyer-pool-means-for-your-rentals-next-decade"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "what-is-the-demographic-cliff-in-housing-and-why-does-it",
+      "question": "What is the demographic cliff in housing and why does it matter to rental owners?",
+      "topic": "demographic-cliff-housing",
+      "topicMatched": false,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "the-demographic-cliff-what-an-aging-buyer-pool-means-for-your-rentals-next-decade"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "is-gen-z-really-leaving-california",
+      "question": "Is Gen Z really leaving California?",
+      "topic": "gen-really-leaving",
+      "topicMatched": false,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "the-demographic-cliff-what-an-aging-buyer-pool-means-for-your-rentals-next-decade"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "which-rental-properties-are-most-exposed-to-the-demographic",
+      "question": "Which rental properties are most exposed to the demographic cliff?",
+      "topic": "rental-properties-exposed",
+      "topicMatched": false,
+      "type": "subjective",
+      "sourcesRequired": false,
+      "derivedFrom": [
+        "the-demographic-cliff-what-an-aging-buyer-pool-means-for-your-rentals-next-decade"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "how-should-a-rental-owner-respond-to-long-term-demographic",
+      "question": "How should a rental owner respond to long-term demographic decline?",
+      "topic": "rental-owner-respond",
+      "topicMatched": false,
+      "type": "subjective",
+      "sourcesRequired": false,
+      "derivedFrom": [
+        "the-demographic-cliff-what-an-aging-buyer-pool-means-for-your-rentals-next-decade"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "does-californias-tax-policy-and-high-earner-out-migration",
+      "question": "Does California's tax policy and high-earner out-migration affect rental demand?",
+      "topic": "selling-your-rental",
+      "topicMatched": true,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "the-demographic-cliff-what-an-aging-buyer-pool-means-for-your-rentals-next-decade"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "are-fewer-first-time-homebuyers-good-or-bad-for-rental",
+      "question": "Are fewer first-time homebuyers good or bad for rental property owners?",
+      "topic": "ai-and-property-management",
+      "topicMatched": true,
+      "type": "subjective",
+      "sourcesRequired": false,
+      "derivedFrom": [
+        "the-disappearing-first-time-buyer-why-it-strengthens-your-rental-and-changes-your-endgame"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "how-does-the-decline-in-first-time-buyers-affect-the-resale",
+      "question": "How does the decline in first-time buyers affect the resale value of my rental?",
+      "topic": "decline-first-time",
+      "topicMatched": false,
+      "type": "subjective",
+      "sourcesRequired": false,
+      "derivedFrom": [
+        "the-disappearing-first-time-buyer-why-it-strengthens-your-rental-and-changes-your-endgame"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "how-can-i-access-my-rental-propertys-equity-without-selling",
+      "question": "How can I access my rental property's equity without selling it?",
+      "topic": "selling-your-rental",
+      "topicMatched": true,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "the-disappearing-first-time-buyer-why-it-strengthens-your-rental-and-changes-your-endgame"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "what-is-the-step-up-in-basis-and-why-does-it-favor-holding",
+      "question": "What is the step-up in basis and why does it favor holding rental property until death?",
+      "topic": "ai-and-property-management",
+      "topicMatched": true,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "the-disappearing-first-time-buyer-why-it-strengthens-your-rental-and-changes-your-endgame"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "should-i-sell-my-house-if-i-have-a-low-mortgage-rate-but-need",
+      "question": "Should I sell my house if I have a low mortgage rate but need to access my equity?",
+      "topic": "buying-and-investing",
+      "topicMatched": true,
+      "type": "subjective",
+      "sourcesRequired": false,
+      "derivedFrom": [
+        "the-golden-handcuffs-when-your-3-mortgage-is-quietly-costing-you-money"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "what-is-the-rate-lock-in-effect",
+      "question": "What is the rate lock-in effect?",
+      "topic": "rate-lock-effect",
+      "topicMatched": false,
+      "type": "subjective",
+      "sourcesRequired": false,
+      "derivedFrom": [
+        "the-golden-handcuffs-when-your-3-mortgage-is-quietly-costing-you-money"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "is-a-heloc-or-a-home-equity-loan-better-for-pulling-equity",
+      "question": "Is a HELOC or a home equity loan better for pulling equity out of a rental property?",
+      "topic": "selling-your-rental",
+      "topicMatched": true,
+      "type": "subjective",
+      "sourcesRequired": false,
+      "derivedFrom": [
+        "the-golden-handcuffs-when-your-3-mortgage-is-quietly-costing-you-money"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "does-pulling-equity-out-of-a-rental-property-still-make-sense",
+      "question": "Does pulling equity out of a rental property still make sense if it turns cash flow negative?",
+      "topic": "selling-your-rental",
+      "topicMatched": true,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "the-golden-handcuffs-when-your-3-mortgage-is-quietly-costing-you-money"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "can-i-still-get-the-25-000-rental-loss-deduction-if-i-use-a",
+      "question": "Can I still get the $25,000 rental loss deduction if I use a property manager?",
+      "topic": "property-management-basics",
+      "topicMatched": true,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "the-golden-handcuffs-when-your-3-mortgage-is-quietly-costing-you-money"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "can-i-deduct-the-tax-loss-when-i-convert-my-home-to-a-rental",
+      "question": "Can I deduct the tax loss when I convert my home to a rental?",
+      "topic": "buying-and-investing",
+      "topicMatched": true,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "the-golden-handcuffs-when-your-3-mortgage-is-quietly-costing-you-money"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "what-is-soar-in-ventura-county",
+      "question": "What is SOAR in Ventura County?",
+      "topic": "soar-ventura-county",
+      "topicMatched": false,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "the-one-factor-that-works-for-you-how-soar-quietly-protects-your-ventura-county-rental"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "how-does-soar-affect-ventura-county-housing-supply-and",
+      "question": "How does SOAR affect Ventura County housing supply and property values?",
+      "topic": "soar-affect-ventura",
+      "topicMatched": false,
+      "type": "subjective",
+      "sourcesRequired": false,
+      "derivedFrom": [
+        "the-one-factor-that-works-for-you-how-soar-quietly-protects-your-ventura-county-rental"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "does-limited-housing-supply-help-or-hurt-rental-property",
+      "question": "Does limited housing supply help or hurt rental property owners?",
+      "topic": "ai-and-property-management",
+      "topicMatched": true,
+      "type": "subjective",
+      "sourcesRequired": false,
+      "derivedFrom": [
+        "the-one-factor-that-works-for-you-how-soar-quietly-protects-your-ventura-county-rental"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "can-a-property-manager-agree-to-let-a-government-agency-use-a",
+      "question": "Can a property manager agree to let a government agency use a vacant rental without the owner's permission?",
+      "topic": "property-management-basics",
+      "topicMatched": true,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "they-walked-into-my-office-with-an-800-offer-i-said-no"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "whats-the-liability-risk-if-a-law-enforcement-sting-on-my",
+      "question": "What's the liability risk if a law-enforcement sting on my rental goes wrong?",
+      "topic": "liability-risk-law",
+      "topicMatched": false,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "they-walked-into-my-office-with-an-800-offer-i-said-no"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "is-a-property-manager-required-to-present-every-offer-to-the",
+      "question": "Is a property manager required to present every offer to the owner, even bad ones?",
+      "topic": "property-manager-required",
+      "topicMatched": false,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "they-walked-into-my-office-with-an-800-offer-i-said-no"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "why-compare-a-contractor-sting-to-a-hud-fair-housing-test",
+      "question": "Why compare a contractor sting to a HUD fair-housing test?",
+      "topic": "compare-contractor-sting",
+      "topicMatched": false,
+      "type": "subjective",
+      "sourcesRequired": false,
+      "derivedFrom": [
+        "they-walked-into-my-office-with-an-800-offer-i-said-no"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "what-should-an-owner-ask-before-allowing-any-non-standard-use",
+      "question": "What should an owner ask before allowing any non-standard use of a vacant property?",
+      "topic": "owner-ask-before",
+      "topicMatched": false,
+      "type": "subjective",
+      "sourcesRequired": false,
+      "derivedFrom": [
+        "they-walked-into-my-office-with-an-800-offer-i-said-no"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "what-should-a-tenant-do-if-a-rental-is-not-in-the-promised",
+      "question": "What should a tenant do if a rental is not in the promised condition at move-in?",
+      "topic": "buying-and-investing",
+      "topicMatched": true,
+      "type": "subjective",
+      "sourcesRequired": false,
+      "derivedFrom": [
+        "when-move-in-ready-isnt-a-tenant-a-landlord-and-the-day-everything-changed"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "can-a-tenant-get-their-security-deposit-and-prepaid-rent-back",
+      "question": "Can a tenant get their security deposit and prepaid rent back if the unit was not delivered as promised?",
+      "topic": "tenant-get-their",
+      "topicMatched": false,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "when-move-in-ready-isnt-a-tenant-a-landlord-and-the-day-everything-changed"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "is-a-musty-smell-water-stained-baseboards-or-lifting-vinyl-a",
+      "question": "Is a musty smell, water-stained baseboards, or lifting vinyl a habitability problem?",
+      "topic": "musty-smell-water",
+      "topicMatched": false,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "when-move-in-ready-isnt-a-tenant-a-landlord-and-the-day-everything-changed"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "why-should-a-tenant-refuse-possession-rather-than-move-in-and",
+      "question": "Why should a tenant refuse possession rather than move in and complain later?",
+      "topic": "tenant-refuse-possession",
+      "topicMatched": false,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "when-move-in-ready-isnt-a-tenant-a-landlord-and-the-day-everything-changed"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "what-is-the-lesson-for-landlords-who-promise-new-paint-carpet",
+      "question": "What is the lesson for landlords who promise new paint, carpet, and cleaning before move-in?",
+      "topic": "lesson-landlords-promise",
+      "topicMatched": false,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "when-move-in-ready-isnt-a-tenant-a-landlord-and-the-day-everything-changed"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "how-can-a-property-manager-help-in-a-situation-like-this",
+      "question": "How can a property manager help in a situation like this?",
+      "topic": "property-management-basics",
+      "topicMatched": true,
+      "type": "subjective",
+      "sourcesRequired": false,
+      "derivedFrom": [
+        "when-move-in-ready-isnt-a-tenant-a-landlord-and-the-day-everything-changed"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "can-a-california-landlord-pass-insurance-cost-increases",
+      "question": "Can a California landlord pass insurance cost increases through to residential tenants?",
+      "topic": "california-rental-laws",
+      "topicMatched": true,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "your-insurance-just-jumped-35-can-you-pass-it-to-the-tenant"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "how-does-the-ab-1482-single-family-exemption-affect",
+      "question": "How does the AB 1482 single-family exemption affect recovering insurance costs?",
+      "topic": "1482-single-family",
+      "topicMatched": false,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "your-insurance-just-jumped-35-can-you-pass-it-to-the-tenant"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "can-a-1031-exchange-help-with-high-california-insurance-costs",
+      "question": "Can a 1031 exchange help with high California insurance costs?",
+      "topic": "selling-your-rental",
+      "topicMatched": true,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "your-insurance-just-jumped-35-can-you-pass-it-to-the-tenant"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "why-has-california-homeowners-and-landlord-insurance-gotten",
+      "question": "Why has California homeowners and landlord insurance gotten so expensive?",
+      "topic": "california-rental-laws",
+      "topicMatched": true,
+      "type": "subjective",
+      "sourcesRequired": false,
+      "derivedFrom": [
+        "your-insurance-just-jumped-35-can-you-pass-it-to-the-tenant"
+      ],
+      "status": "written"
+    },
+    {
+      "slug": "is-the-ab-1482-rent-cap-doing-to-landlords-what-prop-103-did",
+      "question": "Is the AB 1482 rent cap doing to landlords what Prop 103 did to insurers?",
+      "topic": "1482-rent-cap",
+      "topicMatched": false,
+      "type": "objective",
+      "sourcesRequired": true,
+      "derivedFrom": [
+        "your-insurance-just-jumped-35-can-you-pass-it-to-the-tenant"
+      ],
+      "status": "written"
+    }
+  ]
+}

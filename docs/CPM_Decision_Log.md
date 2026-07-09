@@ -138,61 +138,64 @@ task. Keep host-git actions in the gitignored `scripts/_*.bat` pattern already i
 
 ---
 
-## 2026-07-03 (later) — Item #2 BUILT: post-publish inspection + heartbeat
+## 2026-07-03 — Priority item #3 BUILT (GEO effectiveness readout — the OUTCOME end)
 
-**Design decisions settled first (per the open question above).**
-1. **Signal channel = email to the blog inbox.** Reuse the Track-D Gmail path
-   (`cpmblog93012@gmail.com`) the owner already watches — no new surface to remember to open.
-2. **Inspection host = the Windows runners.** Live-fetch + git already work there; appending
-   to the existing scheduled tasks avoids a second moving part. (Matches the sandbox-can't-fetch
-   constraint above.)
+**Why this is the item.** The pipeline authors, publishes, inspects (item #2), and
+heartbeats — but nothing measured whether any of it moved the needle the whole
+initiative exists for: *are our pages indexed, and do AI answer engines cite us?*
+Item #3 closes that loop with a measurement + reporting layer. It is the "only
+genuinely new build worth adding" flagged in `CPM_GEO_Progress_Summary.md` §8.
 
-**What shipped.**
-- `scripts/inspect-live-posts.mjs` — OUTPUT-end check. Derives targets from the git range the
-  run pushed (`--since <preSha>..HEAD`, or explicit `--slug` / `--faq-slug`), fetches the LIVE
-  `www.c-p-m.com` url(s), and asserts they actually rendered: blog → HTTP 200, correct page
-  (slug in canonical/og, not a soft-404), title rendered, hero asset resolves + is referenced,
-  and the "Related questions" spoke when the post declares `faq:`; FAQ → topic page 200, the
-  `#<slug>` anchor rendered, question rendered, and (objective entries) the Sources block. Every
-  request is cache-busted and the target set is retried over a propagation window (default 8×20s)
-  so a slow-but-good Vercel deploy is never false-alarmed. Writes `inspect-report.json`
-  (gitignored); exits nonzero on any hard failure. Does NOT re-fetch external FAQ sources — that
-  stays Track B's (`check:faq-sources`) job.
-- `scripts/lib-mail.mjs` + `scripts/send-heartbeat.mjs` — the SIGNAL. nodemailer over the same
-  Gmail App Password (SMTP 465). The heartbeat gathers three things: OUTPUT (the inspect report),
-  INPUT (FAQ draft-queue depth: `content/faq-drafts` vs live `content/faq` — the 07/02 stall
-  shape), and RUN outcome (counts the runner passes in). Subject is scannable: `[CPM blog ✓]`
-  clean vs `[CPM blog ⚠]` when a live check failed, a run failed, or the draft backlog crossed a
-  stall threshold (default 25 — the queue is ~84 today, so it will flag until drained).
-- Wiring: `post-blog-inbox.ps1` inspects + heartbeats only when it actually published a post
-  (avoids noise on every 30-min tick); `publish-faq.ps1` inspects + heartbeats on a real publish,
-  and on a no-op day sends `--only-problems` so a stalled draft queue still surfaces while healthy
-  quiet days stay silent. Both capture the pre-run SHA to scope the inspection. Failure paths emit
-  a best-effort heartbeat so a crashing runner isn't silent. A heartbeat send failure never fails
-  the publish run.
+**Decisions locked with the owner (before building):**
+- **Indexation source = public `site:` queries, no setup** (over the GSC API or
+  manual CSV export). Owner chose zero-setup + unattended over exact-but-credentialed.
+  Approximate by design; the sampled key-URL presence is the cleaner sub-signal.
+- **AI-citation method = browser automation** (over paid Perplexity/OpenAI APIs or a
+  manual checklist). Reflects the real consumer answer; accepted trade is that it
+  needs a signed-in browser session and occasional babysitting.
+- **Output = committed markdown trend + emailed summary** (over a transient Cowork
+  artifact or email-only). Durable, versioned trend in the repo; reuses the item-#2
+  SMTP path.
 
-**Verification.** Target derivation confirmed against a real range (`f380c1d~1..HEAD` → the 07/02
-blog post + its 4 FAQ entries). Assertion core (`evalHtml` + `hasPhrase`, incl. HTML-entity
-tolerance, 404 short-circuit, missing-spoke / 404-hero / missing-source / missing-anchor failure
-detection) unit-tested 10/10. Live-fetch against `www.c-p-m.com` and the SMTP send could not be
-exercised from the Linux sandbox (no route to the domain; SMTP not reachable) — both run on the
-Windows host and will be exercised on the first real publish.
+**Shipped:**
+- `scripts/geo-indexation-check.mjs` — fetches the live sitemap (denominator), runs
+  `site:c-p-m.com` against Bing + DuckDuckGo (Google best-effort; CAPTCHA/consent
+  degrades to "unavailable", never throws), spot-checks a sample of high-value URLs
+  with exact `site:<url>` queries, writes `geo-index-report.json` (gitignored).
+  `--self-test` proves the parsers with fixtures (7/7 pass, no network).
+- `scripts/geo-citation-probes.json` — 12 fixed Ventura-County owner/investor
+  questions (local, informational, decision intent), each mapped to the CPM URL it
+  should surface. Stable across cycles so the trend is comparable.
+- `scripts/geo-citation-record.mjs` — turns a browser run's results array into the
+  same-shaped `geo-citation-report.json`; per-engine + per-intent rollups; counts
+  only *checked* cells so partial runs don't distort the rate. `--template` emits a
+  blank scaffold; unknown probe ids warn, don't crash.
+- `scripts/geo-readout.mjs` (`npm run geo:readout`) — folds both reports into a
+  dated section **prepended** to `docs/CPM_GEO_Readout.md` (newest first) and emails
+  a `[CPM GEO ✓/⚠]` summary. Each half degrades independently; a missing/stale
+  (>45d) report is reported as "not run", which is itself signal. Thresholds:
+  bulk coverage <70%, sampled presence <80%, or citation <25% trip ⚠.
+- `scripts/geo-readout.ps1` — Windows monthly runner: indexation probe → assemble +
+  email → commit only the trend doc (report JSONs are gitignored). No-ops on no diff.
+- Docs: new `docs/CPM_GEO_Readout.md` (ledger + how-to); `CPM_GEO_Progress_Summary.md`
+  §8 item 4 marked BUILT; `.gitignore` + `package.json` (`geo:index`,
+  `geo:citation-record`, `geo:readout`) updated.
 
-**Sandbox caveat (for the next session).** During this build the read-only county-pm-site mount
-desynced after repeated rewrites of the same filename and served a stale/corrupted cached copy of
-`inspect-live-posts.mjs` to `node` (the file API showed the correct file throughout). If a future
-sandbox `node --check` of that file reports a phantom syntax error at EOF, suspect the mount cache,
-not the file — verify with the file API / on Windows before "fixing" it.
+**Verified:** indexation parser self-test 7/7; recorder rollups (per-engine,
+per-intent, unknown-id guard) checked against fixtures; readout composition + ⚠/✓
+logic + newest-first prepend (header stays singular) + both-halves-missing
+degradation all confirmed. First real Perplexity data point seeded live: the
+flagship "best property management companies in Ventura County" query named six
+competitors and **did not surface County Property Management** — a sobering but
+accurate baseline, staged in `geo-citation-report.json`.
 
-**Optional config.** `send-heartbeat` recipient defaults to `cpmblog93012@gmail.com`; override with
-`CPM_HEARTBEAT_TO` in `.env.blog-inbox`. Stall threshold via `--stall-threshold N`.
-
-**Next (item #3, unchanged):** GEO effectiveness readout (indexation coverage + periodic
-AI-citation spot checks) — the OUTCOME end.
-
----
-
-## 2026-07-03 (close of session) — Item #2 shipped, live, and in version control
+**Known limits / next:** (1) the citation half needs a signed-in browser — answer
+engines gate their source panels behind login (hit on the seed run), so full runs
+require the owner signed in; (2) the first live *indexation* numbers must come from
+a Windows-side run (`site:` queries + commit can't run in the Linux sandbox); (3)
+consider registering `geo-readout.ps1` in Task Scheduler (monthly) alongside the
+existing FAQ/blog jobs.
+ipped, live, and in version control
 
 **What was decided.** Build item #2 as two halves and settle its open channel question first:
 the pipeline's signal surfaces as an **email to the blog inbox** (`cpmblog93012@gmail.com`,
