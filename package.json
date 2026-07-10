@@ -4,7 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/stamp-faq-cache-key.mjs --quiet",
     "build": "next build",
+    "wire:spokes": "node scripts/wire-blog-spokes.mjs",
+    "stamp:faq-cache": "node scripts/stamp-faq-cache-key.mjs",
     "start": "next start",
     "lint": "eslint",
     "check:faq-sources": "node scripts/check-faq-sources.mjs",

@@ -50,9 +50,23 @@ try {
     if ($LASTEXITCODE -ne 0) { Log 'Build FAILED — nothing published.'; exit 1 }
   }
 
-  # 4. Stage ONLY FAQ content + the source registry.
+  # 3b. Wire reciprocal blog spokes from FAQ `derivedFrom` (append-only merge:
+  #     never removes hand-curated faq entries, only adds missing derived ones),
+  #     and stamp the FAQ cache key so Vercel's build cache can't serve stale
+  #     blog prerenders after a FAQ-only change (the 2026-07-09 stale-cache bug).
+  #     Both are idempotent — no-op when everything is already wired/current.
+  $spokeChanged = & node scripts/wire-blog-spokes.mjs --apply --print-changed
+  if ($LASTEXITCODE -ne 0) { Log 'Spoke wiring FAILED (invalid YAML produced) — nothing published.'; try { node scripts/send-heartbeat.mjs --context faq --failed 1 --state 'spoke-wiring-failed' } catch {}; exit 1 }
+  $cacheKeyChanged = & node scripts/stamp-faq-cache-key.mjs --print-changed
+  if ($LASTEXITCODE -ne 0) { Log 'Cache-key stamp FAILED — nothing published.'; exit 1 }
+
+  # 4. Stage ONLY FAQ content, the source registry, any blog posts whose spokes
+  #    changed, and the generated cache-key module (never `git add .`).
   git add content/faq scripts/faq-source-registry.json
-  $changes = git status --porcelain content/faq scripts/faq-source-registry.json
+  foreach ($f in @($spokeChanged) + @($cacheKeyChanged)) {
+    if ($f -and $f.Trim()) { git add -- $f.Trim() }
+  }
+  $changes = git status --porcelain content/faq scripts/faq-source-registry.json content/blog lib/faq-cache-key.ts
   if (-not $changes) {
     Log 'No FAQ changes to publish.'
     # Queue hygiene: clear any drafts whose slug is already live so the heartbeat

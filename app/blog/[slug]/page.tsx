@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import { getAllPosts, getPostBySlug } from '@/lib/blog'
 import { getFaqEntry, faqEntryUrl } from '@/lib/faq'
+import { FAQ_CACHE_KEY } from '@/lib/faq-cache-key'
 import { blogPostingLd, jsonLd } from '@/lib/structured-data'
 import InvestorLeadForm from '@/components/forms/InvestorLeadForm'
 
@@ -41,6 +42,13 @@ export default async function BlogPostPage({ params }: PageProps) {
   // Spoke: resolve referenced FAQ entries from the hub. We render a short
   // reference + link back to the canonical answer — never a copy (avoids drift
   // and duplicate-content penalties; the hub stays the single source of truth).
+  // Reference FAQ_CACHE_KEY so this const (a hash of content/faq) is a tracked
+  // build dependency of this page. Without it, Next.js doesn't see the blog
+  // page's dependence on FAQ files and can serve stale spokes after a FAQ-only
+  // change. See scripts/stamp-faq-cache-key.mjs and
+  // claude/blog-spoke-stale-cache-2026-07-09.md. void keeps it side-effect-free.
+  void FAQ_CACHE_KEY
+
   const faqRefs = (post.faq || [])
     .map((faqSlug) => getFaqEntry(faqSlug))
     .filter((entry): entry is NonNullable<typeof entry> => entry !== null)
