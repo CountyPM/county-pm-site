@@ -1,16 +1,25 @@
 ---
-question: 'Is Gen Z really leaving California?'
+question: Is Gen Z really leaving California?
 topic: housing-market-and-demographics
 topicTitle: Housing Market & Demographics
-topicDescription: >-
-  How demographic and supply trends shape rental demand and owner strategy.
+topicDescription: How demographic and supply trends shape rental demand and owner strategy.
 type: subjective
 derivedFrom:
-  - the-demographic-cliff-what-an-aging-buyer-pool-means-for-your-rentals-next-decade
+  - >-
+    the-demographic-cliff-what-an-aging-buyer-pool-means-for-your-rentals-next-decade
 created: '2026-07-09'
 order: 1
 sources: []
-annotations: []
+annotations:
+  - date: '2026-07-13'
+    type: additive
+    note: >-
+      The demographic-cliff post treats Gen Z out-migration as a genuinely
+      contested question and presents both sides — including the $16.5B revenue
+      windfall as evidence the high-earner base is, for now, a strength rather
+      than a collapse.
+    post: >-
+      the-demographic-cliff-what-an-aging-buyer-pool-means-for-your-rentals-next-decade
 ---
 
 On net, yes — though the picture is more nuanced than a clean exodus. California has the largest overall net domestic out-migration of any state, and Gen Z's biggest net inflows are landing in Texas, Tennessee, and other lower-cost states, driven mostly by affordability and entry-level job markets.

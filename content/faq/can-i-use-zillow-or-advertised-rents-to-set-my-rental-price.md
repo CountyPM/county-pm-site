@@ -7,14 +7,24 @@ topicDescription: >-
   Ventura County rental owners.
 type: objective
 derivedFrom:
-  - price-by-walking-the-street-what-californias-new-algorithm-law-means-for-rental-owners
+  - >-
+    price-by-walking-the-street-what-californias-new-algorithm-law-means-for-rental-owners
 created: '2026-07-06'
 order: 34
 sources:
   - label: 'Assembly Bill 325 (2025), amending the Cartwright Act'
     url: >-
       https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB325
-annotations: []
+annotations:
+  - date: '2026-07-13'
+    type: additive
+    note: >-
+      The AB 325 post gives the safe-harbor test: comps drawn from public
+      listings (Zillow, advertised rents) and priced by your own judgment
+      'pass'; pooled private competitor data with a software-recommended number
+      is the architecture AB 325 codified against.
+    post: >-
+      price-by-walking-the-street-what-californias-new-algorithm-law-means-for-rental-owners
 ---
 
 Yes. Advertised asking rents, public listings, and recorded public data are visible to both sides of the market — prospective tenants can see the same numbers you can — which is exactly the kind of information antitrust law treats as pro-competitive.

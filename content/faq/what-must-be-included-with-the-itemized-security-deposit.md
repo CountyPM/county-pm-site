@@ -1,5 +1,7 @@
 ---
-question: What must be included with the itemized security deposit statement in California?
+question: >-
+  What must be included with the itemized security deposit statement in
+  California?
 topic: california-rental-laws
 topicTitle: California Rental Laws
 topicDescription: >-
@@ -7,7 +9,8 @@ topicDescription: >-
   Ventura County rental owners.
 type: objective
 derivedFrom:
-  - sacramento-changed-the-strike-zone-and-most-landlords-are-still-swinging-at-the-old-one
+  - >-
+    sacramento-changed-the-strike-zone-and-most-landlords-are-still-swinging-at-the-old-one
 created: '2026-07-06'
 order: 13
 sources:
@@ -17,7 +20,26 @@ sources:
   - label: 'Assembly Bill 2801 (2024), amending Cal. Civ. Code Section 1950.5'
     url: >-
       https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240AB2801
-annotations: []
+annotations:
+  - date: '2026-07-13'
+    type: additive
+    note: >-
+      The strike-zone post reinforces the new §1950.5 requirements: every item
+      visible at the pre-move-out walkthrough must be listed, backed by
+      move-out, post-repair, and move-in photos, and delivered inside 21 days —
+      a statement without the photos loses even a legitimate claim.
+    post: >-
+      sacramento-changed-the-strike-zone-and-most-landlords-are-still-swinging-at-the-old-one
+  - date: '2026-07-13'
+    type: additive
+    note: >-
+      The congratulations-landlord post reinforces the AB 2801 documentation
+      requirements — photos delivered with the itemized statement, the deduction
+      reasonably-necessary standard, and bad-faith forfeiture of the deposit.
+      Flagged as a candidate contradiction on shared statutes 1950.5/AB 2801;
+      verified 2026-07-13 that the post carries no figure conflicting with the
+      entry’s 25 documentation-omission threshold under §1950.5(g). Additive.
+    post: congratulations-landlord-youre-now-a-crime-scene-investigator
 ---
 
 California's itemized security deposit statement must list every deduction with its cost, and since AB 2801 it must also include photographs of the unit's condition. That means the move-out photos taken before any repairs or cleaning, the post-work photos, and — for tenancies beginning on or after July 1, 2025 — the move-in baseline photos.

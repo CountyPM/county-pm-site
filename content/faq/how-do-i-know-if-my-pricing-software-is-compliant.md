@@ -7,14 +7,25 @@ topicDescription: >-
   Ventura County rental owners.
 type: subjective
 derivedFrom:
-  - price-by-walking-the-street-what-californias-new-algorithm-law-means-for-rental-owners
+  - >-
+    price-by-walking-the-street-what-californias-new-algorithm-law-means-for-rental-owners
 created: '2026-07-06'
 order: 35
 sources:
   - label: 'Assembly Bill 325 (2025), amending the Cartwright Act'
     url: >-
       https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB325
-annotations: []
+annotations:
+  - date: '2026-07-13'
+    type: additive
+    note: >-
+      The AB 325 post supplies three compliance questions for any pricing tool:
+      where do the comps come from (public listings vs other customers' books),
+      does your own data feed anyone else's recommendation, and do you or the
+      software set the final price — public sources, siloed data, human decision
+      pass.
+    post: >-
+      price-by-walking-the-street-what-californias-new-algorithm-law-means-for-rental-owners
 ---
 
 Ask three questions about how the tool actually works. First, where do the comps come from — public listings, or other customers' private books? Second, does your data feed anyone else's recommendations? Third, who sets the final price — you, or the algorithm?

@@ -7,11 +7,21 @@ topicDescription: >-
   Ventura County rental owners.
 type: subjective
 derivedFrom:
-  - we-managed-ventura-county-rentals-through-thomas-and-mountain-sb-610-changes-the-next-fire
+  - >-
+    we-managed-ventura-county-rentals-through-thomas-and-mountain-sb-610-changes-the-next-fire
 created: '2026-07-06'
 order: 45
 sources: []
-annotations: []
+annotations:
+  - date: '2026-07-13'
+    type: additive
+    note: >-
+      The SB 610 post supplies Ventura County fire context (CPM placed tenants
+      displaced by the Thomas and Mountain fires); the new law shifts
+      habitability burden to owners but doesn't change that a renter's own
+      loss-of-use coverage, not the landlord, typically funds temporary housing.
+    post: >-
+      we-managed-ventura-county-rentals-through-thomas-and-mountain-sb-610-changes-the-next-fire
 ---
 
 Often, yes. Most renters policies include loss-of-use coverage — sometimes called additional living expenses — that pays for a hotel or short-term rental when a covered event makes the unit unlivable.

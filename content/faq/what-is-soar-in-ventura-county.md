@@ -1,20 +1,32 @@
 ---
-question: "What is SOAR in Ventura County?"
+question: What is SOAR in Ventura County?
 topic: housing-market-and-demographics
 topicTitle: Housing Market & Demographics
-topicDescription: >-
-  How demographic and supply trends shape rental demand and owner strategy.
+topicDescription: How demographic and supply trends shape rental demand and owner strategy.
 type: objective
 derivedFrom:
-  - the-one-factor-that-works-for-you-how-soar-quietly-protects-your-ventura-county-rental
+  - >-
+    the-one-factor-that-works-for-you-how-soar-quietly-protects-your-ventura-county-rental
 created: '2026-07-09'
 order: 1
 sources:
-  - label: 'County of Ventura SOAR (Save Open-space and Agricultural Resources) Initiative 2050 — official Ventura County RMA ordinance PDF'
-    url: 'https://rmadocs.venturacounty.gov/planning/ordinances/save-open-space-and-agricultural-resources/planning-save-open-space-and-agricultural-resources-initiative-2050.pdf'
-  - label: 'Ventura County RMA — County Ordinances page'
+  - label: >-
+      County of Ventura SOAR (Save Open-space and Agricultural Resources)
+      Initiative 2050 — official Ventura County RMA ordinance PDF
+    url: >-
+      https://rmadocs.venturacounty.gov/planning/ordinances/save-open-space-and-agricultural-resources/planning-save-open-space-and-agricultural-resources-initiative-2050.pdf
+  - label: Ventura County RMA — County Ordinances page
     url: 'https://rma.venturacounty.gov/county-ordinances/'
-annotations: []
+annotations:
+  - date: '2026-07-13'
+    type: additive
+    note: >-
+      The SOAR post is the full explainer: Save Open-space and Agricultural
+      Resources, passed 1998 and renewed to 2050, blocks rezoning of
+      agricultural and open-space land without a countywide vote, with companion
+      CURB measures in eight cities.
+    post: >-
+      the-one-factor-that-works-for-you-how-soar-quietly-protects-your-ventura-county-rental
 ---
 
 SOAR stands for Save Open-space and Agricultural Resources. It's a set of Ventura County voter initiatives, first passed countywide in 1998 and renewed through 2050, that require a public vote before agricultural, open-space, or rural land in the unincorporated county can be rezoned for development.

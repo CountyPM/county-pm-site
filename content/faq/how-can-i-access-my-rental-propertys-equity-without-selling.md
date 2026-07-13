@@ -1,16 +1,27 @@
 ---
-question: "How can I access my rental property's equity without selling it?"
+question: How can I access my rental property's equity without selling it?
 topic: financing-and-mortgages
-topicTitle: 'Financing & Mortgages'
+topicTitle: Financing & Mortgages
 topicDescription: >-
-  Down payments, rates, the rate lock-in effect, and pulling equity from a rental.
+  Down payments, rates, the rate lock-in effect, and pulling equity from a
+  rental.
 type: subjective
 derivedFrom:
-  - the-disappearing-first-time-buyer-why-it-strengthens-your-rental-and-changes-your-endgame
+  - >-
+    the-disappearing-first-time-buyer-why-it-strengthens-your-rental-and-changes-your-endgame
 created: '2026-07-09'
 order: 1
 sources: []
-annotations: []
+annotations:
+  - date: '2026-07-13'
+    type: additive
+    note: >-
+      The disappearing-first-time-buyer post reinforces the borrow-and-hold
+      answer: when the resale exit for entry-level property is thinning, reach
+      the equity by borrowing against it and keep the property producing rent
+      rather than selling into a shrinking buyer pool.
+    post: >-
+      the-disappearing-first-time-buyer-why-it-strengthens-your-rental-and-changes-your-endgame
 ---
 You can borrow against the equity instead of selling — typically with a second mortgage such as a home equity loan or HELOC — which keeps any low-rate first mortgage in place and the property producing rent.
 

@@ -1,5 +1,7 @@
 ---
-question: What happens if a landlord misses the 21-day deadline for returning a security deposit?
+question: >-
+  What happens if a landlord misses the 21-day deadline for returning a security
+  deposit?
 topic: california-rental-laws
 topicTitle: California Rental Laws
 topicDescription: >-
@@ -7,7 +9,8 @@ topicDescription: >-
   Ventura County rental owners.
 type: objective
 derivedFrom:
-  - sacramento-changed-the-strike-zone-and-most-landlords-are-still-swinging-at-the-old-one
+  - >-
+    sacramento-changed-the-strike-zone-and-most-landlords-are-still-swinging-at-the-old-one
 created: '2026-07-06'
 order: 15
 sources:
@@ -17,7 +20,17 @@ sources:
   - label: 'Assembly Bill 2801 (2024), amending Cal. Civ. Code Section 1950.5'
     url: >-
       https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240AB2801
-annotations: []
+annotations:
+  - date: '2026-07-13'
+    type: additive
+    note: >-
+      The strike-zone post frames the 21-day statement-plus-photos as a called
+      third strike: since April 2025 the statement must arrive with move-out,
+      post-repair, and (for July 2025+ tenancies) move-in photos, and bad-faith
+      noncompliance can forfeit the entire deposit claim with statutory
+      penalties.
+    post: >-
+      sacramento-changed-the-strike-zone-and-most-landlords-are-still-swinging-at-the-old-one
 ---
 
 A landlord who misses California's 21-day deadline risks losing the right to make any deductions at all. Civil Code Section 1950.5 requires the itemized statement — now including the photographs required by AB 2801 — to reach the tenant within 21 calendar days after the tenant moves out.

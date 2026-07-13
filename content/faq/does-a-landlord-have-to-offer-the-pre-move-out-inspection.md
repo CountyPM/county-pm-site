@@ -7,14 +7,24 @@ topicDescription: >-
   Ventura County rental owners.
 type: objective
 derivedFrom:
-  - sacramento-changed-the-strike-zone-and-most-landlords-are-still-swinging-at-the-old-one
+  - >-
+    sacramento-changed-the-strike-zone-and-most-landlords-are-still-swinging-at-the-old-one
 created: '2026-07-06'
 order: 21
 sources:
   - label: 'California Security Deposit Law, Cal. Civ. Code Section 1950.5(f)'
     url: >-
       https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5.
-annotations: []
+annotations:
+  - date: '2026-07-13'
+    type: additive
+    note: >-
+      The strike-zone post stresses the written-notice trap: you must notify the
+      tenant in writing of their right to request the initial inspection —
+      skipping the notice is a compliance failure a tenant's attorney leads with
+      and a small-claims commissioner notices.
+    post: >-
+      sacramento-changed-the-strike-zone-and-most-landlords-are-still-swinging-at-the-old-one
 ---
 
 Yes. A California landlord must notify the tenant in writing of the tenant's right to request an initial inspection before move-out. That written offer is mandatory under Civil Code Section 1950.5(f).

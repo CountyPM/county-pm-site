@@ -1,16 +1,28 @@
 ---
-question: "Does California's tax policy and high-earner out-migration affect rental demand?"
+question: >-
+  Does California's tax policy and high-earner out-migration affect rental
+  demand?
 topic: housing-market-and-demographics
 topicTitle: Housing Market & Demographics
-topicDescription: >-
-  How demographic and supply trends shape rental demand and owner strategy.
+topicDescription: How demographic and supply trends shape rental demand and owner strategy.
 type: subjective
 derivedFrom:
-  - the-demographic-cliff-what-an-aging-buyer-pool-means-for-your-rentals-next-decade
+  - >-
+    the-demographic-cliff-what-an-aging-buyer-pool-means-for-your-rentals-next-decade
 created: '2026-07-09'
 order: 1
 sources: []
-annotations: []
+annotations:
+  - date: '2026-07-13'
+    type: additive
+    note: >-
+      The demographic-cliff post adds the fair-minded counterweight:
+      California's recent $16.5B AI-driven revenue windfall and Gov. Newsom's
+      own opposition to a billionaire wealth tax show the high-earner exodus is
+      a contested structural risk, not settled decline — weigh it as one factor
+      among several, not a certainty.
+    post: >-
+      the-demographic-cliff-what-an-aging-buyer-pool-means-for-your-rentals-next-decade
 ---
 
 Indirectly, but meaningfully. High earners, employers, and young workers all sit inside a rental market's demand base — as tenants, move-up renters, cash buyers, and the job centers that anchor local demand. Policy that raises the incentive for those groups to leave can compound demographic pressure on both rental and resale demand.

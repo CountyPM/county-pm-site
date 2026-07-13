@@ -7,14 +7,24 @@ topicDescription: >-
   Ventura County rental owners.
 type: objective
 derivedFrom:
-  - price-by-walking-the-street-what-californias-new-algorithm-law-means-for-rental-owners
+  - >-
+    price-by-walking-the-street-what-californias-new-algorithm-law-means-for-rental-owners
 created: '2026-07-06'
 order: 30
 sources:
   - label: 'Assembly Bill 325 (2025), amending the Cartwright Act'
     url: >-
       https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB325
-annotations: []
+annotations:
+  - date: '2026-07-13'
+    type: additive
+    note: >-
+      The price-by-walking-the-street post is CPM's fullest explainer: AB 325
+      amended the Cartwright Act to target 'common pricing algorithms' that pool
+      competing landlords' data and recommend rents — California's legislative
+      answer to the RealPage litigation.
+    post: >-
+      price-by-walking-the-street-what-californias-new-algorithm-law-means-for-rental-owners
 ---
 
 AB 325 is a California law, signed in October 2025 and effective January 1, 2026, that amended the state's antitrust statute — the Cartwright Act — to target "common pricing algorithms." It makes it unlawful to use or distribute pricing software that pools competitors' data to coordinate or recommend prices in a way that restrains trade.

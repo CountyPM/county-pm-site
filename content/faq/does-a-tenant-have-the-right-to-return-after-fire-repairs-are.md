@@ -7,14 +7,26 @@ topicDescription: >-
   Ventura County rental owners.
 type: objective
 derivedFrom:
-  - we-managed-ventura-county-rentals-through-thomas-and-mountain-sb-610-changes-the-next-fire
+  - >-
+    we-managed-ventura-county-rentals-through-thomas-and-mountain-sb-610-changes-the-next-fire
 created: '2026-07-06'
 order: 42
 sources:
-  - label: 'Senate Bill 610 (2025), Disaster assistance: tenants, mobilehome parks, and mortgages'
+  - label: >-
+      Senate Bill 610 (2025), Disaster assistance: tenants, mobilehome parks,
+      and mortgages
     url: >-
       https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB610
-annotations: []
+annotations:
+  - date: '2026-07-13'
+    type: additive
+    note: >-
+      The SB 610 post frames the owner's post-fire duties: debris, smoke, and
+      ash removal are the owner's responsibility and expense, and after Jan 1,
+      2026 the habitability presumption runs against the owner until the unit is
+      proven safe.
+    post: >-
+      we-managed-ventura-county-rentals-through-thomas-and-mountain-sb-610-changes-the-next-fire
 ---
 
 Yes. Under California's SB 610, once remediation is complete the landlord must notify the tenant that the unit is habitable again, and the tenant holds a right to return to it at the pre-disaster rent.

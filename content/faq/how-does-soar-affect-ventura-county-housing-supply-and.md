@@ -1,20 +1,31 @@
 ---
-question: "How does SOAR affect Ventura County housing supply and property values?"
+question: How does SOAR affect Ventura County housing supply and property values?
 topic: housing-market-and-demographics
 topicTitle: Housing Market & Demographics
-topicDescription: >-
-  How demographic and supply trends shape rental demand and owner strategy.
+topicDescription: How demographic and supply trends shape rental demand and owner strategy.
 type: subjective
 derivedFrom:
-  - the-one-factor-that-works-for-you-how-soar-quietly-protects-your-ventura-county-rental
+  - >-
+    the-one-factor-that-works-for-you-how-soar-quietly-protects-your-ventura-county-rental
 created: '2026-07-09'
 order: 1
 sources:
-  - label: 'County of Ventura SOAR (Save Open-space and Agricultural Resources) Initiative 2050 — official Ventura County RMA ordinance PDF'
-    url: 'https://rmadocs.venturacounty.gov/planning/ordinances/save-open-space-and-agricultural-resources/planning-save-open-space-and-agricultural-resources-initiative-2050.pdf'
-  - label: 'Ventura County RMA — County Ordinances page'
+  - label: >-
+      County of Ventura SOAR (Save Open-space and Agricultural Resources)
+      Initiative 2050 — official Ventura County RMA ordinance PDF
+    url: >-
+      https://rmadocs.venturacounty.gov/planning/ordinances/save-open-space-and-agricultural-resources/planning-save-open-space-and-agricultural-resources-initiative-2050.pdf
+  - label: Ventura County RMA — County Ordinances page
     url: 'https://rma.venturacounty.gov/county-ordinances/'
-annotations: []
+annotations:
+  - date: '2026-07-13'
+    type: additive
+    note: >-
+      The SOAR post details the mechanism: countywide SOAR (passed 1998, renewed
+      2016 through 2050) plus eight cities' CURB lines require a public vote to
+      develop protected land — a belt-and-suspenders cap on new housing supply.
+    post: >-
+      the-one-factor-that-works-for-you-how-soar-quietly-protects-your-ventura-county-rental
 ---
 
 SOAR shapes values mainly by limiting where new housing can go. By requiring a public vote before protected agricultural and open-space land in Ventura County can be rezoned for development, SOAR sharply constrains new construction and preserves greenbelts of farmland between cities.

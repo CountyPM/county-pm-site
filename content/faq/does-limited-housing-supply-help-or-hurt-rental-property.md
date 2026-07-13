@@ -1,16 +1,25 @@
 ---
-question: "Does limited housing supply help or hurt rental property owners?"
+question: Does limited housing supply help or hurt rental property owners?
 topic: housing-market-and-demographics
 topicTitle: Housing Market & Demographics
-topicDescription: >-
-  How demographic and supply trends shape rental demand and owner strategy.
+topicDescription: How demographic and supply trends shape rental demand and owner strategy.
 type: subjective
 derivedFrom:
-  - the-one-factor-that-works-for-you-how-soar-quietly-protects-your-ventura-county-rental
+  - >-
+    the-one-factor-that-works-for-you-how-soar-quietly-protects-your-ventura-county-rental
 created: '2026-07-09'
 order: 1
 sources: []
-annotations: []
+annotations:
+  - date: '2026-07-13'
+    type: additive
+    note: >-
+      The SOAR post makes the supply case concretely: SOAR's voter-approval
+      requirement caps new development through 2050, and a structurally fixed
+      supply meeting durable Ventura County job-anchor demand supports values
+      and rents for the housing that already exists.
+    post: >-
+      the-one-factor-that-works-for-you-how-soar-quietly-protects-your-ventura-county-rental
 ---
 
 For owners of existing rental property, constrained new supply generally helps. When little new housing can be added, your property faces less competition for tenants, which tends to support occupancy, rents, and long-run values.

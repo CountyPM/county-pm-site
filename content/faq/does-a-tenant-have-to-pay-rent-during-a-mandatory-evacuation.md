@@ -7,14 +7,25 @@ topicDescription: >-
   Ventura County rental owners.
 type: objective
 derivedFrom:
-  - we-managed-ventura-county-rentals-through-thomas-and-mountain-sb-610-changes-the-next-fire
+  - >-
+    we-managed-ventura-county-rentals-through-thomas-and-mountain-sb-610-changes-the-next-fire
 created: '2026-07-06'
 order: 41
 sources:
-  - label: 'Senate Bill 610 (2025), Disaster assistance: tenants, mobilehome parks, and mortgages'
+  - label: >-
+      Senate Bill 610 (2025), Disaster assistance: tenants, mobilehome parks,
+      and mortgages
     url: >-
       https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB610
-annotations: []
+annotations:
+  - date: '2026-07-13'
+    type: additive
+    note: >-
+      The SB 610 post flags the coverage question owners should ask before fire
+      season: does your loss-of-rents policy pay when a civil-authority
+      evacuation stops the rent while the property itself is undamaged?
+    post: >-
+      we-managed-ventura-county-rentals-through-thomas-and-mountain-sb-610-changes-the-next-fire
 ---
 
 No. Under California's SB 610, effective January 1, 2026, a tenant's obligation to pay rent and other fees is discharged for the duration of a mandatory evacuation order, whether or not the unit is ultimately damaged.

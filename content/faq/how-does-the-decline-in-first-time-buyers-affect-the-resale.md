@@ -1,16 +1,27 @@
 ---
-question: "How does the decline in first-time buyers affect the resale value of my rental?"
+question: >-
+  How does the decline in first-time buyers affect the resale value of my
+  rental?
 topic: housing-market-and-demographics
-topicTitle: "Housing Market & Demographics"
-topicDescription: >-
-  How demographic and supply trends shape rental demand and owner strategy.
+topicTitle: Housing Market & Demographics
+topicDescription: How demographic and supply trends shape rental demand and owner strategy.
 type: subjective
 derivedFrom:
-  - the-disappearing-first-time-buyer-why-it-strengthens-your-rental-and-changes-your-endgame
+  - >-
+    the-disappearing-first-time-buyer-why-it-strengthens-your-rental-and-changes-your-endgame
 created: '2026-07-09'
 order: 1
 sources: []
-annotations: []
+annotations:
+  - date: '2026-07-13'
+    type: additive
+    note: >-
+      The disappearing-first-time-buyer post: priced-out first-timers don't
+      vanish, they rent longer, so household formation is absorbed by the rental
+      market — a cash-flow tailwind that simultaneously lengthens and softens
+      the eventual sale of entry-level property.
+    post: >-
+      the-disappearing-first-time-buyer-why-it-strengthens-your-rental-and-changes-your-endgame
 ---
 
 It weakens the sell-side of your decision more than it weakens the property itself. Entry-level homes depend most heavily on first-time buyer demand, and with first-time buyers at a record-low share of about 21% of the market, the pool of buyers for smaller, older, entry-level properties is structurally thinning.

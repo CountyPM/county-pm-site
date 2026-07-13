@@ -1,16 +1,26 @@
 ---
-question: "Are fewer first-time homebuyers good or bad for rental property owners?"
+question: Are fewer first-time homebuyers good or bad for rental property owners?
 topic: housing-market-and-demographics
-topicTitle: 'Housing Market & Demographics'
-topicDescription: >-
-  How demographic and supply trends shape rental demand and owner strategy.
+topicTitle: Housing Market & Demographics
+topicDescription: How demographic and supply trends shape rental demand and owner strategy.
 type: subjective
 derivedFrom:
-  - the-disappearing-first-time-buyer-why-it-strengthens-your-rental-and-changes-your-endgame
+  - >-
+    the-disappearing-first-time-buyer-why-it-strengthens-your-rental-and-changes-your-endgame
 created: '2026-07-09'
 order: 1
 sources: []
-annotations: []
+annotations:
+  - date: '2026-07-13'
+    type: additive
+    note: >-
+      The disappearing-first-time-buyer post answers the double edge directly:
+      fewer first-time buyers strengthens the rental case (priced-out households
+      rent longer) while weakening the resale case for entry-level property —
+      the same demographic story pointing opposite ways depending on whether you
+      rent or sell.
+    post: >-
+      the-disappearing-first-time-buyer-why-it-strengthens-your-rental-and-changes-your-endgame
 ---
 It cuts both ways, and the honest read is structural support for holding rather than a guaranteed rent spike. When would-be first-time buyers can't purchase, they keep renting, and that sustained demand supports occupancy and rent stability, especially for entry-level homes that compete directly with the starter market.
 

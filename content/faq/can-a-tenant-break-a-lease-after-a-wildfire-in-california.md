@@ -7,14 +7,26 @@ topicDescription: >-
   Ventura County rental owners.
 type: objective
 derivedFrom:
-  - we-managed-ventura-county-rentals-through-thomas-and-mountain-sb-610-changes-the-next-fire
+  - >-
+    we-managed-ventura-county-rentals-through-thomas-and-mountain-sb-610-changes-the-next-fire
 created: '2026-07-06'
 order: 40
 sources:
-  - label: 'Senate Bill 610 (2025), Disaster assistance: tenants, mobilehome parks, and mortgages'
+  - label: >-
+      Senate Bill 610 (2025), Disaster assistance: tenants, mobilehome parks,
+      and mortgages
     url: >-
       https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB610
-annotations: []
+annotations:
+  - date: '2026-07-13'
+    type: additive
+    note: >-
+      The SB 610 post adds the 2026 change: effective Jan 1, 2026, a rental
+      affected by disaster debris is presumed NOT habitable — the burden shifts
+      to the owner to prove it's safe — which strengthens a tenant's footing
+      when a fire-affected unit is at issue.
+    post: >-
+      we-managed-ventura-county-rentals-through-thomas-and-mountain-sb-610-changes-the-next-fire
 ---
 
 Yes, if the unit is uninhabitable. Under California's SB 610, effective January 1, 2026, a tenant can terminate the lease of an uninhabitable unit after a disaster without penalty, and the landlord must return the prepaid rent and the security deposit.

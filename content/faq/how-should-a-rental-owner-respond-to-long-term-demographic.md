@@ -1,18 +1,28 @@
 ---
-question: "How should a rental owner respond to long-term demographic decline?"
+question: How should a rental owner respond to long-term demographic decline?
 topic: housing-market-and-demographics
-topicTitle: "Housing Market & Demographics"
-topicDescription: >-
-  How demographic and supply trends shape rental demand and owner strategy.
+topicTitle: Housing Market & Demographics
+topicDescription: How demographic and supply trends shape rental demand and owner strategy.
 type: subjective
 derivedFrom:
-  - the-demographic-cliff-what-an-aging-buyer-pool-means-for-your-rentals-next-decade
+  - >-
+    the-demographic-cliff-what-an-aging-buyer-pool-means-for-your-rentals-next-decade
 created: '2026-07-09'
 order: 1
 sources:
   - label: 'IRS Publication 551, Basis of Assets (Rev. December 2025)'
     url: 'https://www.irs.gov/publications/p551'
-annotations: []
+annotations:
+  - date: '2026-07-13'
+    type: additive
+    note: >-
+      The demographic-cliff post sharpens the response: own property with
+      multi-cohort demand near durable job anchors (Naval Base Ventura County,
+      the Amgen biotech corridor, healthcare), and plan to access equity by
+      borrowing rather than selling into a thinning buyer pool — holding to the
+      §1014 step-up.
+    post: >-
+      the-demographic-cliff-what-an-aging-buyer-pool-means-for-your-rentals-next-decade
 ---
 
 Two moves, and neither one panics. First, own the right property. A well-located rental near jobs and transit, with appeal across several tenant types, holds demand far better through a long demographic decline than an isolated, entry-level box that depends on a single thinning group of buyers.

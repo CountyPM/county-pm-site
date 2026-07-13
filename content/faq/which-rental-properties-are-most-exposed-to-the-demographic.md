@@ -1,16 +1,26 @@
 ---
-question: "Which rental properties are most exposed to the demographic cliff?"
+question: Which rental properties are most exposed to the demographic cliff?
 topic: housing-market-and-demographics
 topicTitle: Housing Market & Demographics
-topicDescription: >-
-  How demographic and supply trends shape rental demand and owner strategy.
+topicDescription: How demographic and supply trends shape rental demand and owner strategy.
 type: subjective
 derivedFrom:
-  - the-demographic-cliff-what-an-aging-buyer-pool-means-for-your-rentals-next-decade
+  - >-
+    the-demographic-cliff-what-an-aging-buyer-pool-means-for-your-rentals-next-decade
 created: '2026-07-09'
 order: 1
 sources: []
-annotations: []
+annotations:
+  - date: '2026-07-13'
+    type: additive
+    note: >-
+      The demographic-cliff post names the exposure: isolated entry-level
+      'boxes' far from jobs and transit that depend on the shrinking
+      first-time-buyer cohort to exit are most at risk; properties within
+      commuting reach of Naval Base Ventura County, the biotech corridor, and
+      healthcare are most insulated.
+    post: >-
+      the-demographic-cliff-what-an-aging-buyer-pool-means-for-your-rentals-next-decade
 ---
 
 The most exposed are smaller, older, entry-level homes and condos sitting far from job centers, transit, and strong schools. They depend most heavily on the shrinking pool of first-time buyers and young renters, so as that cohort thins they feel the softness in demand first.

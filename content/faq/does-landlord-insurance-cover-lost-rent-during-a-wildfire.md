@@ -7,11 +7,21 @@ topicDescription: >-
   Ventura County rental owners.
 type: subjective
 derivedFrom:
-  - we-managed-ventura-county-rentals-through-thomas-and-mountain-sb-610-changes-the-next-fire
+  - >-
+    we-managed-ventura-county-rentals-through-thomas-and-mountain-sb-610-changes-the-next-fire
 created: '2026-07-06'
 order: 44
 sources: []
-annotations: []
+annotations:
+  - date: '2026-07-13'
+    type: additive
+    note: >-
+      The SB 610 post underscores the gap to verify: whether loss-of-rents pays
+      on a civil-authority evacuation (rent stops, building intact) versus only
+      on physical damage — confirm with your agent before fire season, not
+      after.
+    post: >-
+      we-managed-ventura-county-rentals-through-thomas-and-mountain-sb-610-changes-the-next-fire
 ---
 
 Not always — and that's the gap worth checking before fire season. Many loss-of-rents provisions require direct physical damage to the property, so a mandatory evacuation that leaves the building untouched may fall outside coverage, or only within a short "civil authority" extension.

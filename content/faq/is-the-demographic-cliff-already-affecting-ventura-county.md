@@ -1,16 +1,25 @@
 ---
-question: "Is the demographic cliff already affecting Ventura County?"
+question: Is the demographic cliff already affecting Ventura County?
 topic: housing-market-and-demographics
-topicTitle: 'Housing Market & Demographics'
-topicDescription: >-
-  How demographic and supply trends shape rental demand and owner strategy.
+topicTitle: Housing Market & Demographics
+topicDescription: How demographic and supply trends shape rental demand and owner strategy.
 type: subjective
 derivedFrom:
-  - the-demographic-cliff-what-an-aging-buyer-pool-means-for-your-rentals-next-decade
+  - >-
+    the-demographic-cliff-what-an-aging-buyer-pool-means-for-your-rentals-next-decade
 created: '2026-07-09'
 order: 1
 sources: []
-annotations: []
+annotations:
+  - date: '2026-07-13'
+    type: additive
+    note: >-
+      The demographic-cliff post grounds this in Ventura County specifics: the
+      latest State of the Region report finds the county's population both aging
+      and shrinking, with enrollment contracting at CSU Channel Islands and Cal
+      Lutheran — a present condition, not just a forecast.
+    post: >-
+      the-demographic-cliff-what-an-aging-buyer-pool-means-for-your-rentals-next-decade
 ---
 Yes — it's already a present condition in Ventura County, not just a forecast. The most recent State of the Region report found the county's population is both aging and shrinking, and enrollment is contracting at CSU Channel Islands and California Lutheran University.
 

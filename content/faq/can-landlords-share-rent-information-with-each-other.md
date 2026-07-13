@@ -7,14 +7,24 @@ topicDescription: >-
   Ventura County rental owners.
 type: objective
 derivedFrom:
-  - price-by-walking-the-street-what-californias-new-algorithm-law-means-for-rental-owners
+  - >-
+    price-by-walking-the-street-what-californias-new-algorithm-law-means-for-rental-owners
 created: '2026-07-06'
 order: 33
 sources:
   - label: 'Assembly Bill 325 (2025), amending the Cartwright Act'
     url: >-
       https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB325
-annotations: []
+annotations:
+  - date: '2026-07-13'
+    type: additive
+    note: >-
+      The AB 325 post draws the line: sharing what already happened is
+      transparency, but pooling what competitors are about to do — sellers-only,
+      fed to a recommendation engine — is the algorithmic price-fixing the
+      Cartwright Act now targets.
+    post: >-
+      price-by-walking-the-street-what-californias-new-algorithm-law-means-for-rental-owners
 ---
 
 Talking generally about the market with other operators is normal and legal — it's how independent owners have always worked. What crosses the line is systematically pooling non-public pricing data, especially current or forward-looking rents, into a common tool that recommends prices back to the group.
