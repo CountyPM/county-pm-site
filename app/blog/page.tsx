@@ -53,14 +53,16 @@ export default function BlogPage() {
                   {/* CONTENT */}
                   <div className="absolute inset-x-0 bottom-0 p-6">
                     {post.series && (
-                      <p className="mb-2 inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.12em] text-white ring-1 ring-inset ring-white/25 backdrop-blur-sm">
-                        <span>{post.series}</span>
+                      <div className="mb-2 flex min-w-0 items-center gap-2">
                         {post.seriesPart && post.seriesTotal && (
-                          <span className="text-white/80">
-                            · Part {post.seriesPart} of {post.seriesTotal}
+                          <span className="flex-none rounded-md bg-[#e6ad2e] px-2 py-0.5 text-[10px] font-extrabold uppercase tracking-[0.06em] text-[#072c49]">
+                            Part {post.seriesPart} of {post.seriesTotal}
                           </span>
                         )}
-                      </p>
+                        <span className="min-w-0 flex-1 truncate text-[11px] font-semibold uppercase tracking-[0.1em] text-white/70">
+                          {post.series}
+                        </span>
+                      </div>
                     )}
 
                     <div className="flex items-center justify-between gap-4">
