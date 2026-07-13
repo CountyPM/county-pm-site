@@ -35,9 +35,21 @@ export default function BlogPage() {
       {/* CATEGORY TILES */}
       <section className="border-t border-[var(--cpm-border)] bg-[var(--cpm-page)]">
         <div className="mx-auto max-w-6xl px-4 py-20">
-          <h2 className="text-2xl font-bold tracking-tight text-[var(--cpm-text)] md:text-3xl">
-            Browse by topic
-          </h2>
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <h2 className="text-2xl font-bold tracking-tight text-[var(--cpm-text)] md:text-3xl">
+              Browse by topic
+            </h2>
+
+            <Link
+              href="/blog/guide"
+              className="flex items-center text-sm font-semibold text-[var(--cpm-primary-soft)] transition hover:text-[var(--cpm-text)]"
+            >
+              Some posts are meant to be read in order — see the Reading Guide
+              <span className="ml-2 transition-transform hover:translate-x-1">
+                →
+              </span>
+            </Link>
+          </div>
 
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {tiles.map((tile) => (
