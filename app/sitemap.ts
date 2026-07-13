@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next'
 import { SITE_URL } from '@/lib/site'
 import { getAllPosts } from '@/lib/blog'
+import { getCategoryTiles } from '@/lib/blog-categories'
 import { getFaqTopics } from '@/lib/faq'
 
 type ChangeFrequency = NonNullable<
@@ -66,6 +67,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }))
 
+  // Blog category pages (gated tile navigation). Only categories that
+  // currently have posts; lastModified = latest post in the category so a
+  // publish resurfaces its category page.
+  const categoryEntries: MetadataRoute.Sitemap = getCategoryTiles()
+    .filter((tile) => tile.count > 0)
+    .map((tile) => ({
+      url: `${SITE_URL}/blog/category/${tile.slug}`,
+      lastModified: latestDate(
+        tile.latestPost ? [tile.latestPost.publishedAt] : [],
+        now
+      ),
+      changeFrequency: 'weekly',
+      priority: 0.7,
+    }))
+
   // FAQ topic-cluster pages. lastModified = most recent entry creation or
   // annotation date in the cluster, so living-FAQ updates resurface the page.
   const faqEntries: MetadataRoute.Sitemap = getFaqTopics().map((topic) => ({
@@ -81,5 +97,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  return [...staticEntries, ...blogEntries, ...faqEntries]
+  return [...staticEntries, ...blogEntries, ...categoryEntries, ...faqEntries]
 }

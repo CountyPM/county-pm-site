@@ -1,8 +1,13 @@
 import Link from 'next/link'
 import { getAllPosts } from '@/lib/blog'
+import { getCategoryTiles } from '@/lib/blog-categories'
+import PostCard from './PostCard'
+
+const RECENT_COUNT = 6
 
 export default function BlogPage() {
-  const posts = getAllPosts()
+  const tiles = getCategoryTiles()
+  const recent = getAllPosts().slice(0, RECENT_COUNT)
 
   return (
     <main>
@@ -18,73 +23,58 @@ export default function BlogPage() {
           </h1>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-[var(--cpm-muted)]">
-            County Property Management’s resource center is designed to support
+            County Property Management&rsquo;s resource center is designed to support
             owner strategy, property management education, agent partnerships,
             and long-term real estate decision-making throughout Ventura County.
+            Pick the topic that matches your situation, or start with the latest
+            articles below.
           </p>
         </div>
       </section>
 
-      {/* BLOG GRID */}
+      {/* CATEGORY TILES */}
       <section className="border-t border-[var(--cpm-border)] bg-[var(--cpm-page)]">
         <div className="mx-auto max-w-6xl px-4 py-20">
-          <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-            {posts.map((post) => (
+          <h2 className="text-2xl font-bold tracking-tight text-[var(--cpm-text)] md:text-3xl">
+            Browse by topic
+          </h2>
+
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {tiles.map((tile) => (
               <Link
-                key={post.slug}
-                href={`/blog/${post.slug}`}
+                key={tile.slug}
+                href={`/blog/category/${tile.slug}`}
                 className="group relative overflow-hidden rounded-3xl border border-[var(--cpm-border)] bg-[var(--cpm-surface)] transition hover:border-[var(--cpm-primary-soft)]"
               >
-                <div className="relative h-[420px] w-full overflow-hidden">
-                  {/* HERO IMAGE */}
-                  {post.heroImage ? (
+                <div className="relative h-[260px] w-full overflow-hidden">
+                  {tile.latestPost?.heroImage ? (
                     <img
-                      src={post.heroImage}
-                      alt={post.heroImageAlt || post.title}
+                      src={tile.latestPost.heroImage}
+                      alt=""
+                      aria-hidden="true"
                       className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
                     />
                   ) : (
                     <div className="h-full w-full bg-[var(--cpm-surface)]" />
                   )}
 
-                  {/* OVERLAY */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/45 to-black/10" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/55 to-black/20" />
 
-                  {/* CONTENT */}
                   <div className="absolute inset-x-0 bottom-0 p-6">
-                    {post.series && (
-                      <div className="mb-2 flex min-w-0 items-center gap-2">
-                        {post.seriesPart && post.seriesTotal && (
-                          <span className="flex-none rounded-md bg-[#e6ad2e] px-2 py-0.5 text-[10px] font-extrabold uppercase tracking-[0.06em] text-[#072c49]">
-                            Part {post.seriesPart} of {post.seriesTotal}
-                          </span>
-                        )}
-                        <span className="min-w-0 flex-1 truncate text-[11px] font-semibold uppercase tracking-[0.1em] text-white/70">
-                          {post.series}
-                        </span>
-                      </div>
-                    )}
-
-                    <div className="flex items-center justify-between gap-4">
-                      <p className="text-xs font-semibold uppercase tracking-[0.15em] text-[#e6ad2e]">
-                        {post.category}
-                      </p>
-
-                      <p className="text-xs text-white/80">
-                        {post.publishedAt}
-                      </p>
-                    </div>
-
-                    <h2 className="mt-3 text-2xl font-semibold leading-tight text-white transition group-hover:text-[#e6ad2e]">
-                      {post.title}
-                    </h2>
-
-                    <p className="mt-3 line-clamp-3 text-sm leading-6 text-white/80">
-                      {post.excerpt}
+                    <p className="text-xs font-semibold uppercase tracking-[0.15em] text-[#e6ad2e]">
+                      {tile.count} {tile.count === 1 ? 'article' : 'articles'}
                     </p>
 
-                    <div className="mt-5 flex items-center text-sm font-semibold text-[#e6ad2e]">
-                      Read Article
+                    <h3 className="mt-2 text-2xl font-semibold leading-tight text-white transition group-hover:text-[#e6ad2e]">
+                      {tile.name}
+                    </h3>
+
+                    <p className="mt-2 line-clamp-2 text-sm leading-6 text-white/80">
+                      {tile.description}
+                    </p>
+
+                    <div className="mt-4 flex items-center text-sm font-semibold text-[#e6ad2e]">
+                      Browse {tile.name}
                       <span className="ml-2 transition-transform group-hover:translate-x-1">
                         →
                       </span>
@@ -92,6 +82,21 @@ export default function BlogPage() {
                   </div>
                 </div>
               </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* RECENT POSTS */}
+      <section className="border-t border-[var(--cpm-border)] bg-[var(--cpm-page)]">
+        <div className="mx-auto max-w-6xl px-4 py-20">
+          <h2 className="text-2xl font-bold tracking-tight text-[var(--cpm-text)] md:text-3xl">
+            Latest articles
+          </h2>
+
+          <div className="mt-8 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+            {recent.map((post) => (
+              <PostCard key={post.slug} post={post} />
             ))}
           </div>
         </div>
