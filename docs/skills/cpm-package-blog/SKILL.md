@@ -20,6 +20,8 @@ Keep two phases separate:
 - **Creative phase (default).** When the user raises a blog topic or asks you to write,
   draft, explore, or brainstorm a blog — even "create a blog about X" — collaborate in
   normal prose. Do NOT emit the contract format; don't let the template constrain ideas.
+  If a multi-part series is taking shape, track the series name and each part's order so
+  packaging can number them — but still emit nothing until `/blog`.
 - **Packaging phase (only on the exact `/blog` command).** Produce the contract file ONLY
   when the user types `/blog`. That is the sole trigger. ("Package this as a CPM blog" is
   an acceptable equivalent, but a bare request to "write a blog" is NOT — that's creative.)
@@ -53,6 +55,8 @@ mixed formats (`.docx`, `.pdf`, `.md`, `.txt`). When `/blog` covers multiple dis
 ---
 type: blog
 campaign_id: null
+series: <null, or the exact series name shared by every post in the series — e.g. "Next Level Real Estate Investing">
+seriesPart: <null, or this post's 1-indexed position in the series — 1, 2, 3, …>
 slug: null
 title: "<headline>"
 subtitle: "<one-sentence deck/subtitle>"
@@ -83,6 +87,15 @@ A: <direct answer first, then expand>
   lead_magnet, contact_form, strategy_session, owner_lead}. Invent no new values.
 - `category` is NOT in the contract — it is derived by the PC stage from
   `decision_intent` + `tags`. Do not add it.
+- `series`/`seriesPart` are PUBLIC-SAFE and rendered by the site (index "Part N of M"
+  badge + post-page part label + prev/next nav). Standalone post → both `null`. Series
+  member → `series` = the human-readable series name (the IDENTICAL string across every
+  post in the series; the site groups and counts by exact match) and `seriesPart` = its
+  1-indexed position (a positive integer). Emit `series` double-quoted, like `title`.
+  Never write a total — `seriesTotal` ("of N") is computed by the site from how many posts
+  share the name. On a multi-post fan-out of one series, give every block the same `series`
+  and number `seriesPart` 1, 2, 3, … in the order discussed. Only set these when the posts
+  genuinely form a series; never invent one.
 - Include `---FAQ---` only when `faq_included: true`; 3–6 strong Q&As, answer-first.
 - **YAML-safe values:** `title`, `subtitle`, `byline`, `source_chat_context`, and
   `gemini_prompt` are emitted as double-quoted YAML. Escape any straight double quote

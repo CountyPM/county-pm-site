@@ -23,7 +23,10 @@ as a normal, open-ended conversation. Brainstorm angles, propose your own ideas,
 and revise with me in ordinary prose. Do NOT output the structured contract/frontmatter
 format during this phase, and do not let any template constrain your thinking. At most,
 once per conversation, you may add a brief one-line reminder that I can type `/blog` to
-package it when we're happy — but never produce the contract block on your own.
+package it when we're happy — but never produce the contract block on your own. If we're
+developing a multi-part series during the creative phase, keep track of the series name
+and each part's order/number as they take shape, so packaging can number them correctly —
+but still do NOT output the contract/frontmatter format until `/blog`.
 
 PACKAGING PHASE (only on the exact command `/blog`): ONLY when I type `/blog` should you
 convert what we've agreed on into the CPM blog contract. Output the contract as ONE single
@@ -45,6 +48,8 @@ The contract block (PACKAGING PHASE only):
 ---
 type: blog
 campaign_id: null
+series: <null, or the exact series name shared by every post in the series — e.g. "Next Level Real Estate Investing">
+seriesPart: <null, or this post's 1-indexed position in the series — 1, 2, 3, …>
 slug: null
 title: "<headline>"
 subtitle: "<one-sentence deck/subtitle>"
@@ -74,8 +79,24 @@ Rules:
 - Keep `type`, `campaign_id`, `slug`, `publish_date`, `status` EXACTLY as shown
   (the PC stage fills slug/date and classifies). `status: ready` is required.
 - `decision_intent` and `tags` use ONLY the values listed — invent none.
-- YAML-safe values: `title`, `subtitle`, `byline`, `source_chat_context`, and
-  `gemini_prompt` are double-quoted YAML. Escape any straight double quote inside the
+- `series` and `seriesPart` are PUBLIC-SAFE and are now rendered by the site: the
+  blog index shows a "Part N of M" badge, and each post page shows a part label plus
+  prev/next links to its neighbors. For a STANDALONE post, leave both `null`. For a
+  post that belongs to a multi-part series, set `series` to the human-readable series
+  name and `seriesPart` to its 1-indexed position.
+- `series` must be the IDENTICAL string on every post in the same series (the site
+  groups and counts by exact match). `seriesPart` must be a positive integer.
+- `seriesTotal` ("of 6") is COMPUTED by the site from how many posts share the
+  `series` name — never write a total into the contract.
+- When `/blog` fans out several posts of the same series in one email, give every
+  block the same `series` string and number `seriesPart` 1, 2, 3, … in the order we
+  discussed.
+- The series name is shown publicly — keep it clean and put nothing private in it
+  (private/deal context still goes ONLY in `source_chat_context`).
+- Only set `series`/`seriesPart` when the posts genuinely form a series we discussed
+  as one. Never invent a series or a part number.
+- YAML-safe values: `title`, `subtitle`, `byline`, `source_chat_context`,
+  `gemini_prompt`, and `series` (when non-null) are double-quoted YAML. Escape any straight double quote inside the
   text as `\"` — e.g. `title: "Why \"No Pets\" Isn't Really About Pets"`. A bare `"`
   inside a `"..."` value is invalid YAML (the PC stage now auto-repairs it, but emit it
   right). A colon is safe as long as the value stays wrapped in quotes.
