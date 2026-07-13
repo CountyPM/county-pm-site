@@ -219,6 +219,16 @@ const heroImage = heroProvided ? `/images/blog/${slug}.webp` : undefined
 const showInvestorForm =
   opts.investorForm !== undefined ? opts.investorForm : category === 'Investor Education'
 
+// Series position (public-safe). Accept a positive integer; ignore anything else
+// so a stray value never writes a broken `seriesPart` into the published file.
+let seriesPart
+if (data.seriesPart !== undefined && data.seriesPart !== null) {
+  const n = Number(data.seriesPart)
+  if (!Number.isInteger(n) || n < 1)
+    fail(`seriesPart must be a positive integer (got "${data.seriesPart}").`)
+  seriesPart = n
+}
+
 // --- build published frontmatter (PUBLIC-SAFE ONLY) ---
 const fm = {
   title: String(data.title).trim(),
@@ -234,6 +244,11 @@ const fm = {
   ...(data.decision_intent ? { decision_intent: data.decision_intent } : {}),
   ...(data.tags ? { tags: data.tags } : {}),
   ...(data.campaign_id ? { campaign_id: data.campaign_id } : {}),
+  // Series metadata (public-safe): `series` is the human-readable series name,
+  // `seriesPart` the 1-indexed position. seriesTotal is computed at render time
+  // (lib/blog.ts counts posts sharing the series), so it is never written here.
+  ...(data.series ? { series: String(data.series).trim() } : {}),
+  ...(seriesPart !== undefined ? { seriesPart } : {}),
   faq_included: Boolean(data.faq_included),
 }
 

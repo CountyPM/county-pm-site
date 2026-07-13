@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { MDXRemote } from 'next-mdx-remote/rsc'
-import { getAllPosts, getPostBySlug } from '@/lib/blog'
+import { getAllPosts, getPostBySlug, getSeriesContext } from '@/lib/blog'
 import { getFaqEntry, faqEntryUrl } from '@/lib/faq'
 import { FAQ_CACHE_KEY } from '@/lib/faq-cache-key'
 import { blogPostingLd, jsonLd } from '@/lib/structured-data'
@@ -53,6 +53,9 @@ export default async function BlogPostPage({ params }: PageProps) {
     .map((faqSlug) => getFaqEntry(faqSlug))
     .filter((entry): entry is NonNullable<typeof entry> => entry !== null)
 
+  // Series navigation (null when the post isn't part of a series).
+  const series = getSeriesContext(slug)
+
   return (
     <main className="bg-[var(--cpm-page)]">
       <article className="mx-auto max-w-4xl px-6 py-20">
@@ -64,6 +67,12 @@ export default async function BlogPostPage({ params }: PageProps) {
             }}
           >
             <div className="px-8 py-20 md:px-12 md:py-28">
+              {series && (
+                <p className="mb-3 text-xs font-semibold uppercase tracking-[0.15em] text-[#e6ad2e]">
+                  {series.name} · Part {series.part} of {series.total}
+                </p>
+              )}
+
               <p className="mb-4 text-sm text-[var(--cpm-muted)]">
                 {post.category} · {post.readingTime}
               </p>
@@ -75,6 +84,12 @@ export default async function BlogPostPage({ params }: PageProps) {
           </header>
         ) : (
           <header className="mb-12">
+            {series && (
+              <p className="mb-3 text-xs font-semibold uppercase tracking-[0.15em] text-[#e6ad2e]">
+                {series.name} · Part {series.part} of {series.total}
+              </p>
+            )}
+
             <p className="mb-4 text-sm text-[var(--cpm-muted)]">
               {post.category} · {post.readingTime}
             </p>
@@ -88,6 +103,52 @@ export default async function BlogPostPage({ params }: PageProps) {
         <div className="blog-content mx-auto max-w-3xl">
           <MDXRemote source={post.content} />
         </div>
+
+        {/* SERIES NAV — prev/next within a multi-part series (links only) */}
+        {series && (series.prev || series.next) && (
+          <nav
+            aria-label="Series navigation"
+            className="mx-auto mt-16 max-w-3xl border-t border-[var(--cpm-border)] pt-8"
+          >
+            <p className="text-xs font-semibold uppercase tracking-[0.15em] text-[var(--cpm-muted)]">
+              {series.name} — Part {series.part} of {series.total}
+            </p>
+
+            <div className="mt-4 flex flex-col gap-4 sm:flex-row sm:justify-between">
+              {series.prev ? (
+                <Link
+                  href={`/blog/${series.prev.slug}`}
+                  className="group flex-1 rounded-2xl border border-[var(--cpm-border)] bg-[var(--cpm-surface)] p-5 transition hover:border-[var(--cpm-primary-soft)]"
+                >
+                  <span className="text-xs text-[var(--cpm-muted)]">
+                    ← Previous · Part {series.prev.seriesPart}
+                  </span>
+                  <span className="mt-1 block text-base font-semibold text-white transition group-hover:text-[#e6ad2e]">
+                    {series.prev.title}
+                  </span>
+                </Link>
+              ) : (
+                <span className="hidden flex-1 sm:block" />
+              )}
+
+              {series.next ? (
+                <Link
+                  href={`/blog/${series.next.slug}`}
+                  className="group flex-1 rounded-2xl border border-[var(--cpm-border)] bg-[var(--cpm-surface)] p-5 text-right transition hover:border-[var(--cpm-primary-soft)]"
+                >
+                  <span className="text-xs text-[var(--cpm-muted)]">
+                    Next · Part {series.next.seriesPart} →
+                  </span>
+                  <span className="mt-1 block text-base font-semibold text-white transition group-hover:text-[#e6ad2e]">
+                    {series.next.title}
+                  </span>
+                </Link>
+              ) : (
+                <span className="hidden flex-1 sm:block" />
+              )}
+            </div>
+          </nav>
+        )}
 
         {/* FAQ SPOKE — references to canonical hub answers (links, not copies) */}
         {faqRefs.length > 0 && (

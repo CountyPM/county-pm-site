@@ -52,6 +52,17 @@ export default function BlogPage() {
 
                   {/* CONTENT */}
                   <div className="absolute inset-x-0 bottom-0 p-6">
+                    {post.series && (
+                      <p className="mb-2 inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.12em] text-white ring-1 ring-inset ring-white/25 backdrop-blur-sm">
+                        <span>{post.series}</span>
+                        {post.seriesPart && post.seriesTotal && (
+                          <span className="text-white/80">
+                            · Part {post.seriesPart} of {post.seriesTotal}
+                          </span>
+                        )}
+                      </p>
+                    )}
+
                     <div className="flex items-center justify-between gap-4">
                       <p className="text-xs font-semibold uppercase tracking-[0.15em] text-[#e6ad2e]">
                         {post.category}
