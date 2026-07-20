@@ -2,4 +2,4 @@
 // Hash of content/faq/*.md. Imported by app/blog/[slug]/page.tsx so that any
 // FAQ content change invalidates the blog pages’ Next.js build cache and the
 // "Related questions" spokes regenerate. See claude/blog-spoke-stale-cache-*.md.
-export const FAQ_CACHE_KEY = 'bce753b50afe3d19'
+export const FAQ_CACHE_KEY = 'a829d795efce68ea'

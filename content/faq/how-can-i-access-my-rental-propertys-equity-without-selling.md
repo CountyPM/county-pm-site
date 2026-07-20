@@ -22,6 +22,16 @@ annotations:
       rather than selling into a shrinking buyer pool.
     post: >-
       the-disappearing-first-time-buyer-why-it-strengthens-your-rental-and-changes-your-endgame
+  - date: '2026-07-13'
+    type: additive
+    note: >-
+      The golden-handcuffs post is the full mechanics: keep the low-rate first
+      mortgage and take a second only for the amount you need (home equity loan
+      near 8% fixed, or HELOC near 7.25 to 7.5% variable as of mid-2026), so
+      your blended borrowing cost stays far below a full refinance. Breakeven
+      rule — the equity you pull has to earn more than the second mortgage
+      costs.
+    post: the-golden-handcuffs-when-your-3-mortgage-is-quietly-costing-you-money
 ---
 You can borrow against the equity instead of selling — typically with a second mortgage such as a home equity loan or HELOC — which keeps any low-rate first mortgage in place and the property producing rent.
 

@@ -24,6 +24,14 @@ annotations:
       time to fix items, and anything visible left off that list is waived.
     post: >-
       sacramento-changed-the-strike-zone-and-most-landlords-are-still-swinging-at-the-old-one
+  - date: '2026-07-13'
+    type: additive
+    note: >-
+      Reinforces why it is the tenant's strongest move under AB 2801: the
+      request forces the owner to list every deductible item early, and anything
+      visible that doesn't make the list is waived — so the tenant both gets a
+      chance to cure and locks out later surprise deductions.
+    post: congratulations-landlord-youre-now-a-crime-scene-investigator
 ---
 
 In almost every case, yes. The initial inspection is the single strongest procedural protection a California tenant has over their deposit, and requesting it costs nothing.

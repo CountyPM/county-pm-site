@@ -31,6 +31,15 @@ annotations:
       penalties.
     post: >-
       sacramento-changed-the-strike-zone-and-most-landlords-are-still-swinging-at-the-old-one
+  - date: '2026-07-13'
+    type: additive
+    note: >-
+      Adds the AB 2801 documentation dimension: since April 2025 a deduction
+      with no photographic evidence fails the same way a late statement does,
+      and bad-faith noncompliance — including skipping the required
+      documentation — can forfeit the right to keep any of the deposit, with
+      statutory penalties on top.
+    post: congratulations-landlord-youre-now-a-crime-scene-investigator
 ---
 
 A landlord who misses California's 21-day deadline risks losing the right to make any deductions at all. Civil Code Section 1950.5 requires the itemized statement — now including the photographs required by AB 2801 — to reach the tenant within 21 calendar days after the tenant moves out.

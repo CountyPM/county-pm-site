@@ -27,6 +27,16 @@ annotations:
       exchange with estate planning (a revocable living trust) when
       repositioning a long-held rental.
     post: getting-your-money-out-of-california
+  - date: '2026-07-06'
+    type: additive
+    note: >-
+      Shows the 1031 in a real decision: when California's insurance math
+      structurally breaks a rental, sell and roll the entire equity into a
+      replacement in a healthier market, deferring capital gains and
+      depreciation recapture. Mechanics reaffirmed — identify in 45 days, close
+      in 180, qualified intermediary required, investment-for-investment
+      like-kind.
+    post: your-insurance-just-jumped-35-can-you-pass-it-to-the-tenant
 related:
   - capital-gains-when-selling-a-california-rental
   - how-can-i-move-my-rental-property-equity-out-of-california

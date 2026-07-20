@@ -1,5 +1,7 @@
 ---
-question: What is the pre-move-out inspection, and can a landlord deduct for items not listed in it?
+question: >-
+  What is the pre-move-out inspection, and can a landlord deduct for items not
+  listed in it?
 topic: california-rental-laws
 topicTitle: California Rental Laws
 topicDescription: >-
@@ -14,7 +16,16 @@ sources:
   - label: 'California Security Deposit Law, Cal. Civ. Code Section 1950.5(f)'
     url: >-
       https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5.
-annotations: []
+annotations:
+  - date: '2026-07-13'
+    type: additive
+    note: >-
+      Sharpens the waiver rule: the walkthrough is a filing deadline, not a
+      courtesy — anything visible that the owner doesn't put on the itemized
+      list is waived, not merely reduced. The only claims that survive are
+      post-inspection damage or damage that was genuinely concealed.
+    post: >-
+      sacramento-changed-the-strike-zone-and-most-landlords-are-still-swinging-at-the-old-one
 ---
 
 The pre-move-out (initial) inspection is a walk-through a California tenant has the right to request before moving out, and the landlord must notify the tenant of that right in writing. Its purpose under Civil Code Section 1950.5(f) is to give the tenant a written list of proposed deductions while there is still time to fix the items and avoid them.

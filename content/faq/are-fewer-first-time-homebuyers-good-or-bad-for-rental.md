@@ -21,6 +21,17 @@ annotations:
       rent or sell.
     post: >-
       the-disappearing-first-time-buyer-why-it-strengthens-your-rental-and-changes-your-endgame
+  - date: '2026-07-13'
+    type: additive
+    note: >-
+      The demographic-cliff post extends this out to the full decade: the same
+      thinning first-time-buyer pool that supports your rent today is also the
+      pool that eventually buys entry-level property, so the occupancy tailwind
+      carries a slow headwind on any future sale. The 2026 takeaway — own
+      property with multi-cohort demand near durable job anchors, and plan to
+      borrow-and-hold rather than sell into a shrinking buyer base.
+    post: >-
+      the-demographic-cliff-what-an-aging-buyer-pool-means-for-your-rentals-next-decade
 ---
 It cuts both ways, and the honest read is structural support for holding rather than a guaranteed rent spike. When would-be first-time buyers can't purchase, they keep renting, and that sustained demand supports occupancy and rent stability, especially for entry-level homes that compete directly with the starter market.
 

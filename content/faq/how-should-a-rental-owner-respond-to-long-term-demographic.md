@@ -23,6 +23,15 @@ annotations:
       §1014 step-up.
     post: >-
       the-demographic-cliff-what-an-aging-buyer-pool-means-for-your-rentals-next-decade
+  - date: '2026-07-13'
+    type: additive
+    note: >-
+      Adds the concrete response: buy property with multi-cohort demand (near
+      job centers, transit, strong schools) rather than product dependent on the
+      shrinking first-timer, and treat borrow-and-hold-to-step-up as the exit
+      rather than a sale into a thinning buyer pool.
+    post: >-
+      the-disappearing-first-time-buyer-why-it-strengthens-your-rental-and-changes-your-endgame
 ---
 
 Two moves, and neither one panics. First, own the right property. A well-located rental near jobs and transit, with appeal across several tenant types, holds demand far better through a long demographic decline than an isolated, entry-level box that depends on a single thinning group of buyers.

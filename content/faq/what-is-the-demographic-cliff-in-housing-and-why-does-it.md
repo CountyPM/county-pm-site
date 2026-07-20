@@ -22,6 +22,15 @@ annotations:
       reason to panic about rental income.
     post: >-
       the-demographic-cliff-what-an-aging-buyer-pool-means-for-your-rentals-next-decade
+  - date: '2026-07-13'
+    type: additive
+    note: >-
+      The disappearing-first-time-buyer post is the near-term companion: the
+      priced-out buyer becomes today's renter (a demand tailwind), while the
+      demographic cliff is the decade-long version of the same story draining
+      the eventual buyer pool for entry-level property.
+    post: >-
+      the-disappearing-first-time-buyer-why-it-strengthens-your-rental-and-changes-your-endgame
 ---
 
 The demographic cliff refers to the structural shrinking of the entry-level buyer and renter pool over the coming decade. The largest home-buying generation, the Millennials, is aging out of starter homes and into move-up purchases, while Gen Z — the cohort meant to replace them at the bottom rung — is smaller and, in California, is net out-migrating to lower-cost states.

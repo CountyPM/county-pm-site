@@ -26,6 +26,15 @@ annotations:
       Takeaway: lenders price owner-occupied risk lower, and that advantage
       carries forward if the home becomes a rental.
     post: the-decade-dividend
+  - date: '2026-07-06'
+    type: additive
+    note: >-
+      Real-world application: because a new investor purchase loan runs near or
+      above 6.5% versus the sub-4% owner-occupied first many owners hold, the
+      golden-handcuffs post argues for keeping that owner-occupied-rate first
+      mortgage in place when you convert a home to a rental — take a second for
+      equity rather than refinancing into costlier investor terms.
+    post: the-golden-handcuffs-when-your-3-mortgage-is-quietly-costing-you-money
 related:
   - can-i-turn-my-home-into-a-rental-after-i-move-out
 ---

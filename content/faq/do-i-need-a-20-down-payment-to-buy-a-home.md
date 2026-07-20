@@ -24,6 +24,15 @@ annotations:
       3.5% down, not 20%. Takeaway: the 20% figure is a myth for many buyers —
       run the 3.5%-down numbers before assuming you are priced out.
     post: the-cheap-rent-trap
+  - date: '2026-07-06'
+    type: additive
+    note: >-
+      Adds a sourcing angle: a down payment need not be cash you saved. An owner
+      with equity can fund one by borrowing against an existing property (home
+      equity loan or HELOC, to roughly 75 to 80% CLTV) while keeping the
+      low-rate first mortgage in place — the breakeven test is whether the new
+      asset's return clears the second's roughly 7.5 to 8% cost.
+    post: the-golden-handcuffs-when-your-3-mortgage-is-quietly-costing-you-money
 related:
   - how-can-i-buy-property-if-i-cant-afford-it-on-my-own
 ---

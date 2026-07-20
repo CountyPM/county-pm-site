@@ -22,6 +22,17 @@ annotations:
       the eventual sale of entry-level property.
     post: >-
       the-disappearing-first-time-buyer-why-it-strengthens-your-rental-and-changes-your-endgame
+  - date: '2026-07-13'
+    type: additive
+    note: >-
+      Extends the resale-weakness point over a full decade: entry-level property
+      depends more than any other category on the first-time-buyer pool for its
+      eventual sale, and that pool is thinning from both ends (millennials
+      trading up, a smaller Gen Z net out-migrating from California). Planning
+      to sell that property in 10 to 15 years means selling into a weaker market
+      than today's.
+    post: >-
+      the-demographic-cliff-what-an-aging-buyer-pool-means-for-your-rentals-next-decade
 ---
 
 It weakens the sell-side of your decision more than it weakens the property itself. Entry-level homes depend most heavily on first-time buyer demand, and with first-time buyers at a record-low share of about 21% of the market, the pool of buyers for smaller, older, entry-level properties is structurally thinning.
