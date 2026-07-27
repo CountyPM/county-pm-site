@@ -13,7 +13,19 @@ derivedFrom:
 created: '2026-06-25'
 order: 5
 sources: []
-annotations: []
+annotations:
+  - date: '2026-07-27'
+    type: additive
+    note: >-
+      The move-up post adds the full playbook for converting a home you're
+      leaving: you keep the IRC 121 exclusion for roughly three years (occupied
+      2 of the last 5), your homeowner's HO-3 must convert to a landlord policy
+      at move-out, and — the highest-consequence step — the single-family AB
+      1482 rent-cap and just-cause exemption has to be affirmatively claimed in
+      the right form before the lease, or you permanently hand a rent cap and
+      just-cause protection to a house that never needed either. Dated takeaway:
+      put a month-24 calendar note to call your CPA about the 121 clock.
+    post: youre-about-to-sell-a-3-5-mortgage-to-buy-a-bigger-kitchen
 related:
   - why-are-owner-occupied-mortgage-rates-better-than-investor
 ---

@@ -18,6 +18,18 @@ annotations:
       consistently alongside other compensating factors. Takeaway: use 3x as one
       screening signal applied evenly, not as a legal cutoff.
     post: why-good-tenants-keep-getting-rejected
+  - date: '2026-07-27'
+    type: additive
+    note: >-
+      The eviction-record post explains why income multipliers and credit-score
+      minimums have hardened: with eviction filings sealed under Code of Civil
+      Procedure 1161.2 and rent-payment reporting under AB 2747 (effective April
+      1, 2025) voluntary for the tenant, landlords lean harder on the one signal
+      left — the credit score — and raise thresholds to price the added risk. A
+      3x ratio is still a landlord policy, not a legal mandate, but the post
+      shows the market pressure pushing those cutoffs up, and why applying them
+      consistently to every applicant matters for fair-housing exposure.
+    post: the-law-that-hides-the-record
 related:
   - tenant-application-screening-fee-california
 ---

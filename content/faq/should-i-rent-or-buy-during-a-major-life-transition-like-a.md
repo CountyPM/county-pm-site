@@ -22,6 +22,17 @@ annotations:
       transition, give yourself room to decide; renting now does not foreclose
       buying later.
     post: when-decisions-overwhelm
+  - date: '2026-07-27'
+    type: additive
+    note: >-
+      The move-up post is a transition case in point (a growing family rather
+      than a divorce, but the same trap): the three people advising you at a
+      move-up — agent, lender, and the CPA nobody called — are all paid when you
+      sell, so the low-rate, low-Prop-13-basis home gets sold by default. The
+      dated takeaway for anyone in transition: keeping the departing home is
+      often only a ~36-month option (the Section 121 window), and it deserves a
+      deliberate choice on the record with your CPA, not a reflexive sale.
+    post: youre-about-to-sell-a-3-5-mortgage-to-buy-a-bigger-kitchen
 ---
 
 When life is unsettled, renting first is often the sounder call. Buying is a large, expensive-to-reverse decision, and making it while you're emotionally stretched — during a divorce, a move, or a loss — stacks a hard commitment on top of an already hard time. Renting buys you flexibility precisely when you can least predict what you'll want a year out.

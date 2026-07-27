@@ -25,6 +25,20 @@ annotations:
       that portion — a real number worth checking before you sell, separate from
       how the rented portion is treated.
     post: getting-your-money-out-of-california
+  - date: '2026-07-27'
+    type: additive
+    note: >-
+      The move-up post puts numbers on the used-to-live-in case: Section 121
+      lets a married couple exclude up to $500,000 of gain ($250,000 single) if
+      you occupied the home 2 of the last 5 years, so you can rent it about
+      three years and still sell protected. The price of that window is
+      depreciation recapture on the rental years — roughly $14,000 of tax in the
+      worked example — while California taxes the remaining gain as ordinary
+      income (blended federal, NIIT, and state of about 28 to 35 percent). On a
+      typical Ventura move-up the exclusion is worth $57k to $72k and grows with
+      appreciation, so the recapture is usually a cheap price to keep the option
+      open.
+    post: youre-about-to-sell-a-3-5-mortgage-to-buy-a-bigger-kitchen
 related:
   - how-can-i-move-my-rental-property-equity-out-of-california
   - what-happens-to-existing-tenant-leases-when-i-sell-my-rental

@@ -5,39 +5,19 @@ topicTitle: Housing Market & Demographics
 topicDescription: How demographic and supply trends shape rental demand and owner strategy.
 type: subjective
 derivedFrom:
-  - >-
-    the-demographic-cliff-what-an-aging-buyer-pool-means-for-your-rentals-next-decade
+  - the-demographic-cliff-what-an-aging-buyer-pool-means-for-your-rentals-next-decade
 created: '2026-07-09'
 order: 1
 sources:
   - label: 'IRS Publication 551, Basis of Assets (Rev. December 2025)'
     url: 'https://www.irs.gov/publications/p551'
-annotations:
-  - date: '2026-07-13'
-    type: additive
-    note: >-
-      The demographic-cliff post sharpens the response: own property with
-      multi-cohort demand near durable job anchors (Naval Base Ventura County,
-      the Amgen biotech corridor, healthcare), and plan to access equity by
-      borrowing rather than selling into a thinning buyer pool — holding to the
-      §1014 step-up.
-    post: >-
-      the-demographic-cliff-what-an-aging-buyer-pool-means-for-your-rentals-next-decade
-  - date: '2026-07-13'
-    type: additive
-    note: >-
-      Adds the concrete response: buy property with multi-cohort demand (near
-      job centers, transit, strong schools) rather than product dependent on the
-      shrinking first-timer, and treat borrow-and-hold-to-step-up as the exit
-      rather than a sale into a thinning buyer pool.
-    post: >-
-      the-disappearing-first-time-buyer-why-it-strengthens-your-rental-and-changes-your-endgame
+annotations: []
 ---
 
-Two moves, and neither one panics. First, own the right property. A well-located rental near jobs and transit, with appeal across several tenant types, holds demand far better through a long demographic decline than an isolated, entry-level box that depends on a single thinning group of buyers.
+Two moves, and neither one panics. First, own the right property. A well-located rental near durable job anchors — Naval Base Ventura County, the Amgen biotech corridor, healthcare — with appeal across several tenant types holds demand far better through a long demographic decline than an isolated, entry-level box that depends on a single thinning group of buyers. Favor a single-family lot that can legally hold two households over a two-bedroom condo in an aging, underfunded association.
 
-Second, plan to reach your property's value without selling into a weakening buyer pool. You can borrow against built-up equity for a life event or a new purchase and keep the asset, rather than forcing a sale into soft demand.
+Second, underwrite the contraction honestly. Plan for flat rents and rising carry, screen a purchase for insurability before you screen for cap rate, and read the reserve study before you read the listing. In a flat-rent market the margin lives in the two lines you actually control — days vacant and turnover cost.
 
-For many long-term owners the endgame is to hold until death and let the IRC Section 1014 step-up reset the property's basis to fair market value, which can erase the lifetime gain for income-tax purposes. That routes around the weak resale exit a demographic cliff creates.
+Third, plan to reach your property's value without selling into a weakening buyer pool. Borrow against built-up equity for a life event or a new purchase and keep the asset rather than forcing a sale into soft demand. For many long-term owners the endgame is to hold until death and let the IRC Section 1014 step-up reset the property's basis to fair market value, which can erase the lifetime gain for income-tax purposes.
 
-This is strategy, not a guarantee, and the tax mechanics belong with your CPA and estate attorney. In Ventura County we help owners line these choices up as a deliberate Rent/Sell/Hold plan rather than a reaction.
+But do not sell a low-basis coastal asset on the assumption the decline is permanent. California's own Department of Finance math shows the state would have gained about 66,000 people in 2025 absent the federal immigration changes — so renter demand is now a policy variable that can reverse in a single election, while a decades-old Proposition 13 basis cannot be rebuilt once you sell. Plan for the worse case; keep the thing that cannot be replaced. This is strategy, not a guarantee, and the tax mechanics belong with your CPA and estate attorney on your specific facts.

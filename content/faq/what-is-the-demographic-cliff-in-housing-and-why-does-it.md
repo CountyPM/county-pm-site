@@ -7,34 +7,17 @@ topicTitle: Housing Market & Demographics
 topicDescription: How demographic and supply trends shape rental demand and owner strategy.
 type: subjective
 derivedFrom:
-  - >-
-    the-demographic-cliff-what-an-aging-buyer-pool-means-for-your-rentals-next-decade
+  - the-demographic-cliff-what-an-aging-buyer-pool-means-for-your-rentals-next-decade
 created: '2026-07-09'
 order: 1
 sources: []
-annotations:
-  - date: '2026-07-13'
-    type: additive
-    note: >-
-      The demographic-cliff post is CPM's fullest treatment: an aging, shrinking
-      buyer pool thins future resale demand, and the dated takeaway is that the
-      cliff is the strongest argument for a borrow-and-hold strategy, not a
-      reason to panic about rental income.
-    post: >-
-      the-demographic-cliff-what-an-aging-buyer-pool-means-for-your-rentals-next-decade
-  - date: '2026-07-13'
-    type: additive
-    note: >-
-      The disappearing-first-time-buyer post is the near-term companion: the
-      priced-out buyer becomes today's renter (a demand tailwind), while the
-      demographic cliff is the decade-long version of the same story draining
-      the eventual buyer pool for entry-level property.
-    post: >-
-      the-disappearing-first-time-buyer-why-it-strengthens-your-rental-and-changes-your-endgame
+annotations: []
 ---
 
-The demographic cliff refers to the structural shrinking of the entry-level buyer and renter pool over the coming decade. The largest home-buying generation, the Millennials, is aging out of starter homes and into move-up purchases, while Gen Z — the cohort meant to replace them at the bottom rung — is smaller and, in California, is net out-migrating to lower-cost states.
+The demographic cliff refers to the structural shrinking of the entry-level buyer and renter pool over the coming decade. The largest home-buying generation, the Millennials, is aging out of starter homes into move-up purchases, while Gen Z — the cohort meant to replace them at the bottom rung — is smaller and, in California, is net out-migrating to lower-cost states.
 
-Why it matters to owners: long-run demand for smaller, older, entry-level properties far from job centers is the most exposed to this trend. The affordable, commuter-distant end of the market is where a thinner young cohort shows up first.
+The statewide numbers now show it, not just the theory. California lost about 54,000 people in 2025, its first annual decline in years, as net international migration more than halved. Housing units, meanwhile, kept growing — the first time in fifty years supply has outpaced population. Long-run demand for smaller, older, entry-level properties far from job centers is the most exposed to that shift.
 
-For Ventura County, the practical response is not alarm — it is positioning. Well-located, well-maintained rentals near jobs and good schools tend to hold their demand; the risk sits in aging entry-level product on the fringe. This is our read of the demographic data as context for a Rent, Sell, or Hold decision, not a market forecast.
+Why it matters to owners is a matter of positioning, not alarm. Well-located, well-maintained rentals near jobs and good schools tend to hold their demand; the risk sits in aging entry-level product on the fringe, and in thin-margin condos in underfunded associations. The cliff is the strongest argument for a borrow-and-hold strategy — reach your equity by borrowing rather than selling into a thinning buyer pool — not a reason to panic about rental income, which the same trend actually supports as priced-out buyers keep renting longer.
+
+One caveat keeps this from being destiny: the Department of Finance's own arithmetic shows California would have gained about 66,000 people in 2025 absent the federal immigration changes. Renter demand is now a policy variable that can reverse in one election, while a low Proposition 13 basis cannot be rebuilt. That asymmetry is the whole point — plan for the contraction, but keep the low-basis coastal asset. This is our read of the demographic data as context for a Rent, Sell, or Hold decision, not a market forecast.

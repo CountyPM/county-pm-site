@@ -11,30 +11,13 @@ derivedFrom:
 created: '2026-07-09'
 order: 1
 sources: []
-annotations:
-  - date: '2026-07-13'
-    type: additive
-    note: >-
-      Adds context on why lock-in compounds other headwinds: higher rates keep
-      existing owners locked in, thinning for-sale supply even as the
-      demographic cliff thins the buyer pool — one more reason the post argues
-      for accessing equity by borrowing rather than selling.
-    post: >-
-      the-demographic-cliff-what-an-aging-buyer-pool-means-for-your-rentals-next-decade
-  - date: '2026-07-13'
-    type: additive
-    note: >-
-      Reinforces the practical response to lock-in: keep the low-rate first
-      mortgage untouched and pull equity with a second mortgage rather than
-      refinancing or selling, so the sub-5% rate most California owners hold
-      keeps working for you.
-    post: >-
-      the-disappearing-first-time-buyer-why-it-strengthens-your-rental-and-changes-your-endgame
+annotations: []
 ---
-The rate lock-in effect describes homeowners who stay put because moving would mean giving up a low fixed mortgage rate for a much higher one. Trading a rate often under 4% for a current rate near 6.5-7% makes a move far more expensive, so many owners simply don't list.
 
-The scale of it is what makes it matter. Roughly 80% of California homeowners hold mortgages below 5%, which keeps a large share of would-be sellers on the sidelines.
+The rate lock-in effect describes homeowners who stay put because moving would mean giving up a low fixed mortgage rate for a much higher one. Trading a rate often under 4% for a current market rate near 6.5% to 7% makes a move far more expensive, so many owners simply don't list.
 
-The market consequence is tight for-sale inventory. Because so many owners won't trade their cheap financing, fewer homes come up for sale, and many people stay in houses that no longer fit their needs — too small, too far from work, or otherwise outgrown.
+The scale is what makes it matter. Roughly three-quarters of California homeowners hold mortgages under 5%, against a market rate that has hovered near 6.5% to 7% — a gap that keeps a large share of would-be sellers on the sidelines and holds for-sale inventory tight. Fewer homes come up for sale, and many people stay in houses that no longer fit — too small, too far from work, or otherwise outgrown.
 
-For a rental owner this is a double-edged read: your own low-rate loan is an asset worth keeping, but the same lock-in that benefits you also thins the resale market when you eventually sell. It's a real factor to weigh in any Rent/Sell/Hold decision, and one we help Ventura County owners think through.
+Here is the part most owners miss: the lock rarely breaks because rates fall. It breaks when the owner dies or moves into care — and under Proposition 19 a non-occupant heir loses the low Proposition 13 assessed value and faces reassessment, which turns "hold it as a rental" into "sell it." That mortality-and-Prop-19 turnover, concentrated in the coastal suburbs now losing population, is the decade's real inventory event, not a drop in rates.
+
+For a rental owner the read is double-edged, and it points to a specific move. Your own sub-4% loan is itself the asset — refinancing it to today's rate to pull cash can flip a property from cash-flow positive to sharply negative. So when you need the equity, borrow against it with a second position (a HELOC or fixed second) and leave the low-rate first mortgage untouched, rather than refinancing or selling. Never trade a sub-4% note by default. We help Ventura County owners weigh exactly this as part of the Rent/Sell/Hold decision.
