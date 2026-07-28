@@ -209,6 +209,11 @@ let category = opts.category || deriveCategory(data)
 if (!CATEGORIES.includes(category))
   fail(`Category "${category}" not in the closed set: ${CATEGORIES.join(', ')}`)
 
+// Intent guard (2026-07-28): an empty/missing decision_intent publishes fine
+// but leaves the post invisible to the /blog intent filters. Warn loudly so
+// the runner log (and heartbeat email) surfaces it for backfill.
+if (!Array.isArray(data.decision_intent) || data.decision_intent.length === 0)
+  console.warn(`\u26a0 WARNING: contract has empty/missing decision_intent — backfill content/blog/${slug}.mdx or it stays out of the intent filters.`)
 const excerpt = deriveExcerpt(data, body)
 const author = deriveAuthor(data.byline)
 const heroProvided = Boolean(opts.hero)
