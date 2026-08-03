@@ -21,6 +21,19 @@ annotations:
       — it is a known cash-for-keys figure vs. months of lost rent plus legal
       costs and uncertainty.
     post: cash-for-keys-when-the-court-fails
+  - date: '2026-08-03'
+    type: additive
+    note: >-
+      An August 2026 case study updates the arithmetic: with contested unlawful
+      detainers now routinely running four-plus months (demurrers, motions to
+      quash, continuances, jury demands), an owner facing $18,000 in unpaid rent
+      paid $5,000 for the keys — the right call by that point. Two additions
+      worth knowing: a guarantor shortens the eviction by zero days (you still
+      litigate against the tenant in possession), and under CCP §1161.2 a UD the
+      landlord doesn't win within 60 days of filing stays sealed — so the
+      cheapest cash-for-keys deal is the one you avoid with verification in week
+      one.
+    post: and-you-thought-you-had-a-good-tenant
 related:
   - how-to-evict-a-tenant-in-california
   - what-does-it-take-to-win-an-eviction-for-non-payment-of-rent

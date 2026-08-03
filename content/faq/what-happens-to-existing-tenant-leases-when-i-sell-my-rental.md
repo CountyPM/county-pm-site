@@ -27,6 +27,19 @@ annotations:
       tenant is handled with proper notice. Takeaway: selling does not void
       leases — the buyer steps into them.
     post: getting-your-money-out-of-california
+  - date: '2026-08-03'
+    type: additive
+    note: >-
+      The ADU series (July 2026) reinforces the point from the local-ordinance
+      side: selling is not on AB 1482's no-fault just-cause list, so wanting to
+      deliver a vacant property to a buyer is not, by itself, lawful grounds to
+      terminate. No-fault terminations also carry relocation assistance — one
+      month's rent under state law, and more under local ordinances (Oxnard: two
+      months' rent or $5,000, whichever is greater). And in Oxnard and Ojai,
+      just-cause protection attaches after only 30 days of tenancy, not the
+      12-month state threshold — so a plan to sell vacant needs a city-specific
+      check, not just the state-law analysis.
+    post: building-an-adu-can-cost-you-your-exemption-before-you-ever-rent-it
 related:
   - capital-gains-when-selling-a-california-rental
   - how-can-i-move-my-rental-property-equity-out-of-california

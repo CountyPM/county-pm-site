@@ -21,6 +21,17 @@ annotations:
       fast. Takeaway: vacancy is lost NOI that cannot be earned back, which is
       why speed at turnover matters more than chasing the cheapest make-ready.
     post: most-property-managers-work-for-themselves
+  - date: '2026-08-03'
+    type: additive
+    note: >-
+      An August 2026 post names vacancy's hidden cost: the pressure it puts on
+      your judgment. After five weeks empty, the applicant offering fast move-in
+      and six months' rent up front feels like relief — and that is exactly when
+      owners skip verification. In the post's case study the shortcut cost about
+      $23,000 and, ultimately, the property itself. Takeaway: vacancy is lost
+      revenue, but the most expensive vacancy is the one you end with the wrong
+      tenant; the daily rent loss never outweighs screening done right.
+    post: and-you-thought-you-had-a-good-tenant
 related:
   - how-important-is-tenant-screening-to-a-rental-propertys
 ---

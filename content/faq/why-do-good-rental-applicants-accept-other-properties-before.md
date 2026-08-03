@@ -1,16 +1,30 @@
 ---
-question: "Why do good rental applicants accept other properties before I can approve them?"
+question: >-
+  Why do good rental applicants accept other properties before I can approve
+  them?
 topic: leasing-and-showings
 topicTitle: Leasing & Showings
-topicDescription: >-
-  Marketing a vacancy, showing it, and getting a qualified resident in quickly.
+topicDescription: 'Marketing a vacancy, showing it, and getting a qualified resident in quickly.'
 type: subjective
 derivedFrom:
   - be-quick-but-dont-hurry-a-lease-we-lost-and-the-lesson-that-stuck
 created: '2026-07-09'
 order: 1
 sources: []
-annotations: []
+annotations:
+  - date: '2026-08-03'
+    type: additive
+    note: >-
+      An August 2026 post adds the flip side: the genuinely strong applicant is
+      the one with competing applications who accepts the first solid approval —
+      while the applicant who is instantly available, eager to prepay, and
+      flexible about everything is often solving a problem of their own. Speed
+      should shorten your process, never your verification: run checks in
+      parallel and decide fast, but still require the same bank statements,
+      employer contact, and prior-landlord contact from everyone. Legitimate
+      applicants produce the file; the wrong ones go vague, then hurt, then
+      pressuring, then gone.
+    post: and-you-thought-you-had-a-good-tenant
 ---
 
 Because strong applicants rarely apply to just one place. When a qualified renter is house-hunting in Ventura County, they typically have several applications in motion at once, and they accept the first solid approval they receive rather than wait to see if a better yes is coming.
