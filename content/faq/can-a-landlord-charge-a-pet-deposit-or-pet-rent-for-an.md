@@ -8,6 +8,9 @@ topicDescription: What Ventura County owners can and can't do when screening ren
 type: objective
 derivedFrom:
   - why-good-tenants-keep-getting-rejected
+  - the-600-question-when-a-reasonable-tenant-asks-the-wrong-thing
+  - hud-stopped-enforcing-california-didnt
+  - the-california-assistance-animal-checklist
 created: '2026-06-25'
 order: 3
 sources:
@@ -19,35 +22,25 @@ sources:
   - label: 'U.S. HUD, Assistance Animals (Fair Housing)'
     url: >-
       https://www.hud.gov/program_offices/fair_housing_equal_opp/assistance_animals
-annotations:
-  - date: '2026-06-29'
-    type: additive
-    note: >-
-      A 2026 post on tenant screening reinforces the rule that an assistance
-      animal is not a pet: no pet deposit and no pet rent may be charged for a
-      verified emotional support animal, though the tenant stays liable for any
-      actual damage. Takeaway: keep the ESA accommodation and the money
-      questions separate from your ordinary pet policy.
-    post: why-good-tenants-keep-getting-rejected
-  - date: '2026-07-06'
-    type: additive
-    note: >-
-      A 2026 field case reinforced the rule and added a deposit-cap wrinkle: a
-      documented emotional support animal is an assistance animal, not a pet, so
-      a housing provider generally cannot charge a pet deposit, pet rent, or pet
-      fee for it. The old workaround of rolling a pet deposit into the security
-      deposit no longer works either — since July 1, 2024, most security
-      deposits are capped at one month's rent (a narrow small-landlord exception
-      allows two), so there is often no legal room left to tuck an extra charge
-      inside.
-    post: the-600-question-when-a-reasonable-tenant-asks-the-wrong-thing
+  - label: 'AB 468 (2021), Emotional support animals — Cal. Health & Safety Code §122318 (leginfo)'
+    url: >-
+      https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202120220AB468
+  - label: 'Cal. Civ. Code §1950.5 (security deposits)'
+    url: >-
+      https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5
+annotations: []
 related:
   - can-a-landlord-deny-an-emotional-support-animal
   - tenant-application-screening-fee-california
+  - what-documentation-can-i-require-for-an-emotional-support
 ---
 
-No. An emotional support animal is an assistance animal under the federal Fair Housing Act and California's Fair Employment and Housing Act, not a pet — so you cannot charge a pet deposit, pet rent, or any extra pet fee for it, even if your property otherwise has a no-pet policy. Granting the accommodation is required, and putting a price on it is itself a fair-housing violation.
+No. An emotional support animal is an assistance animal under the federal Fair Housing Act and California's Fair Employment and Housing Act, not a pet — so you cannot charge a pet deposit, pet rent, or any extra pet fee for it, even if your property otherwise has a no-pet policy. Granting the accommodation is required, and putting a price on it is itself a fair-housing violation. No separate agreement may recategorize the animal as a pet.
 
-What you can still do is hold the tenant responsible for the animal's behavior and for any actual damage it causes, the same as you would for damage from any other source covered by the security deposit. You may also ask for documentation of the disability-related need when it isn't obvious, though an online "ESA certificate" purchased on its own is not adequate proof. The accommodation can be denied only if the specific animal would be a direct threat to others' health or safety, or would cause substantial physical damage.
+The old workaround is gone too. Rolling a pet charge into the security deposit stopped working on July 1, 2024, when California capped most residential security deposits at one month's rent (a narrow small-landlord exception allows two), so there is usually no legal room left to tuck an animal charge inside the deposit.
+
+The May 2026 federal enforcement change did not touch this rule in California. HUD's May 22, 2026 memo narrowed federal enforcement to trained assistance animals, following the September 2025 rescission of HUD's earlier guidance — but the Fair Housing Act itself is unchanged, private suits remain available, and the California Civil Rights Department enforces the state standard, which never required training. For a verified assistance animal in California, the no-fee rule stands.
+
+What you can require is documentation that meets California's standard when the disability-related need isn't obvious. Under AB 468 (effective January 2022), an ESA letter must come from a California-licensed provider with a client relationship of at least 30 days and an actual clinical evaluation; an online certificate with no individualized assessment is presumptively not reliable. If the paperwork is deficient, send a cure request rather than a denial. And on approval, the tenant still remains responsible for the animal's behavior and any actual damage it causes, under the same lease provisions that cover any other damage.
 
 This is general information, not legal advice. Fair-housing rules carry real liability, so confirm a specific situation against the Civil Rights Department guidance above or with counsel before charging any animal-related fee.

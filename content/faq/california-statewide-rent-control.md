@@ -18,7 +18,20 @@ sources:
   - label: 'Just cause eviction provisions, Cal. Civ. Code §1946.2'
     url: >-
       https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1946.2
-annotations: []
+annotations:
+  - date: '2026-08-10'
+    type: additive
+    note: >-
+      The August 2026 Oxnard city profile adds the local layer this statewide
+      answer cannot carry alone: Oxnard's own Rent Stabilization Ordinance (City
+      Code ch. 27, adopted 2022) caps covered increases at 4 percent — stricter
+      than AB 1482 — while Costa-Hawkins keeps separately alienable
+      single-family homes and condos out of the local cap. Just cause is the
+      sharper local difference: Oxnard's attaches at 30 days of tenancy, not the
+      state's 12 months, and it reaches exempt houses and condos. Dated
+      takeaway: statewide rent control is the floor, not the whole rulebook —
+      check the city's ordinances before serving any notice.
+    post: oxnard-what-it-actually-takes-to-be-a-landlord-here
 related:
   - how-much-can-a-landlord-raise-rent-in-california
 ---

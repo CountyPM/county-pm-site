@@ -42,6 +42,66 @@
   ],
   "entries": [
     {
+      "id": "ab-468-esa-documentation",
+      "match": [
+        "ab 468",
+        "ab468",
+        "esa letter",
+        "esa documentation",
+        "emotional support animal letter",
+        "support animal documentation",
+        "online esa certificate",
+        "assistance animal documentation"
+      ],
+      "facts": "AB 468 (2021), Health & Safety Code §122318, effective January 1, 2022: a health care practitioner may provide emotional support animal documentation only if they hold a valid active license, are licensed in the jurisdiction, established a client-provider relationship at least 30 days before issuing the documentation, and completed a clinical evaluation. Online certificates with no individualized assessment are presumptively not reliable third-party information under California housing regulations.",
+      "currencyNote": "Verified current 2026-08-10 against the chaptered bill text on leginfo. HUD's May 22, 2026 FHEO enforcement memo narrowed FEDERAL enforcement to trained animals only; it does not change AB 468 or California's untrained-support-animal standard, which CRD enforces independently.",
+      "entities": [
+        {
+          "name": "AB 468 (2021), Emotional support animals — Cal. Health & Safety Code §122318",
+          "type": "Legislation",
+          "sameAs": [
+            "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202120220AB468"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "AB 468 (2021), Emotional support animals — Cal. Health & Safety Code §122318 (leginfo)",
+          "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202120220AB468"
+        }
+      ]
+    },
+    {
+      "id": "oxnard-rent-stabilization",
+      "match": [
+        "oxnard rent",
+        "oxnard rent control",
+        "oxnard rent stabilization",
+        "oxnard ordinance",
+        "oxnard 4%",
+        "oxnard four percent",
+        "local rent ordinance",
+        "local rent cap"
+      ],
+      "facts": "Oxnard's Rent Stabilization Ordinance (Ordinance 3013, City Code ch. 27, adopted 2022) limits covered units to one rent increase per 12-month period, capped at 4%. It covers multifamily residential property first issued a certificate of occupancy before February 1, 1995; most single-family homes and condominiums are exempt (see §27-24(B)(3)), consistent with Costa-Hawkins. Oxnard also runs a mandatory rental registry and separate just-cause protections (Ordinance 3012).",
+      "currencyNote": "Verified current 2026-08-10 against the City of Oxnard rent stabilization page. Registration was required by April 1, 2025; a 2026 fee study proposes per-unit program fees. Local ordinances change — re-check the city page before relying on figures.",
+      "entities": [
+        {
+          "name": "City of Oxnard Rent Stabilization Ordinance (Ordinance 3013, City Code ch. 27)",
+          "type": "Legislation",
+          "sameAs": [
+            "https://www.oxnard.gov/housing/affordable-housing/rent-stabilization"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "City of Oxnard — Rent Stabilization (Ordinance 3013, City Code ch. 27)",
+          "url": "https://www.oxnard.gov/housing/affordable-housing/rent-stabilization"
+        }
+      ]
+    },
+    {
       "id": "ca-rent-cap",
       "match": [
         "rent control",
