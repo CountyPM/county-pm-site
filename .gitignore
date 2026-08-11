@@ -92,3 +92,11 @@ faq-validate-report.json
 scripts/faq-draft-report.json
 # blog-reconcile packets: local review-queue state (same class as content/faq-reconcile)
 content/blog-reconcile/
+.env.social
+.social-token-state.json
+content/social-queue/*.json
+content/social-queue/posted/
+
+
+# Build-generated search index for /blog/all (scripts/build-search-index.mjs via prebuild)
+/public/search-index.json

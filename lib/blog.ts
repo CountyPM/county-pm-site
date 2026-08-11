@@ -18,6 +18,8 @@ export type BlogPostMeta = {
   heroImage?: string
   heroImageAlt?: string
   showInvestorForm?: boolean
+  subtitle?: string // one-sentence deck under the title (contract `subtitle`)
+  decisionIntent: string[] // selling | renting | holding | still-deciding; [] = exempt
   faq?: string[] // FAQ entry slugs this post references (spoke -> hub)
   series?: string // human-readable series name (e.g. "Next Level Real Estate Investing")
   seriesPart?: number // 1-indexed position within the series
@@ -57,6 +59,10 @@ export function getAllPosts(): BlogPostMeta[] {
         heroImage: data.heroImage,
         heroImageAlt: data.heroImageAlt,
         showInvestorForm: Boolean(data.showInvestorForm),
+        subtitle: data.subtitle ? String(data.subtitle) : undefined,
+        decisionIntent: Array.isArray(data.decision_intent)
+          ? data.decision_intent.map(String)
+          : [],
         faq: Array.isArray(data.faq) ? data.faq.map(String) : [],
         series: data.series ? String(data.series) : undefined,
         seriesPart: toSeriesPart(data.seriesPart),
@@ -105,6 +111,10 @@ export function getPostBySlug(slug: string): BlogPost | null {
     heroImage: data.heroImage ? String(data.heroImage) : undefined,
     heroImageAlt: data.heroImageAlt ? String(data.heroImageAlt) : undefined,
     showInvestorForm: Boolean(data.showInvestorForm),
+    subtitle: data.subtitle ? String(data.subtitle) : undefined,
+    decisionIntent: Array.isArray(data.decision_intent)
+      ? data.decision_intent.map(String)
+      : [],
     faq: Array.isArray(data.faq) ? data.faq.map(String) : [],
     series: data.series ? String(data.series) : undefined,
     seriesPart: toSeriesPart(data.seriesPart),

@@ -22,6 +22,7 @@ const STATIC_ROUTES: { path: string; changeFrequency: ChangeFrequency; priority:
   { path: '/faq', changeFrequency: 'weekly', priority: 0.8 },
   { path: '/blog', changeFrequency: 'weekly', priority: 0.8 },
   { path: '/blog/guide', changeFrequency: 'weekly', priority: 0.7 },
+  { path: '/blog/all', changeFrequency: 'weekly', priority: 0.7 },
   { path: '/available-rentals', changeFrequency: 'daily', priority: 0.7 },
   { path: '/contact', changeFrequency: 'yearly', priority: 0.7 },
   { path: '/resources/rent-vs-sell', changeFrequency: 'monthly', priority: 0.6 },
