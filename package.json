@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/stamp-faq-cache-key.mjs --quiet",
+    "prebuild": "node scripts/stamp-faq-cache-key.mjs --quiet && node scripts/build-search-index.mjs --quiet",
     "build": "next build",
+    "index:search": "node scripts/build-search-index.mjs",
+    "embed:blog": "node scripts/build-embeddings.mjs",
     "wire:spokes": "node scripts/wire-blog-spokes.mjs",
     "stamp:faq-cache": "node scripts/stamp-faq-cache-key.mjs",
     "start": "next start",
@@ -22,7 +24,11 @@
     "post:blog": "node scripts/post-blog.mjs",
     "geo:index": "node scripts/geo-indexation-check.mjs",
     "geo:citation-record": "node scripts/geo-citation-record.mjs",
-    "geo:readout": "node scripts/geo-readout.mjs"
+    "geo:readout": "node scripts/geo-readout.mjs",
+    "social:post": "node scripts/post-social.mjs post",
+    "social:whoami": "node scripts/post-social.mjs whoami",
+    "social:google-auth": "node scripts/post-social.mjs google-auth",
+    "social:gbp-locations": "node scripts/post-social.mjs gbp-locations"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",

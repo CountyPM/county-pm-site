@@ -116,6 +116,35 @@ try {
 
   Log "post-blog-inbox: done - $ok converted, $bad failed."
 
+  # ---- Semantic search: refresh post embeddings for anything new ----------
+  # public/search-embeddings.json is COMMITTED (the Vercel build has no
+  # GEMINI_API_KEY), so new posts need their vector generated here and pushed
+  # with the content. Incremental: only new/edited posts hit the API.
+  # Best-effort: a failure never blocks publishing - keyword search covers
+  # new posts immediately; semantic just lags until the next successful run.
+  if ($ok -gt 0) {
+    try {
+      Log 'Refreshing search embeddings for new posts...'
+      node scripts/build-embeddings.mjs --quiet
+      if ($LASTEXITCODE -eq 0) {
+        git add -- public/search-embeddings.json
+        git diff --cached --quiet -- public/search-embeddings.json
+        if ($LASTEXITCODE -ne 0) {
+          git commit -m "search: refresh post embeddings ($ok new post(s))"
+          if ($Publish) { git push origin main }
+          Log 'Search embeddings refreshed and committed.'
+        } else {
+          Log 'Search embeddings already up to date.'
+        }
+      } else {
+        Log "Embeddings refresh FAILED (exit $LASTEXITCODE) - non-fatal; semantic search lags until next run."
+      }
+    } catch {
+      Log "Embeddings refresh error: $_ (non-fatal)"
+    }
+  }
+  # -------------------------------------------------------------------------
+
   # ---- Item #2: OUTPUT-END inspection + heartbeat -------------------------
   # Only meaningful when we actually pushed (Publish) AND shipped something this
   # run. Nothing to inspect on a commit-only or empty run. A heartbeat here would

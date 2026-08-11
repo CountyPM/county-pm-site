@@ -1,13 +1,30 @@
 import Link from 'next/link'
 import { getAllPosts } from '@/lib/blog'
 import { getCategoryTiles } from '@/lib/blog-categories'
+import HomeSearch from './HomeSearch'
 import PostCard from './PostCard'
 
 const RECENT_COUNT = 6
 
+// The intent chips mirror the site's Rent/Hold/Sell framing. Each links into
+// the /blog/all explorer with the filter pre-applied — those URLs are stable
+// and shareable. Counts are computed from frontmatter at build time.
+const INTENTS = [
+  { key: 'selling', label: 'Selling' },
+  { key: 'renting', label: 'Renting' },
+  { key: 'holding', label: 'Holding' },
+  { key: 'still-deciding', label: 'Still deciding' },
+]
+
 export default function BlogPage() {
   const tiles = getCategoryTiles()
-  const recent = getAllPosts().slice(0, RECENT_COUNT)
+  const all = getAllPosts()
+  const recent = all.slice(0, RECENT_COUNT)
+
+  const intentCounts: Record<string, number> = {}
+  for (const { key } of INTENTS) intentCounts[key] = 0
+  for (const p of all)
+    for (const v of p.decisionIntent) if (v in intentCounts) intentCounts[v]++
 
   return (
     <main>
@@ -29,6 +46,19 @@ export default function BlogPage() {
             Pick the topic that matches your situation, or start with the latest
             articles below.
           </p>
+        </div>
+      </section>
+
+      {/* FIND YOUR SITUATION — intent chips + LIVE search over the full
+          corpus (keyword + phrase + semantic). Results render inline; the
+          chips still deep-link into /blog/all. */}
+      <section className="border-t border-[var(--cpm-border)] bg-[var(--cpm-page)]">
+        <div className="mx-auto max-w-6xl px-4 py-10">
+          <HomeSearch
+            intents={INTENTS}
+            intentCounts={intentCounts}
+            totalPosts={all.length}
+          />
         </div>
       </section>
 
