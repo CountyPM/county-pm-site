@@ -50,7 +50,14 @@ export default function BlogGuidePage() {
         <div className="mx-auto max-w-6xl px-4 py-20">
           <div className="space-y-16">
             {series.map((group) => (
-              <div key={group.name}>
+              <div
+                key={group.name}
+                id={group.name
+                  .toLowerCase()
+                  .replace(/[^a-z0-9]+/g, '-')
+                  .replace(/^-+|-+$/g, '')}
+                className="scroll-mt-24"
+              >
                 <div className="flex flex-wrap items-baseline gap-3">
                   <h2 className="text-2xl font-bold tracking-tight text-[var(--cpm-text)] md:text-3xl">
                     {group.name}
