@@ -86,12 +86,20 @@ try {
     $heroTmp = Join-Path $heroTmpDir ($f.BaseName + '.webp')
     if (Test-Path $heroTmp) { Remove-Item $heroTmp -Force -ErrorAction SilentlyContinue }
     try {
-      node scripts/gen-hero.mjs --contract $f.FullName --out $heroTmp --brightness 1.3
-      if ($LASTEXITCODE -eq 0 -and (Test-Path $heroTmp)) {
+      # Retry once: gen-hero occasionally dies with a transient node crash
+      # (exit -1073740791 / 0xC0000409) and succeeds on the next attempt.
+      $heroExit = 1
+      foreach ($heroTry in 1..2) {
+        node scripts/gen-hero.mjs --contract $f.FullName --out $heroTmp --brightness 1.3
+        $heroExit = $LASTEXITCODE
+        if ($heroExit -eq 0 -and (Test-Path $heroTmp)) { break }
+        if ($heroTry -lt 2) { Log "Hero gen attempt $heroTry failed (exit $heroExit) - retrying once."; Start-Sleep -Seconds 10 }
+      }
+      if ($heroExit -eq 0 -and (Test-Path $heroTmp)) {
         $nodeArgs += @('--hero', $heroTmp)
         Log "Hero generated: $($f.BaseName).webp"
       } else {
-        Log "Hero gen skipped/failed for $($f.Name) (exit $LASTEXITCODE) - publishing text-only."
+        Log "Hero gen skipped/failed for $($f.Name) (exit $heroExit) - publishing text-only."
       }
     } catch {
       Log "Hero gen error for $($f.Name): $_ - publishing text-only."
