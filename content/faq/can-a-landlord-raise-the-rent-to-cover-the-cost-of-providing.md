@@ -29,6 +29,21 @@ annotations:
       only within the AB 1482 cap (lower of 5% plus CPI or 10%) unless the unit
       is exempt and the exemption notice was properly served.
     post: your-insurance-just-jumped-35-can-you-pass-it-to-the-tenant
+  - date: '2026-08-17'
+    type: additive
+    note: >-
+      Where you own changes how much of this cost you can actually recover.
+      Ojai's Ordinance No. 937, effective April 28, 2023, caps annual increases
+      on covered property at 4% with no more than one increase in any 12-month
+      period — below the statewide AB 1482 formula — so an Ojai owner subject to
+      the local cap has materially less room to price a refrigerator into the
+      rent than the statewide answer suggests. Ojai does allow a petition to the
+      Community Development Director for an increase above the cap where
+      necessary for a fair return, a process involving tenant notification and a
+      30-day response period. Oxnard runs a comparable 4% local cap. As of
+      2026-08-17: check the local ordinance before assuming the state ceiling is
+      your ceiling.
+    post: ojai-where-the-rules-are-the-investment-case
 ---
 
 Not on the basis of AB 628 alone. The new refrigerator-and-stove rule is a habitability obligation, not a reason to raise rent — any increase still has to comply with every rule that already governs the property, including the AB 1482 rent cap where it applies, Costa-Hawkins, and any local rent ordinance.

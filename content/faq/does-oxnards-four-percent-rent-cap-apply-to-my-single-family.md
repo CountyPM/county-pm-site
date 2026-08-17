@@ -22,7 +22,37 @@ sources:
       https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954.50
   - label: 'City of Oxnard — Rent Stabilization (Ordinance 3013, City Code ch. 27)'
     url: 'https://www.oxnard.gov/housing/affordable-housing/rent-stabilization'
-annotations: []
+annotations:
+  - date: '2026-08-17'
+    type: soft-revision
+    note: >-
+      Adding an ADU can undo this answer. Costa-Hawkins — the state law that
+      keeps single-family homes out of local rent caps — uses the same
+      "alienable separate from the title to any other dwelling unit" test that
+      AB 1482 uses, so once a second dwelling unit sits on the parcel, the basis
+      for keeping the house outside Oxnard's local cap gets shaky at the same
+      moment the state exemption does. The exposure starts the day the ADU
+      receives its certificate of occupancy, not the day you move out and rent
+      both units. As of 2026-08-17: the "no" above holds for a plain
+      single-family home. If there is an ADU or a JADU on the lot, treat both
+      the Oxnard cap and the state cap as open questions and get the analysis in
+      writing before you serve an increase.
+    post: building-an-adu-can-cost-you-your-exemption-before-you-ever-rent-it
+  - date: '2026-08-17'
+    type: additive
+    note: >-
+      Oxnard is no longer the only Ventura County city running this structure.
+      Ojai's Rent Stabilization and Just Cause Tenant Protection Ordinance
+      (Ordinance No. 937, Title 11 of the Ojai City Code) took effect April 28,
+      2023 with a 4% annual cap, one increase per 12-month period, and a
+      petition process for a fair-return increase above the cap. Ojai exempts
+      single-family homes and condominiums from that cap for the same
+      Costa-Hawkins reason Oxnard does — and, like Oxnard, its just-cause
+      chapter attaches after only 30 days of tenancy and is a separate analysis.
+      As of 2026-08-17: the caution in the third paragraph above generalizes
+      across the county. Escaping a local rent cap tells you nothing about
+      whether you can end the tenancy.
+    post: ojai-where-the-rules-are-the-investment-case
 related:
   - how-much-can-a-landlord-raise-rent-in-california
   - how-does-the-ab-1482-single-family-exemption-affect

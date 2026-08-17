@@ -17,7 +17,23 @@ sources:
   - label: 'Just cause eviction provisions, Cal. Civ. Code §1946.2'
     url: >-
       https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1946.2.
-annotations: []
+annotations:
+  - date: '2026-08-17'
+    type: soft-revision
+    note: >-
+      Sharpening the ADU point above on both timing and consequences. The
+      single-family exemption is at risk from the day the ADU receives its
+      certificate of occupancy — not from the day you move out and rent both
+      units — because the test is whether the property is alienable separate
+      from the title to any other dwelling unit, and an ADU cannot be sold off
+      the lot. There is also no fallback: the owner-occupied duplex exemption is
+      written for two units within a single structure and specifically excludes
+      accessory and junior accessory dwelling units, so it does not catch you
+      when the single-family exemption fails. The owner-occupied exemption that
+      does reach an ADU is a just-cause exemption only; it was never protection
+      from the rent cap, and it dies the day you move out. As of 2026-08-17: run
+      the exemption analysis before you pull the ADU permit, not after.
+    post: building-an-adu-can-cost-you-your-exemption-before-you-ever-rent-it
 related:
   - how-does-the-ab-1482-single-family-exemption-affect
   - how-much-can-a-landlord-raise-rent-in-california

@@ -20,6 +20,23 @@ annotations:
       and rents for the housing that already exists.
     post: >-
       the-one-factor-that-works-for-you-how-soar-quietly-protects-your-ventura-county-rental
+  - date: '2026-08-17'
+    type: additive
+    note: >-
+      Ojai is the sharp version of this trade-off. A tightly constrained housing
+      supply sitting next to a large visitor economy produces continuous
+      pressure to convert long-term housing into visitor accommodation, and the
+      city's response has been comprehensive — a citywide short-term rental
+      prohibition, an advertising ban, revenue disgorgement, and a Ventura
+      County overlay zone covering the unincorporated valley. That protects
+      long-term rental demand by design, which is the constrained-supply
+      argument working in an owner's favor. But scarcity cuts both ways: the
+      qualified tenant pool is small and competing against second-home buyers
+      for the same inventory, and hospitality and service employment does not
+      generate the income profile that supports the rents Ojai property values
+      imply. As of 2026-08-17: limited supply supports demand, but it does not
+      by itself support rent — the local income base still sets the ceiling.
+    post: ojai-where-the-rules-are-the-investment-case
 ---
 
 For owners of existing rental property, constrained new supply generally helps. When little new housing can be added, your property faces less competition for tenants, which tends to support occupancy, rents, and long-run values.

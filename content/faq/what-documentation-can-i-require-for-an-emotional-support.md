@@ -19,10 +19,27 @@ sources:
   - label: 'U.S. HUD, Assistance Animals (Fair Housing)'
     url: >-
       https://www.hud.gov/program_offices/fair_housing_equal_opp/assistance_animals
-  - label: 'AB 468 (2021), Emotional support animals — Cal. Health & Safety Code §122318 (leginfo)'
+  - label: >-
+      AB 468 (2021), Emotional support animals — Cal. Health & Safety Code
+      §122318 (leginfo)
     url: >-
       https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202120220AB468
-annotations: []
+annotations:
+  - date: '2026-08-17'
+    type: additive
+    note: >-
+      A shift in federal enforcement posture does not move this answer.
+      California has its own statute and its own regulator: AB 468 sets the
+      licensing, 30-day-relationship, and clinical-evaluation requirements
+      described above, and the Civil Rights Department enforces the state
+      fair-housing framework independently of HUD. An owner who relaxes
+      documentation practice because the federal picture changed is exposed
+      under state law, and an owner who tightens it beyond what California
+      allows is exposed the other direction. As of 2026-08-17: run the
+      documentation analysis under California law, and confirm current guidance
+      against the Civil Rights Department materials cited in this entry before
+      changing your process.
+    post: hud-stopped-enforcing-california-didnt
 related:
   - can-a-landlord-deny-an-emotional-support-animal
   - can-a-landlord-charge-a-pet-deposit-or-pet-rent-for-an
