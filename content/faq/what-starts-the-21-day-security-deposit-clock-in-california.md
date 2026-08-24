@@ -1,9 +1,10 @@
 ---
-question: "What starts the 21-day security deposit clock in California?"
+question: What starts the 21-day security deposit clock in California?
 topic: security-deposits
-topicTitle: "Security Deposits"
+topicTitle: Security Deposits
 topicDescription: >-
-  California's rules on deposits, move-out documentation, deductions, and the 21-day return.
+  California's rules on deposits, move-out documentation, deductions, and the
+  21-day return.
 type: objective
 derivedFrom:
   - but-i-paid-through-the-end-of-the-month-when-a-tenancy-actually-ends
@@ -11,8 +12,19 @@ created: '2026-07-09'
 order: 1
 sources:
   - label: 'California Security Deposit Law, Cal. Civ. Code Section 1950.5'
-    url: 'https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5'
-annotations: []
+    url: >-
+      https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5
+annotations:
+  - date: '2026-08-24'
+    type: additive
+    note: >-
+      Sharpens the surrender rule with a concrete case: a resident who pays
+      through the end of the month and comes back Saturday to finish cleaning
+      has not surrendered possession, and the clock has not started. Surrender
+      means unit vacated and all keys returned. The post's practice is to put
+      the 21-day date on the calendar the moment possession comes back, with an
+      internal deadline well inside it.
+    post: the-file-that-holds
 ---
 
 The 21-day clock starts when the resident surrenders possession of the unit — not when the last rent payment was made, and not when the lease term happens to end on the calendar.

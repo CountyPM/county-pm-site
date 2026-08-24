@@ -17,7 +17,17 @@ sources:
   - label: 'Assembly Bill 2801 (2024), amending Cal. Civ. Code Section 1950.5'
     url: >-
       https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240AB2801
-annotations: []
+annotations:
+  - date: '2026-08-24'
+    type: additive
+    note: >-
+      Adds the practice recommendation behind the July 1, 2025 requirement: take
+      signed, room-by-room move-in condition documentation with photographs
+      regardless of when the tenancy started. Every deduction is a comparison
+      between two states of the property, and without the first state, "beyond
+      ordinary wear and tear" is just the owner's opinion. A signed condition
+      report does work that unsigned photographs cannot.
+    post: the-file-that-holds
 ---
 
 For any tenancy that began on or after July 1, 2025, a California landlord must photograph the unit at or immediately before the tenant takes possession. That requirement comes from AB 2801's amendments to Civil Code Section 1950.5.

@@ -17,7 +17,16 @@ sources:
   - label: 'Assembly Bill 2801 (2024), amending Cal. Civ. Code Section 1950.5'
     url: >-
       https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240AB2801
-annotations: []
+annotations:
+  - date: '2026-08-24'
+    type: additive
+    note: >-
+      The File That Holds adds the sequencing behind the photo rule: the
+      move-out photographs have to be taken the day possession comes back,
+      before a vendor touches anything. After-repair photos prove the unit is
+      clean now; they cannot prove what it was. Only one of the two can be taken
+      late, and it is not the "before."
+    post: the-file-that-holds
 ---
 
 No. Since April 1, 2025, California's AB 2801 requires a landlord to photograph the unit at move-out — before any repairs or cleaning — and again after the work is finished, then deliver those photos to the tenant with the itemized statement. Without that documentation, deductions for repairs or cleaning are not enforceable.

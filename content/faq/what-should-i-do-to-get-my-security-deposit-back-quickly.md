@@ -1,5 +1,5 @@
 ---
-question: 'What should I do to get my security deposit back quickly?'
+question: What should I do to get my security deposit back quickly?
 topic: security-deposits
 topicTitle: Security Deposits
 topicDescription: >-
@@ -12,8 +12,18 @@ created: '2026-07-09'
 order: 1
 sources:
   - label: 'California Security Deposit Law, Cal. Civ. Code Section 1950.5'
-    url: 'https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5'
-annotations: []
+    url: >-
+      https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5
+annotations:
+  - date: '2026-08-24'
+    type: additive
+    note: >-
+      Reinforces the surrender-of-possession point from the owner's side and
+      adds the forwarding address. The statement and balance go to the address
+      the resident provides, so a resident who leaves without giving one delays
+      their own refund. Keys back, unit vacated, address given — that is what
+      starts and completes the count.
+    post: the-file-that-holds
 ---
 
 Surrender possession cleanly and quickly — that is what starts the clock. Finish vacating, complete your cleaning, return every key, and give the landlord or property manager a forwarding address. Under California Civil Code §1950.5, the landlord then has 21 days from the surrender of possession to return your deposit or send an itemized statement of any deductions.

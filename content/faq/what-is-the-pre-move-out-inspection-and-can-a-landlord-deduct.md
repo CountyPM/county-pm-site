@@ -26,6 +26,15 @@ annotations:
       post-inspection damage or damage that was genuinely concealed.
     post: >-
       sacramento-changed-the-strike-zone-and-most-landlords-are-still-swinging-at-the-old-one
+  - date: '2026-08-24'
+    type: additive
+    note: >-
+      Adds the on-the-spot requirement. The itemized list has to be written and
+      handed over before leaving the property, not reconstructed afterward — a
+      friendly walkthrough where everyone agrees on what needs fixing preserves
+      nothing. The post pairs the list with capturing the forwarding address on
+      the same form, so both come out of one visit.
+    post: the-file-that-holds
 ---
 
 The pre-move-out (initial) inspection is a walk-through a California tenant has the right to request before moving out, and the landlord must notify the tenant of that right in writing. Its purpose under Civil Code Section 1950.5(f) is to give the tenant a written list of proposed deductions while there is still time to fix the items and avoid them.

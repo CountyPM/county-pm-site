@@ -17,10 +17,23 @@ sources:
   - label: 'California Security Deposit Law, Cal. Civ. Code Section 1950.5(f)'
     url: >-
       https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5.
-  - label: 'AB 2801 (2024) — Tenancy: security deposits (amending Civ. Code Section 1950.5)'
+  - label: >-
+      AB 2801 (2024) — Tenancy: security deposits (amending Civ. Code Section
+      1950.5)
     url: >-
       https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB2801
-annotations: []
+annotations:
+  - date: '2026-08-24'
+    type: additive
+    note: >-
+      Adds the trigger and the proof. The written disclosure of the
+      initial-inspection right should go out the same day a notice to vacate
+      lands, and the owner should keep evidence it was sent — in a hearing, a
+      disclosure that cannot be shown to have gone out is the disclosure that
+      did not. The post also flags the walkthrough as the natural moment to
+      capture the resident's forwarding address, since the 21-day statement has
+      to go somewhere.
+    post: the-file-that-holds
 ---
 
 Yes. Before a California tenancy ends, the landlord must notify the tenant in writing of the tenant's right to request an initial inspection — sometimes called the pre-move-out inspection. That written offer is mandatory under Civil Code Section 1950.5(f). The inspection itself only happens if the tenant asks for it, but the written notice is not optional, and skipping it is a compliance failure that a tenant's attorney will lead with and a small-claims commissioner will notice.

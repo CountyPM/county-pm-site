@@ -1,9 +1,10 @@
 ---
-question: "How long does a landlord have to return a security deposit in California?"
+question: How long does a landlord have to return a security deposit in California?
 topic: security-deposits
-topicTitle: 'Security Deposits'
+topicTitle: Security Deposits
 topicDescription: >-
-  California's rules on deposits, move-out documentation, deductions, and the 21-day return.
+  California's rules on deposits, move-out documentation, deductions, and the
+  21-day return.
 type: objective
 derivedFrom:
   - but-i-paid-through-the-end-of-the-month-when-a-tenancy-actually-ends
@@ -11,8 +12,22 @@ created: '2026-07-09'
 order: 1
 sources:
   - label: 'California Security Deposit Law, Cal. Civ. Code Section 1950.5'
-    url: 'https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5'
-annotations: []
+    url: >-
+      https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5
+annotations:
+  - date: '2026-08-24'
+    type: soft-revision
+    note: >-
+      Refines what to do when the deadline and an unfinished repair collide.
+      Civ. Code Section 1950.5 lets a landlord deduct a documented good-faith
+      estimate inside the 21 days when the repair cannot reasonably be completed
+      or the vendor's paperwork has not arrived, then furnish the actual
+      statement and invoices within 14 calendar days of completing the work or
+      receiving the documents — re-verified against Section 1950.5 on
+      2026-08-24. Owners blow the deadline trying to be accurate, which the
+      statute does not reward: a timely estimate survives, a late exact number
+      does not.
+    post: the-file-that-holds
 ---
 Twenty-one calendar days. Under California Civil Code Section 1950.5, a landlord has 21 days after the resident surrenders possession to either return the full security deposit or send an itemized statement of any deductions to the resident's forwarding address.
 

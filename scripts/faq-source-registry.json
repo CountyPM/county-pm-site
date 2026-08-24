@@ -692,6 +692,39 @@
           "url": "https://selling-guide.fanniemae.com/sel/b2-1.1-01/occupancy-types"
         }
       ]
+    },
+    {
+      "id": "irs-material-participation",
+      "match": [
+        "material participation",
+        "materially participate",
+        "500 hours",
+        "short-term rental tax",
+        "str tax",
+        "active vs passive",
+        "passive short-term rental",
+        "real estate professional",
+        "750 hours",
+        "co-host tax",
+        "cost segregation losses"
+      ],
+      "facts": "IRS material participation (IRC §469; Pub 925) is measured by seven tests. The two that decide most rental cases: (1) more than 500 hours in the activity during the year; (2) more than 100 hours AND at least as much participation as any other individual, including individuals who own no interest (a paid co-host, cleaner, or vendor). The facts-and-circumstances test (test 7) is UNAVAILABLE if the taxpayer participated 100 hours or less, and the taxpayer's management hours do not count under it at all if any person other than the taxpayer received compensation for managing the activity. Real estate professional status under §469(c)(7) (more than half of personal services and more than 750 hours in real property trades or businesses in which the taxpayer materially participates) removes the per-se passive rule but does NOT by itself make rental losses non-passive — the taxpayer must ALSO materially participate in the rental activity. Each rental interest is a separate activity unless the taxpayer elects to treat all rental real estate as one activity.",
+      "currencyNote": "Verified 2026-08-24 against IRS Publication 925 (2025) and Topic No. 425 on irs.gov. Test thresholds (500/100/750 hours) and the paid-manager limitation on test 7 are current.",
+      "sources": [
+        {
+          "label": "IRS Publication 925, Passive Activity and At-Risk Rules",
+          "url": "https://www.irs.gov/publications/p925"
+        },
+        {
+          "label": "IRS Topic No. 425, Passive Activities — Losses and Credits",
+          "url": "https://www.irs.gov/taxtopics/tc425"
+        }
+      ],
+      "entities": [
+        {
+          "id": "irs"
+        }
+      ]
     }
   ]
 }
