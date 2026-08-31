@@ -17,7 +17,18 @@ sources:
       faith estimate and 14-day follow-up
     url: >-
       https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5
-annotations: []
+annotations:
+  - date: '2026-08-31'
+    type: additive
+    note: >-
+      Adds the credibility argument for actually using the estimate provision. A
+      documented good-faith estimate sent on time is not only the mechanism
+      Section 1950.5(h)(3) provides — it is the record that separates a
+      disorganized owner from a bad-faith one. The post's read of small-claims
+      practice is that a coherent, documented reason for a delay usually keeps a
+      case at negligence, while nothing at all looks like a choice. The escape
+      hatch is a legal provision and a credibility exhibit at the same time.
+    post: the-landlord-who-kept-the-deposit-and-built-the-case-afterward
 ---
 
 Send the itemized statement on time anyway, with a good-faith estimate of the charges. Civil Code Section 1950.5 expressly provides for this: if a repair cannot reasonably be completed within 21 calendar days after the tenant vacates, or if the vendor's paperwork is not in the landlord's hands yet, the landlord may deduct a good-faith estimate of the charges and send that estimate with the statement. This is the mechanism the statute provides, not a workaround.

@@ -34,6 +34,18 @@ annotations:
       capture the resident's forwarding address, since the 21-day statement has
       to go somewhere.
     post: the-file-that-holds
+  - date: '2026-08-31'
+    type: soft-revision
+    note: >-
+      A second written notice now rides on the same trigger. Effective January
+      1, 2026, Section 1950.5(h)(1)(A)(ii) requires a landlord who received the
+      security or rent payments electronically to notify the tenant in writing
+      of the right to have the balance returned electronically to an account the
+      tenant designates — given within a reasonable time after either party's
+      notice to terminate, or before the end of the lease term. That is the same
+      moment the initial-inspection offer goes out, so both belong on one form
+      with proof of sending. Re-verified against Section 1950.5 on 2026-08-31.
+    post: the-landlord-who-kept-the-deposit-and-built-the-case-afterward
 ---
 
 Yes. Before a California tenancy ends, the landlord must notify the tenant in writing of the tenant's right to request an initial inspection — sometimes called the pre-move-out inspection. That written offer is mandatory under Civil Code Section 1950.5(f). The inspection itself only happens if the tenant asks for it, but the written notice is not optional, and skipping it is a compliance failure that a tenant's attorney will lead with and a small-claims commissioner will notice.

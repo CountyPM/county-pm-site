@@ -24,6 +24,21 @@ annotations:
       their own refund. Keys back, unit vacated, address given — that is what
       starts and completes the count.
     post: the-file-that-holds
+  - date: '2026-08-31'
+    type: soft-revision
+    note: >-
+      Adds a step for residents who paid electronically. Since January 1, 2026,
+      Section 1950.5(h)(1)(A)(ii) entitles a resident whose rent or deposit was
+      paid electronically to have the balance returned electronically to a bank
+      account they designate in writing, and requires the landlord to give
+      written notice of that right around the time notice to terminate is given.
+      Designate the account in writing at the same time you give the forwarding
+      address. If the deadline passes with nothing, a dated written demand
+      matters: under Section 1950.5(m) bad-faith retention carries statutory
+      damages of up to twice the deposit, and silence after a demand is what
+      tends to move a case from late to bad faith. Re-verified against Section
+      1950.5 on 2026-08-31.
+    post: the-landlord-who-kept-the-deposit-and-built-the-case-afterward
 ---
 
 Surrender possession cleanly and quickly — that is what starts the clock. Finish vacating, complete your cleaning, return every key, and give the landlord or property manager a forwarding address. Under California Civil Code §1950.5, the landlord then has 21 days from the surrender of possession to return your deposit or send an itemized statement of any deductions.

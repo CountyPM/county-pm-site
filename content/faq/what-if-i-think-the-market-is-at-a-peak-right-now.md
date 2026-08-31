@@ -1,16 +1,27 @@
 ---
-question: "What if I think the market is at a peak right now?"
+question: What if I think the market is at a peak right now?
 topic: housing-market-and-demographics
 topicTitle: Housing Market & Demographics
-topicDescription: >-
-  How demographic and supply trends shape rental demand and owner strategy.
+topicDescription: How demographic and supply trends shape rental demand and owner strategy.
 type: subjective
 derivedFrom:
   - real-estate-doesnt-create-wealth
 created: '2026-08-17'
 order: 3
 sources: []
-annotations: []
+annotations:
+  - date: '2026-08-24'
+    type: additive
+    note: >-
+      Adds the asymmetry that should govern the decision when a stagnation
+      genuinely looks plausible. Underwrite the contraction — price acquisitions
+      for flat rents and rising carry, screen for insurability before cap rate,
+      read the reserve study before the listing. But do not sell a low-basis
+      coastal asset on the assumption the contraction is permanent, because a
+      population trend is reversible in a single policy cycle and a decades-old
+      Proposition 13 basis is not. Plan for the worse case; keep holding the
+      thing that cannot be replaced.
+    post: fewer-californians-more-housing-units
 ---
 
 You may be right, and it may still not help you. Timing gains are one-time and they require you to be correct twice — on the way out and on the way back in. Most people who get the first call right never make the second one, because the conditions that confirm the bottom are the same conditions that make buying feel unwise.

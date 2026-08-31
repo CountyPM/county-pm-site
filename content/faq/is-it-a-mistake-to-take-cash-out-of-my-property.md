@@ -1,5 +1,5 @@
 ---
-question: "Is it a mistake to take cash out of my property?"
+question: Is it a mistake to take cash out of my property?
 topic: financing-and-mortgages
 topicTitle: Financing & Mortgages
 topicDescription: >-
@@ -11,7 +11,34 @@ derivedFrom:
 created: '2026-08-17'
 order: 11
 sources: []
-annotations: []
+annotations:
+  - date: '2026-08-24'
+    type: additive
+    note: >-
+      Adds the instrument question alongside the use question. What the money
+      does after closing is still the whole test, but how you reach it now
+      carries its own cost: refinancing a low-rate first reprices the entire
+      balance and resets the amortization schedule, while a second behind that
+      first touches only the equity and leaves the cheap money in place. That
+      changes the arithmetic on borrowing to buy another asset — a second at
+      today's rate against a first still at three percent is a far lower blended
+      cost than one new loan at today's rate. It does nothing at all for
+      borrowing to consume, which remains the mistake regardless of the
+      instrument.
+    post: the-golden-handcuffs-when-your-3-mortgage-is-quietly-costing-you-money
+  - date: '2026-08-24'
+    type: additive
+    note: >-
+      Puts numbers on the reset. Refinancing a low-rate first to seventy-five
+      percent of a much-appreciated value can more than double the
+      principal-and-interest payment, turning a property that ran several
+      hundred dollars a month positive into one running well over a thousand
+      negative — an annual cost in the tens of thousands to extract a lump sum.
+      The extraction is real. What it buys is the destruction of the spread that
+      made the asset work, and the low rate itself was the investment. A second
+      position charges a higher rate on a much smaller balance and can be paid
+      down out of income.
+    post: youre-about-to-sell-a-3-5-mortgage-to-buy-a-bigger-kitchen
 ---
 
 It depends entirely on what the money does after closing. The refinance itself is neutral. What it funds is the whole question.

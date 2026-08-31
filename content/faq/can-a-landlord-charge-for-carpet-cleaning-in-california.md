@@ -17,7 +17,20 @@ sources:
   - label: 'Assembly Bill 2801 (2024), amending Cal. Civ. Code Section 1950.5'
     url: >-
       https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240AB2801
-annotations: []
+annotations:
+  - date: '2026-08-31'
+    type: additive
+    note: >-
+      Adds the depreciation dimension. Civ. Code Section 1950.5(e)(2) limits any
+      claim to what is reasonably necessary to restore the unit to the condition
+      it was in at the inception of the tenancy, exclusive of ordinary wear and
+      tear — so full replacement cost on a component most of the way through its
+      useful life, carpet in year nine or paint after three, is a depreciation
+      argument rather than an invoice. A bench officer who has heard a hundred
+      of these reads inflated numbers as opportunism rather than error. Charge
+      for damage, not for the passage of time. Re-verified against Section
+      1950.5 on 2026-08-31.
+    post: the-landlord-who-kept-the-deposit-and-built-the-case-afterward
 ---
 
 Only when it is reasonably necessary to return the unit to its move-in condition, setting aside ordinary wear and tear. Since AB 2801, a California landlord can no longer treat professional carpet cleaning as an automatic, flat charge pulled from every tenant's deposit.

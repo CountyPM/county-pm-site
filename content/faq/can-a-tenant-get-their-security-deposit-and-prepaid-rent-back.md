@@ -1,5 +1,7 @@
 ---
-question: "Can a tenant get their security deposit and prepaid rent back if the unit was not delivered as promised?"
+question: >-
+  Can a tenant get their security deposit and prepaid rent back if the unit was
+  not delivered as promised?
 topic: security-deposits
 topicTitle: Security Deposits
 topicDescription: >-
@@ -12,10 +14,24 @@ created: '2026-07-09'
 order: 1
 sources:
   - label: 'California Security Deposit Law, Cal. Civ. Code Section 1950.5'
-    url: 'https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5'
-  - label: 'Cal. Civ. Code §1941.1 (landlord duty to maintain habitable premises)'
-    url: 'https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1941.1'
-annotations: []
+    url: >-
+      https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5
+  - label: Cal. Civ. Code §1941.1 (landlord duty to maintain habitable premises)
+    url: >-
+      https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1941.1
+annotations:
+  - date: '2026-08-31'
+    type: additive
+    note: >-
+      Adds what silence costs the landlord. Section 1950.5(m) allows statutory
+      damages of up to twice the deposit in addition to actual damages where the
+      deposit is claimed or retained in bad faith, and the post's read of
+      small-claims practice is that no answer to a forwarding address or a
+      certified demand letter is often exactly what moves a commissioner from
+      careless to willful. A dated written demand that goes unanswered
+      strengthens a refund claim well past the deposit itself. Re-verified
+      against Section 1950.5 on 2026-08-31.
+    post: the-landlord-who-kept-the-deposit-and-built-the-case-afterward
 ---
 
 Generally yes. If a tenant never takes beneficial occupancy because the unit was not delivered habitable or in the promised condition, they are typically entitled to a refund of both the prepaid rent and the security deposit.

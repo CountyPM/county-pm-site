@@ -1,6 +1,5 @@
 ---
-question: >-
-  My Ojai rental is held in a family trust. Do the just cause protections apply?
+question: My Ojai rental is held in a family trust. Do the just cause protections apply?
 topic: california-rental-laws
 topicTitle: California Rental Laws
 topicDescription: >-
@@ -16,7 +15,25 @@ sources:
       Ojai Municipal Code Title 11, Ch. 2 — Just Cause Evictions and Tenant
       Protections, incl. § 11-2.08 Exemptions (Ord. 937, eff. April 27, 2023)
     url: 'https://ecode360.com/44876205'
-annotations: []
+annotations:
+  - date: '2026-08-24'
+    type: soft-revision
+    note: >-
+      Sharpens the written-notice condition, which is the part owners actually
+      lose on. The state analogue is Civ. Code Section 1947.12(d)(5) and Section
+      1946.2(e)(8): the exemption notice must use the prescribed statutory
+      language, it had to be in the rental agreement for any tenancy commenced
+      or renewed on or after July 1, 2020, and for tenancies existing before
+      that date the deadline to deliver it as an addendum was August 1, 2020.
+      Two consequences carry straight over to an Ojai owner. First, this is a
+      per-lease event, not a one-time filing — an exemption properly claimed in
+      the 2021 lease does not survive a 2024 renewal signed on a form that
+      omitted the language. Second, the state notice recites that the property
+      is not subject to the just cause requirements of Section 1946.2, which is
+      true only of state law; Ojai's chapter is broader and applies in full, so
+      an owner who reads their own notice as permission to serve a no-cause
+      termination loses holding the paper they created. Re-verified 2026-08-31.
+    post: the-exemption-you-have-to-claim
 ---
 
 A family trust is not on the list of owners the ordinance disqualifies — but the exemption still depends on a written notice you have to have given, and on how your particular trust is drafted. Ask a California landlord-tenant attorney the specific question before you rely on it.

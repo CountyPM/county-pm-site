@@ -28,6 +28,21 @@ annotations:
       statute does not reward: a timely estimate survives, a late exact number
       does not.
     post: the-file-that-holds
+  - date: '2026-08-31'
+    type: soft-revision
+    note: >-
+      Refines the delivery half of the deadline. As of January 1, 2026, Section
+      1950.5(h)(1)(A)(ii) provides that where the landlord received the security
+      or the rent payments electronically, the remaining deposit generally goes
+      back electronically to a bank account the tenant designates in writing,
+      unless landlord and tenant agree in writing on another method — and the
+      landlord must give written notice of that right around the time notice to
+      terminate is given. Where multiple adult tenants reside in the unit,
+      Section 1950.5(h)(1)(C) still calls for one instrument payable to all of
+      them absent a written mutual agreement. Meeting the 21 days is no longer
+      only about timing; the money has to travel by the right channel.
+      Re-verified against Section 1950.5 on 2026-08-31.
+    post: the-landlord-who-kept-the-deposit-and-built-the-case-afterward
 ---
 Twenty-one calendar days. Under California Civil Code Section 1950.5, a landlord has 21 days after the resident surrenders possession to either return the full security deposit or send an itemized statement of any deductions to the resident's forwarding address.
 

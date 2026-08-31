@@ -22,7 +22,22 @@ sources:
   - label: 'Assembly Bill 2801 (2024), amending Cal. Civ. Code Section 1950.5'
     url: >-
       https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240AB2801
-annotations: []
+annotations:
+  - date: '2026-08-31'
+    type: soft-revision
+    note: >-
+      Adds the delivery channel, which changed on January 1, 2026. Section
+      1950.5(h)(1)(A)(ii) now requires the remaining deposit to be returned
+      electronically to a bank account the tenant designates in writing where
+      the landlord received the security or rent electronically, unless both
+      sides agree in writing to another method, and requires advance written
+      notice to the tenant of that right. Where multiple adult tenants reside in
+      the unit, Section 1950.5(h)(1)(C) calls for one instrument payable to all
+      adult tenants unless all of them sign a written agreement setting a
+      different split. A complete statement delivered with the money in the
+      wrong form is still a defect. Re-verified against Section 1950.5 on
+      2026-08-31.
+    post: the-landlord-who-kept-the-deposit-and-built-the-case-afterward
 ---
 
 Three things: every deduction itemized line by line with its own dollar amount, the documents showing what each charge cost, and the photographs of the unit's condition. All of it has to reach the tenant within 21 calendar days of move-out. A lump sum with no breakdown does not satisfy Civil Code Section 1950.5, no matter how reasonable the total is.

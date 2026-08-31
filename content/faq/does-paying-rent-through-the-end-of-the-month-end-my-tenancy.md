@@ -1,5 +1,5 @@
 ---
-question: 'Does paying rent through the end of the month end my tenancy?'
+question: Does paying rent through the end of the month end my tenancy?
 topic: california-rental-laws
 topicTitle: California Rental Laws
 topicDescription: >-
@@ -11,11 +11,25 @@ derivedFrom:
 created: '2026-07-09'
 order: 1
 sources:
-  - label: 'Cal. Civ. Code §1946.1 (termination of periodic tenancy; 30/60-day notice)'
-    url: 'https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1946.1'
+  - label: Cal. Civ. Code §1946.1 (termination of periodic tenancy; 30/60-day notice)
+    url: >-
+      https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1946.1
   - label: 'California Security Deposit Law, Cal. Civ. Code Section 1950.5'
-    url: 'https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5'
-annotations: []
+    url: >-
+      https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5
+annotations:
+  - date: '2026-08-31'
+    type: additive
+    note: >-
+      Adds why the surrender date is worth fixing in writing. The post's case
+      turns on an oral end-of-tenancy deal — vacate early, last two months' rent
+      forgiven, deposit returned — that nobody signed, leaving both the
+      surrender date and the terms to be reconstructed from text messages a year
+      later. A negotiated early exit still runs on the statutory clock. Put the
+      vacate date, exactly what rent is waived, and an acknowledgment that the
+      Section 1950.5 accounting still runs into a signed surrender agreement,
+      and the question stops being a memory contest.
+    post: the-landlord-who-kept-the-deposit-and-built-the-case-afterward
 ---
 
 No. Paying rent through a date shows how far you are paid up; it does not, by itself, end the tenancy. A California tenancy ends when possession is legally surrendered or terminated on proper notice — for a periodic (month-to-month) tenancy, that is the 30- or 60-day notice under Civil Code §1946.1 — not the moment the calendar reaches your paid-through date.

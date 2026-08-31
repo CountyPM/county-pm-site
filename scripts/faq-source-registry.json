@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "verifiedOn": "2026-07-09",
+  "verifiedOn": "2026-08-31",
   "note": "Primary-source citations for recurring objective FAQ topics. The write pipeline attaches these automatically to matching objective entries; the agent does fresh web research for any objective claim not covered here. Track B (scripts/check-faq-sources.mjs) keeps these URLs alive. CURRENCY-CHECKED 2026-06-25 — see currencyNote fields. SLICE 3: each entry also carries `entities[]` — the authoritative orgs/statutes this topic is about, as schema.org-typed nodes with canonical `sameAs` URLs. lib/faq-entities.ts matches these to FAQ entries; structured-data.ts emits them as JSON-LD `about` so answer engines resolve each passage to its governing law/agency. | 2026-07-09: added AB 2801, §1950.5 deposits, AB 628 refrigerator, §1941.1 habitability, AB 325/RealPage pricing, SB 610 disaster, Costa-Hawkins, SOAR, agency/fiduciary, lease-survives-sale, IRS passive-loss/step-up, FHA down payment, insurance loss-of-use/Prop 103, owner-vs-investor rates.",
   "entities": [
     {
@@ -344,12 +344,16 @@
         "deposit deduction",
         "prepaid rent"
       ],
-      "facts": "Cal. Civ. Code §1950.5 governs residential security deposits: the landlord must return the deposit and an itemized statement of deductions within 21 calendar days after the tenant vacates. Deductions are limited to unpaid rent, cleaning to the level of cleanliness at move-in, and repair of damage beyond ordinary wear and tear. Subdivision (f) gives the tenant a pre-move-out (initial) inspection right and a chance to cure before move-out.",
-      "currencyNote": "Verified 2026-07-09. Long-standing statute; deposit cap changes via AB 12 (eff. Jul 1, 2024) and photo duties via AB 2801.",
+      "facts": "Cal. Civ. Code §1950.5 governs residential security deposits: the landlord must return the deposit and an itemized statement of deductions within 21 calendar days after the tenant vacates. Deductions are limited by subdivision (b) to unpaid rent, cleaning to the level of cleanliness at the inception of the tenancy, repair of damage beyond ordinary wear and tear, and restoration of personal property where the rental agreement provides for it. Subdivision (f) gives the tenant a pre-move-out (initial) inspection right and a chance to cure before move-out. Subdivision (g) carries the photo duties: move-out and post-repair photos required from April 1, 2025 for any deduction, move-in photos for tenancies beginning on or after July 1, 2025. Subdivision (h)(3) allows a documented good-faith estimate inside 21 days with the actual statement and documents due within 14 calendar days of completing the work or receiving the paperwork; (h)(4)(A) waives the backup documentation only where repair-and-cleaning deductions in the AGGREGATE do not exceed $125. Subdivision (h)(7) forfeits the right to claim any amount of the security only where the landlord fails to comply IN BAD FAITH — lateness alone is a violation, not automatic forfeiture. Subdivision (m) puts the burden of proof on the landlord as to the reasonableness of every amount claimed, and allows discretionary statutory damages of up to twice the deposit in addition to actual damages.",
+      "currencyNote": "Re-verified 2026-08-31 against the full current text of §1950.5 (subdivisions re-lettered; photo duties now (g), 21-day/estimate/$125/bad-faith now (h), burden and bad-faith damages now (m)). Deposit cap via AB 12 (eff. Jul 1, 2024) at §1950.5(c), with a two-month exception at (c)(5) for a natural-person or all-natural-person-LLC landlord owning no more than two residential rental properties totalling no more than four units. Photo duties via AB 2801. Electronic-return rules via AB 414, eff. Jan 1, 2026 — see registry entry ab-414-electronic-deposit-return. leginfo.legislature.ca.gov is not fetchable from the pipeline sandbox; use the FindLaw mirror below to re-verify text.",
       "sources": [
         {
           "label": "California Security Deposit Law, Cal. Civ. Code Section 1950.5",
           "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5"
+        },
+        {
+          "label": "Cal. Civ. Code Section 1950.5 — full current text (FindLaw mirror, current as of January 1, 2026)",
+          "url": "https://codes.findlaw.com/ca/civil-code/civ-sect-1950-5/"
         }
       ]
     },
@@ -723,6 +727,33 @@
       "entities": [
         {
           "id": "irs"
+        }
+      ]
+    },
+    {
+      "id": "ab-414-electronic-deposit-return",
+      "match": [
+        "ab 414",
+        "ab414",
+        "electronic refund",
+        "electronic return",
+        "return the deposit electronically",
+        "deposit electronically",
+        "zelle deposit refund",
+        "refund method",
+        "how is the deposit returned",
+        "multiple tenants deposit refund"
+      ],
+      "facts": "AB 414 (2025), amending Cal. Civ. Code §1950.5(h)(1)(A), effective January 1, 2026: where the landlord received the security or the rental payments from the tenant electronically, the landlord must return the remainder of the security electronically to a bank account or other financial institution designated by the tenant in writing, or by any electronic or virtual method available to the landlord if agreed to in writing by the tenant. Landlord and tenant may instead designate another method — including a first-class-mail check — by written agreement. The same provision adds a NOTICE duty: within a reasonable time after either party's notice to terminate, or before the end of the lease term, the landlord must notify the tenant in writing of that right. Where multiple adult tenants reside in the unit, §1950.5(h)(1)(C) requires a check payable to all adult tenants on the agreement unless the landlord and all adult tenants sign a written mutual agreement specifying a different allocation.",
+      "currencyNote": "Verified 2026-08-31 against the full current text of §1950.5 (FindLaw mirror, current as of January 1, 2026). The 21-day deadline and all other §1950.5 duties are unchanged by AB 414 — this governs the CHANNEL the money travels by, plus a new advance written notice. leginfo bill text is not fetchable from the pipeline sandbox.",
+      "sources": [
+        {
+          "label": "California Security Deposit Law, Cal. Civ. Code Section 1950.5(h)(1)(A)(ii) — electronic return of security",
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5"
+        },
+        {
+          "label": "Cal. Civ. Code Section 1950.5 — full current text (FindLaw mirror, current as of January 1, 2026)",
+          "url": "https://codes.findlaw.com/ca/civil-code/civ-sect-1950-5/"
         }
       ]
     }

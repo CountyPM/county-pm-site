@@ -27,6 +27,18 @@ annotations:
       clean now; they cannot prove what it was. Only one of the two can be taken
       late, and it is not the "before."
     post: the-file-that-holds
+  - date: '2026-08-31'
+    type: additive
+    note: >-
+      Adds what a missing photograph actually does inside a hearing. Section
+      1950.5(m) puts the burden of proving the reasonableness of every amount
+      claimed on the landlord, so an absent photo is not a weak showing — it is
+      the absence of one, and a dispute where neither side has documentation
+      does not end in a tie. The post also names the sequence tell: a deduction
+      list that did not exist on day 21 and appeared only after the tenant asked
+      where the money went reads to a commissioner as reverse-engineered from a
+      number the owner had already decided to keep.
+    post: the-landlord-who-kept-the-deposit-and-built-the-case-afterward
 ---
 
 No. Since April 1, 2025, California's AB 2801 requires a landlord to photograph the unit at move-out — before any repairs or cleaning — and again after the work is finished, then deliver those photos to the tenant with the itemized statement. Without that documentation, deductions for repairs or cleaning are not enforceable.

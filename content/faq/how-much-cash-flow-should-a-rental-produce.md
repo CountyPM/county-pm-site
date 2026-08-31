@@ -1,16 +1,28 @@
 ---
-question: "How much cash flow should a rental produce?"
+question: How much cash flow should a rental produce?
 topic: buying-and-investing
 topicTitle: Buying & Investing in Real Estate
-topicDescription: >-
-  Practical guidance for buying, converting, and building a rental portfolio.
+topicDescription: 'Practical guidance for buying, converting, and building a rental portfolio.'
 type: subjective
 derivedFrom:
   - structuring-so-you-can-survive-the-flat-years
 created: '2026-08-17'
 order: 14
 sources: []
-annotations: []
+annotations:
+  - date: '2026-08-24'
+    type: additive
+    note: >-
+      Adds why a converted primary residence often produces cash flow a
+      purchased rental cannot. A house bought years ago carries two frozen costs
+      a new buyer cannot replicate: a mortgage rate set in a different market
+      and a Proposition 13 assessed base tied to the original purchase, rising
+      about two percent a year while market rent floats. The gap widens every
+      year on its own. That is worth naming in the cash-flow conversation
+      because it cuts both ways — the number looks unrepeatable because it is,
+      and a cash-out refinance that reprices the note erases exactly the thing
+      producing it.
+    post: youre-about-to-sell-a-3-5-mortgage-to-buy-a-bigger-kitchen
 ---
 
 Enough to be durable, not as much as possible. Cash flow's job is to absorb repairs, fund the reserve, and make a vacancy annoying rather than dangerous. Once it does those three things reliably, additional yield is worth much less than it appears.

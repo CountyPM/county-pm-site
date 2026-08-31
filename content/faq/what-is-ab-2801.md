@@ -17,7 +17,18 @@ sources:
   - label: 'Assembly Bill 2801 (2024), amending Cal. Civ. Code Section 1950.5'
     url: >-
       https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240AB2801
-annotations: []
+annotations:
+  - date: '2026-08-31'
+    type: additive
+    note: >-
+      Places AB 2801 in a longer sequence. The photograph duties it added during
+      2025 were not the last change to Section 1950.5: as of January 1, 2026 the
+      statute also dictates how the refund travels, requiring electronic return
+      to a tenant-designated account where the deposit or rent was paid
+      electronically, plus written notice to the tenant of that right. Owners
+      who treated AB 2801 as the update to absorb have a second one already in
+      force. Re-verified against Section 1950.5 on 2026-08-31.
+    post: the-landlord-who-kept-the-deposit-and-built-the-case-afterward
 ---
 
 AB 2801 is a California law that overhauled how landlords document security deposit deductions. It amended Civil Code Section 1950.5 to require photographic proof of a unit's condition before a landlord can charge a tenant's deposit for repairs or cleaning, and it tightened the deduction standard to what is "reasonably necessary" to restore the unit, excluding ordinary wear and tear.

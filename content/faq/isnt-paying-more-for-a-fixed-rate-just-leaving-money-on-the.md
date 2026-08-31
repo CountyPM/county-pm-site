@@ -1,5 +1,5 @@
 ---
-question: "Isn't paying more for a fixed rate just leaving money on the table?"
+question: Isn't paying more for a fixed rate just leaving money on the table?
 topic: financing-and-mortgages
 topicTitle: Financing & Mortgages
 topicDescription: >-
@@ -11,7 +11,17 @@ derivedFrom:
 created: '2026-08-17'
 order: 9
 sources: []
-annotations: []
+annotations:
+  - date: '2026-08-24'
+    type: additive
+    note: >-
+      Adds the second-mortgage version of the same trade. Choosing a fixed home
+      equity loan over a HELOC costs a slightly higher starting rate and buys a
+      payment that cannot move while you are carrying it — the same insurance,
+      priced the same way, on a smaller balance. The argument for the variable
+      product is almost always a forecast that rates will fall, and a borrower
+      who needs that forecast to be right has bought a plan rather than a loan.
+    post: the-golden-handcuffs-when-your-3-mortgage-is-quietly-costing-you-money
 ---
 
 Only if you're certain about the future. The premium on a fixed rate is not a fee for nothing — it buys you a payment that cannot move against you during the exact stretch when your other options may disappear.

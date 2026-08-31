@@ -1,6 +1,5 @@
 ---
-question: >-
-  When does more of my mortgage payment go to principal than interest?
+question: When does more of my mortgage payment go to principal than interest?
 topic: financing-and-mortgages
 topicTitle: Financing & Mortgages
 topicDescription: >-
@@ -17,7 +16,20 @@ sources:
       work? (amortization; shifting principal/interest split)
     url: >-
       https://www.consumerfinance.gov/ask-cfpb/how-does-paying-down-a-mortgage-work-en-1943/
-annotations: []
+annotations:
+  - date: '2026-08-24'
+    type: additive
+    note: >-
+      Adds what happens to that crossover point when an owner reaches for
+      equity. A cash-out refinance of the first mortgage does not just change
+      the rate — it restarts the amortization schedule at the front, where
+      interest consumes most of the payment, and surrenders whatever position on
+      the curve the loan had already earned. A second mortgage behind an intact
+      first reaches the same equity without touching that position. For an owner
+      holding a low-rate loan that is already past its crossover, the paydown
+      running inside the existing note is part of what is being given up, and it
+      rarely shows up in the comparison.
+    post: the-golden-handcuffs-when-your-3-mortgage-is-quietly-costing-you-money
 ---
 
 It depends almost entirely on your interest rate, and the spread between rates is much wider than most owners expect. On a standard 30-year fixed loan, the month where principal first exceeds interest lands around year 21 at 8%, around year 19 at 6.5%, around year 13 at 4%, and around year 7 at 3%. Those are the crossover points on the amortization schedule itself, independent of loan size — the same rate produces the same crossover month on a $300,000 loan and a $900,000 one.

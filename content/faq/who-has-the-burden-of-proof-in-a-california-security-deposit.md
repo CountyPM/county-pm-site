@@ -16,7 +16,20 @@ sources:
       of proof and bad-faith damages
     url: >-
       https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5
-annotations: []
+annotations:
+  - date: '2026-08-31'
+    type: additive
+    note: >-
+      Adds what carrying that burden looks like from the bench. The post
+      catalogs the tells a small-claims commissioner reads when deciding whether
+      a shortfall was disorganization or bad faith: silence versus mere
+      lateness, when the deduction list was born, whether the charges are even
+      inside the four categories in Section 1950.5(b), full replacement cost on
+      a depreciated component, the owner's own texts, rent waived in a deal and
+      then charged anyway, no answer to a demand letter, and whether the delay
+      can be explained at all. The burden is not only about which documents
+      exist — it is about the order they were created in.
+    post: the-landlord-who-kept-the-deposit-and-built-the-case-afterward
 ---
 
 The landlord does. Civil Code Section 1950.5 puts the burden of proof on the landlord as to the reasonableness of every amount claimed from the deposit. The tenant does not have to prove the deductions were wrong; the landlord has to prove they were right.

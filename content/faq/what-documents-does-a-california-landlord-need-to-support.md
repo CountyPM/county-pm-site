@@ -20,7 +20,35 @@ sources:
   - label: 'Assembly Bill 2801 (2024), amending Cal. Civ. Code Section 1950.5'
     url: >-
       https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240AB2801
-annotations: []
+annotations:
+  - date: '2026-08-31'
+    type: additive
+    note: >-
+      Downgraded from the flagged contradiction — the deterministic sniff caught
+      a $3,000 deposit used as a rhetorical example in the post against the $125
+      documentation threshold in the entry, and a 14-day follow-up period
+      against the 21-day statement deadline. Both figures in the entry are
+      correct and the post does not dispute either. What the post does add is a
+      practice worth copying: have the tenant photograph the unit themselves at
+      move-in, room by room on a guided checklist. Our photographs record what
+      we saw; theirs record what they agreed they saw, and a tenant cannot stand
+      in small claims two years later and dispute their own documentation.
+      Re-verified against Civ. Code Section 1950.5 on 2026-08-31.
+    post: congratulations-landlord-youre-now-a-crime-scene-investigator
+  - date: '2026-08-31'
+    type: soft-revision
+    note: >-
+      Adds an eighth item to the file, effective January 1, 2026. Where the
+      deposit or rent came in electronically, Section 1950.5(h)(1)(A)(ii)
+      requires written notice to the tenant of the right to receive the refund
+      electronically to a designated account, delivered within a reasonable time
+      after notice to terminate or before the lease term ends — and it belongs
+      in the file with proof it was sent, exactly like the initial-inspection
+      offer. One precision worth holding onto while reading the deduction
+      threshold: the $125 figure in Section 1950.5(h)(4)(A) applies to
+      repair-and-cleaning deductions in the aggregate, not to any single line
+      item. Re-verified against Section 1950.5 on 2026-08-31.
+    post: the-landlord-who-kept-the-deposit-and-built-the-case-afterward
 ---
 
 Seven things, in order: move-in condition photographs, the written notice of the tenant's right to request an initial inspection with proof it was sent, the itemized list produced at that inspection, move-out photographs taken before any repair or cleaning, vendor invoices matched line by line to the statement, after-repair photographs, and the itemized statement delivered within 21 calendar days with proof of delivery. A signed move-in condition report belongs with the photographs.

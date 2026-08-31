@@ -25,6 +25,18 @@ annotations:
       the 21-day date on the calendar the moment possession comes back, with an
       internal deadline well inside it.
     post: the-file-that-holds
+  - date: '2026-08-31'
+    type: additive
+    note: >-
+      Adds the negotiated-exit case. When a tenancy ends by agreement rather
+      than by notice — cash for keys, an early surrender, a buyout — the
+      statutory clock still runs from the day possession comes back, and an
+      owner who treats an informal deal as suspending the deadline has simply
+      missed it. The post's rule: whatever the parties agreed, put the vacate
+      date, the condition the unit is delivered in, precisely what money moves
+      and when, and an acknowledgment that the Section 1950.5 accounting still
+      runs into a signed surrender agreement.
+    post: the-landlord-who-kept-the-deposit-and-built-the-case-afterward
 ---
 
 The 21-day clock starts when the resident surrenders possession of the unit — not when the last rent payment was made, and not when the lease term happens to end on the calendar.

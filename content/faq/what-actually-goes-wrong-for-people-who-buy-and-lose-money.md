@@ -1,16 +1,30 @@
 ---
-question: "What actually goes wrong for people who buy and lose money?"
+question: What actually goes wrong for people who buy and lose money?
 topic: buying-and-investing
 topicTitle: Buying & Investing in Real Estate
-topicDescription: >-
-  Practical guidance for buying, converting, and building a rental portfolio.
+topicDescription: 'Practical guidance for buying, converting, and building a rental portfolio.'
 type: subjective
 derivedFrom:
   - real-estate-doesnt-create-wealth
 created: '2026-08-17'
 order: 16
 sources: []
-annotations: []
+annotations:
+  - date: '2026-08-24'
+    type: additive
+    note: >-
+      Adds two causes to the list that do not look like failures while they are
+      happening. First, pulling equity out and spending it — the amortization
+      resets, the payment rises, the margin thins, and nothing that keeps
+      running was bought; debt consolidation is the most reasonable-sounding
+      version and it converts unsecured debt into debt secured by the property.
+      Second, deferred maintenance compounding: a skipped repair becomes a
+      larger one, tenant quality drops because good tenants choose properties
+      that are cared for, turnover rises, rents soften, thinner cash flow makes
+      the next deferral easier, and eventually the only way to fix it is to sell
+      to a buyer who prices in every deferred dollar. Neither involves a
+      downturn, a crisis, or a single dramatic moment.
+    post: what-actually-stops-the-clock
 ---
 
 Almost never the market by itself. What goes wrong is being forced to sell during a flat or falling stretch — and the force comes from the owner's structure, not from the price.

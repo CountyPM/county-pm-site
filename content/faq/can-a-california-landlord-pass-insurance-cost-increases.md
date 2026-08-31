@@ -20,57 +20,11 @@ sources:
     url: >-
       https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1947.12
   - label: 'Costa-Hawkins Rental Housing Act, Cal. Civ. Code §1954.50'
-    url: 'https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954.50'
+    url: >-
+      https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954.50
   - label: 'City of Oxnard — Rent Stabilization (Ordinance 3013, City Code ch. 27)'
     url: 'https://www.oxnard.gov/housing/affordable-housing/rent-stabilization'
-annotations:
-  - date: '2026-07-27'
-    type: additive
-    note: >-
-      The fewer-Californians post sharpens this: with Ventura County rents
-      projected near 1 to 2.5 percent nominal and effectively flat after
-      inflation, and the California FAIR Plan approved for a 29.1 percent
-      average rate increase effective October 15, 2026, a premium spike is even
-      harder to recover through rent than the AB 1482 cap alone implies — the
-      turnover reset only helps when market rent is actually moving. Dated
-      takeaway: underwrite insurability as an acquisition screen, not a cost you
-      can pass along.
-    post: fewer-californians-more-housing-units
-  - date: '2026-07-27'
-    type: soft-revision
-    note: >-
-      Local ordinances can push the ceiling below the statewide AB 1482 cap:
-      Ojai limits annual increases to 4 percent (ordinance adopted 2023) and
-      Oxnard adopted rent stabilization under Ordinance 3012 in 2022, with the
-      more restrictive standard controlling where local and state law conflict.
-      Where a stricter local cap applies, an owner's ability to absorb an
-      insurance spike through rent is smaller still. The statewide figure in
-      this answer (the lower of 5 percent plus regional CPI or 10 percent, Civ.
-      Code 1947.12) is unchanged and remains correct as of July 2026; confirm
-      whether your city has its own ordinance.
-    post: the-spreading-cancer-of-rent-control-whos-next-in-ventura-county
-  - date: '2026-08-10'
-    type: additive
-    note: >-
-      An August 2026 post on AB 1482's economics adds the mechanism behind slow
-      cost recovery: the cap has no banking, so an increase skipped this year
-      can never be recouped later. For a covered unit absorbing a premium spike,
-      that turns the annual cap into a use-it-or-lose-it ceiling — the rational
-      owner takes the full allowed increase every cycle until the shock is
-      absorbed. Dated takeaway: on capped property, deferring an increase to be
-      generous permanently forfeits that recovery room.
-    post: is-state-rent-control-worth-it-here-are-the-numbers
-  - date: '2026-08-10'
-    type: additive
-    note: >-
-      The August 2026 Oxnard profile refines the earlier Oxnard note: the city's
-      4 percent cap (City Code ch. 27) reaches only covered units —
-      Costa-Hawkins keeps single-family homes and condominiums out of the local
-      cap, leaving them under AB 1482, or under no cap at all where the state
-      exemption was properly noticed. Dated takeaway: in Oxnard, how much
-      insurance pain the rent can absorb depends on which of three regimes the
-      unit sits in — local 4 percent cap, state cap, or perfected exemption.
-    post: oxnard-what-it-actually-takes-to-be-a-landlord-here
+annotations: []
 ---
 
 No — not as a separate line-item surcharge. Unlike a commercial triple-net (NNN) lease, a standard California residential lease gives an owner no mechanism to bill a resident directly for a jump in the insurance premium. That cost is recovered indirectly, through the rent itself, so the practical question is whether your rent can move enough to absorb it.

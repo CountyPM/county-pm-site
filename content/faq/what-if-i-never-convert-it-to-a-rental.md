@@ -1,16 +1,29 @@
 ---
-question: "What if I never convert it to a rental?"
+question: What if I never convert it to a rental?
 topic: buying-and-investing
 topicTitle: Buying & Investing in Real Estate
-topicDescription: >-
-  Practical guidance for buying, converting, and building a rental portfolio.
+topicDescription: 'Practical guidance for buying, converting, and building a rental portfolio.'
 type: subjective
 derivedFrom:
   - the-starter-home-is-the-entry-point-buy-it-like-one
 created: '2026-08-17'
 order: 13
 sources: []
-annotations: []
+annotations:
+  - date: '2026-08-24'
+    type: additive
+    note: >-
+      Adds the sequencing problem for owners who do decide to convert, because
+      it is where these plans break. To approve the move-up purchase, a lender
+      generally needs the starter's payment offset by rental income — which
+      usually means a signed lease and evidence the deposit was received, with
+      only a portion of the rent credited. So the starter has to be leased
+      before the new purchase closes: marketing and showing a house you still
+      live in, to a tenant taking possession before you hold keys to the next
+      one. The conversion fails on the calendar far more often than on the
+      spreadsheet, and it only works if someone is running the leasing timeline
+      against the escrow timeline from day one.
+    post: youre-about-to-sell-a-3-5-mortgage-to-buy-a-bigger-kitchen
 ---
 
 Then you owned a home you could afford for twenty years and the clock ran the entire time. That is not a failed plan; it is the base case working.
