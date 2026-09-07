@@ -22,6 +22,22 @@ annotations:
       Proposition 13 basis is not. Plan for the worse case; keep holding the
       thing that cannot be replaced.
     post: fewer-californians-more-housing-units
+  - date: '2026-09-07'
+    type: additive
+    note: >-
+      There is a way to make the timing question matter less, which is the
+      strongest version of the argument above. Most California single-family
+      rentals bought at market are appreciation bets wearing a rental's clothes
+      — you cannot harvest appreciation without selling, you cannot hedge it,
+      and it requires the market to cooperate on a timeline you do not control,
+      all while you fund the carry. Adding units to a parcel you already own
+      converts part of that bet into monthly income: on illustrative Ventura
+      County numbers, roughly $230,000 of conversion moves net operating income
+      from about $32,200 to about $56,000 a year. As of 2026-09-07: you did not
+      trade appreciation for income, you added income to an appreciation bet you
+      were making anyway. A property that pays you every month does not require
+      you to be right about the top.
+    post: how-to-cash-flow-in-california-with-the-right-single-family-home
 ---
 
 You may be right, and it may still not help you. Timing gains are one-time and they require you to be correct twice — on the way out and on the way back in. Most people who get the first call right never make the second one, because the conditions that confirm the bottom are the same conditions that make buying feel unwise.

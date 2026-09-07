@@ -29,6 +29,24 @@ annotations:
       calendar entry at month twenty-four to call the CPA. Re-verified
       2026-08-31.
     post: youre-about-to-sell-a-3-5-mortgage-to-buy-a-bigger-kitchen
+  - date: '2026-09-07'
+    type: additive
+    note: >-
+      There is a third condition worth adding to the two above, and it is
+      physical rather than financial: what the house itself will let you do. The
+      features that decide whether a parcel can carry more than one tenancy are
+      specific and checkable before you ever move — a downstairs bedroom with
+      its own bathroom (a junior unit with separate sanitation facilities
+      carries no owner-occupancy requirement under AB 1154, effective October
+      2025), a detached garage, sewer rather than septic, electrical panel
+      capacity, and lot depth with a side yard wide enough for a genuine
+      separate entrance. Units under 750 square feet are exempt from impact
+      fees, which should shape how you size any work. As of 2026-09-07: if
+      market rent alone does not cover the payment, check the structure before
+      concluding the conversion does not pencil. The two-condition test above
+      answers whether to rent the house as it stands; it does not answer what
+      the parcel could produce.
+    post: how-to-cash-flow-in-california-with-the-right-single-family-home
 ---
 
 You don't decide on a schedule — you decide when the conditions cooperate. Two ingredients have to arrive together: market rent that covers the payment, and a life reason to move.

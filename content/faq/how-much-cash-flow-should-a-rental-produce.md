@@ -23,6 +23,24 @@ annotations:
       and a cash-out refinance that reprices the note erases exactly the thing
       producing it.
     post: youre-about-to-sell-a-3-5-mortgage-to-buy-a-bigger-kitchen
+  - date: '2026-09-07'
+    type: additive
+    note: >-
+      In Ventura County the starting point is often below zero, which is worth
+      stating plainly alongside the answer above. A $950,000 four-bedroom bought
+      at market with 25% down at roughly 6.75% carries principal and interest
+      near $4,620, taxes on a fresh assessment near $831, insurance near $210,
+      and reserves, management, and vacancy near $700 — about $6,360 a month
+      against $4,000 of rent. Negative $2,360 a month, roughly $28,000 a year
+      out of pocket. Most California single-family rentals bought at market are
+      appreciation bets wearing a rental's clothes. As of 2026-09-07: the
+      durability test above is still the right test, but for a California
+      purchase the honest question is usually not how much cash flow to require,
+      it is whether the property produces any at all — and if it does not,
+      whether the parcel can be made to (a junior unit, a garage conversion) or
+      whether you are simply funding the carry on a bet. Figures are
+      illustrative; run yours.
+    post: how-to-cash-flow-in-california-with-the-right-single-family-home
 ---
 
 Enough to be durable, not as much as possible. Cash flow's job is to absorb repairs, fund the reserve, and make a vacancy annoying rather than dangerous. Once it does those three things reliably, additional yield is worth much less than it appears.

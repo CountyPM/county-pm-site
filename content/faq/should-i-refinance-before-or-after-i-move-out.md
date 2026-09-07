@@ -11,39 +11,15 @@ derivedFrom:
 created: '2026-08-17'
 order: 12
 sources: []
-annotations:
-  - date: '2026-08-24'
-    type: soft-revision
-    note: >-
-      Adds a prior question to ask before the timing question. Sequencing the
-      refinance ahead of the move is right when a refinance is the correct tool
-      — but for an owner holding a low-rate first, the better structure is often
-      not to refinance the first at all. Take a second behind it while you still
-      qualify as an occupant, keep the original loan intact, and convert the
-      property afterward. The occupancy point is unchanged and still governs:
-      whichever instrument you use, do it while you genuinely occupy the
-      property, on the timeline the loan documents contemplate.
-    post: the-golden-handcuffs-when-your-3-mortgage-is-quietly-costing-you-money
-  - date: '2026-08-24'
-    type: additive
-    note: >-
-      Adds the arithmetic behind the caution against a large cash-out. On a
-      converted primary residence, refinancing to seventy-five percent of value
-      at today's rates can move a property from comfortably cash-flow positive
-      to well over a thousand dollars a month negative — that is not unlocking
-      equity, it is dismantling the reason the property works. A second position
-      touches only the equity you need and leaves the first alone; it is the
-      least-bad way to reach the money and it is not free. Whichever you use,
-      line it up while you still genuinely occupy the property.
-    post: youre-about-to-sell-a-3-5-mortgage-to-buy-a-bigger-kitchen
+annotations: []
 ---
 
-Before — if the numbers depend on it at all. Once the property is no longer your primary residence, you are refinancing as an investor, and that is a materially worse deal in three ways at once.
+Before — but ask a prior question first: should you refinance the first mortgage at all? The timing rule is right and it still governs. Once the property is no longer your primary residence you are borrowing as an investor, which is worse in three ways at once: a higher rate than owner-occupied financing on the same property with the same borrower, tighter loan-to-value limits so you can pull less, and stricter underwriting, which bites hardest on the borrowers who most want the cash. None of that changes because the house changed. It changes because your occupancy status did. So line the financing up while you still genuinely qualify as an occupant, on the timeline your loan documents contemplate.
 
-Investor financing generally carries a higher rate than owner-occupied financing on the same property with the same borrower. Loan-to-value limits are tighter, so you can pull less equity out. And underwriting is stricter, which matters most for the borrowers who most want the cash. None of those change because the house is the same house — they change because your occupancy status changed.
+The instrument matters more than the timing when you hold a low first. Moving $600,000 from 4% to 6.75% costs roughly $1,100 a month — about $13,000 a year, for as long as you own the property. If the point of the money is a conversion generating roughly $23,800 of additional annual net operating income, a full refinance consumes more than half of that return permanently: you pay for the work twice, once in construction and once in rate. Refinancing to seventy-five percent of value at today's rates can move a property from comfortably positive to well over a thousand dollars a month negative. That is not unlocking equity. It is dismantling the reason the property works.
 
-So line up the financing while you still qualify as an occupant. That means doing the arithmetic before you list the next place, not after you have moved. If your plan for the new purchase relies on equity from the current home, the sequencing is the plan.
+For that owner the rule is: never touch the first. Take the money in second position — a home equity loan, a HELOC, an FHA Title I Property Improvement Loan (government-insured and specifically designed to sit subordinate), or a renovation second underwritten on after-renovation value. A second touches only the equity you need and leaves the cheap debt in place. It is not free, and it still has to clear a breakeven, but you are running that arithmetic on the incremental debt instead of on a whole new blended loan.
 
-One caution worth stating plainly: occupancy representations on a loan application are not a technicality. Refinance as an owner-occupant while you genuinely occupy the property, on the timeline your loan documents contemplate. Doing it the other way is a problem of a different category entirely.
+If you are already at or near market rate on the first, the calculus flips and a single clean refinance is often the better structure — one loan, one payment, no second lien, and on a purchase-plus-renovation it can be underwritten against after-improved value. The point is that the answer turns on what you are carrying today, not on how much equity has accumulated.
 
-This is general information, not financial advice; confirm your situation with your lender and a qualified professional.
+So the sequence is: find out what your existing loan costs you if you refinance, choose the instrument, then execute it while you still occupy the property. Do that arithmetic before you list the next place, not after you have moved — if your plan for the next purchase relies on equity from this one, the sequencing is the plan. Figures here are illustrative; confirm current terms with a licensed mortgage professional.

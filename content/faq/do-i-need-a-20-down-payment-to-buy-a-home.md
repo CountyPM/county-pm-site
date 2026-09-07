@@ -24,6 +24,7 @@ sources:
 annotations: []
 related:
   - how-can-i-buy-property-if-i-cant-afford-it-on-my-own
+  - how-much-down-payment-does-an-owner-occupant-need-on-a-two-to
 ---
 
 No. An FHA-insured loan lets an owner-occupant buy with as little as 3.5% down on a one-to-four-unit property, far below the 20% figure many people assume is required. Twenty percent is simply the threshold at which a conventional loan avoids private mortgage insurance — a cost-saving target, not a minimum to buy.

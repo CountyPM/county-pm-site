@@ -1,7 +1,7 @@
 {
   "version": 1,
   "verifiedOn": "2026-08-31",
-  "note": "Primary-source citations for recurring objective FAQ topics. The write pipeline attaches these automatically to matching objective entries; the agent does fresh web research for any objective claim not covered here. Track B (scripts/check-faq-sources.mjs) keeps these URLs alive. CURRENCY-CHECKED 2026-06-25 — see currencyNote fields. SLICE 3: each entry also carries `entities[]` — the authoritative orgs/statutes this topic is about, as schema.org-typed nodes with canonical `sameAs` URLs. lib/faq-entities.ts matches these to FAQ entries; structured-data.ts emits them as JSON-LD `about` so answer engines resolve each passage to its governing law/agency. | 2026-07-09: added AB 2801, §1950.5 deposits, AB 628 refrigerator, §1941.1 habitability, AB 325/RealPage pricing, SB 610 disaster, Costa-Hawkins, SOAR, agency/fiduciary, lease-survives-sale, IRS passive-loss/step-up, FHA down payment, insurance loss-of-use/Prop 103, owner-vs-investor rates.",
+  "note": "Primary-source citations for recurring objective FAQ topics. The write pipeline attaches these automatically to matching objective entries; the agent does fresh web research for any objective claim not covered here. Track B (scripts/check-faq-sources.mjs) keeps these URLs alive. CURRENCY-CHECKED 2026-06-25 — see currencyNote fields. SLICE 3: each entry also carries `entities[]` — the authoritative orgs/statutes this topic is about, as schema.org-typed nodes with canonical `sameAs` URLs. lib/faq-entities.ts matches these to FAQ entries; structured-data.ts emits them as JSON-LD `about` so answer engines resolve each passage to its governing law/agency. | 2026-07-09: added AB 2801, §1950.5 deposits, AB 628 refrigerator, §1941.1 habitability, AB 325/RealPage pricing, SB 610 disaster, Costa-Hawkins, SOAR, agency/fiduciary, lease-survives-sale, IRS passive-loss/step-up, FHA down payment, insurance loss-of-use/Prop 103, owner-vs-investor rates. | 2026-09-07: added Ojai rent stabilization (Ord. 937) and Gov. Code §65400 ADU/JADU estimated-rent reporting.",
   "entities": [
     {
       "id": "irs",
@@ -754,6 +754,73 @@
         {
           "label": "Cal. Civ. Code Section 1950.5 — full current text (FindLaw mirror, current as of January 1, 2026)",
           "url": "https://codes.findlaw.com/ca/civil-code/civ-sect-1950-5/"
+        }
+      ]
+    },
+    {
+      "id": "ojai-rent-stabilization",
+      "match": [
+        "ojai rent",
+        "ojai rent control",
+        "ojai rent stabilization",
+        "ojai ordinance",
+        "ordinance 937",
+        "ojai just cause",
+        "ojai 4%"
+      ],
+      "facts": "Ojai's Rent Stabilization and Just Cause Tenant Protection Ordinance (Ordinance No. 937, Ojai City Code Title 11) took effect April 28, 2023. Chapter 1 caps annual rent increases on covered units at 4% with one increase per 12-month period, and provides a petition process for a fair-return increase above the cap. Chapter 2 sets just-cause eviction and tenant-protection rules, which attach after roughly 30 days of tenancy. Single-family homes and condominiums are exempt from the rent cap under Costa-Hawkins, but not from the just-cause chapter. No-fault terminations require relocation assistance equal to two months' rent or $5,000, whichever is greater.",
+      "currencyNote": "Verified current 2026-09-07 against the City of Ojai Rent Stabilization program page and Ordinance No. 937. Local ordinances change and fair-return petition rules are administered by the Community Development Department — re-check the city page before relying on figures.",
+      "entities": [
+        {
+          "name": "City of Ojai Rent Stabilization and Just Cause Tenant Protection Ordinance (Ordinance No. 937, Ojai City Code Title 11)",
+          "type": "Legislation",
+          "sameAs": [
+            "https://ojai.ca.gov/582/Rent-Stabilization",
+            "https://ecode360.com/44876205"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "City of Ojai — Rent Stabilization (Ordinance No. 937, Ojai City Code Title 11)",
+          "url": "https://ojai.ca.gov/582/Rent-Stabilization"
+        },
+        {
+          "label": "Ojai City Code Title 11 — Rent Stabilization, Just Cause Eviction, Tenant Protections",
+          "url": "https://ecode360.com/44876205"
+        }
+      ]
+    },
+    {
+      "id": "adu-rent-reporting-gc-65400",
+      "match": [
+        "65400",
+        "estimated rental amount",
+        "adu rent reporting",
+        "jadu rent reporting",
+        "adu supplemental form",
+        "housing element annual report",
+        "adu rent form"
+      ],
+      "facts": "Under Government Code §65400, California cities and counties must submit an annual progress report on their housing element to the state. To satisfy it, Ventura County and the City of Oxnard require the estimated monthly rent of each accessory dwelling unit (ADU) and junior accessory dwelling unit (JADU) to be reported on a supplemental form filed with the building permit application — so the projected rent is recorded against the parcel before the unit is occupied, and flows to the state.",
+      "currencyNote": "Verified current 2026-09-07 against the Ventura County RMA Estimated Rental Amount Form (last updated April 2025) and the City of Oxnard ADU program page. Local forms and thresholds change — confirm the current form with the permitting jurisdiction.",
+      "entities": [
+        {
+          "name": "California Government Code §65400 (annual housing element progress report)",
+          "type": "Legislation",
+          "sameAs": [
+            "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=65400"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Ventura County RMA — Estimated Rental Amount Form for ADUs/JADUs (Gov. Code §65400 reporting)",
+          "url": "https://rma.venturacounty.gov/wp-content/uploads/2024/03/estimated-rental-amount-form-for-accessory-dwelling-units-and-junior-accessory-dwelling-units.pdf"
+        },
+        {
+          "label": "City of Oxnard — Accessory Dwelling Units",
+          "url": "https://www.oxnard.gov/community-development/planning-environmental-services/accessory-dwelling-units"
         }
       ]
     }

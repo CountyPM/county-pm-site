@@ -15,7 +15,24 @@ sources:
     url: 'https://www.irs.gov/taxtopics/tc701'
   - label: 'IRS Publication 523, Selling Your Home'
     url: 'https://www.irs.gov/publications/p523'
-annotations: []
+annotations:
+  - date: '2026-09-07'
+    type: additive
+    note: >-
+      Two additions for owners who improve a property and then sell it. First,
+      character of gain: a property built or converted and sold quickly can
+      generate ordinary income rather than capital gain, which puts the whole
+      §121 and §1250 analysis above on a different footing. That turns on facts
+      — intent, holding period, how many of these you do — and it is a
+      conversation to have with your CPA before the work starts, not at closing.
+      Second, the arithmetic rarely rewards improving-to-sell in this county:
+      sell at $1,300,000 against a $1,000,000 purchase and after 6% selling
+      costs and twelve to eighteen months of carry during construction and
+      lease-up, roughly $122,000 remains to cover construction and profit
+      against $230,000 of conversion cost. As of 2026-09-07: the exclusion and
+      recapture rules above are unchanged. What changes when you add units is
+      who is buying and how the gain is characterized. Figures illustrative.
+    post: how-to-cash-flow-in-california-with-the-right-single-family-home
 related:
   - how-can-i-move-my-rental-property-equity-out-of-california
   - what-happens-to-existing-tenant-leases-when-i-sell-my-rental

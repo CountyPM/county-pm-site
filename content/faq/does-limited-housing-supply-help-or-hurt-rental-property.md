@@ -10,37 +10,15 @@ derivedFrom:
 created: '2026-07-09'
 order: 1
 sources: []
-annotations:
-  - date: '2026-07-13'
-    type: additive
-    note: >-
-      The SOAR post makes the supply case concretely: SOAR's voter-approval
-      requirement caps new development through 2050, and a structurally fixed
-      supply meeting durable Ventura County job-anchor demand supports values
-      and rents for the housing that already exists.
-    post: >-
-      the-one-factor-that-works-for-you-how-soar-quietly-protects-your-ventura-county-rental
-  - date: '2026-08-17'
-    type: additive
-    note: >-
-      Ojai is the sharp version of this trade-off. A tightly constrained housing
-      supply sitting next to a large visitor economy produces continuous
-      pressure to convert long-term housing into visitor accommodation, and the
-      city's response has been comprehensive — a citywide short-term rental
-      prohibition, an advertising ban, revenue disgorgement, and a Ventura
-      County overlay zone covering the unincorporated valley. That protects
-      long-term rental demand by design, which is the constrained-supply
-      argument working in an owner's favor. But scarcity cuts both ways: the
-      qualified tenant pool is small and competing against second-home buyers
-      for the same inventory, and hospitality and service employment does not
-      generate the income profile that supports the rents Ojai property values
-      imply. As of 2026-08-17: limited supply supports demand, but it does not
-      by itself support rent — the local income base still sets the ceiling.
-    post: ojai-where-the-rules-are-the-investment-case
+annotations: []
 ---
 
-For owners of existing rental property, constrained new supply generally helps. When little new housing can be added, your property faces less competition for tenants, which tends to support occupancy, rents, and long-run values.
+For owners of existing rental property, constrained new supply generally helps — but it is a weaker tailwind in 2026 than it was two years ago, because the demand side moved harder than the supply side. When little new housing can be added, your property faces less competition for tenants, which tends to support occupancy, rents, and long-run values. That is still true. What changed is that scarcity only supports rent when demand is intact.
 
-The flip side is real: the same constraint contributes to high housing costs and affordability pressure for renters and would-be buyers. What benefits the incumbent owner is hard on the newcomer trying to get in.
+In Ventura County the supply constraint is unusually durable, which is the strongest version of the argument. SOAR's voter-approval requirement caps new development through 2050, so a structurally fixed supply meets job-anchor demand that does not move. Ojai is the sharpest case: a tightly constrained housing stock next to a large visitor economy produces continuous pressure to convert long-term housing into visitor accommodation, and the city answered with a citywide short-term rental prohibition, an advertising ban, revenue disgorgement, and a county overlay zone covering the unincorporated valley. That protects long-term rental demand by design.
 
-For an investor weighing whether to hold or sell, supply scarcity strengthens the case for keeping a well-located property rather than cashing out. In Ventura County, where geography and land-use rules keep new construction tight, that dynamic acts as a structural tailwind for owners who already hold. It's one input, not a whole strategy, so your financing, the property's condition, and your own plans still drive the decision.
+Scarcity cuts both ways, and the second edge is the one owners underweight. A small market means a small qualified tenant pool, competing for the same inventory against second-home buyers who do not care what the rent would be. And the local income base, not the supply constraint, sets the ceiling on rent — hospitality and service employment does not generate the income profile that Ojai property values imply. Limited supply supports demand. It does not by itself support rent.
+
+The demand side is what to watch now. Census Bureau estimates released in January 2026 put net international migration at 2.7 million in the year to June 2024, 1.3 million in the year to June 2025, and roughly 321,000 projected for 2026, with the country heading toward negative net international migration for the first time in more than 50 years. Total population growth fell from about 3.2 million to 1.8 million in a single year. Household formation lags arrival by one to two years, so Harvard's Joint Center for Housing Studies puts the shortfall at roughly 75,000 fewer immigrant households formed in 2025, growing toward nearly 500,000 fewer by 2027. Meanwhile California's 2025 housing package — AB 130, SB 131, SB 79, AB 712 — is pushing supply the other direction, and accessory dwelling units are arriving quietly on single-family lots rather than as visible new projects.
+
+For an investor weighing hold versus sell, the practical conclusion has not flipped, but it has narrowed. Supply scarcity still strengthens the case for keeping a well-located property. It is one input, not a strategy, and the demand assumption underneath most Ventura County pro formas was written during the 2022 to 2024 immigration peak — so if your case for holding rests on rent growth rather than on the carry, re-run it. Underwrite the carry, not the scarcity.

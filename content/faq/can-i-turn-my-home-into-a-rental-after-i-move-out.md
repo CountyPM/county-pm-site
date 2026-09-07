@@ -26,8 +26,26 @@ annotations:
       just-cause protection to a house that never needed either. Dated takeaway:
       put a month-24 calendar note to call your CPA about the 121 clock.
     post: youre-about-to-sell-a-3-5-mortgage-to-buy-a-bigger-kitchen
+  - date: '2026-09-07'
+    type: soft-revision
+    note: >-
+      The depreciation paragraph above needs one qualifier. On a converted
+      residence the basis for depreciation is the lesser of your adjusted basis
+      or fair market value at the date of conversion (IRS Pub. 527, Pub. 946) —
+      not what the house is worth. After a long hold, adjusted basis is usually
+      the smaller figure, and net of land the depreciable building basis can be
+      a fraction of market value. So the non-cash deduction that 'often turns a
+      property with positive cash flow into a paper loss' can be thinner than
+      expected on exactly the homes owners hold longest. The preserved
+      owner-occupied rate and the $25,000 active-participation allowance
+      described above are unaffected. As of 2026-09-07: keep the conversion case
+      resting on the rate you keep and the rent you collect, and treat
+      depreciation as a bonus you should have your CPA size against your actual
+      adjusted basis before you count on it.
+    post: how-to-cash-flow-in-california-with-the-right-single-family-home
 related:
   - why-are-owner-occupied-mortgage-rates-better-than-investor
+  - how-much-down-payment-does-an-owner-occupant-need-on-a-two-to
 ---
 
 Yes, and it's one of the more accessible ways for everyday owners to build a portfolio. The common version goes like this: buy a home as an owner-occupant (which gets you the better rate and the lower down payment), live in it long enough to build equity, then convert it to a rental when you move up — and buy your next home again as an owner-occupant, often tapping the first home's equity for the down payment. Repeat that over a decade and you can accumulate several income-producing properties without ever using investor financing.

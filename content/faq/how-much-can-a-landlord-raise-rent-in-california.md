@@ -22,11 +22,31 @@ sources:
       https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1946.2.
   - label: 'City of Oxnard — Rent Stabilization (Ordinance 3013, City Code ch. 27)'
     url: 'https://www.oxnard.gov/housing/affordable-housing/rent-stabilization'
-annotations: []
+annotations:
+  - date: '2026-09-07'
+    type: additive
+    note: >-
+      The percentages the sniffer flagged are ballot-measure margins, not
+      rent-cap figures — the 5% plus regional CPI / 10% ceiling above is
+      unchanged. What this post adds is the shape of the risk behind the January
+      1, 2030 sunset already noted in the answer. AB 1157 (Kalra) would have cut
+      the cap to the lower of 2% plus CPI or 5%, removed the
+      separately-alienable single-family exemption, and deleted the sunset
+      outright. It failed in the Assembly Judiciary Committee in January 2026 on
+      a 4-3 vote with five members not voting, short of the seven needed — but
+      it was carried as a two-year measure, so the language exists and can come
+      back. Note the sequence: the author offered to strike the single-family
+      exemption removal to buy votes before the bill died on the rent cap. The
+      exemption is the bargaining chip. As of 2026-09-07: plan on the current
+      numbers through 2029, but treat the exemption and the cap formula as
+      amendable by ordinary legislation — a budget trailer bill needs no voters,
+      and three ballot losses say that is the cheaper route.
+    post: californias-housing-truce-expires-january-1-2030
 related:
   - california-statewide-rent-control
   - does-oxnards-four-percent-rent-cap-apply-to-my-single-family
   - is-my-single-family-rental-automatically-exempt-from-ab-1482
+  - does-ab-1482-really-expire-in-2030
 ---
 
 For a unit covered by state law, a landlord cannot raise the rent by more than 5% plus the local rate of inflation (the regional Consumer Price Index), or 10%, whichever is lower, in any 12-month period. That ceiling comes from California's Tenant Protection Act of 2019 (AB 1482), applies statewide including throughout Ventura County, and is scheduled to remain in effect until January 1, 2030. Because the inflation figure is the regional CPI, the exact maximum changes each year and differs by metro area — always check the current CPI for the property's area before serving an increase notice.

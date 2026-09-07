@@ -30,6 +30,33 @@ annotations:
       applicants who are then rejected is exactly the practice the §1950.6
       actual-cost ceiling and itemized-receipt requirement are meant to curb.
     post: why-good-tenants-keep-getting-rejected
+  - date: '2026-09-07'
+    type: soft-revision
+    note: >-
+      The fee cap and the itemized receipt above are still right, but Civil Code
+      §1950.6 grew several new duties that the answer does not mention. AB 2493,
+      effective January 1, 2025, added: you may not collect a screening fee
+      unless a unit is actually available; you must deliver a copy of the
+      applicant's consumer credit report to them within seven days of receiving
+      it, automatically, without being asked; and you must pick one of two
+      processing paths and follow it — either process applications in the order
+      completed applications are received and offer the unit to the first
+      qualified applicant, or select among applicants and refund the entire
+      screening fee to everyone not selected within seven days of choosing a
+      tenant or thirty days of the application, whichever comes first. Two
+      related screening rules landed in the same window: SB 267, effective
+      January 1, 2024, bars using credit history where a government rent subsidy
+      is involved unless you offer the applicant the option of supplying lawful,
+      verifiable alternative evidence of ability to pay their portion — and
+      requires you to give reasonable time for it and reasonably consider it.
+      And SB 1061, effective January 1, 2025, keeps medical debt off California
+      credit reports. As of 2026-09-07: setting a lawful fee is now the smallest
+      part of the obligation. The larger exposure is the process — a written
+      standard given to every applicant before any fee is collected, and a
+      processing rule that removes the moment where someone chooses between two
+      qualified households. This is general information, not legal advice;
+      confirm against §1950.6 or with counsel.
+    post: the-test-is-whether-a-policy-exists
 related:
   - can-a-landlord-charge-a-pet-deposit-or-pet-rent-for-an
   - can-a-landlord-deny-an-emotional-support-animal

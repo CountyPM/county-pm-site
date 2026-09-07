@@ -17,7 +17,28 @@ sources:
   - label: 'U.S. HUD, Assistance Animals (Fair Housing)'
     url: >-
       https://www.hud.gov/program_offices/fair_housing_equal_opp/assistance_animals
-annotations: []
+annotations:
+  - date: '2026-09-07'
+    type: additive
+    note: >-
+      The answer above is right that the paper trail, not the denial, is usually
+      the problem — and there is a practical version of that worth stating. Fair
+      housing testers are calling Ventura County landlords, they are trained,
+      they often call twice days apart to see whether the answer changes, and no
+      owner can reliably identify one. That is fine, because detection was never
+      the assignment. What a tester establishes is whether a written policy
+      exists and whether what you said on the phone matches it. On assistance
+      animals specifically, the answer that has to be in writing and the same
+      for everyone is: service and support animals are not pets, they are not
+      subject to any pet restriction, pet rent, or pet deposit, they are
+      permitted at properties advertised as no-pet, you may request reliable
+      documentation of the disability-related need from a provider with an
+      established relationship with the applicant, and you will not ask about
+      the nature of the disability. As of 2026-09-07: put that paragraph in a
+      qualification standard you hand to every applicant before any fee is
+      collected. A document that already said it before the phone rang is the
+      whole defense.
+    post: the-test-is-whether-a-policy-exists
 related:
   - did-huds-may-2026-guidance-eliminate-emotional-support-animal
   - can-a-landlord-deny-an-emotional-support-animal

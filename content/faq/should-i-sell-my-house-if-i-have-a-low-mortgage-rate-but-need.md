@@ -13,7 +13,25 @@ derivedFrom:
 created: '2026-07-09'
 order: 1
 sources: []
-annotations: []
+annotations:
+  - date: '2026-09-07'
+    type: additive
+    note: >-
+      If the reason to reach for equity is that the property does not carry
+      itself, there is a route between borrowing and selling: change what the
+      parcel produces. On illustrative Ventura County numbers, a four-bedroom
+      renting at $4,000 becomes a three-bedroom at $3,600 plus a junior unit at
+      $1,800 plus a garage unit at $2,400 — $7,800 a month — for roughly
+      $230,000 of conversion cost, with Proposition 13 protecting the existing
+      owner's assessment on everything but the new construction. Note the main
+      house drops $400; you gave up a bedroom, and that is real money nobody
+      puts in the pitch. As of 2026-09-07: the breakeven framing above still
+      governs, and the resale arithmetic says do not do this for the exit —
+      value added tends to track build cost rather than exceed it, a converted
+      property sells to a narrower pool, and a quick build-and-sell can generate
+      ordinary income rather than capital gain. You do not make money on the
+      sale. You make it on the hold.
+    post: how-to-cash-flow-in-california-with-the-right-single-family-home
 ---
 
 Not necessarily — selling is often the most expensive way to reach your equity. If you hold a sub-4% first mortgage, selling forces you to give up that rate and re-borrow near 6.5% to 7% on your next purchase, a jump that can cost far more over time than the equity is worth accessing.

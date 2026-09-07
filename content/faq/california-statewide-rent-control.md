@@ -34,6 +34,7 @@ annotations:
     post: oxnard-what-it-actually-takes-to-be-a-landlord-here
 related:
   - how-much-can-a-landlord-raise-rent-in-california
+  - does-ab-1482-really-expire-in-2030
 ---
 
 Yes. California has had statewide rent control since the Tenant Protection Act of 2019 (AB 1482) took effect on January 1, 2020. For covered residential properties it caps annual rent increases at 5% plus the regional rate of inflation, or 10%, whichever is lower, in any 12-month period, and it gives tenants "just cause" eviction protection. The Act is scheduled to remain in effect until January 1, 2030.
