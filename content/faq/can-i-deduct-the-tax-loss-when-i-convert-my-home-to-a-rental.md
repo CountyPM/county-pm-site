@@ -13,6 +13,12 @@ sources:
     url: 'https://www.irs.gov/publications/p925'
   - label: 'IRS Topic No. 425, Passive Activities – Losses and Credits'
     url: 'https://www.irs.gov/taxtopics/tc425'
+  - label: 'IRS Publication 551, Basis of Assets (stepped-up basis, IRC §1014)'
+    url: 'https://www.irs.gov/publications/p551'
+  - label: >-
+      IRS Publication 523, Selling Your Home (business or rental use; separate
+      structures)
+    url: 'https://www.irs.gov/publications/p523'
 annotations:
   - date: '2026-09-07'
     type: soft-revision
@@ -33,6 +39,34 @@ annotations:
       the $100,000-$150,000 MAGI phaseout above are unchanged, but run your
       actual depreciable basis before you assume there is a loss to deduct.
     post: how-to-cash-flow-in-california-with-the-right-single-family-home
+  - date: '2026-09-21'
+    type: additive
+    note: >-
+      Worth naming who the $25,000 allowance actually reaches, because the
+      phaseout above inverts the usual assumption about who wins here. The
+      high-earning buyer who generates the largest first-year deduction is
+      precisely the person whose MAGI puts the allowance out of reach, so that
+      deduction suspends under IRC Section 469 and sits. The retiree converting
+      a long-held Camarillo house — no mortgage, modest income — generates a
+      smaller deduction and can generally use it. Same construction, same cost
+      segregation study, opposite result, and the difference is the income line,
+      not the property. Two things on the far end of the hold that change how
+      you value the deduction. Depreciation taken during life is not necessarily
+      repaid: an heir takes a stepped-up basis at fair market value on the date
+      of death under IRC Section 1014, so recapture on the decedent's
+      depreciation generally never comes due — the deduction is taken and not
+      paid back. And if you later sell rather than hold, whether the Section 121
+      home sale exclusion reaches the whole property turns on a fact people do
+      not think about at the permit counter: Treas. Reg. Section 1.121-1(e)
+      requires allocating gain where a SEPARATE structure is put to
+      non-residential use, so a converted attached garage and a detached
+      backyard cottage are not the same question. Ask your CPA which one you are
+      building before you build it. Not tax advice. As of 2026-09-21: run the
+      allowance against your own MAGI and your own exit, not against the general
+      case.
+    post: the-owner-who-already-owns-the-dirt
+related:
+  - is-an-accessory-dwelling-unit-worth-building
 ---
 
 It depends on your income. When you convert a Ventura County primary residence to a long-term rental, mortgage interest, property tax, insurance, management, and depreciation become deductible against the rental income, which often produces a paper loss even when the property cash-flows.

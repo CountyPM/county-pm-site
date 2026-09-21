@@ -25,6 +25,8 @@ sources:
   - label: 'City of Oxnard — Rent Stabilization (Ordinance 3013, City Code ch. 27)'
     url: 'https://www.oxnard.gov/housing/affordable-housing/rent-stabilization'
 annotations: []
+related:
+  - can-a-landlord-raise-the-rent-to-cover-the-cost-of-providing
 ---
 
 No — not as a separate line-item surcharge. Unlike a commercial triple-net (NNN) lease, a standard California residential lease gives an owner no mechanism to bill a resident directly for a jump in the insurance premium. That cost is recovered indirectly, through the rent itself, so the practical question is whether your rent can move enough to absorb it.

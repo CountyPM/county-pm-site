@@ -18,6 +18,9 @@ sources:
   - label: 'Just cause eviction provisions, Cal. Civ. Code §1946.2'
     url: >-
       https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1946.2
+  - label: 'Rent increase notice periods, Cal. Civ. Code §827'
+    url: >-
+      https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=827
 annotations:
   - date: '2026-08-10'
     type: additive
@@ -35,6 +38,8 @@ annotations:
 related:
   - how-much-can-a-landlord-raise-rent-in-california
   - does-ab-1482-really-expire-in-2030
+  - can-a-california-landlord-bank-unused-rent-increases
+  - how-much-notice-is-required-for-a-rent-increase-in-california
 ---
 
 Yes. California has had statewide rent control since the Tenant Protection Act of 2019 (AB 1482) took effect on January 1, 2020. For covered residential properties it caps annual rent increases at 5% plus the regional rate of inflation, or 10%, whichever is lower, in any 12-month period, and it gives tenants "just cause" eviction protection. The Act is scheduled to remain in effect until January 1, 2030.
@@ -43,7 +48,7 @@ The inflation figure in the cap is the regional Consumer Price Index, measured A
 
 The cap is not the whole picture, because the Act exempts several categories of housing. Single-family homes and condominiums are exempt provided the owner is not a real estate investment trust, a corporation, or an LLC with at least one corporate member — and provided the owner serves the tenant the required written exemption notice, with the exact statutory language under Civil Code Section 1946.2(e)(8)(B). Housing built within the previous 15 years is also exempt on a rolling basis. This exemption is not automatic: every successive tenant must receive the notice, or the property defaults to being covered by both the rent cap and the just-cause rules. We regularly see owners who qualified all along but never served the notice, capping themselves by accident for years.
 
-Two more things owners miss. A no-fault just-cause termination — for example an owner move-in or a withdrawal of the unit from the rental market — requires paying the tenant one month of rent as relocation assistance. And the notice mechanics still matter: a rent increase of 10% or less requires 30 days' written notice, while an increase above 10% (available only on exempt units, since capped units can't exceed 10%) requires 60 days. Miss the notice mechanics and the increase can be invalidated entirely.
+Two more things owners miss. A no-fault just-cause termination — for example an owner move-in or a withdrawal of the unit from the rental market — requires paying the tenant one month of rent as relocation assistance. And the notice mechanics still matter: under Civil Code §827 a rent increase of 10% or less requires at least 30 days' written notice, while an increase above 10% (available only on exempt units, since capped units can't exceed 10%) requires at least 90 days, counting cumulative increases across the prior 12 months. Miss the notice mechanics and the increase can be invalidated entirely.
 
 For Ventura County owners the practical takeaway is procedural: whether you can absorb a rising cost depends on whether you are capped or exempt, and the exemption turns on entity type, property age, and proper notice. Confirm your specific situation against the statute or with counsel before relying on an exemption. County Property Management can supply the exemption disclosure and keep it current as tenancies turn over.
 

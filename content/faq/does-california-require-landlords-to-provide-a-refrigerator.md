@@ -18,6 +18,8 @@ sources:
   - label: 'Cal. Civ. Code §1941.1 (landlord duty to maintain habitable premises)'
     url: 'https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1941.1'
 annotations: []
+related:
+  - can-a-landlord-raise-the-rent-to-cover-the-cost-of-providing
 ---
 
 Increasingly, yes — for newer tenancies. AB 628, effective January 1, 2026, amends Civil Code §1941.1 to add a working refrigerator **and** a working stove to California's minimum habitability standards. But it applies to tenancies entered into or renewed on or after January 1, 2026 — not automatically to every unit that happens to be occupied on that date.

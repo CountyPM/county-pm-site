@@ -1,7 +1,7 @@
 {
   "version": 1,
   "verifiedOn": "2026-08-31",
-  "note": "Primary-source citations for recurring objective FAQ topics. The write pipeline attaches these automatically to matching objective entries; the agent does fresh web research for any objective claim not covered here. Track B (scripts/check-faq-sources.mjs) keeps these URLs alive. CURRENCY-CHECKED 2026-06-25 — see currencyNote fields. SLICE 3: each entry also carries `entities[]` — the authoritative orgs/statutes this topic is about, as schema.org-typed nodes with canonical `sameAs` URLs. lib/faq-entities.ts matches these to FAQ entries; structured-data.ts emits them as JSON-LD `about` so answer engines resolve each passage to its governing law/agency. | 2026-07-09: added AB 2801, §1950.5 deposits, AB 628 refrigerator, §1941.1 habitability, AB 325/RealPage pricing, SB 610 disaster, Costa-Hawkins, SOAR, agency/fiduciary, lease-survives-sale, IRS passive-loss/step-up, FHA down payment, insurance loss-of-use/Prop 103, owner-vs-investor rates. | 2026-09-07: added Ojai rent stabilization (Ord. 937) and Gov. Code §65400 ADU/JADU estimated-rent reporting.",
+  "note": "Primary-source citations for recurring objective FAQ topics. The write pipeline attaches these automatically to matching objective entries; the agent does fresh web research for any objective claim not covered here. Track B (scripts/check-faq-sources.mjs) keeps these URLs alive. CURRENCY-CHECKED 2026-06-25 — see currencyNote fields. SLICE 3: each entry also carries `entities[]` — the authoritative orgs/statutes this topic is about, as schema.org-typed nodes with canonical `sameAs` URLs. lib/faq-entities.ts matches these to FAQ entries; structured-data.ts emits them as JSON-LD `about` so answer engines resolve each passage to its governing law/agency. | 2026-07-09: added AB 2801, §1950.5 deposits, AB 628 refrigerator, §1941.1 habitability, AB 325/RealPage pricing, SB 610 disaster, Costa-Hawkins, SOAR, agency/fiduciary, lease-survives-sale, IRS passive-loss/step-up, FHA down payment, insurance loss-of-use/Prop 103, owner-vs-investor rates. | 2026-09-07: added Ojai rent stabilization (Ord. 937) and Gov. Code §65400 ADU/JADU estimated-rent reporting. | 2026-09-21: added Gov. Code §66324 ADU/JADU impact-fee thresholds.",
   "entities": [
     {
       "id": "irs",
@@ -821,6 +821,43 @@
         {
           "label": "City of Oxnard — Accessory Dwelling Units",
           "url": "https://www.oxnard.gov/community-development/planning-environmental-services/accessory-dwelling-units"
+        }
+      ]
+    },
+    {
+      "id": "adu-jadu-impact-fees-gc-66324",
+      "match": [
+        "adu impact fee",
+        "jadu impact fee",
+        "junior adu impact fee",
+        "impact fees adu",
+        "750 square feet impact fee",
+        "500 square feet junior",
+        "adu fees"
+      ],
+      "facts": "Cal. Gov. Code §66324: a local agency, special district, or water corporation shall not impose any impact fee upon the development of an accessory dwelling unit with 750 square feet or less of interior livable space, or a junior accessory dwelling unit with 500 square feet or less. An ADU over 750 square feet may be charged impact fees only proportionately to the square footage of the primary dwelling unit. Section renumbered into the Gov. Code ADU chapter (§§66310 et seq.) from former §65852.2(f)(3); most recently amended by SB 543, approved October 10, 2025.",
+      "currencyNote": "Verified 2026-09-21 against leginfo GOV §66324 and the SB 543 (2025-2026) chaptered text. ADU fee statutes have been renumbered and amended in each of the last several sessions — re-check the section number as well as the figures before citing.",
+      "entities": [
+        {
+          "name": "Cal. Gov. Code §66324 — ADU and JADU impact fees",
+          "type": "Legislation",
+          "sameAs": [
+            "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=66324.&lawCode=GOV"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "ADU/JADU impact fees — Cal. Gov. Code §66324 (leginfo)",
+          "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=66324.&lawCode=GOV"
+        },
+        {
+          "label": "SB 543 (2025-2026), Accessory dwelling units and junior accessory dwelling units (leginfo)",
+          "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB543"
+        },
+        {
+          "label": "California HCD, Accessory Dwelling Unit Handbook (March 2026)",
+          "url": "https://www.hcd.ca.gov/sites/default/files/docs/policy-and-research/adu-handbook-update.pdf"
         }
       ]
     }

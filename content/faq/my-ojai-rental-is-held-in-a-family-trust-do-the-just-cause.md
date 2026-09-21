@@ -34,6 +34,27 @@ annotations:
       an owner who reads their own notice as permission to serve a no-cause
       termination loses holding the paper they created. Re-verified 2026-08-31.
     post: the-exemption-you-have-to-claim
+  - date: '2026-09-21'
+    type: additive
+    note: >-
+      Adds the timing piece an Ojai trust owner needs alongside the notice
+      question. Ojai's chapter attaches just cause once all tenants have
+      continuously and lawfully occupied the unit for thirty days — not the
+      twelve months state law requires — so the short initial term owners reach
+      for as a hedge buys almost nothing here. Your tenant is protected in month
+      two whatever the lease says. That changes what the exemption is actually
+      worth: if the written notice was never delivered and the exemption is
+      therefore not available, there is no twelve-month runway to fix it in, the
+      way there would be in an unregulated part of the county. One more framing
+      correction that carries over from the state analogue — the notice does not
+      create the exemption, it only lets you claim one the property
+      independently qualifies for, so a trust that clears the ownership test
+      still fails if the parcel is not alienable separate from the title to any
+      other dwelling unit. As of 2026-09-21: treat the notice and the thirty-day
+      clock as one decision made before the first lease is signed, and confirm
+      the current text of the ordinance, which the City has amended more than
+      once.
+    post: the-sentence-that-decides-whether-you-have-an-exemption
 ---
 
 A family trust is not on the list of owners the ordinance disqualifies — but the exemption still depends on a written notice you have to have given, and on how your particular trust is drafted. Ask a California landlord-tenant attorney the specific question before you rely on it.

@@ -34,6 +34,27 @@ annotations:
       from the rent cap, and it dies the day you move out. As of 2026-08-17: run
       the exemption analysis before you pull the ADU permit, not after.
     post: building-an-adu-can-cost-you-your-exemption-before-you-ever-rent-it
+  - date: '2026-09-21'
+    type: soft-revision
+    note: >-
+      One qualification worth making explicit, because owners get it backwards.
+      The notice does not create the exemption — it only lets you claim one you
+      independently qualify for. Civ. Code Section 1947.12(d)(5) and Section
+      1946.2(e)(8) require two things at once: the property has to be alienable
+      separate from the title to any other dwelling unit and owned by someone
+      who is not a REIT, a corporation, or an LLC with a corporate member, AND
+      the tenant has to have received the prescribed statutory language. Check
+      the box on a parcel that does not qualify — an ADU lot is the common case
+      — and you have not bought protection; you have written down a claim that
+      fails the first time it is tested. The reverse is also true and just as
+      costly: a qualifying house with no notice in the lease is covered. Two
+      further mechanics. The most common real-world failure is an unchecked
+      exemption box on an otherwise correct C.A.R. form, and there is no cure
+      after the fact — putting the language into a termination notice does not
+      retroactively create an exemption you never claimed in the agreement. As
+      of 2026-09-21: verify both halves before your next renewal date, not at
+      the moment you need to end a tenancy.
+    post: the-sentence-that-decides-whether-you-have-an-exemption
 related:
   - how-does-the-ab-1482-single-family-exemption-affect
   - how-much-can-a-landlord-raise-rent-in-california
