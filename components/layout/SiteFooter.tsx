@@ -32,6 +32,9 @@ export default function SiteFooter() {
               <Link href="/resources/rent-vs-sell" className="transition hover:text-[var(--cpm-primary-soft)]">
                 Rent vs Sell Guide
               </Link>
+              <Link href="/resources/california-landlord-quiz" className="transition hover:text-[var(--cpm-primary-soft)]">
+                California Landlord Quiz
+              </Link>
               <Link href="/blog" className="transition hover:text-[var(--cpm-primary-soft)]">
                 Blog
               </Link>

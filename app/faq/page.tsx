@@ -31,6 +31,33 @@ export default function FaqIndexPage() {
         </div>
       </section>
 
+      {/* LANDLORD QUIZ ENTRY POINT */}
+      <section className="border-t border-[var(--cpm-border)] bg-[var(--cpm-page)]">
+        <div className="mx-auto max-w-6xl px-4 py-10">
+          <Link
+            href="/resources/california-landlord-quiz"
+            className="group flex flex-col gap-4 rounded-3xl border border-[var(--cpm-border)] bg-[var(--cpm-surface)] p-8 transition hover:border-[var(--cpm-primary-soft)] md:flex-row md:items-center md:justify-between"
+          >
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.15em] text-[var(--cpm-accent)]">
+                20-question self-assessment
+              </p>
+              <p className="mt-2 text-2xl font-semibold text-[var(--cpm-text)]">
+                Are you legally compliant as a California landlord?
+              </p>
+              <p className="mt-2 text-[var(--cpm-muted)]">
+                Twenty rules with money attached, from the rental ad to the
+                security deposit. Every answer links to the article behind it.
+              </p>
+            </div>
+            <span className="flex shrink-0 items-center text-sm font-semibold text-[var(--cpm-primary-soft)] transition group-hover:text-[var(--cpm-text)]">
+              Take the quiz
+              <span className="ml-2 transition-transform group-hover:translate-x-1">→</span>
+            </span>
+          </Link>
+        </div>
+      </section>
+
       {/* TOPIC CLUSTERS */}
       <section className="border-t border-[var(--cpm-border)] bg-[var(--cpm-page)]">
         <div className="mx-auto max-w-4xl px-4 py-20">

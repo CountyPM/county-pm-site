@@ -67,6 +67,33 @@ export default function OwnersPage() {
         </div>
       </section>
 
+      {/* LANDLORD QUIZ ENTRY POINT */}
+      <section className="border-t border-[var(--cpm-border)] bg-[var(--cpm-page)]">
+        <div className="mx-auto max-w-6xl px-4 py-16">
+          <a
+            href="/resources/california-landlord-quiz"
+            className="group flex flex-col gap-4 rounded-3xl border border-[var(--cpm-border)] bg-[var(--cpm-surface)] p-8 transition hover:border-[var(--cpm-primary-soft)] md:flex-row md:items-center md:justify-between"
+          >
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.15em] text-[var(--cpm-accent)]">
+                Already renting it out?
+              </p>
+              <p className="mt-2 text-2xl font-semibold text-[var(--cpm-text)]">
+                Are you legally compliant as a California landlord?
+              </p>
+              <p className="mt-2 text-[var(--cpm-muted)]">
+                A 20-question self-assessment. See what you got right, what each
+                miss costs, and the article that explains every rule.
+              </p>
+            </div>
+            <span className="flex shrink-0 items-center text-sm font-semibold text-[var(--cpm-primary-soft)] transition group-hover:text-[var(--cpm-text)]">
+              Take the quiz
+              <span className="ml-2 transition-transform group-hover:translate-x-1">→</span>
+            </span>
+          </a>
+        </div>
+      </section>
+
       {/* INVESTOR SECTION */}
       <section className="border-t border-[var(--cpm-border)] bg-[var(--cpm-page)]">
         <div className="mx-auto max-w-6xl px-4 py-20">
