@@ -15,14 +15,26 @@ sources:
   - label: 'Rent increase notice periods, Cal. Civ. Code §827'
     url: >-
       https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=827
-  - label: >-
-      Extension of time for service by mail, Cal. Code of Civil Procedure §1013
+  - label: 'Extension of time for service by mail, Cal. Code of Civil Procedure §1013'
     url: >-
       https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1013.&lawCode=CCP
   - label: 'Tenant Protection Act of 2019 (AB 1482), Cal. Civ. Code §1947.12'
     url: >-
       https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1947.12
-annotations: []
+annotations:
+  - date: '2026-09-28'
+    type: additive
+    note: >-
+      A properly-noticed increase can still be void for a different reason:
+      Civil Code §1942.5 presumes any rent increase, notice, or non-renewal
+      served within 180 days of a tenant's protected act — a habitability
+      complaint, a call to code enforcement, joining a tenant organization — to
+      be retaliatory. The landlord carries the burden of rebutting that
+      presumption, and a tenant who prevails can recover attorney's fees. Before
+      serving an increase, check whether the tenant made a protected complaint
+      in roughly the last six months, not just whether the §827 notice period
+      and the AB 1482 math are right.
+    post: why-being-exempt-from-rent-control-made-this-harder
 related:
   - how-much-can-a-landlord-raise-rent-in-california
   - can-a-california-landlord-bank-unused-rent-increases

@@ -9,7 +9,17 @@ derivedFrom:
 created: '2026-09-21'
 order: 29
 sources: []
-annotations: []
+annotations:
+  - date: '2026-09-28'
+    type: additive
+    note: >-
+      The dollar comparison above is construction cost only. Converting a garage
+      into a junior ADU means recording a deed restriction barring separate sale
+      of that unit, which for most owners ends the AB 1482 single-family
+      rent-cap exemption on the whole parcel going forward. Price that lost
+      exemption into the decision alongside the construction numbers — it
+      belongs in the model, not in the surprise column after the permit records.
+    post: how-to-cash-flow-in-california-with-the-right-single-family-home
 related:
   - is-an-accessory-dwelling-unit-worth-building
   - do-i-have-to-live-on-the-property-to-rent-out-a-junior-adu
