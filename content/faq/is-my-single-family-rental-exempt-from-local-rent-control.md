@@ -7,15 +7,26 @@ topicDescription: >-
   Ventura County rental owners.
 type: objective
 derivedFrom:
-  - rent-control-is-moving-up-the-coast-heres-how-ventura-county-investors-protect-what-theyve-built
+  - >-
+    rent-control-is-moving-up-the-coast-heres-how-ventura-county-investors-protect-what-theyve-built
 created: '2026-09-28'
 order: 78
 sources:
-  - label: 'Costa-Hawkins Rental Housing Act — single-family/condo exemption overview'
+  - label: Costa-Hawkins Rental Housing Act — single-family/condo exemption overview
     url: 'https://caanet.org/single-family-rent-caps/'
-  - label: 'City of Oxnard — Rent Stabilization Ordinance'
+  - label: City of Oxnard — Rent Stabilization Ordinance
     url: 'https://www.oxnard.gov/housing/affordable-housing/rent-stabilization'
-annotations: []
+annotations:
+  - date: '2026-10-05'
+    type: additive
+    note: >-
+      Oct 5, 2026: The Costa-Hawkins exemption is automatic, but the separate AB
+      1482 exemption must be claimed with the statutory notice in every lease or
+      renewal signed on or after July 1, 2020. An exemption claimed in the
+      original lease does not carry into a renewal that omits the language, and
+      a blank checkbox on a lease form means no exemption for that term. Check
+      your current lease before your next renewal.
+    post: the-exemption-you-have-to-claim
 ---
 
 Usually — but it turns on how you hold title, not on the fact that it's a single-family home. Under the state Costa-Hawkins Rental Housing Act, single-family homes and condominiums are generally exempt from local rent-control caps like Oxnard's or Ojai's, and unlike the statewide Tenant Protection Act, Costa-Hawkins doesn't require you to give the tenant any notice to claim it.
