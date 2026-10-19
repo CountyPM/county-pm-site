@@ -32,6 +32,20 @@ annotations:
       ordinary income rather than capital gain. You do not make money on the
       sale. You make it on the hold.
     post: how-to-cash-flow-in-california-with-the-right-single-family-home
+  - date: '2026-10-19'
+    type: soft-revision
+    note: >-
+      A newer post gives this question a concrete price tag and a rate update.
+      Its comparison: a $50,000 price cut is certain and immediate, while
+      carrying a rental at about $500 a month negative takes more than eight
+      years to cost the same, or roughly $12,600 to $18,000 over a three-year
+      hold, before a tax benefit. It also reports 30-year rates back above 7% in
+      early October 2026 (7.28%, up from 6.34% a year earlier), which is the top
+      of the 6.5% to 7% range in the answer above and makes giving up a sub-4%
+      loan even costlier. The caveat that keeps this honest: the hold only works
+      with a reserve for vacancy and repairs and a sale date inside the Section
+      121 window. As of 2026-10-19 the breakeven framing above still governs.
+    post: a-50-000-price-cut-or-500-a-month-which-costs-you-more
 ---
 
 Not necessarily — selling is often the most expensive way to reach your equity. If you hold a sub-4% first mortgage, selling forces you to give up that rate and re-borrow near 6.5% to 7% on your next purchase, a jump that can cost far more over time than the equity is worth accessing.

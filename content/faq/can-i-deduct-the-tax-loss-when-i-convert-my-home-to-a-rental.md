@@ -19,58 +19,21 @@ sources:
       IRS Publication 523, Selling Your Home (business or rental use; separate
       structures)
     url: 'https://www.irs.gov/publications/p523'
-annotations:
-  - date: '2026-09-07'
-    type: soft-revision
-    note: >-
-      One limit belongs in the answer above and is missing from it. The
-      depreciation that creates the paper loss is not computed on what the house
-      is worth. When you convert property held for personal use to rental use,
-      the basis for depreciation is the LESSER of your adjusted basis or fair
-      market value on the date of conversion (IRS Pub. 527, Pub. 946). On a
-      Ventura County home held for decades, adjusted basis is usually the far
-      smaller number, and once you strip out land the depreciable building basis
-      on a $950,000 house can be $250,000 or less. That is a much thinner
-      shelter than owners assume when they read that depreciation 'often
-      produces a paper loss.' The corollary matters for anyone weighing a
-      conversion against a purchase: a buyer of the same house establishes basis
-      at cost, so a cost segregation study runs against $800,000 to $900,000
-      instead of a fraction of that. As of 2026-09-07: the $25,000 allowance and
-      the $100,000-$150,000 MAGI phaseout above are unchanged, but run your
-      actual depreciable basis before you assume there is a loss to deduct.
-    post: how-to-cash-flow-in-california-with-the-right-single-family-home
-  - date: '2026-09-21'
-    type: additive
-    note: >-
-      Worth naming who the $25,000 allowance actually reaches, because the
-      phaseout above inverts the usual assumption about who wins here. The
-      high-earning buyer who generates the largest first-year deduction is
-      precisely the person whose MAGI puts the allowance out of reach, so that
-      deduction suspends under IRC Section 469 and sits. The retiree converting
-      a long-held Camarillo house — no mortgage, modest income — generates a
-      smaller deduction and can generally use it. Same construction, same cost
-      segregation study, opposite result, and the difference is the income line,
-      not the property. Two things on the far end of the hold that change how
-      you value the deduction. Depreciation taken during life is not necessarily
-      repaid: an heir takes a stepped-up basis at fair market value on the date
-      of death under IRC Section 1014, so recapture on the decedent's
-      depreciation generally never comes due — the deduction is taken and not
-      paid back. And if you later sell rather than hold, whether the Section 121
-      home sale exclusion reaches the whole property turns on a fact people do
-      not think about at the permit counter: Treas. Reg. Section 1.121-1(e)
-      requires allocating gain where a SEPARATE structure is put to
-      non-residential use, so a converted attached garage and a detached
-      backyard cottage are not the same question. Ask your CPA which one you are
-      building before you build it. Not tax advice. As of 2026-09-21: run the
-      allowance against your own MAGI and your own exit, not against the general
-      case.
-    post: the-owner-who-already-owns-the-dirt
+  - label: 'IRS Publication 527, Residential Rental Property (converting a home to rental use)'
+    url: 'https://www.irs.gov/publications/p527'
+  - label: 'IRS Publication 946, How To Depreciate Property'
+    url: 'https://www.irs.gov/publications/p946'
+annotations: []
 related:
   - is-an-accessory-dwelling-unit-worth-building
 ---
 
-It depends on your income. When you convert a Ventura County primary residence to a long-term rental, mortgage interest, property tax, insurance, management, and depreciation become deductible against the rental income, which often produces a paper loss even when the property cash-flows.
+It depends on your income, and on how much depreciation you actually have. When you convert a Ventura County primary residence to a long-term rental, mortgage interest, property tax, insurance, management fees, and depreciation become deductible against the rental income, which can produce a paper loss even when the property cash-flows. Whether you can use that loss against your salary is a separate question.
 
-If you actively participate — approving tenants, terms, and major expenditures — and your modified adjusted gross income (MAGI) is $100,000 or less, you can generally deduct up to $25,000 of that loss against ordinary income such as salary. The allowance phases out between $100,000 and $150,000 of MAGI and disappears entirely above $150,000. At $130,000 MAGI, for example, only about $15,000 of the allowance survives.
+If you actively participate (approving tenants, terms, and major expenditures) and your modified adjusted gross income (MAGI) is $100,000 or less, you can generally deduct up to $25,000 of the loss against ordinary income. The allowance phases out between $100,000 and $150,000 of MAGI and is gone above $150,000. At $130,000 MAGI, for example, about $15,000 survives. Above the phaseout the loss is not lost; it is suspended under IRC Section 469 and carried forward until you have passive income or sell the property. A professional manager does not by itself cost you active-participation status as long as you keep genuine decision authority. The income line, not the property, decides who benefits: a high earner generates the largest deduction and is the person least able to use it, while a retiree with modest income and a long-held, paid-off house produces a smaller deduction and can generally use it.
 
-Above $150,000 the loss isn't gone — it's suspended and carried forward until you have passive income or sell the property. Using a professional manager does not by itself cost you active-participation status, as long as you keep genuine decision authority. The result turns on your income and participation, so confirm the numbers with your CPA before relying on them.
+The depreciation behind the loss is smaller than most owners assume. When personal-use property becomes a rental, your depreciable basis is the lesser of your adjusted basis or its fair market value on the conversion date, and land is not depreciable. On a home held for decades, adjusted basis is usually the far smaller number, so the building basis on a $950,000 house can be $250,000 or less. A buyer of the same house establishes basis at cost, which is why a cost segregation study on a purchase works against a much larger base. Run your actual depreciable basis before you assume there is a loss to deduct.
+
+Weigh the deduction against the exit. A rough rule: a $500-a-month loss costs about $350 a month after tax at a combined 30% rate, but only if it is deductible, and for a former residence, holding is a bet that has to pay off inside the roughly three-year window to use the Section 121 home-sale exclusion. If you sell instead of hold, depreciation you took is taxed on sale, and Treas. Reg. Section 1.121-1(e) requires allocating gain when a separate structure (such as a detached cottage, as opposed to a converted attached garage) is used for non-residential purposes. If you hold until death, an heir generally takes a stepped-up basis under IRC Section 1014, so the decedent's depreciation is generally never recaptured.
+
+This is general information, not legal or tax advice; confirm your situation with a qualified professional.

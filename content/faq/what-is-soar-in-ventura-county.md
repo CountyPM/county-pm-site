@@ -27,6 +27,21 @@ annotations:
       CURB measures in eight cities.
     post: >-
       the-one-factor-that-works-for-you-how-soar-quietly-protects-your-ventura-county-rental
+  - date: '2026-10-19'
+    type: additive
+    note: >-
+      SOAR is only half of the supply story, and a newer post explains the other
+      half. SOAR and the city CURB lines close the edges of Ventura County
+      cities to new development without a public vote (eight of the ten cities
+      have their own measures; Ojai and Port Hueneme do not). Inside those
+      lines, state law has gone the opposite direction by replacing
+      discretionary hearings with objective-standards checklists, such as SB 35,
+      SB 9 and ministerial ADU approval. The combined effect is that nearly all
+      new housing is steered toward infill within existing city limits. Nothing
+      in the answer above changes; this is context for why the SOAR constraint
+      and state housing law do not really conflict.
+    post: >-
+      the-wall-and-the-checklist-how-california-is-building-around-ventura-countys-growth-limits
 ---
 
 SOAR stands for Save Open-space and Agricultural Resources. It's a set of Ventura County voter initiatives, first passed countywide in 1998 and renewed through 2050, that require a public vote before agricultural, open-space, or rural land in the unincorporated county can be rezoned for development.
