@@ -15,7 +15,19 @@ sources:
   - label: 'California Security Deposit Law, Cal. Civ. Code Section 1950.5'
     url: >-
       https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5
-annotations: []
+annotations:
+  - date: '2026-11-23'
+    type: additive
+    note: >-
+      November 2026: the 21-day clock in Civil Code §1950.5 runs from when the
+      tenants give up possession, whether there is one tenant or several.
+      Missing it is a violation; missing it in bad faith forfeits the right to
+      keep any of the deposit and can add statutory damages of up to twice the
+      deposit, and the landlord carries the burden of proving every deduction is
+      reasonable. Takeaway: send one itemized statement, on time and with
+      receipts, to all the tenants on the agreement; an early-exit deal that
+      waives rent or returns the deposit belongs in writing.
+    post: the-landlord-who-kept-the-deposit-and-built-the-case-afterward
 ---
 
 In our practice, the deposit refund and the itemized statement go to all of the tenants on the rental agreement together. How that money is then divided among the roommates is a matter for the roommates, not the landlord.

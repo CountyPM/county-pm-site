@@ -1,7 +1,7 @@
 {
   "version": 1,
   "verifiedOn": "2026-08-31",
-  "note": "Primary-source citations for recurring objective FAQ topics. The write pipeline attaches these automatically to matching objective entries; the agent does fresh web research for any objective claim not covered here. Track B (scripts/check-faq-sources.mjs) keeps these URLs alive. CURRENCY-CHECKED 2026-06-25 — see currencyNote fields. SLICE 3: each entry also carries `entities[]` — the authoritative orgs/statutes this topic is about, as schema.org-typed nodes with canonical `sameAs` URLs. lib/faq-entities.ts matches these to FAQ entries; structured-data.ts emits them as JSON-LD `about` so answer engines resolve each passage to its governing law/agency. | 2026-07-09: added AB 2801, §1950.5 deposits, AB 628 refrigerator, §1941.1 habitability, AB 325/RealPage pricing, SB 610 disaster, Costa-Hawkins, SOAR, agency/fiduciary, lease-survives-sale, IRS passive-loss/step-up, FHA down payment, insurance loss-of-use/Prop 103, owner-vs-investor rates. | 2026-09-07: added Ojai rent stabilization (Ord. 937) and Gov. Code §65400 ADU/JADU estimated-rent reporting. | 2026-09-21: added Gov. Code §66324 ADU/JADU impact-fee thresholds.",
+  "note": "Primary-source citations for recurring objective FAQ topics. The write pipeline attaches these automatically to matching objective entries; the agent does fresh web research for any objective claim not covered here. Track B (scripts/check-faq-sources.mjs) keeps these URLs alive. CURRENCY-CHECKED 2026-06-25 — see currencyNote fields. SLICE 3: each entry also carries `entities[]` — the authoritative orgs/statutes this topic is about, as schema.org-typed nodes with canonical `sameAs` URLs. lib/faq-entities.ts matches these to FAQ entries; structured-data.ts emits them as JSON-LD `about` so answer engines resolve each passage to its governing law/agency. | 2026-07-09: added AB 2801, §1950.5 deposits, AB 628 refrigerator, §1941.1 habitability, AB 325/RealPage pricing, SB 610 disaster, Costa-Hawkins, SOAR, agency/fiduciary, lease-survives-sale, IRS passive-loss/step-up, FHA down payment, insurance loss-of-use/Prop 103, owner-vs-investor rates. | 2026-09-07: added Ojai rent stabilization (Ord. 937) and Gov. Code §65400 ADU/JADU estimated-rent reporting. | 2026-09-21: added Gov. Code §66324 ADU/JADU impact-fee thresholds. | 2026-11-23: added SB 1296 / Civ. Code §1942.7.5 pet-policy disclosure (operative 2027-04-01).",
   "entities": [
     {
       "id": "irs",
@@ -858,6 +858,35 @@
         {
           "label": "California HCD, Accessory Dwelling Unit Handbook (March 2026)",
           "url": "https://www.hcd.ca.gov/sites/default/files/docs/policy-and-research/adu-handbook-update.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ca-pet-policy-sb1296",
+      "match": [
+        "pet policy",
+        "pet addendum",
+        "pet rent",
+        "1942.7.5",
+        "sb 1296",
+        "refuse a pet",
+        "no pets"
+      ],
+      "facts": "SB 1296 (Durazo, Ch. 1025, Stats. 2026) adds Cal. Civ. Code §1942.7.5, operative April 1, 2027: every residential landlord or agent must have a written pet policy or pet addendum (including a complete no-pets policy), link it on the property website, digital ads and rental search-engine listings where the platform allows, give a written copy with every rental application, and include a space on the application to acknowledge receipt. The policy must describe in plain language the rights, responsibilities, requirements and material rules for tenant pet owners; it may be amended for prospective tenants only. If an application fee is charged before the policy is disclosed and the applicant then becomes ineligible or withdraws because of it, the fee must be refunded within seven business days of written request. A tenant's failure to sign a pet addendum cannot be the sole basis for an unlawful detainer. The law does not require landlords to allow pets, preserves their ability to deny or restrict pets based on the written policy, health/safety, property condition, insurance or business reasons, and does not affect service/support/assistance-animal rights.",
+      "currencyNote": "Verified 2026-11-23 against the chaptered text on leginfo (approved by Governor and filed with Secretary of State September 30, 2026). Operative April 1, 2027 — before that date the disclosure duties do not yet apply.",
+      "entities": [
+        {
+          "name": "California Civil Code §1942.7.5 (residential rental pet policy disclosure, SB 1296)",
+          "type": "Legislation",
+          "sameAs": [
+            "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB1296"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "SB 1296 (2025-2026), Real property: rentals: pet policy — Ch. 1025, Stats. 2026, adding Cal. Civ. Code §1942.7.5 (leginfo)",
+          "url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB1296"
         }
       ]
     }
